@@ -1,0 +1,8 @@
+stage,apps,source
+AndroT clone tree,1324,AndroT dataset of Muradyan and Fazzini (MSR 2026): all repositories
+Connected-test batch,172,connected-test run of 2026-04-08
+final_dataset,25,connected-test run of 2026-04-08: apps with a passing Espresso test on the Pixel 9
+Appium scenarios authored,22,appium_android_tests/<app>/scenarios.py
+Four-variant cohort locked 2026-07-25,11,experiment plan of 2026-07-25
+Measured in the four thesis batches,10,the four run tables
+Final cohort (androidskk excluded),9,decision 2026-09-28; nine-application recomputation

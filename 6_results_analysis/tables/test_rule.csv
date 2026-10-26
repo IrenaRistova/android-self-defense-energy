@@ -1,0 +1,2 @@
+rule,normal_raw,normal_log,applied,sided,alpha,p,statistic
+"t-test throughout if all 18 are normal (raw, else log); otherwise Wilcoxon signed-rank throughout",14 of 18,15 of 18,"Wilcoxon signed-rank, raw",two-sided,0.05,"exact null distribution when no zero or tied differences (n <= 50), else normal approximation","V = sum of the ranks of the positive differences (R's wilcox.test); W = min(V, n(n+1)/2 - V) (SciPy)"

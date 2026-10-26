@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Energy effect of each technique against its control (matched pairs, three series batches pooled).}
+\label{tab:main-results}
+\begin{tabular}{llrrrlll}
+\toprule
+\textbf{Technique} & \textbf{Window} & \textbf{Apps} & \textbf{Pairs} & \textbf{$\Delta$E (\%)} & \textbf{95\% CI} & \textbf{p} & \textbf{MDE (\%)} \\
+\midrule
+\multicolumn{8}{l}{\textit{Primary: every application in each technique's arm}} \\
+Bangcle & Active & 8 & 69 & $-$0.02 & [$-$0.81, +0.78] & 0.974 & 1.13 \\
+Bangcle & Passive & 8 & 69 & +0.10 & [$-$0.85, +1.05] & 0.873 & 1.36 \\
+Allatori & Active & 5 & 45 & $-$0.44 & [$-$1.52, +0.65] & 0.430 & 1.54 \\
+Allatori & Passive & 4 & 36 & $-$0.29 & [$-$1.82, +1.24] & 0.722 & 2.17 \\
+freeRASP & Active & 9 & 78 & +4.06 & [+2.65, +5.48] & $<$ 0.001 & 2.02 \\
+freeRASP & Passive & 8 & 69 & +31.79 & [+28.05, +35.53] & $<$ 0.001 & 5.33 \\
+\midrule
+\multicolumn{8}{l}{\textit{Bangcle and freeRASP on the 5 Allatori applications (sensitivity)}} \\
+Bangcle & Active & 4 & 36 & +0.32 & [$-$0.75, +1.39] & 0.650 & 1.52 \\
+Bangcle & Passive & 4 & 36 & +0.35 & [$-$0.91, +1.61] & 0.654 & 1.79 \\
+freeRASP & Active & 5 & 45 & +4.38 & [+2.62, +6.14] & $<$ 0.001 & 2.50 \\
+freeRASP & Passive & 4 & 36 & +28.17 & [+23.86, +32.49] & $<$ 0.001 & 6.13 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize $\Delta$E: mean over matched pairs of the percentage difference from the control. 95\% CI: paired t-interval over pairs. p: stratified permutation test, 6,000 permutations; $<$ 0.001 means none was as extreme as observed. MDE: minimum detectable effect at 80\% power, $\alpha$ = 0.05. Passive phase: medtimer left out in every build.
+\end{table}

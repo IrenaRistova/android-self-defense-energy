@@ -1,0 +1,2 @@
+medtimer_overhead_j,medtimer_control_j,eight_apps_control_j_max,eight_apps_overhead_j_mean,gap_to_eight_mean_j,eight_apps_slope_j_per_j,slope_p,predicted_from_control_size_j,prediction_lo,prediction_hi,predicted_leave_one_app_out_min_j,predicted_leave_one_app_out_max_j
+9.274553581121095,224.59906947718892,94.31147450990596,22.417472598405446,13.14291901728435,-0.08937162442358253,0.13408784562169684,9.267575867951336,-9.969449042455935,28.504600778358608,5.908793074434243,11.1045258954107

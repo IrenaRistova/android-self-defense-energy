@@ -1,0 +1,10 @@
+technique,permission,n_apps,apps,of_apps
+Bangcle,android.permission.ACCESS_WIFI_STATE,9,"calculator, documenter, itsok, keep_recipe, linkhub, medtimer, pdfviewer, poetskingdom, tipuous",9
+Bangcle,android.permission.ACCESS_NETWORK_STATE,6,"calculator, itsok, keep_recipe, linkhub, medtimer, poetskingdom",9
+freeRASP,android.permission.ACCESS_WIFI_STATE,9,"calculator, documenter, itsok, keep_recipe, linkhub, medtimer, pdfviewer, poetskingdom, tipuous",9
+freeRASP,com.google.android.providers.gsf.permission.READ_GSERVICES,9,"calculator, documenter, itsok, keep_recipe, linkhub, medtimer, pdfviewer, poetskingdom, tipuous",9
+freeRASP,android.permission.USE_BIOMETRIC,8,"calculator, documenter, itsok, keep_recipe, linkhub, pdfviewer, poetskingdom, tipuous",9
+freeRASP,android.permission.USE_FINGERPRINT,8,"calculator, documenter, itsok, keep_recipe, linkhub, pdfviewer, poetskingdom, tipuous",9
+freeRASP,android.permission.RECEIVE_BOOT_COMPLETED,7,"calculator, itsok, keep_recipe, linkhub, pdfviewer, poetskingdom, tipuous",9
+freeRASP,android.permission.ACCESS_NETWORK_STATE,6,"calculator, itsok, keep_recipe, linkhub, medtimer, poetskingdom",9
+freeRASP,android.permission.INTERNET,6,"calculator, documenter, itsok, keep_recipe, linkhub, poetskingdom",9

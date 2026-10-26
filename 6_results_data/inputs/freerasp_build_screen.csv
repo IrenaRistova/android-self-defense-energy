@@ -1,0 +1,11 @@
+app,variant,verdict,real_source_names,short_source_names,no_source_attribute,other_source_names,app_package_classes,short_name_packages,apk_sha256
+androidskk,freerasp_debug,PASS,160,0,14,78,252,,278a88a941579fa6e8c887319c98fa0b009aa3e6ba4d8f87f6b58f98a03f5fb0
+calculator,freerasp_debug,PASS,94,0,10,7,111,,b1dcf87408f26cc51411b9b0a5d420b6e3846ef5e46b0f8ff1b89646c179f790
+documenter,freerasp_debug,PASS,160,0,12,19,191,,7f3ed4868c06731a0f28797b3c1aa86b1c532ba1690f9031c91ae794cedbe74b
+itsok,freerasp_debug,PASS,331,0,17,49,397,,0534d4e993eaf654ba501e9525741427fd8e20ec5cdb37290d7a5aaa72e82a97
+keep_recipe,freerasp_debug,PASS,233,0,13,110,356,,8d7db06989d66144eb09fba8d764d877353e95632faacfba8038785938601d5a
+linkhub,freerasp_debug,PASS,453,0,22,327,802,,a57ca62d6595aa8878831f5cdacbfe0daa9ed54e5ae8c3065c030dc42b5cf445
+medtimer,freerasp_debug,PASS,341,0,15,376,732,,eb12baa3e71c67e464aedecc342e758e87fbfd08047fd5fa14367f87dd7e068f
+pdfviewer,freerasp_debug,PASS,21,0,19,15,55,,74c09b0fa258470dbbdb3e0ef0a8c4043353f7e1a1259f66fddc5b6c3bc1e6d2
+poetskingdom,freerasp_debug,PASS,500,0,14,97,611,,bce17296373aeba0480136362e7e04c9997d6bff91cad8889ff1fa0fcd60bd28
+tipuous,freerasp_debug,PASS,85,0,26,131,242,,b679dcf331df5399dceb4d9334399ae55f641d06ac4da4051497972e0fe80afe

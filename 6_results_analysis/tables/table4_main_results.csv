@@ -1,0 +1,11 @@
+Block,Technique,Window,Apps,Pairs,dE (%),95% CI,p,MDE (%)
+Primary: every application in each technique's arm,Bangcle,Active,8,69,-0.02,"[-0.81, +0.78]",0.974,1.13
+Primary: every application in each technique's arm,Bangcle,Passive,8,69,+0.10,"[-0.85, +1.05]",0.873,1.36
+Primary: every application in each technique's arm,Allatori,Active,5,45,-0.44,"[-1.52, +0.65]",0.430,1.54
+Primary: every application in each technique's arm,Allatori,Passive,4,36,-0.29,"[-1.82, +1.24]",0.722,2.17
+Primary: every application in each technique's arm,freeRASP,Active,9,78,+4.06,"[+2.65, +5.48]",< 0.001,2.02
+Primary: every application in each technique's arm,freeRASP,Passive,8,69,+31.79,"[+28.05, +35.53]",< 0.001,5.33
+Bangcle and freeRASP on the 5 Allatori applications (sensitivity),Bangcle,Active,4,36,+0.32,"[-0.75, +1.39]",0.650,1.52
+Bangcle and freeRASP on the 5 Allatori applications (sensitivity),Bangcle,Passive,4,36,+0.35,"[-0.91, +1.61]",0.654,1.79
+Bangcle and freeRASP on the 5 Allatori applications (sensitivity),freeRASP,Active,5,45,+4.38,"[+2.62, +6.14]",< 0.001,2.50
+Bangcle and freeRASP on the 5 Allatori applications (sensitivity),freeRASP,Passive,4,36,+28.17,"[+23.86, +32.49]",< 0.001,6.13

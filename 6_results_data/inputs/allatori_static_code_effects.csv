@@ -1,0 +1,7 @@
+app,classes_renamed,decryptor_routines,decrypt_call_sites,app_code_instructions_pct,app_code_branches_pct,app_code_goto_pct,app_code_if_pct
+calculator,61,14,1033,16.45,-4.43,-13.57,0.12
+itsok,124,20,459,0.88,-11.63,-39.93,4.26
+medtimer,400,32,1615,9.48,-8.13,-25.00,0.30
+pdfviewer,25,2,112,7.45,-1.00,-2.70,0.00
+poetskingdom,490,9,3082,-1.49,-3.30,-8.58,-0.06
+tipuous,138,10,697,1.63,-3.60,-9.22,-0.42

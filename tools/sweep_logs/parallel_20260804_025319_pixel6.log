@@ -1,0 +1,289 @@
+[02:53:35] START pixel6 androidskk/baseline_debug rep9 cfg=androidskk_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=63 status=3 (band=40-70)
+  top-up SKIPPED (level=63 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1347500µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:57:40] DONE  pixel6 androidskk/baseline_debug rep9 PASS wall=245s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_androidskk_baseline_debug_r9.log
+[02:57:40] START pixel6 pdfviewer/baseline_debug rep1 cfg=pdfviewer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=62 status=3 (band=40-70)
+  top-up SKIPPED (level=62 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1415000µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[03:02:25] DONE  pixel6 pdfviewer/baseline_debug rep1 PASS wall=284s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_pdfviewer_baseline_debug_r1.log
+[03:02:25] START pixel6 medtimer/allatori_debug rep10 cfg=medtimer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=61 status=3 (band=40-70)
+  top-up SKIPPED (level=61 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1423125µA = ≥150mA)
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:08:13] DONE  pixel6 medtimer/allatori_debug rep10 PASS wall=348s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_medtimer_allatori_debug_r10.log
+[03:08:13] START pixel6 linkhub/freerasp_debug rep10 cfg=linkhub_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=60 status=3 (band=40-70)
+  top-up SKIPPED (level=60 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1408125µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:13:56] DONE  pixel6 linkhub/freerasp_debug rep10 PASS wall=343s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_linkhub_freerasp_debug_r10.log
+[03:13:56] START pixel6 tipuous/baseline_debug rep3 cfg=tipuous_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=59 status=3 (band=40-70)
+  top-up SKIPPED (level=59 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1302812µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:19:17] DONE  pixel6 tipuous/baseline_debug rep3 PASS wall=321s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_tipuous_baseline_debug_r3.log
+[03:19:17] START pixel6 keep_recipe/freerasp_debug rep4 cfg=keep_recipe_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=58 status=3 (band=40-70)
+  top-up SKIPPED (level=58 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1605625µA = ≥150mA)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:24:31] DONE  pixel6 keep_recipe/freerasp_debug rep4 PASS wall=313s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_keep_recipe_freerasp_debug_r4.log
+[03:24:31] START pixel6 calculator/freerasp_debug rep1 cfg=calculator_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=57 status=3 (band=40-70)
+  top-up SKIPPED (level=57 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-901875µA = ≥150mA)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:29:19] DONE  pixel6 calculator/freerasp_debug rep1 PASS wall=288s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_calculator_freerasp_debug_r1.log
+[03:29:19] START pixel6 linkhub/allatori_debug rep8 cfg=linkhub_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=57 status=3 (band=40-70)
+  top-up SKIPPED (level=57 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-485312µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:34:06] DONE  pixel6 linkhub/allatori_debug rep8 PASS wall=287s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_linkhub_allatori_debug_r8.log
+[03:34:06] START pixel6 calculator/freerasp_debug rep7 cfg=calculator_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=56 status=3 (band=40-70)
+  top-up SKIPPED (level=56 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-419375µA = ≥150mA)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:39:20] DONE  pixel6 calculator/freerasp_debug rep7 PASS wall=314s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_calculator_freerasp_debug_r7.log
+[03:39:20] START pixel6 medtimer/freerasp_debug rep9 cfg=medtimer_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=55 status=3 (band=40-70)
+  top-up SKIPPED (level=55 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-394062µA = ≥150mA)
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:45:38] DONE  pixel6 medtimer/freerasp_debug rep9 PASS wall=378s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_medtimer_freerasp_debug_r9.log
+[03:45:38] START pixel6 itsok/bangcle_debug rep9 cfg=itsok_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=55 status=3 (band=40-70)
+  top-up SKIPPED (level=55 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-399062µA = ≥150mA)
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:50:24] DONE  pixel6 itsok/bangcle_debug rep9 PASS wall=285s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_itsok_bangcle_debug_r9.log
+[03:50:24] START pixel6 documenter/baseline_debug rep3 cfg=documenter_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=54 status=3 (band=40-70)
+  top-up SKIPPED (level=54 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-452500µA = ≥150mA)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:55:06] DONE  pixel6 documenter/baseline_debug rep3 PASS wall=282s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_documenter_baseline_debug_r3.log
+[03:55:06] START pixel6 androidskk/baseline_debug rep2 cfg=androidskk_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=54 status=3 (band=40-70)
+  top-up SKIPPED (level=54 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-424687µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:59:23] DONE  pixel6 androidskk/baseline_debug rep2 PASS wall=256s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_androidskk_baseline_debug_r2.log
+[03:59:23] START pixel6 linkhub/freerasp_debug rep4 cfg=linkhub_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=53 status=3 (band=40-70)
+  top-up SKIPPED (level=53 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-671875µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:05:05] DONE  pixel6 linkhub/freerasp_debug rep4 PASS wall=342s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_linkhub_freerasp_debug_r4.log
+[04:05:05] START pixel6 pdfviewer/allatori_debug rep10 cfg=pdfviewer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=52 status=3 (band=40-70)
+  top-up SKIPPED (level=52 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-478750µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[04:09:54] DONE  pixel6 pdfviewer/allatori_debug rep10 PASS wall=288s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_pdfviewer_allatori_debug_r10.log
+[04:09:54] START pixel6 medtimer/baseline_debug rep9 cfg=medtimer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=52 status=3 (band=40-70)
+  top-up SKIPPED (level=52 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-490312µA = ≥150mA)
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:15:43] DONE  pixel6 medtimer/baseline_debug rep9 PASS wall=348s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_medtimer_baseline_debug_r9.log
+[04:15:43] START pixel6 poetskingdom/freerasp_debug rep7 cfg=poetskingdom_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=51 status=3 (band=40-70)
+  top-up SKIPPED (level=51 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-482500µA = ≥150mA)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:20:43] DONE  pixel6 poetskingdom/freerasp_debug rep7 PASS wall=300s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_poetskingdom_freerasp_debug_r7.log
+[04:20:43] START pixel6 calculator/freerasp_debug rep4 cfg=calculator_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=50 status=3 (band=40-70)
+  top-up SKIPPED (level=50 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-454687µA = ≥150mA)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:25:43] DONE  pixel6 calculator/freerasp_debug rep4 PASS wall=300s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_calculator_freerasp_debug_r4.log
+[04:25:43] START pixel6 pdfviewer/allatori_debug rep4 cfg=pdfviewer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=50 status=3 (band=40-70)
+  top-up SKIPPED (level=50 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-441562µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[04:30:29] DONE  pixel6 pdfviewer/allatori_debug rep4 PASS wall=285s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_pdfviewer_allatori_debug_r4.log
+[04:30:29] START pixel6 tipuous/allatori_debug rep5 cfg=tipuous_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=49 status=3 (band=40-70)
+  top-up SKIPPED (level=49 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-430625µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:35:54] DONE  pixel6 tipuous/allatori_debug rep5 PASS wall=325s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_tipuous_allatori_debug_r5.log
+[04:35:54] START pixel6 androidskk/freerasp_debug rep1 cfg=androidskk_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=48 status=3 (band=40-70)
+  top-up SKIPPED (level=48 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-457500µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:40:14] DONE  pixel6 androidskk/freerasp_debug rep1 PASS wall=260s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_androidskk_freerasp_debug_r1.log
+[04:40:14] START pixel6 documenter/bangcle_debug rep5 cfg=documenter_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=48 status=3 (band=40-70)
+  top-up SKIPPED (level=48 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-456250µA = ≥150mA)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:44:58] DONE  pixel6 documenter/bangcle_debug rep5 PASS wall=284s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_documenter_bangcle_debug_r5.log
+[04:44:58] START pixel6 linkhub/allatori_debug rep4 cfg=linkhub_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=47 status=3 (band=40-70)
+  top-up SKIPPED (level=47 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-466875µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:49:36] DONE  pixel6 linkhub/allatori_debug rep4 PASS wall=278s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_linkhub_allatori_debug_r4.log
+[04:49:36] START pixel6 documenter/bangcle_debug rep3 cfg=documenter_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=46 status=3 (band=40-70)
+  top-up SKIPPED (level=46 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-448125µA = ≥150mA)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:54:23] DONE  pixel6 documenter/bangcle_debug rep3 PASS wall=287s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_documenter_bangcle_debug_r3.log
+[04:54:23] START pixel6 poetskingdom/baseline_debug rep10 cfg=poetskingdom_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=46 status=3 (band=40-70)
+  top-up SKIPPED (level=46 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-477812µA = ≥150mA)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[04:59:14] DONE  pixel6 poetskingdom/baseline_debug rep10 PASS wall=291s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_poetskingdom_baseline_debug_r10.log
+[04:59:14] START pixel6 itsok/baseline_debug rep2 cfg=itsok_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=45 status=3 (band=40-70)
+  top-up SKIPPED (level=45 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-474375µA = ≥150mA)
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:03:48] DONE  pixel6 itsok/baseline_debug rep2 PASS wall=274s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_itsok_baseline_debug_r2.log
+[05:03:48] START pixel6 medtimer/baseline_debug rep1 cfg=medtimer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=45 status=3 (band=40-70)
+  top-up SKIPPED (level=45 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-500312µA = ≥150mA)
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:09:42] DONE  pixel6 medtimer/baseline_debug rep1 PASS wall=354s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_medtimer_baseline_debug_r1.log
+[05:09:42] START pixel6 tipuous/baseline_debug rep1 cfg=tipuous_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=44 status=3 (band=40-70)
+  top-up SKIPPED (level=44 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-458437µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:15:09] DONE  pixel6 tipuous/baseline_debug rep1 PASS wall=327s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_tipuous_baseline_debug_r1.log
+[05:15:09] START pixel6 calculator/freerasp_debug rep5 cfg=calculator_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=44 status=3 (band=40-70)
+  top-up SKIPPED (level=44 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-442187µA = ≥150mA)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:20:09] DONE  pixel6 calculator/freerasp_debug rep5 PASS wall=300s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_calculator_freerasp_debug_r5.log
+[05:20:09] START pixel6 keep_recipe/bangcle_debug rep4 cfg=keep_recipe_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=43 status=3 (band=40-70)
+  top-up SKIPPED (level=43 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-438750µA = ≥150mA)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:25:18] DONE  pixel6 keep_recipe/bangcle_debug rep4 PASS wall=309s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_keep_recipe_bangcle_debug_r4.log
+[05:25:18] START pixel6 poetskingdom/freerasp_debug rep8 cfg=poetskingdom_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=42 status=3 (band=40-70)
+  top-up SKIPPED (level=42 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-469687µA = ≥150mA)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:30:22] DONE  pixel6 poetskingdom/freerasp_debug rep8 PASS wall=303s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_poetskingdom_freerasp_debug_r8.log
+[05:30:22] START pixel6 androidskk/allatori_debug rep3 cfg=androidskk_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=42 status=3 (band=40-70)
+  top-up SKIPPED (level=42 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-447500µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:34:32] DONE  pixel6 androidskk/allatori_debug rep3 PASS wall=249s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_androidskk_allatori_debug_r3.log
+[05:34:32] START pixel6 itsok/freerasp_debug rep2 cfg=itsok_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=41 status=3 (band=40-70)
+  top-up SKIPPED (level=41 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-427187µA = ≥150mA)
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:39:28] DONE  pixel6 itsok/freerasp_debug rep2 PASS wall=296s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_itsok_freerasp_debug_r2.log
+[05:39:28] START pixel6 poetskingdom/bangcle_debug rep7 cfg=poetskingdom_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=40 status=3 (band=40-70)
+  top-up SKIPPED (level=40 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-440000µA = ≥150mA)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:44:13] DONE  pixel6 poetskingdom/bangcle_debug rep7 PASS wall=285s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_poetskingdom_bangcle_debug_r7.log
+[05:44:13] START pixel6 androidskk/freerasp_debug rep7 cfg=androidskk_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=40 status=3 (band=40-70)
+  top-up SKIPPED (level=40 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-433750µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:48:35] DONE  pixel6 androidskk/freerasp_debug rep7 PASS wall=262s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_025319_pixel6_androidskk_freerasp_debug_r7.log
+[05:48:35] START pixel6 documenter/freerasp_debug rep4 cfg=documenter_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=39 status=3 (band=40-70)
+  top-up: level=39 < 40 -> charging to >= 70 (stall cap 2400s)

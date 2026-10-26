@@ -1,0 +1,33 @@
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+index ae47f34..0b8d27c 100644
+--- a/app/src/main/AndroidManifest.xml
++++ b/app/src/main/AndroidManifest.xml
+@@ -1,5 +1,12 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools">
++
++    <!-- Master-experiment fork: added to enable A/B test of BATTERY_STATS effect on
++         BatteryManager.getIntProperty(BATTERY_PROPERTY_CURRENT_NOW). AOSP source says
++         CURRENT_NOW is not gated by this permission; this rebuild verifies empirically. -->
++    <uses-permission android:name="android.permission.BATTERY_STATS"
++        tools:ignore="ProtectedPermissions" />
+ 
+     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+diff --git a/gradle/wrapper/gradle-wrapper.properties b/gradle/wrapper/gradle-wrapper.properties
+index 95d8a43..b4df6e2 100644
+--- a/gradle/wrapper/gradle-wrapper.properties
++++ b/gradle/wrapper/gradle-wrapper.properties
+@@ -1,6 +1,6 @@
+ #Mon Mar 06 12:32:43 CET 2023
+ distributionBase=GRADLE_USER_HOME
+-distributionUrl=https\://services.gradle.org/distributions/gradle-8.0-bin.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-8.5-bin.zip
+ distributionPath=wrapper/dists
+ zipStorePath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+diff --git a/gradlew b/gradlew
+old mode 100644
+new mode 100755

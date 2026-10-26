@@ -1,0 +1,13 @@
+applications,window,cells,denials,share_pct,cells_with_any,median_per_cell,per_minute_pooled
+the eight other than medtimer,before measurement (launch),680,5864,26.6158315177923,679,8.0,
+the eight other than medtimer,passive phase,680,1751,7.947530864197531,260,0.0,5.087257161672703
+the eight other than medtimer,active phase,680,13453,61.06118373275236,680,18.0,10.409584483247789
+the eight other than medtimer,after the active phase,680,964,4.375453885257807,198,0.0,
+all nine (medtimer included),before measurement (launch),770,6742,26.676690539310727,769,8.0,
+all nine (medtimer included),passive phase,770,2838,11.22937522256954,350,0.0,5.742711161324047
+all nine (medtimer included),active phase,770,14724,58.25980295176671,770,18.0,10.13340062628325
+all nine (medtimer included),after the active phase,770,969,3.834131286353025,199,0.0,
+medtimer,before measurement (launch),90,878,27.09040419623573,90,11.0,
+medtimer,passive phase,90,1087,33.539031163221225,90,10.0,7.246747186079845
+medtimer,active phase,90,1271,39.21629126812712,90,12.0,7.911609088079676
+medtimer,after the active phase,90,5,0.154273372415921,1,0.0,

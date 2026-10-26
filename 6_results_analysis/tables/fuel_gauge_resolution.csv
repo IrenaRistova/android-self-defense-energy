@@ -1,0 +1,4 @@
+phone,cells,gauge_update_ms_median,gauge_update_ms_min,gauge_update_ms_max,launch_ms_median_baseline,samples_in_launch_median_baseline,gauge_updates_in_launch_median_baseline,launch_ms_median_bangcle,samples_in_launch_median_bangcle,gauge_updates_in_launch_median_bangcle
+pixel3,115,334.0,327,337,442.0,4.0,1.0,1196.0,12.0,3.0
+pixel6,120,317.0,316,326,275.0,3.0,1.0,664.0,7.0,2.0
+pixel9,120,217.0,213,218,311.0,3.0,2.0,660.0,6.0,4.0

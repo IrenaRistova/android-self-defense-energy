@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.25cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage{booktabs,graphicx,colortbl,xcolor,placeins}
+\usepackage[labelfont=bf]{caption}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\providecommand{\etal}{et~al.}
+\pagestyle{plain}
+\begin{document}
+\section*{Supplementary material}
+\noindent\emph{On the impact of self-defense techniques on the energy efficiency of Android apps} --- Irena Ristova, Vrije Universiteit Amsterdam.\par\medskip
+\noindent These tables and figures support the thesis and are cited from it as Table~S$n$ and Figure~S$n$. Each is emitted by a notebook of the replication package; the data behind each table is the CSV file of the same name in \texttt{6\_results\_analysis/tables/}.\par\medskip
+\begin{center}\small\begin{tabular}{lp{10cm}l}\toprule \textbf{Item} & \textbf{Content} & \textbf{File (the notebook is in INDEX.md)} \\ \midrule
+Table S1 & Control-build screen: compiler-written source-file names in each control APK & \texttt{\footnotesize table2\_control\_build\_screen} \\
+Table S2 & What the obfuscator changed in each application's own code & \texttt{\footnotesize table\_obfuscation\_static} \\
+Table S3 & Phase length per cell by device, build and phase; medtimer's passive phase as measured & \texttt{\footnotesize table\_durations\_per\_device} \\
+Table S4 & The thermal gate: charging failures, starting temperatures, and the within-pilot test & \texttt{\footnotesize table\_thermal\_gate} \\
+Table S5 & Repeatability, pilot against series & \texttt{\footnotesize table\_pilot\_series} \\
+Table S6 & Per application, active phase: mean energy difference per technique and device & \texttt{\footnotesize table\_per\_app\_active} \\
+Table S7 & Per application, passive phase: mean energy difference per technique and device & \texttt{\footnotesize table\_per\_app\_passive} \\
+Table S8 & Shapiro-Wilk test on the per-pair differences of each comparison & \texttt{\footnotesize table\_normality} \\
+Table S9 & RQ4 in full: each protected build against its control in memory, threads, processor share and phase length & \texttt{\footnotesize table\_rq4\_full} \\
+Table S10 & Applying Allatori to the nine applications: renaming and run-time outcome & \texttt{\footnotesize table5\_allatori\_applicability} \\
+Table S11 & Where freeRASP's passive-phase energy goes (exploratory) & \texttt{\footnotesize table6\_freerasp\_postlaunch} \\
+Table S12 & Runtime shielding per device (exploratory): the burst, rejected local requests, Wi-Fi traffic, SELinux denials & \texttt{\footnotesize table\_freerasp\_mechanism} \\
+Table S13 & freeRASP's active-phase cost per device in joules, and what the larger control explains & \texttt{\footnotesize table\_freerasp\_active\_cost} \\
+Table S14 & How often the fuel gauge's current reading changes, per device & \texttt{\footnotesize table\_fuel\_gauge} \\
+Table S15 & Arrival temperature: power slopes, the balance per comparison, the adjusted comparisons & \texttt{\footnotesize table\_arrival\_temperature} \\
+Table S16 & The memory sampler's extra load on the shielded builds & \texttt{\footnotesize table\_sampler\_load} \\
+Figure S1 & Q-Q plots of the paired differences for each technique, phase and device & \texttt{\footnotesize qq\_per\_device} \\
+Figure S2 & Active phase: energy per measurement against phase length, processor utilisation (device-wide), memory and thread count, per device & \texttt{\footnotesize figure\_rq3\_active} \\
+Figure S3 & Passive phase, as Figure S2 & \texttt{\footnotesize figure\_rq3\_passive} \\
+\bottomrule\end{tabular}\end{center}
+\clearpage
+\input{../tables/table2_control_build_screen.tex}
+\FloatBarrier
+\input{../tables/table_obfuscation_static.tex}
+\FloatBarrier
+\input{../tables/table_durations_per_device.tex}
+\FloatBarrier
+\input{../tables/table_thermal_gate.tex}
+\FloatBarrier
+\input{../tables/table_pilot_series.tex}
+\FloatBarrier
+\input{../tables/table_per_app_active.tex}
+\FloatBarrier
+\input{../tables/table_per_app_passive.tex}
+\FloatBarrier
+\input{../tables/table_normality.tex}
+\FloatBarrier
+\input{../tables/table_rq4_full.tex}
+\FloatBarrier
+\input{../tables/table5_allatori_applicability.tex}
+\FloatBarrier
+\input{../tables/table6_freerasp_postlaunch.tex}
+\FloatBarrier
+\input{../tables/table_freerasp_mechanism.tex}
+\FloatBarrier
+\input{../tables/table_freerasp_active_cost.tex}
+\FloatBarrier
+\input{../tables/table_fuel_gauge.tex}
+\FloatBarrier
+\input{../tables/table_arrival_temperature.tex}
+\FloatBarrier
+\input{../tables/table_sampler_load.tex}
+\FloatBarrier
+\clearpage
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{../figures/qq_per_device.pdf}
+\caption{Q-Q plots of the paired differences for each technique, phase and device.}
+\end{figure}
+\FloatBarrier
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{../figures/figure_rq3_active.pdf}
+\caption{Active phase: energy per measurement against phase length, processor utilisation (device-wide), memory and thread count, per device; one point per measurement, a least-squares line per build.}
+\end{figure}
+\FloatBarrier
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{../figures/figure_rq3_passive.pdf}
+\caption{Passive phase, as Figure S2; medtimer is not included.}
+\end{figure}
+\FloatBarrier
+\end{document}

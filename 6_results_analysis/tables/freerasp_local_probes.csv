@@ -1,0 +1,154 @@
+device,application,build,cells,per_cell_post_launch,per_cell_workload,cells_with_any_post_launch_pct
+all devices,the eight other than medtimer,freeRASP,680,1.0176470588235293,0.12941176470588237,68.38235294117648
+all devices,the eight other than medtimer,Control,673,0.0,0.0,0.0
+all devices,the eight other than medtimer,Bangcle,676,0.0,0.0,0.0
+all devices,the eight other than medtimer,Allatori,350,0.0,0.0,0.0
+all devices,all applications (medtimer included),freeRASP,770,0.8987012987012987,0.11428571428571428,60.3896103896104
+all devices,all applications (medtimer included),Control,760,0.0,0.0,0.0
+all devices,all applications (medtimer included),Bangcle,676,0.0,0.0,0.0
+all devices,all applications (medtimer included),Allatori,439,0.0,0.0,0.0
+all devices,calculator,freeRASP,90,0.9666666666666667,0.0,64.44444444444444
+all devices,calculator,Control,90,0.0,0.0,0.0
+all devices,calculator,Bangcle,88,0.0,0.0,0.0
+all devices,calculator,Allatori,89,0.0,0.0,0.0
+all devices,documenter,freeRASP,88,1.0,0.0,65.9090909090909
+all devices,documenter,Control,89,0.0,0.0,0.0
+all devices,documenter,Bangcle,90,0.0,0.0,0.0
+all devices,itsok,freeRASP,89,0.9662921348314607,0.0,64.04494382022472
+all devices,itsok,Control,89,0.0,0.0,0.0
+all devices,itsok,Bangcle,89,0.0,0.0,0.0
+all devices,keep_recipe,freeRASP,60,1.4666666666666666,0.0,98.33333333333333
+all devices,keep_recipe,Control,60,0.0,0.0,0.0
+all devices,keep_recipe,Bangcle,60,0.0,0.0,0.0
+all devices,linkhub,freeRASP,90,0.9888888888888889,0.0,66.66666666666666
+all devices,linkhub,Control,89,0.0,0.0,0.0
+all devices,linkhub,Bangcle,88,0.0,0.0,0.0
+all devices,medtimer,freeRASP,90,0.0,0.0,0.0
+all devices,medtimer,Control,87,0.0,0.0,0.0
+all devices,medtimer,Allatori,89,0.0,0.0,0.0
+all devices,pdfviewer,freeRASP,84,0.9642857142857143,0.0,66.66666666666666
+all devices,pdfviewer,Control,80,0.0,0.0,0.0
+all devices,pdfviewer,Bangcle,82,0.0,0.0,0.0
+all devices,pdfviewer,Allatori,82,0.0,0.0,0.0
+all devices,poetskingdom,freeRASP,90,0.9777777777777777,0.9777777777777777,66.66666666666666
+all devices,poetskingdom,Control,87,0.0,0.0,0.0
+all devices,poetskingdom,Bangcle,89,0.0,0.0,0.0
+all devices,poetskingdom,Allatori,89,0.0,0.0,0.0
+all devices,tipuous,freeRASP,89,0.9550561797752809,0.0,64.04494382022472
+all devices,tipuous,Control,89,0.0,0.0,0.0
+all devices,tipuous,Bangcle,90,0.0,0.0,0.0
+all devices,tipuous,Allatori,90,0.0,0.0,0.0
+Pixel 3,the eight other than medtimer,freeRASP,202,0.0,0.0,0.0
+Pixel 3,the eight other than medtimer,Control,196,0.0,0.0,0.0
+Pixel 3,the eight other than medtimer,Bangcle,199,0.0,0.0,0.0
+Pixel 3,the eight other than medtimer,Allatori,110,0.0,0.0,0.0
+Pixel 3,all applications (medtimer included),freeRASP,232,0.0,0.0,0.0
+Pixel 3,all applications (medtimer included),Control,224,0.0,0.0,0.0
+Pixel 3,all applications (medtimer included),Bangcle,199,0.0,0.0,0.0
+Pixel 3,all applications (medtimer included),Allatori,139,0.0,0.0,0.0
+Pixel 3,calculator,freeRASP,30,0.0,0.0,0.0
+Pixel 3,calculator,Control,30,0.0,0.0,0.0
+Pixel 3,calculator,Bangcle,29,0.0,0.0,0.0
+Pixel 3,calculator,Allatori,29,0.0,0.0,0.0
+Pixel 3,documenter,freeRASP,29,0.0,0.0,0.0
+Pixel 3,documenter,Control,29,0.0,0.0,0.0
+Pixel 3,documenter,Bangcle,30,0.0,0.0,0.0
+Pixel 3,itsok,freeRASP,29,0.0,0.0,0.0
+Pixel 3,itsok,Control,29,0.0,0.0,0.0
+Pixel 3,itsok,Bangcle,30,0.0,0.0,0.0
+Pixel 3,linkhub,freeRASP,30,0.0,0.0,0.0
+Pixel 3,linkhub,Control,29,0.0,0.0,0.0
+Pixel 3,linkhub,Bangcle,28,0.0,0.0,0.0
+Pixel 3,medtimer,freeRASP,30,0.0,0.0,0.0
+Pixel 3,medtimer,Control,28,0.0,0.0,0.0
+Pixel 3,medtimer,Allatori,29,0.0,0.0,0.0
+Pixel 3,pdfviewer,freeRASP,25,0.0,0.0,0.0
+Pixel 3,pdfviewer,Control,23,0.0,0.0,0.0
+Pixel 3,pdfviewer,Bangcle,23,0.0,0.0,0.0
+Pixel 3,pdfviewer,Allatori,22,0.0,0.0,0.0
+Pixel 3,poetskingdom,freeRASP,30,0.0,0.0,0.0
+Pixel 3,poetskingdom,Control,27,0.0,0.0,0.0
+Pixel 3,poetskingdom,Bangcle,29,0.0,0.0,0.0
+Pixel 3,poetskingdom,Allatori,29,0.0,0.0,0.0
+Pixel 3,tipuous,freeRASP,29,0.0,0.0,0.0
+Pixel 3,tipuous,Control,29,0.0,0.0,0.0
+Pixel 3,tipuous,Bangcle,30,0.0,0.0,0.0
+Pixel 3,tipuous,Allatori,30,0.0,0.0,0.0
+Pixel 6,the eight other than medtimer,freeRASP,239,1.9288702928870294,0.24267782426778242,97.90794979079497
+Pixel 6,the eight other than medtimer,Control,239,0.0,0.0,0.0
+Pixel 6,the eight other than medtimer,Bangcle,238,0.0,0.0,0.0
+Pixel 6,the eight other than medtimer,Allatori,120,0.0,0.0,0.0
+Pixel 6,all applications (medtimer included),freeRASP,269,1.7137546468401488,0.21561338289962825,86.98884758364312
+Pixel 6,all applications (medtimer included),Control,269,0.0,0.0,0.0
+Pixel 6,all applications (medtimer included),Bangcle,238,0.0,0.0,0.0
+Pixel 6,all applications (medtimer included),Allatori,150,0.0,0.0,0.0
+Pixel 6,calculator,freeRASP,30,1.9333333333333333,0.0,96.66666666666667
+Pixel 6,calculator,Control,30,0.0,0.0,0.0
+Pixel 6,calculator,Bangcle,30,0.0,0.0,0.0
+Pixel 6,calculator,Allatori,30,0.0,0.0,0.0
+Pixel 6,documenter,freeRASP,30,2.0,0.0,100.0
+Pixel 6,documenter,Control,30,0.0,0.0,0.0
+Pixel 6,documenter,Bangcle,30,0.0,0.0,0.0
+Pixel 6,itsok,freeRASP,30,1.9333333333333333,0.0,96.66666666666667
+Pixel 6,itsok,Control,30,0.0,0.0,0.0
+Pixel 6,itsok,Bangcle,29,0.0,0.0,0.0
+Pixel 6,keep_recipe,freeRASP,30,1.9333333333333333,0.0,96.66666666666667
+Pixel 6,keep_recipe,Control,30,0.0,0.0,0.0
+Pixel 6,keep_recipe,Bangcle,30,0.0,0.0,0.0
+Pixel 6,linkhub,freeRASP,30,1.9666666666666666,0.0,100.0
+Pixel 6,linkhub,Control,30,0.0,0.0,0.0
+Pixel 6,linkhub,Bangcle,30,0.0,0.0,0.0
+Pixel 6,medtimer,freeRASP,30,0.0,0.0,0.0
+Pixel 6,medtimer,Control,30,0.0,0.0,0.0
+Pixel 6,medtimer,Allatori,30,0.0,0.0,0.0
+Pixel 6,pdfviewer,freeRASP,29,1.8275862068965518,0.0,96.55172413793103
+Pixel 6,pdfviewer,Control,29,0.0,0.0,0.0
+Pixel 6,pdfviewer,Bangcle,29,0.0,0.0,0.0
+Pixel 6,pdfviewer,Allatori,30,0.0,0.0,0.0
+Pixel 6,poetskingdom,freeRASP,30,1.9333333333333333,1.9333333333333333,100.0
+Pixel 6,poetskingdom,Control,30,0.0,0.0,0.0
+Pixel 6,poetskingdom,Bangcle,30,0.0,0.0,0.0
+Pixel 6,poetskingdom,Allatori,30,0.0,0.0,0.0
+Pixel 6,tipuous,freeRASP,30,1.9,0.0,96.66666666666667
+Pixel 6,tipuous,Control,30,0.0,0.0,0.0
+Pixel 6,tipuous,Bangcle,30,0.0,0.0,0.0
+Pixel 6,tipuous,Allatori,30,0.0,0.0,0.0
+Pixel 9,the eight other than medtimer,freeRASP,239,0.9665271966527197,0.12552301255230125,96.65271966527197
+Pixel 9,the eight other than medtimer,Control,238,0.0,0.0,0.0
+Pixel 9,the eight other than medtimer,Bangcle,239,0.0,0.0,0.0
+Pixel 9,the eight other than medtimer,Allatori,120,0.0,0.0,0.0
+Pixel 9,all applications (medtimer included),freeRASP,269,0.8587360594795539,0.11152416356877323,85.87360594795538
+Pixel 9,all applications (medtimer included),Control,267,0.0,0.0,0.0
+Pixel 9,all applications (medtimer included),Bangcle,239,0.0,0.0,0.0
+Pixel 9,all applications (medtimer included),Allatori,150,0.0,0.0,0.0
+Pixel 9,calculator,freeRASP,30,0.9666666666666667,0.0,96.66666666666667
+Pixel 9,calculator,Control,30,0.0,0.0,0.0
+Pixel 9,calculator,Bangcle,29,0.0,0.0,0.0
+Pixel 9,calculator,Allatori,30,0.0,0.0,0.0
+Pixel 9,documenter,freeRASP,29,0.9655172413793104,0.0,96.55172413793103
+Pixel 9,documenter,Control,30,0.0,0.0,0.0
+Pixel 9,documenter,Bangcle,30,0.0,0.0,0.0
+Pixel 9,itsok,freeRASP,30,0.9333333333333333,0.0,93.33333333333333
+Pixel 9,itsok,Control,30,0.0,0.0,0.0
+Pixel 9,itsok,Bangcle,30,0.0,0.0,0.0
+Pixel 9,keep_recipe,freeRASP,30,1.0,0.0,100.0
+Pixel 9,keep_recipe,Control,30,0.0,0.0,0.0
+Pixel 9,keep_recipe,Bangcle,30,0.0,0.0,0.0
+Pixel 9,linkhub,freeRASP,30,1.0,0.0,100.0
+Pixel 9,linkhub,Control,30,0.0,0.0,0.0
+Pixel 9,linkhub,Bangcle,30,0.0,0.0,0.0
+Pixel 9,medtimer,freeRASP,30,0.0,0.0,0.0
+Pixel 9,medtimer,Control,29,0.0,0.0,0.0
+Pixel 9,medtimer,Allatori,30,0.0,0.0,0.0
+Pixel 9,pdfviewer,freeRASP,30,0.9333333333333333,0.0,93.33333333333333
+Pixel 9,pdfviewer,Control,28,0.0,0.0,0.0
+Pixel 9,pdfviewer,Bangcle,30,0.0,0.0,0.0
+Pixel 9,pdfviewer,Allatori,30,0.0,0.0,0.0
+Pixel 9,poetskingdom,freeRASP,30,1.0,1.0,100.0
+Pixel 9,poetskingdom,Control,30,0.0,0.0,0.0
+Pixel 9,poetskingdom,Bangcle,30,0.0,0.0,0.0
+Pixel 9,poetskingdom,Allatori,30,0.0,0.0,0.0
+Pixel 9,tipuous,freeRASP,30,0.9333333333333333,0.0,93.33333333333333
+Pixel 9,tipuous,Control,30,0.0,0.0,0.0
+Pixel 9,tipuous,Bangcle,30,0.0,0.0,0.0
+Pixel 9,tipuous,Allatori,30,0.0,0.0,0.0

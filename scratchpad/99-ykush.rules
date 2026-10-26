@@ -1,0 +1,15 @@
+# Yepkit YKUSH3 switchable USB hub: grant the sweep user access to the board's
+# control interface so ykushcmd can switch downstream port POWER without root.
+#
+# Why this is needed: ykushcmd links against libusb-1.0 and claims the board's
+# USB node under /dev/bus/usb, which is root-only by default. Without this rule
+# every ykushcmd call fails with "Unable to open device" (and `-l` segfaults).
+#
+# Why the sweep must use ykushcmd and NOT uhubctl: uhubctl talks to the YKUSH3's
+# internal Microchip USB2744 hub, which advertises ppps. Setting a port off there
+# disables the DATA port -- the phone drops off USB and uhubctl reports
+# "Port N: 0000 off" -- but VBUS keeps flowing. Verified 2026-08-03: Pixel 3 still
+# read BatteryManager status=2 (charging) drawing ~500 mA a full 30 s after the
+# port reported off. Every cell would have run while charging, with clean logs.
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="f11b", GROUP="plugdev", MODE="0660"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="f11b", GROUP="plugdev", MODE="0660"

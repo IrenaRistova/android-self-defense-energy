@@ -1,0 +1,27 @@
+app,technique,n_pairs,delta_pct,note
+calculator,Bangcle,9,1.1040243933022678,
+documenter,Bangcle,9,1.2133892598684817,
+itsok,Bangcle,9,-1.1172328712675537,
+keep_recipe,Bangcle,6,-2.0396896142507632,
+linkhub,Bangcle,9,-0.16245608054507577,
+pdfviewer,Bangcle,9,-1.2235058335873308,
+poetskingdom,Bangcle,9,0.8754482337281072,
+tipuous,Bangcle,9,0.5265560372778265,
+calculator,Allatori,9,-0.43189118026754664,
+medtimer,Allatori,9,-0.1571867026624481,
+pdfviewer,Allatori,9,-0.3712338285998051,
+poetskingdom,Allatori,9,-0.3123800157382447,
+tipuous,Allatori,9,-0.9090885432648191,
+calculator,freeRASP,9,3.0960948012418132,
+documenter,freeRASP,9,9.143726938337679,
+itsok,freeRASP,9,2.6618833992899034,
+keep_recipe,freeRASP,6,2.5266037427215884,
+linkhub,freeRASP,9,-0.18455870587214196,
+medtimer,freeRASP,9,4.1974285981451835,
+pdfviewer,freeRASP,9,0.38261296129320066,
+poetskingdom,freeRASP,9,10.455678909029379,
+tipuous,freeRASP,9,3.763186869714685,
+documenter,Allatori,0,,no working build
+keep_recipe,Allatori,0,,negative control
+linkhub,Allatori,0,,negative control
+itsok,Allatori,0,,excluded: release build

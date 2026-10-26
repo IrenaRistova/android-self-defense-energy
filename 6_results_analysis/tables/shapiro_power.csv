@@ -1,0 +1,7 @@
+distribution,n_15,n_24,n_27
+normal (false alarms),4.47,4.78,4.95
+"Student t, 5 df (heavier tails)",15.53,20.810000000000002,22.78
+"Student t, 3 df (heavy tails)",27.400000000000002,38.46,42.39
+10% from a 3x wider normal,21.709999999999997,32.67,36.59
+normal plus one value at +4 SD,44.879999999999995,50.61,51.980000000000004
+"log-normal, sigma 0.5 (skewed)",39.61,61.160000000000004,67.15

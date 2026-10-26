@@ -1,0 +1,8 @@
+{
+  "Pixel 3": "<Pixel 3 USB serial>",
+  "Pixel 3-W": "<Pixel 3 IP>:5555",
+  "Pixel 6": "<Pixel 6 USB serial>",
+  "Pixel 6-W": "<Pixel 6 IP>:5555",
+  "Pixel 9": "<Pixel 9 USB serial>",
+  "Pixel 9-W": "<Pixel 9 IP>:5555"
+}

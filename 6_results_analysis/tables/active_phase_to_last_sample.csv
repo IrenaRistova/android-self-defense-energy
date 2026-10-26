@@ -1,0 +1,5 @@
+phone,batch,variant,cells,e_after_true_end_j_median,e_after_true_end_j_max,share_of_active_pct_median,nondischarging_samples,nondischarging_j
+pixel3,series3,Allatori,6,3.3916035,3.906261,0.9745117775428419,0,0.0
+pixel3,series3,Bangcle,8,2.8962235,3.720833,1.061819058904709,0,0.0
+pixel3,series3,Control,10,2.5643545000000003,3.739194,0.9535186809753258,0,0.0
+pixel3,series3,freeRASP,12,3.3182644999999997,5.536168,1.1493126369410998,0,0.0

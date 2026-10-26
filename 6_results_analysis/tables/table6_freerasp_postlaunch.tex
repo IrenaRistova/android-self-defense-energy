@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Where freeRASP's passive-phase energy goes (exploratory). Extra energy per cell (J) by segment of the passive phase and in the active phase, and extra power (W) on the Pixel~6 and~9 power rails; freeRASP minus control, mean of matched pairs with 95\% paired $t$-interval. medtimer is the one freeRASP build without the INTERNET permission. Its passive phase contains its six-screen introduction, so medtimer is left out of the passive-phase analysis; the ``All pairs'' column, which includes it, is shown for completeness. Bold: the values the thesis states in words.}
+\label{tab:freerasp-postlaunch}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{} & \textbf{All pairs (78)} & \textbf{The other eight (69)} & \textbf{medtimer (9)} \\
+\midrule
+\multicolumn{4}{l}{\textit{Extra energy per cell (J); seconds from the first energy sample}} \\
+0--4 s & +1.65 [+1.35, +1.95] & +1.67 [+1.36, +1.99] & +1.44 [+0.28, +2.61] \\
+4--15 s, the burst & +16.55 [+14.18, +18.92] & \textbf{+18.57 [+16.32, +20.83]} & +1.01 [$-$0.43, +2.46] \\
+15 s to the end of the phase & +2.60 [+1.43, +3.78] & +2.06 [+0.83, +3.28] & +6.80 [+3.49, +10.10] \\
+whole passive phase & +20.80 [+18.79, +22.81] & \textbf{+22.31 [+20.37, +24.24]} & +9.25 [+4.05, +14.46] \\
+active phase & +10.56 [+6.25, +14.87] & +10.60 [+5.73, +15.46] & +10.29 [+5.68, +14.90] \\
+\midrule
+\multicolumn{4}{l}{\textit{Extra power (W), Pixel 6 and 9 rails (pairs: 54, 48, 6)}} \\
+battery, passive phase & +0.81 [+0.68, +0.94] & +0.90 [+0.78, +1.03] & +0.06 [$-$0.03, +0.15] \\
+all CPU rails, passive phase & +0.60 [+0.51, +0.69] & +0.67 [+0.58, +0.75] & +0.06 [+0.00, +0.12] \\
+big cluster, passive phase & +0.40 [+0.33, +0.46] & +0.44 [+0.37, +0.50] & +0.07 [+0.05, +0.09] \\
+GPU, passive phase & +0.00 [+0.00, +0.00] & +0.00 [+0.00, +0.00] & +0.00 [+0.00, +0.00] \\
+battery, 4--15 s & +1.84 [+1.58, +2.10] & +2.07 [+1.86, +2.28] & +0.00 [$-$0.15, +0.16] \\
+all CPU rails, 4--15 s & +1.08 [+0.95, +1.22] & +1.21 [+1.11, +1.32] & +0.05 [$-$0.08, +0.17] \\
+big cluster, 4--15 s & +0.65 [+0.56, +0.75] & +0.73 [+0.65, +0.82] & +0.03 [+0.01, +0.06] \\
+GPU, 4--15 s & +0.00 [+0.00, +0.00] & +0.00 [+0.00, +0.00] & +0.00 [+0.00, +0.00] \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Not pre-specified: power rails, other processes' logs and traffic counters were analysed after the fact. The 4--15 s segment was chosen after inspecting the per-second profile averaged over the devices; on the Pixel 3 the burst comes later, at 11 to 21 s, so the segment holds only its first part. Rails: the On-Device Power Monitor readings the thermal service logs every 7 s; the Pixel 3 has no such log. Energies are integrated from each cell's battery samples by the mechanism extraction and averaged over pairs, so the window totals differ slightly from the per-application overheads, which use the run tables' window energies and average over applications: medtimer 9.25 J here against 9.27 J, the other eight 22.31 J against 22.42 J.
+\end{table*}

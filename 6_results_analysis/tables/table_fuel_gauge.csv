@@ -1,0 +1,7 @@
+,Pixel 3,Pixel 6,Pixel 9
+Measurements,115,120,120
+Median interval between changes (ms),334,317,217
+Range over the measurements (ms),327–337,316–326,213–218
+Changes per second,3.0,3.2,4.6
+"Readings during one launch, control",1,1,2
+"Readings during one launch, packed",3,2,4

@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{RQ1, active phase: each technique against its unprotected control, per device.}
+\label{tab:rq1}
+\begin{tabular}{lrrrrrlr}
+\toprule
+\textbf{Device} & \textbf{n} & \textbf{$\Delta$E (\%) [95\% CI]} & \textbf{V} & \textbf{p (BH)} & \textbf{Cliff's $\delta$ [95\% CI]} & \textbf{Magnitude} & \textbf{MDE (\%)} \\
+\midrule
+\multicolumn{8}{l}{\textit{Bangcle (packing)}} \\
+Pixel 3 & 21 & +0.75 [+0.08, +1.42] & 182 & 0.058 & +0.18 [+0.05, +0.30] & small & 0.95 \\
+Pixel 6 & 24 & +0.25 [$-$0.61, +1.11] & 170 & 0.674 & +0.04 [$-$0.06, +0.14] & negligible & 1.22 \\
+Pixel 9 & 24 & $-$0.96 [$-$3.06, +1.14] & 116 & 0.621 & $-$0.03 [$-$0.12, +0.05] & negligible & 2.97 \\
+\midrule
+\multicolumn{8}{l}{\textit{Allatori (obfuscation)}} \\
+Pixel 3 & 15 & $-$0.19 [$-$1.19, +0.81] & 50 & 0.674 & $-$0.01 [$-$0.17, +0.17] & negligible & 1.40 \\
+Pixel 6 & 15 & +0.09 [$-$0.72, +0.90] & 60 & 1.000 & $-$0.03 [$-$0.16, +0.10] & negligible & 1.13 \\
+Pixel 9 & 15 & $-$1.21 [$-$4.46, +2.05] & 45 & 0.632 & $-$0.05 [$-$0.19, +0.09] & negligible & 4.58 \\
+\midrule
+\multicolumn{8}{l}{\textit{freeRASP (runtime shielding)}} \\
+\textbf{Pixel 3} & \textbf{24} & \textbf{+8.04 [+5.41, +10.67]} & \textbf{298} & \textbf{$<$ 0.001} & \textbf{+0.71 [+0.58, +0.82]} & \textbf{large} & \textbf{3.73} \\
+\textbf{Pixel 6} & \textbf{27} & \textbf{+4.04 [+2.48, +5.61]} & \textbf{350} & \textbf{$<$ 0.001} & \textbf{+0.36 [+0.25, +0.48]} & \textbf{medium} & \textbf{2.22} \\
+Pixel 9 & 27 & +0.54 [$-$1.93, +3.01] & 232 & 0.621 & +0.14 [+0.05, +0.23] & negligible & 3.50 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize n: matched pairs (one application in one series batch). $\Delta$E: mean per-pair relative difference with 95\% paired t-interval. V: Wilcoxon signed-rank statistic (sum of the ranks of the positive differences), two-sided, exact p; p (BH): Benjamini-Hochberg adjusted within the research question's nine comparisons. Cliff's $\delta$: protected cells against the same application's control cells on the same device and batch, averaged over pairs, with 95\% bootstrap interval over pairs; magnitude after \cite{romano2006cliff}. MDE: minimum detectable effect at 80\% power. Bold: adjusted $p < 0.05$.
+\end{table*}

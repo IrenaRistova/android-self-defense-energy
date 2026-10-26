@@ -1,0 +1,7 @@
+measure,unit,comparison,pairs,delta,ci_lo,ci_hi,p_wilcoxon,p_method
+extra energy per measurement,J,Pixel 3 minus Pixel 6,24,6.083361047381472,0.3761600206700457,11.790562074092898,0.04906117916107178,exact
+extra energy per measurement,J,Pixel 3 minus Pixel 9,24,20.31964681075469,9.97481628812317,30.66447733338621,0.0004298686981201172,exact
+extra energy per measurement,J,Pixel 6 minus Pixel 9,24,14.236285763373218,3.189138882624311,25.283432644122122,0.02112710475921631,exact
+extra device-wide CPU share,percentage points,Pixel 3 minus Pixel 6,24,-0.06186405324074048,-1.3823688203455098,1.258640713864029,0.8553357124328613,exact
+extra device-wide CPU share,percentage points,Pixel 3 minus Pixel 9,24,-0.43272687268518534,-1.6794344920914173,0.8139807467210465,0.6634435653686523,exact
+extra device-wide CPU share,percentage points,Pixel 6 minus Pixel 9,24,-0.3708628194444448,-1.920695756037798,1.1789701171489084,0.9664472341537476,exact

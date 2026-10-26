@@ -1,0 +1,39 @@
+\begin{table}[t]
+\centering
+\small
+\caption{The thermal gate (exploratory): phones that ran down, the thermal status at which measurements arrive, the battery temperature at which they start, and a test inside the pilot of whether cooler starts alone make repeated measurements steadier. The pilot ran without the gate (apart from its last 62 measurements), the series with it. Bold: the values the thesis states in words.}
+\label{tab:thermal-gate}
+\begin{tabular}{lrr}
+\toprule
+\textbf{} & \textbf{Pilot} & \textbf{Series} \\
+\midrule
+\multicolumn{3}{l}{\textit{Charging, from the external supply on (stream logs)}} \\
+Top-ups the phone refused & 3 & 1 \\
+refusals followed by a successful top-up & 0 & \textbf{1} \\
+Phones that ran down to the safety floor (of stream logs) & \textbf{1 of 9} & \textbf{0 of 15} \\
+the same, all pilot runs & 7 of 23 & – \\
+\midrule
+\multicolumn{3}{l}{\textit{What the gate does (series)}} \\
+Arrival status none / light / moderate or worse (\%) & – & \textbf{9.9 / 73.3 / 16.8} \\
+Measurements the gate rested first (of analysed) & – & \textbf{445 of 2647} \\
+Rests that gave up while still hot & – & 0 \\
+\midrule
+\multicolumn{3}{l}{\textit{Battery temperature when a measurement starts (°C)}} \\
+Median & 39.4 & 39.5 \\
+95th percentile & 44.9 & 41.7 \\
+Maximum & \textbf{47.9} & \textbf{43.0} \\
+\midrule
+\multicolumn{3}{l}{\textit{Variation between repeated measurements (median within-group CV, \%; 88 groups)}} \\
+Active-phase energy: all measurements & 10.00 & 5.53 \\
+the coolest-starting 74 \% of each group & 5.53 & – \\
+a random 74 \% of each group & 8.83 [7.02, 10.38] & – \\
+share of the drop reproduced: coolest / random (\%) & \textbf{100 / 26} & – \\
+measurements the gate did not rest (88 groups) & – & 5.25 \\
+Active-phase length: all measurements & 3.65 & 1.58 \\
+the coolest-starting 74 \% of each group & 3.59 & – \\
+a random 74 \% of each group & 3.65 [3.32, 3.96] & – \\
+share of the drop reproduced: coolest / random (\%) & \textbf{3 / 0} & – \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Refused top-ups: the charger is on but the phone reports that it is not charging; a refusal counts as followed by a successful top-up when the phone next reaches the top of its charge band. Stops: phone streams the harness stopped at its battery safety floor, counted in each batch's stream logs. Before the external supply was fitted, top-ups ran on laptop power, which could not always charge a phone, so the comparison starts at the supply. Arrival status: Android's thermal status read before each analysed series measurement (0 none, 1 light, 2 moderate or worse); the gate rests only the last group, then measures. Temperature: the battery temperature Android reports, read once before each measurement; analysed measurements, the pilot's from the external supply on. Variation: within each application, device and build with at least three measurements in both regimes. Keeping the coolest-starting 74 \% of each pilot group drops its hottest quarter of measurements and leaves a start temperature 95th percentile of 41.6 °C, close to the series' 41.7 °C; the random subsets are 2000 draws (mean, 95 \% band). The share reproduced is the part of the drop from the pilot's to the series' value that the subset alone achieves.
+\end{table}

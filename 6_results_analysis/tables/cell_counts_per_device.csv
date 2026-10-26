@@ -1,0 +1,21 @@
+device,build,planned,valid,analysed,analysed_active,analysed_passive
+Pixel 3,Control,300,254,224,224,196
+Pixel 3,Bangcle,300,259,200,200,200
+Pixel 3,Allatori,300,226,140,140,111
+Pixel 3,freeRASP,300,262,232,232,202
+Pixel 3,all builds,1200,1001,796,796,709
+Pixel 6,Control,300,299,269,269,239
+Pixel 6,Bangcle,300,298,238,238,238
+Pixel 6,Allatori,300,270,150,150,120
+Pixel 6,freeRASP,300,299,269,269,239
+Pixel 6,all builds,1200,1166,926,926,836
+Pixel 9,Control,300,297,267,267,238
+Pixel 9,Bangcle,300,298,239,239,239
+Pixel 9,Allatori,300,270,150,150,120
+Pixel 9,freeRASP,300,299,269,269,239
+Pixel 9,all builds,1200,1164,925,925,836
+all devices,Control,900,850,760,760,673
+all devices,Bangcle,900,855,677,677,677
+all devices,Allatori,900,766,440,440,351
+all devices,freeRASP,900,860,770,770,680
+all devices,all builds,3600,3331,2647,2647,2381

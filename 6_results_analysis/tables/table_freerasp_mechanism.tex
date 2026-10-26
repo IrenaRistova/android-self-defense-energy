@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Runtime shielding per device, passive phase unless stated (exploratory, not pre-specified): freeRASP's burst of extra power, the requests other applications' local web servers rejected, Wi-Fi traffic, and SELinux denials of the library's file and directory accesses. Differences: freeRASP minus control, mean of matched pairs with its 95\% paired $t$-interval. Bold: the values the thesis states in words.}
+\label{tab:freerasp-mechanism}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{} & \textbf{Pixel 3} & \textbf{Pixel 6} & \textbf{Pixel 9} & \textbf{All devices} \\
+\midrule
+\multicolumn{5}{l}{\textit{The burst: the eight applications of the passive-phase analysis}} \\
+Pairs & 21 & 24 & 24 & 69 \\
+Core of the burst (s) & 11–21 & 4–15 & 4–12 & 4–15 \\
+Extra energy in the core (J) & +11.8 [+10.8, +12.7] & +29.7 [+29.0, +30.4] & +13.8 [+11.6, +16.1] & +18.6 [+16.3, +20.8] \\
+Extra energy, whole phase (J) & +19.0 [+17.2, +20.8] & +30.6 [+29.8, +31.4] & +16.9 [+13.6, +20.2] & +22.3 [+20.4, +24.2] \\
+The core's share of the extra energy (\%) & \textbf{62} & \textbf{97} & \textbf{82} & \textbf{83} \\
+\midrule
+\multicolumn{5}{l}{\textit{Requests rejected by other applications' local web servers (the eight applications)}} \\
+freeRASP, per measurement & 0.00 & \textbf{1.93} & \textbf{0.97} & 1.02 \\
+freeRASP, measurements with any (\%) & 0 & 98 & 97 & 68 \\
+Every other build, per measurement & 0 & 0 & 0 & 0 \\
+\midrule
+\multicolumn{5}{l}{\textit{Wi-Fi traffic over the whole measurement (all nine applications)}} \\
+Pairs & 24 & 27 & 27 & 78 \\
+Control (kB/s) & 126 & 179 & 169 & 159 \\
+freeRASP minus control (kB/s) & \textbf{+0.13 [$-$2.52, +2.78]} & \textbf{$-$1.17 [$-$2.69, +0.35]} & \textbf{+1.28 [$-$0.43, +3.00]} & +0.08 [$-$1.03, +1.19] \\
+\midrule
+\multicolumn{5}{l}{\textit{SELinux denials of file and directory accesses (all analysed measurements)}} \\
+freeRASP: with a denial & \textbf{232 of 232} & \textbf{269 of 269} & \textbf{269 of 269} & \textbf{770 of 770} \\
+Other builds: from the main process & \textbf{0 of 562} & \textbf{0 of 657} & \textbf{0 of 656} & \textbf{0 of 1875} \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Core of the burst: each device's own window of highest extra power; for all devices together, 4-15 s. The rejected requests are logged by two unrelated applications on the devices; the Pixel 3 logs none.
+\end{table}

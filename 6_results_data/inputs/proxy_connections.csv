@@ -1,0 +1,5 @@
+sweep,log,client_connections,connections_to_talsec,lines_naming_talsec,distinct_hosts,top_hosts
+pilot,mitmproxy_final_ykush_2026-08-04.log,103,0,0,8,source.android.com 18; css4.pub 18; www.google.com 16; play.googleapis.com 9; research.nhm.org 9; connectivitycheck.gstatic.com 8; youtubei.googleapis.com 8; infinitedata-pa.googleapis.com 7
+series1,mitmproxy_final_ykush_batch2_2026-08-10.log,287,0,0,15,source.android.com 68; css4.pub 68; research.nhm.org 34; youtubei.googleapis.com 32; connectivitycheck.gstatic.com 27; play.googleapis.com 12; www.google.com 2; accounts.google.com 2
+series2,mitmproxy_final_ykush_series2_2026-08-14.log,883,0,0,19,source.android.com 236; css4.pub 236; research.nhm.org 118; connectivitycheck.gstatic.com 48; play.googleapis.com 39; youtubei.googleapis.com 37; infinitedata-pa.googleapis.com 20; proactivebackend-pa.googleapis.com 6
+series3,mitmproxy_final_ykush_series3_2026-08-17.log,910,0,0,19,source.android.com 238; css4.pub 238; research.nhm.org 119; youtubei.googleapis.com 66; connectivitycheck.gstatic.com 47; play.googleapis.com 33; proactivebackend-pa.googleapis.com 12; accounts.google.com 10

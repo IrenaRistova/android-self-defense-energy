@@ -1,0 +1,77 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{RQ4 in full: the protected build minus its control on the matched pairs, per characteristic, technique and device, with the 95\% interval, the pairs in which the protected build is higher, the BH-adjusted $p$ (within RQ4's 54 tests) and Cliff's $\delta$ within pairs. The processor share is given for the active phase only: inside the passive phase the device-wide figure changes in only 13 to 19\% of the measurements, so it mostly carries the load from before the phase. Threads are counted once per measurement, over the whole run, its launch included; the count is a lower bound (threads that never log are not seen). Bold: BH-adjusted $p < 0.05$.}
+\label{tab:rq4-full}
+\begin{tabular}{llrrrrr}
+\toprule
+\textbf{Technique} & \textbf{Device} & \textbf{Pairs} & \textbf{Difference [95\% CI]} & \textbf{Higher} & \textbf{p (BH)} & \textbf{Cliff's $\delta$} \\
+\midrule
+\multicolumn{7}{l}{\textit{Memory, active phase (the application's PSS, \% of the control)}} \\
+Bangcle & Pixel 3 & 21 & \textbf{+16.16 [+9.56, +22.76]} & 21 of 21 & $<$ 0.001 & +0.99 \\
+Bangcle & Pixel 6 & 24 & \textbf{+9.25 [+5.13, +13.38]} & 24 of 24 & $<$ 0.001 & +0.87 \\
+Bangcle & Pixel 9 & 24 & \textbf{+8.86 [+5.47, +12.25]} & 24 of 24 & $<$ 0.001 & +0.75 \\
+Allatori & Pixel 3 & 15 & +0.03 [$-$0.51, +0.58] & 11 of 15 & 0.525 & +0.05 \\
+Allatori & Pixel 6 & 15 & $-$0.02 [$-$0.27, +0.24] & 9 of 15 & 0.952 & +0.00 \\
+Allatori & Pixel 9 & 15 & $-$0.05 [$-$0.59, +0.49] & 7 of 15 & 0.943 & $-$0.02 \\
+freeRASP & Pixel 3 & 24 & \textbf{+10.97 [+9.78, +12.15]} & 24 of 24 & $<$ 0.001 & +0.99 \\
+freeRASP & Pixel 6 & 27 & \textbf{+15.42 [+13.97, +16.87]} & 27 of 27 & $<$ 0.001 & +1.00 \\
+freeRASP & Pixel 9 & 27 & \textbf{+13.98 [+12.89, +15.07]} & 27 of 27 & $<$ 0.001 & +0.99 \\
+\midrule
+\multicolumn{7}{l}{\textit{Memory, passive phase (the application's PSS, \% of the control)}} \\
+Bangcle & Pixel 3 & 21 & \textbf{+24.05 [+15.94, +32.15]} & 21 of 21 & $<$ 0.001 & +1.00 \\
+Bangcle & Pixel 6 & 24 & \textbf{+12.69 [+8.10, +17.28]} & 24 of 24 & $<$ 0.001 & +0.88 \\
+Bangcle & Pixel 9 & 24 & \textbf{+11.91 [+8.25, +15.57]} & 24 of 24 & $<$ 0.001 & +0.85 \\
+Allatori & Pixel 3 & 12 & $-$0.30 [$-$1.04, +0.45] & 5 of 12 & 0.769 & +0.03 \\
+Allatori & Pixel 6 & 12 & +0.11 [$-$0.17, +0.39] & 7 of 12 & 0.861 & +0.02 \\
+Allatori & Pixel 9 & 12 & $-$0.20 [$-$0.77, +0.37] & 5 of 12 & 0.800 & $-$0.06 \\
+freeRASP & Pixel 3 & 21 & \textbf{+16.26 [+13.35, +19.18]} & 21 of 21 & $<$ 0.001 & +1.00 \\
+freeRASP & Pixel 6 & 24 & \textbf{+20.54 [+18.45, +22.63]} & 24 of 24 & $<$ 0.001 & +1.00 \\
+freeRASP & Pixel 9 & 24 & \textbf{+18.06 [+16.40, +19.73]} & 24 of 24 & $<$ 0.001 & +1.00 \\
+\midrule
+\multicolumn{7}{l}{\textit{Threads that log during the run, launch included (count)}} \\
+Bangcle & Pixel 3 & 21 & $-$0.11 [$-$0.47, +0.25] & 11 of 21 & 0.769 & $-$0.08 \\
+Bangcle & Pixel 6 & 24 & $-$0.10 [$-$0.44, +0.24] & 10 of 24 & 0.684 & $-$0.05 \\
+Bangcle & Pixel 9 & 24 & +0.29 [+0.03, +0.55] & 18 of 24 & 0.068 & +0.10 \\
+Allatori & Pixel 3 & 15 & $-$0.22 [$-$0.63, +0.19] & 7 of 15 & 0.769 & $-$0.08 \\
+Allatori & Pixel 6 & 15 & $-$0.19 [$-$0.62, +0.24] & 6 of 15 & 0.409 & $-$0.07 \\
+Allatori & Pixel 9 & 15 & $-$0.10 [$-$0.59, +0.38] & 5 of 15 & 0.801 & $-$0.05 \\
+freeRASP & Pixel 3 & 24 & \textbf{+4.26 [+3.27, +5.25]} & 24 of 24 & $<$ 0.001 & +0.97 \\
+freeRASP & Pixel 6 & 27 & \textbf{+7.68 [+6.46, +8.89]} & 27 of 27 & $<$ 0.001 & +0.98 \\
+freeRASP & Pixel 9 & 27 & \textbf{+8.13 [+6.87, +9.38]} & 27 of 27 & $<$ 0.001 & +0.99 \\
+\midrule
+\multicolumn{7}{l}{\textit{Processor share, device-wide, active phase (percentage points)}} \\
+Bangcle & Pixel 3 & 21 & +0.60 [$-$0.11, +1.30] & 14 of 21 & 0.151 & +0.05 \\
+Bangcle & Pixel 6 & 24 & +0.17 [$-$0.73, +1.08] & 12 of 24 & 0.839 & +0.04 \\
+Bangcle & Pixel 9 & 24 & $-$0.43 [$-$1.55, +0.69] & 11 of 24 & 0.684 & $-$0.04 \\
+Allatori & Pixel 3 & 15 & +0.07 [$-$0.23, +0.37] & 7 of 15 & 1.000 & +0.00 \\
+Allatori & Pixel 6 & 15 & +0.08 [$-$0.92, +1.08] & 8 of 15 & 0.918 & +0.00 \\
+Allatori & Pixel 9 & 15 & +0.15 [$-$1.31, +1.61] & 9 of 15 & 0.904 & +0.01 \\
+freeRASP & Pixel 3 & 24 & \textbf{+2.23 [+1.43, +3.02]} & 22 of 24 & $<$ 0.001 & +0.36 \\
+freeRASP & Pixel 6 & 27 & \textbf{+1.96 [+0.78, +3.15]} & 20 of 27 & 0.016 & +0.20 \\
+freeRASP & Pixel 9 & 27 & \textbf{+2.43 [+0.99, +3.87]} & 17 of 27 & 0.010 & +0.15 \\
+\midrule
+\multicolumn{7}{l}{\textit{Active-phase length (\% of the control)}} \\
+Bangcle & Pixel 3 & 21 & +0.46 [$-$0.18, +1.10] & 12 of 21 & 0.356 & +0.07 \\
+Bangcle & Pixel 6 & 24 & $-$0.25 [$-$0.88, +0.38] & 11 of 24 & 0.952 & +0.03 \\
+Bangcle & Pixel 9 & 24 & +0.22 [$-$0.28, +0.73] & 16 of 24 & 0.177 & +0.08 \\
+Allatori & Pixel 3 & 15 & +0.02 [$-$0.30, +0.34] & 6 of 15 & 0.893 & $-$0.01 \\
+Allatori & Pixel 6 & 15 & \textbf{+0.36 [+0.12, +0.59]} & 11 of 15 & 0.016 & +0.19 \\
+Allatori & Pixel 9 & 15 & +0.06 [$-$0.40, +0.52] & 8 of 15 & 0.861 & +0.07 \\
+freeRASP & Pixel 3 & 24 & $-$0.48 [$-$1.27, +0.31] & 5 of 24 & 0.116 & $-$0.23 \\
+freeRASP & Pixel 6 & 27 & +0.23 [$-$0.08, +0.54] & 15 of 27 & 0.172 & +0.05 \\
+freeRASP & Pixel 9 & 27 & +0.21 [$-$0.35, +0.76] & 15 of 27 & 0.511 & +0.09 \\
+\midrule
+\multicolumn{7}{l}{\textit{Passive-phase length (\% of the control)}} \\
+Bangcle & Pixel 3 & 21 & +1.39 [$-$0.41, +3.20] & 11 of 21 & 0.771 & $-$0.02 \\
+Bangcle & Pixel 6 & 24 & $-$1.97 [$-$4.36, +0.41] & 7 of 24 & 0.200 & $-$0.06 \\
+Bangcle & Pixel 9 & 24 & +0.69 [$-$0.45, +1.82] & 16 of 24 & 0.511 & +0.06 \\
+Allatori & Pixel 3 & 12 & +1.42 [$-$1.07, +3.92] & 10 of 12 & 0.178 & +0.11 \\
+Allatori & Pixel 6 & 12 & $-$0.07 [$-$0.84, +0.71] & 7 of 12 & 0.918 & +0.00 \\
+Allatori & Pixel 9 & 12 & $-$0.65 [$-$2.93, +1.62] & 5 of 12 & 0.757 & $-$0.06 \\
+freeRASP & Pixel 3 & 21 & \textbf{$-$9.35 [$-$13.02, $-$5.67]} & 2 of 21 & $<$ 0.001 & $-$0.91 \\
+freeRASP & Pixel 6 & 24 & \textbf{$-$1.07 [$-$2.25, +0.10]} & 7 of 24 & 0.046 & $-$0.23 \\
+freeRASP & Pixel 9 & 24 & $-$1.24 [$-$3.52, +1.04] & 7 of 24 & 0.086 & $-$0.17 \\
+\bottomrule
+\end{tabular}
+\end{table*}

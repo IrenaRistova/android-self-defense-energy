@@ -1,0 +1,5 @@
+technique,cells,with_auditd,with_auditd_main_process,share_pct,share_main_process_pct,cells_with_denials_outside_documenter
+Allatori,439,0,0,0.0,0.0,0
+Bangcle,676,90,0,13.31360946745562,0.0,0
+Control,760,89,0,11.710526315789474,0.0,0
+freeRASP,770,770,770,100.0,100.0,682

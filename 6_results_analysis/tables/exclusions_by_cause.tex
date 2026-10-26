@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Excluded cells by cause in the three series batches.}
+\label{tab:exclusions}
+\begin{tabular}{lrrrrl}
+\toprule
+\textbf{Cause} & \textbf{Series 1} & \textbf{Series 2} & \textbf{Series 3} & \textbf{Total} & \textbf{Description} \\
+\midrule
+Device unsuitable & 40 & 40 & 40 & 120 & one application–device pair never completed \\
+Application crashed & 30 & 30 & 30 & 90 & crashed repeatedly within the cell \\
+Scenario failed & 15 & 15 & 15 & 45 & a scenario did not complete \\
+Supply contamination & 2 & 3 & 0 & 5 & power reached the device mid-cell \\
+Harness fault & 1 & 6 & 2 & 9 & runner or power-control failure \\
+\midrule
+\multicolumn{6}{l}{\textit{Totals}} \\
+Total excluded & 88 & 94 & 87 & 269 & of 3600 cells \\
+Valid cells & 1112 & 1106 & 1113 & 3331 &  \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Each batch is 1200 cells; each excluded cell is counted once. Of the 3331 valid cells, 2647 enter the analysis once the untransformed obfuscated builds, the excluded application, the excluded release build and medtimer's packed build (coverage probes its control lacks) are set aside. The pilot, which enters no estimate, lost 80 of its 1200 cells to the same causes (40 device unsuitable, 27 application crashed, 7 scenario failed, 6 supply contamination).
+\end{table}

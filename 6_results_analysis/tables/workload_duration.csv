@@ -1,0 +1,11 @@
+app,cells,median_workload_s,pixel3_control_cells,pixel3_control_median_s,pixel3_in_100_130_s
+calculator,358,95.0,30,94.0,False
+documenter,267,101.0,29,101.0,True
+itsok,267,115.0,29,115.0,True
+keep_recipe,180,133.0,0,,
+linkhub,267,121.0,29,118.0,True
+medtimer,266,107.0,28,107.0,True
+pdfviewer,328,114.0,23,115.0,True
+poetskingdom,356,108.0,27,108.0,True
+tipuous,358,126.0,29,126.0,True
+all nine,2647,113.0,224,,7 of 8

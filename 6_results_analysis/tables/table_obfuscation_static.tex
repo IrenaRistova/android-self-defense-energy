@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{What the obfuscator changed in each application's own code (static analysis of the measured builds against their controls): classes renamed, string-decryption routines added and their call sites, and the change in instructions and branches. Bold: the largest change in instructions, which the thesis states in words.}
+\label{tab:obfuscation-static}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Application} & \textbf{Classes renamed} & \textbf{Decryption routines} & \textbf{Decryption call sites} & \textbf{Instructions (\%)} & \textbf{Branches (\%)} \\
+\midrule
+calculator & 61 & 14 & 1033 & \textbf{+16.4} & $-$4.4 \\
+medtimer & 400 & 32 & 1615 & +9.5 & $-$8.1 \\
+pdfviewer & 25 & 2 & 112 & +7.5 & $-$1.0 \\
+poetskingdom & 490 & 9 & 3082 & $-$1.5 & $-$3.3 \\
+tipuous & 138 & 10 & 697 & +1.6 & $-$3.6 \\
+\bottomrule
+\end{tabular}
+\end{table*}

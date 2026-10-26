@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\small
+\caption{freeRASP's active-phase cost per device in joules, and how much of its fall in percent the newer devices' larger control energy explains. Extra energy: freeRASP minus control, mean of matched pairs with its 95\% paired $t$-interval. Bold: the values the thesis states in words.}
+\label{tab:freerasp-active-cost}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{} & \textbf{Pixel 3} & \textbf{Pixel 6} & \textbf{Pixel 9} \\
+\midrule
+\multicolumn{4}{l}{\textit{All applications}} \\
+Pairs & 24 & 27 & 27 \\
+Control energy (J) & 265.1 & 330.4 & 355.1 \\
+Extra energy (J) & \textbf{+19.3 [+13.6, +25.0]} & \textbf{+12.8 [+7.5, +18.0]} & \textbf{+0.2 [$-$9.1, +9.4]} \\
+$\Delta$E (\%) & +8.04 & +4.04 & +0.54 \\
+\midrule
+\multicolumn{4}{l}{\textit{The eight applications measured on all three devices}} \\
+Pairs & 24 & 24 & 24 \\
+Control energy (J) & 265.1 & 328.7 & 343.7 \\
+Control energy against the Pixel 3's (\%) & – & \textbf{+24.0} & \textbf{+29.6} \\
+Extra energy (J) & +19.3 & +13.2 & $-$1.0 \\
+Extra energy as a share of the control's (\%) & \textbf{7.3} & \textbf{4.0} & \textbf{$-$0.3} \\
+The same, had the extra energy stayed at the Pixel 3's (\%) & 7.3 & \textbf{5.9} & \textbf{5.6} \\
+Share of the fall in the percentage that the larger control explains (\%) & – & \textbf{36 (30 to 43)} & \textbf{10 ($-$1 to 22)} \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize The share of the fall: the part of the drop from the Pixel 3's percentage that the larger control alone accounts for, averaged over the two orders of decomposing the change (in brackets, each order). Steps in the extra energy between devices, matched on application and batch over the eight applications: Pixel 3 minus Pixel 6: +6.1 J [+0.4, +11.8], Wilcoxon p = 0.049; Pixel 3 minus Pixel 9: +20.3 J [+10.0, +30.7], Wilcoxon p $<$ 0.001; Pixel 6 minus Pixel 9: +14.2 J [+3.2, +25.3], Wilcoxon p = 0.021.
+\end{table}

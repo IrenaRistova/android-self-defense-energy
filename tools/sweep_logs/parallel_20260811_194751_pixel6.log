@@ -1,0 +1,1378 @@
+[19:48:00] pixel6 medtimer/baseline_debug rep10 — already completed, SKIP
+[19:48:00] pixel6 linkhub/baseline_debug rep1 — already completed, SKIP
+[19:48:00] pixel6 keep_recipe/bangcle_debug rep5 — already completed, SKIP
+[19:48:00] pixel6 poetskingdom/freerasp_debug rep2 — already completed, SKIP
+[19:48:00] pixel6 calculator/allatori_debug rep2 — already completed, SKIP
+[19:48:00] pixel6 androidskk/freerasp_debug rep10 — already completed, SKIP
+[19:48:00] pixel6 pdfviewer/freerasp_debug rep7 — already completed, SKIP
+[19:48:00] pixel6 medtimer/freerasp_debug rep1 — already completed, SKIP
+[19:48:00] pixel6 medtimer/bangcle_debug rep10 — already completed, SKIP
+[19:48:00] pixel6 pdfviewer/freerasp_debug rep6 — already completed, SKIP
+[19:48:00] pixel6 calculator/baseline_debug rep6 — already completed, SKIP
+[19:48:00] START pixel6 itsok/allatori_debug rep9 cfg=itsok_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=69 status=3 (band=40-70)
+  top-up SKIPPED (level=69 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1999062µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":32.10208,"cpu_max_c":58.000004,"battery_c":29.900002,"ts":"2026-08-11T17:49:04Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (39 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[19:52:24] DONE  pixel6 itsok/allatori_debug rep9 PASS wall=264s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_allatori_debug_r9.log
+[19:52:24] pixel6 tipuous/allatori_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 itsok/baseline_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 medtimer/allatori_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/baseline_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 documenter/baseline_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 documenter/freerasp_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 linkhub/allatori_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 documenter/freerasp_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 documenter/freerasp_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/freerasp_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 medtimer/bangcle_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 calculator/freerasp_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 medtimer/bangcle_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/baseline_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 tipuous/freerasp_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 linkhub/baseline_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 itsok/freerasp_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/bangcle_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 androidskk/allatori_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/bangcle_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 linkhub/bangcle_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 medtimer/bangcle_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 tipuous/baseline_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 calculator/allatori_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/bangcle_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/baseline_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 medtimer/baseline_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 androidskk/freerasp_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/allatori_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 itsok/allatori_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/freerasp_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 calculator/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/allatori_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/bangcle_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 androidskk/freerasp_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 linkhub/baseline_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 androidskk/bangcle_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 tipuous/freerasp_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/baseline_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/allatori_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/freerasp_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 androidskk/freerasp_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 calculator/bangcle_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/baseline_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 itsok/freerasp_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 calculator/bangcle_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 linkhub/bangcle_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 medtimer/baseline_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/baseline_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 calculator/bangcle_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/bangcle_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 androidskk/bangcle_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 linkhub/bangcle_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 medtimer/freerasp_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 linkhub/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 documenter/freerasp_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 itsok/bangcle_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 linkhub/allatori_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 documenter/allatori_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/baseline_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/freerasp_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 androidskk/freerasp_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 itsok/baseline_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 itsok/baseline_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 tipuous/freerasp_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 itsok/bangcle_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 androidskk/allatori_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/freerasp_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/baseline_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 calculator/bangcle_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 tipuous/bangcle_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 medtimer/baseline_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 linkhub/allatori_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 itsok/bangcle_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 androidskk/bangcle_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 itsok/allatori_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 linkhub/freerasp_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 documenter/allatori_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 linkhub/freerasp_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 itsok/freerasp_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 tipuous/freerasp_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 tipuous/baseline_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 documenter/allatori_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 medtimer/baseline_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 calculator/bangcle_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 medtimer/allatori_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 medtimer/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 androidskk/bangcle_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 medtimer/freerasp_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/bangcle_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 linkhub/allatori_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 itsok/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 medtimer/bangcle_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 androidskk/freerasp_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 medtimer/bangcle_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 medtimer/allatori_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/allatori_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 androidskk/bangcle_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 tipuous/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 itsok/allatori_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 linkhub/baseline_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 itsok/allatori_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 itsok/baseline_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 documenter/bangcle_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 documenter/bangcle_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 itsok/baseline_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 linkhub/freerasp_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 linkhub/baseline_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/bangcle_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 calculator/baseline_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/bangcle_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 tipuous/baseline_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 androidskk/baseline_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 medtimer/freerasp_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 medtimer/freerasp_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/baseline_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 tipuous/freerasp_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/baseline_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 tipuous/allatori_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 documenter/freerasp_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 medtimer/allatori_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 documenter/bangcle_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 linkhub/freerasp_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/bangcle_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 calculator/freerasp_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/baseline_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/baseline_debug rep10 — already completed, SKIP
+[19:52:24] pixel6 medtimer/baseline_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 androidskk/allatori_debug rep3 — already completed, SKIP
+[19:52:24] pixel6 pdfviewer/bangcle_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 itsok/bangcle_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/freerasp_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 linkhub/baseline_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/bangcle_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/bangcle_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 documenter/baseline_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 calculator/allatori_debug rep7 — already completed, SKIP
+[19:52:24] pixel6 androidskk/allatori_debug rep4 — already completed, SKIP
+[19:52:24] pixel6 calculator/freerasp_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 itsok/allatori_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/allatori_debug rep6 — already completed, SKIP
+[19:52:24] pixel6 documenter/bangcle_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/baseline_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 medtimer/allatori_debug rep1 — already completed, SKIP
+[19:52:24] pixel6 linkhub/bangcle_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 medtimer/freerasp_debug rep9 — already completed, SKIP
+[19:52:24] pixel6 medtimer/baseline_debug rep5 — already completed, SKIP
+[19:52:24] pixel6 keep_recipe/bangcle_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 poetskingdom/baseline_debug rep2 — already completed, SKIP
+[19:52:24] pixel6 androidskk/allatori_debug rep8 — already completed, SKIP
+[19:52:24] pixel6 documenter/bangcle_debug rep10 — already completed, SKIP
+[19:52:25] pixel6 keep_recipe/baseline_debug rep1 — already completed, SKIP
+[19:52:25] pixel6 documenter/allatori_debug rep6 — already completed, SKIP
+[19:52:25] pixel6 pdfviewer/bangcle_debug rep7 — already completed, SKIP
+[19:52:25] pixel6 keep_recipe/allatori_debug rep2 — already completed, SKIP
+[19:52:25] pixel6 tipuous/freerasp_debug rep3 — already completed, SKIP
+[19:52:25] pixel6 tipuous/bangcle_debug rep2 — already completed, SKIP
+[19:52:25] pixel6 tipuous/bangcle_debug rep10 — already completed, SKIP
+[19:52:25] pixel6 documenter/baseline_debug rep7 — already completed, SKIP
+[19:52:25] pixel6 documenter/freerasp_debug rep2 — already completed, SKIP
+[19:52:25] pixel6 tipuous/baseline_debug rep6 — already completed, SKIP
+[19:52:25] pixel6 linkhub/allatori_debug rep3 — already completed, SKIP
+[19:52:25] pixel6 documenter/allatori_debug rep7 — already completed, SKIP
+[19:52:25] pixel6 calculator/freerasp_debug rep3 — already completed, SKIP
+[19:52:25] pixel6 keep_recipe/freerasp_debug rep2 — already completed, SKIP
+[19:52:25] pixel6 calculator/baseline_debug rep5 — already completed, SKIP
+[19:52:25] pixel6 documenter/bangcle_debug rep7 — already completed, SKIP
+[19:52:25] pixel6 itsok/freerasp_debug rep6 — already completed, SKIP
+[19:52:25] pixel6 calculator/freerasp_debug rep6 — already completed, SKIP
+[19:52:25] pixel6 medtimer/bangcle_debug rep2 — already completed, SKIP
+[19:52:25] pixel6 linkhub/baseline_debug rep10 — already completed, SKIP
+[19:52:25] pixel6 medtimer/baseline_debug rep4 — already completed, SKIP
+[19:52:25] pixel6 medtimer/freerasp_debug rep3 — already completed, SKIP
+[19:52:25] pixel6 documenter/allatori_debug rep8 — already completed, SKIP
+[19:52:25] pixel6 keep_recipe/freerasp_debug rep8 — already completed, SKIP
+[19:52:25] pixel6 keep_recipe/baseline_debug rep5 — already completed, SKIP
+[19:52:25] pixel6 poetskingdom/freerasp_debug rep10 — already completed, SKIP
+[19:52:25] pixel6 keep_recipe/freerasp_debug rep3 — already completed, SKIP
+[19:52:25] pixel6 androidskk/allatori_debug rep5 — already completed, SKIP
+[19:52:25] pixel6 tipuous/freerasp_debug rep10 — already completed, SKIP
+[19:52:25] pixel6 pdfviewer/allatori_debug rep1 — already completed, SKIP
+[19:52:25] pixel6 itsok/freerasp_debug rep1 — already completed, SKIP
+[19:52:25] pixel6 poetskingdom/freerasp_debug rep7 — already completed, SKIP
+[19:52:25] pixel6 itsok/bangcle_debug rep3 — already completed, SKIP
+[19:52:25] pixel6 linkhub/freerasp_debug rep6 — already completed, SKIP
+[19:52:25] pixel6 calculator/allatori_debug rep3 — already completed, SKIP
+[19:52:25] START pixel6 pdfviewer/freerasp_debug rep3 cfg=pdfviewer_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=68 status=3 (band=40-70)
+  top-up SKIPPED (level=68 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1868437µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":33.3382,"cpu_max_c":56.000004,"battery_c":31.100002,"ts":"2026-08-11T17:53:28Z"}
+[19:53:29] pixel6: cool after 1s (status=0 skin=33.3382C)
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[19:56:39] DONE  pixel6 pdfviewer/freerasp_debug rep3 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_freerasp_debug_r3.log
+[19:56:39] START pixel6 pdfviewer/freerasp_debug rep9 cfg=pdfviewer_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=67 status=3 (band=40-70)
+  top-up SKIPPED (level=67 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1897187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":35.796963,"cpu_max_c":60.000004,"battery_c":33.5,"ts":"2026-08-11T17:57:42Z"}
+[19:57:43] pixel6: cool after 1s (status=0 skin=35.796963C)
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[20:00:49] DONE  pixel6 pdfviewer/freerasp_debug rep9 PASS wall=250s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_freerasp_debug_r9.log
+[20:00:49] START pixel6 itsok/freerasp_debug rep5 cfg=itsok_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=66 status=3 (band=40-70)
+  top-up SKIPPED (level=66 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1615937µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.19488,"cpu_max_c":57.000004,"battery_c":35.300003,"ts":"2026-08-11T18:01:53Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:05:02] DONE  pixel6 itsok/freerasp_debug rep5 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_freerasp_debug_r5.log
+[20:05:02] START pixel6 poetskingdom/bangcle_debug rep3 cfg=poetskingdom_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=65 status=3 (band=40-70)
+  top-up SKIPPED (level=65 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1561562µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.070164,"cpu_max_c":58.000004,"battery_c":35.600002,"ts":"2026-08-11T18:06:06Z"}
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:09:10] DONE  pixel6 poetskingdom/bangcle_debug rep3 PASS wall=248s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_bangcle_debug_r3.log
+[20:09:10] START pixel6 calculator/baseline_debug rep3 cfg=calculator_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=64 status=3 (band=40-70)
+  top-up SKIPPED (level=64 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1595000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.07312,"cpu_max_c":58.000004,"battery_c":35.800003,"ts":"2026-08-11T18:10:14Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (35 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:13:12] DONE  pixel6 calculator/baseline_debug rep3 PASS wall=242s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_baseline_debug_r3.log
+[20:13:12] START pixel6 itsok/allatori_debug rep2 cfg=itsok_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=63 status=3 (band=40-70)
+  top-up SKIPPED (level=63 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1534375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.303158,"cpu_max_c":58.000004,"battery_c":36.100002,"ts":"2026-08-11T18:14:16Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:17:35] DONE  pixel6 itsok/allatori_debug rep2 PASS wall=263s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_allatori_debug_r2.log
+[20:17:35] START pixel6 documenter/baseline_debug rep9 cfg=documenter_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=63 status=3 (band=40-70)
+  top-up SKIPPED (level=63 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1635000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.32516,"cpu_max_c":60.000004,"battery_c":36.2,"ts":"2026-08-11T18:18:39Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:21:28] DONE  pixel6 documenter/baseline_debug rep9 PASS wall=232s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_baseline_debug_r9.log
+[20:21:28] START pixel6 itsok/freerasp_debug rep10 cfg=itsok_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=62 status=3 (band=40-70)
+  top-up SKIPPED (level=62 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1550625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.5146,"cpu_max_c":60.000004,"battery_c":36.300003,"ts":"2026-08-11T18:22:31Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:25:41] DONE  pixel6 itsok/freerasp_debug rep10 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_freerasp_debug_r10.log
+[20:25:41] START pixel6 itsok/baseline_debug rep3 cfg=itsok_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=61 status=3 (band=40-70)
+  top-up SKIPPED (level=61 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1618125µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.729683,"cpu_max_c":57.000004,"battery_c":36.600002,"ts":"2026-08-11T18:26:45Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:29:54] DONE  pixel6 itsok/baseline_debug rep3 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_baseline_debug_r3.log
+[20:29:54] START pixel6 documenter/allatori_debug rep5 cfg=documenter_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=60 status=3 (band=40-70)
+  top-up SKIPPED (level=60 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1620625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.60656,"cpu_max_c":60.000004,"battery_c":36.100002,"ts":"2026-08-11T18:30:58Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:34:00] DONE  pixel6 documenter/allatori_debug rep5 PASS wall=246s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_allatori_debug_r5.log
+[20:34:00] START pixel6 linkhub/freerasp_debug rep1 cfg=linkhub_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=59 status=3 (band=40-70)
+  top-up SKIPPED (level=59 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1552812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.44688,"cpu_max_c":58.000004,"battery_c":36.4,"ts":"2026-08-11T18:35:04Z"}
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  PORT WATCH: no mid-cell VBUS (45 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:38:50] DONE  pixel6 linkhub/freerasp_debug rep1 PASS wall=290s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_linkhub_freerasp_debug_r1.log
+[20:38:50] START pixel6 itsok/allatori_debug rep10 cfg=itsok_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=58 status=3 (band=40-70)
+  top-up SKIPPED (level=58 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1593750µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.695164,"cpu_max_c":59.000004,"battery_c":37.600002,"ts":"2026-08-11T18:39:54Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (39 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:43:10] DONE  pixel6 itsok/allatori_debug rep10 PASS wall=260s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_allatori_debug_r10.log
+[20:43:10] START pixel6 tipuous/allatori_debug rep4 cfg=tipuous_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=57 status=3 (band=40-70)
+  top-up SKIPPED (level=57 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1632500µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.0964,"cpu_max_c":58.000004,"battery_c":37.100002,"ts":"2026-08-11T18:44:14Z"}
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:47:34] DONE  pixel6 tipuous/allatori_debug rep4 PASS wall=264s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_allatori_debug_r4.log
+[20:47:34] START pixel6 tipuous/bangcle_debug rep6 cfg=tipuous_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=57 status=3 (band=40-70)
+  top-up SKIPPED (level=57 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1655625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":37.81728,"cpu_max_c":58.000004,"battery_c":36.9,"ts":"2026-08-11T18:48:38Z"}
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:51:56] DONE  pixel6 tipuous/bangcle_debug rep6 PASS wall=262s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_bangcle_debug_r6.log
+[20:51:56] START pixel6 poetskingdom/bangcle_debug rep9 cfg=poetskingdom_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=56 status=3 (band=40-70)
+  top-up SKIPPED (level=56 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1585000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":37.691322,"cpu_max_c":59.000004,"battery_c":36.800003,"ts":"2026-08-11T18:53:00Z"}
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[20:56:03] DONE  pixel6 poetskingdom/bangcle_debug rep9 PASS wall=247s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_bangcle_debug_r9.log
+[20:56:03] START pixel6 poetskingdom/allatori_debug rep7 cfg=poetskingdom_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=55 status=3 (band=40-70)
+  top-up SKIPPED (level=55 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1732812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":37.96256,"cpu_max_c":60.000004,"battery_c":36.9,"ts":"2026-08-11T18:57:07Z"}
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:00:13] DONE  pixel6 poetskingdom/allatori_debug rep7 PASS wall=250s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_allatori_debug_r7.log
+[21:00:13] START pixel6 medtimer/allatori_debug rep2 cfg=medtimer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=54 status=3 (band=40-70)
+  top-up SKIPPED (level=54 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1609375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.0074,"cpu_max_c":60.000004,"battery_c":37.100002,"ts":"2026-08-11T19:01:17Z"}
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  PORT WATCH: no mid-cell VBUS (49 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:05:24] DONE  pixel6 medtimer/allatori_debug rep2 PASS wall=311s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_medtimer_allatori_debug_r2.log
+[21:05:24] START pixel6 medtimer/allatori_debug rep4 cfg=medtimer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=53 status=3 (band=40-70)
+  top-up SKIPPED (level=53 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1570625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":37.95112,"cpu_max_c":60.000004,"battery_c":37.100002,"ts":"2026-08-11T19:06:28Z"}
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  PORT WATCH: no mid-cell VBUS (49 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:10:34] DONE  pixel6 medtimer/allatori_debug rep4 PASS wall=310s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_medtimer_allatori_debug_r4.log
+[21:10:34] START pixel6 itsok/allatori_debug rep6 cfg=itsok_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=52 status=3 (band=40-70)
+  top-up SKIPPED (level=52 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1665312µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":37.89484,"cpu_max_c":58.000004,"battery_c":37.0,"ts":"2026-08-11T19:11:38Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:15:01] DONE  pixel6 itsok/allatori_debug rep6 PASS wall=267s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_allatori_debug_r6.log
+[21:15:01] START pixel6 poetskingdom/freerasp_debug rep1 cfg=poetskingdom_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=51 status=3 (band=40-70)
+  top-up SKIPPED (level=51 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1562187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":37.95832,"cpu_max_c":58.000004,"battery_c":37.100002,"ts":"2026-08-11T19:16:05Z"}
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:19:12] DONE  pixel6 poetskingdom/freerasp_debug rep1 PASS wall=251s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_freerasp_debug_r1.log
+[21:19:12] START pixel6 pdfviewer/baseline_debug rep9 cfg=pdfviewer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=50 status=3 (band=40-70)
+  top-up SKIPPED (level=50 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1485625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.55988,"cpu_max_c":61.000004,"battery_c":37.7,"ts":"2026-08-11T19:20:16Z"}
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[21:23:26] DONE  pixel6 pdfviewer/baseline_debug rep9 PASS wall=254s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_baseline_debug_r9.log
+[21:23:26] START pixel6 androidskk/allatori_debug rep1 cfg=androidskk_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=49 status=3 (band=40-70)
+  top-up SKIPPED (level=49 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1526250µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.48996,"cpu_max_c":60.000004,"battery_c":38.600002,"ts":"2026-08-11T19:24:30Z"}
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (31 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:27:06] DONE  pixel6 androidskk/allatori_debug rep1 PASS wall=220s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_allatori_debug_r1.log
+[21:27:06] START pixel6 pdfviewer/bangcle_debug rep5 cfg=pdfviewer_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=48 status=3 (band=40-70)
+  top-up SKIPPED (level=48 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1747812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.34208,"cpu_max_c":59.000004,"battery_c":37.300003,"ts":"2026-08-11T19:28:10Z"}
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[21:31:19] DONE  pixel6 pdfviewer/bangcle_debug rep5 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_bangcle_debug_r5.log
+[21:31:19] START pixel6 itsok/freerasp_debug rep9 cfg=itsok_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=47 status=3 (band=40-70)
+  top-up SKIPPED (level=47 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1722187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.59392,"cpu_max_c":60.000004,"battery_c":38.100002,"ts":"2026-08-11T19:32:23Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (39 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:35:38] DONE  pixel6 itsok/freerasp_debug rep9 PASS wall=259s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_freerasp_debug_r9.log
+[21:35:38] START pixel6 pdfviewer/baseline_debug rep5 cfg=pdfviewer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=46 status=3 (band=40-70)
+  top-up SKIPPED (level=46 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1550937µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.123924,"cpu_max_c":60.000004,"battery_c":38.4,"ts":"2026-08-11T19:36:42Z"}
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[21:39:51] DONE  pixel6 pdfviewer/baseline_debug rep5 PASS wall=252s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_baseline_debug_r5.log
+[21:39:51] START pixel6 poetskingdom/baseline_debug rep10 cfg=poetskingdom_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=45 status=3 (band=40-70)
+  top-up SKIPPED (level=45 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1744687µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.860203,"cpu_max_c":60.000004,"battery_c":38.5,"ts":"2026-08-11T19:40:54Z"}
+[21:40:55] pixel6: cool after 1s (status=1 skin=39.860203C)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:44:00] DONE  pixel6 poetskingdom/baseline_debug rep10 PASS wall=249s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_baseline_debug_r10.log
+[21:44:00] START pixel6 pdfviewer/allatori_debug rep8 cfg=pdfviewer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=44 status=3 (band=40-70)
+  top-up SKIPPED (level=44 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1812187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.99288,"cpu_max_c":60.000004,"battery_c":38.5,"ts":"2026-08-11T19:45:03Z"}
+[21:45:04] pixel6: cool after 1s (status=1 skin=38.99288C)
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[21:48:14] DONE  pixel6 pdfviewer/allatori_debug rep8 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_allatori_debug_r8.log
+[21:48:14] START pixel6 linkhub/allatori_debug rep4 cfg=linkhub_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=43 status=3 (band=40-70)
+  top-up SKIPPED (level=43 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1562187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.83664,"cpu_max_c":60.000004,"battery_c":39.0,"ts":"2026-08-11T19:49:17Z"}
+[21:49:18] pixel6: cool after 1s (status=1 skin=39.83664C)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  PORT WATCH: no mid-cell VBUS (45 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[21:53:02] DONE  pixel6 linkhub/allatori_debug rep4 PASS wall=288s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_linkhub_allatori_debug_r4.log
+[21:53:02] START pixel6 pdfviewer/allatori_debug rep7 cfg=pdfviewer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=42 status=3 (band=40-70)
+  top-up SKIPPED (level=42 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1547812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.944958,"cpu_max_c":60.000004,"battery_c":39.300003,"ts":"2026-08-11T19:54:06Z"}
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[21:57:15] DONE  pixel6 pdfviewer/allatori_debug rep7 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_allatori_debug_r7.log
+[21:57:15] START pixel6 linkhub/freerasp_debug rep5 cfg=linkhub_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=41 status=3 (band=40-70)
+  top-up SKIPPED (level=41 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1593125µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":40.167118,"cpu_max_c":60.000004,"battery_c":39.600002,"ts":"2026-08-11T19:58:19Z"}
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  PORT WATCH: no mid-cell VBUS (45 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[22:02:05] DONE  pixel6 linkhub/freerasp_debug rep5 PASS wall=290s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_linkhub_freerasp_debug_r5.log
+[22:02:05] START pixel6 medtimer/baseline_debug rep3 cfg=medtimer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=39 status=3 (band=40-70)
+  top-up: level=39 < 40 -> charging to >= 70 (stall cap 2400s)
+    band reached: level=70 >= 70 after 6182s
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1675312µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":36.828117,"cpu_max_c":57.000004,"battery_c":35.5,"ts":"2026-08-11T21:46:19Z"}
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  PORT WATCH: no mid-cell VBUS (49 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[23:50:23] DONE  pixel6 medtimer/baseline_debug rep3 PASS wall=6497s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_medtimer_baseline_debug_r3.log
+[23:50:23] START pixel6 itsok/bangcle_debug rep5 cfg=itsok_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=69 status=3 (band=40-70)
+  top-up SKIPPED (level=69 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1550312µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":38.8162,"cpu_max_c":60.000004,"battery_c":37.300003,"ts":"2026-08-11T21:51:26Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[23:54:39] DONE  pixel6 itsok/bangcle_debug rep5 PASS wall=256s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_bangcle_debug_r5.log
+[23:54:39] START pixel6 linkhub/bangcle_debug rep10 cfg=linkhub_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=68 status=3 (band=40-70)
+  top-up SKIPPED (level=68 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1742812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":40.11228,"cpu_max_c":60.000004,"battery_c":38.4,"ts":"2026-08-11T21:55:43Z"}
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[23:58:41] DONE  pixel6 linkhub/bangcle_debug rep10 PASS wall=242s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_linkhub_bangcle_debug_r10.log
+[23:58:41] START pixel6 keep_recipe/freerasp_debug rep10 cfg=keep_recipe_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=67 status=3 (band=40-70)
+  top-up SKIPPED (level=67 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1430312µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.02712,"cpu_max_c":61.000004,"battery_c":40.7,"ts":"2026-08-11T21:59:45Z"}
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (41 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:03:12] DONE  pixel6 keep_recipe/freerasp_debug rep10 PASS wall=271s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_freerasp_debug_r10.log
+[00:03:12] START pixel6 androidskk/bangcle_debug rep8 cfg=androidskk_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=66 status=3 (band=40-70)
+  top-up SKIPPED (level=66 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1439062µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.273483,"cpu_max_c":61.000004,"battery_c":41.4,"ts":"2026-08-11T22:04:16Z"}
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (32 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:06:54] DONE  pixel6 androidskk/bangcle_debug rep8 PASS wall=222s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_bangcle_debug_r8.log
+[00:06:54] START pixel6 calculator/baseline_debug rep8 cfg=calculator_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=65 status=3 (band=40-70)
+  top-up SKIPPED (level=65 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1350625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.18956,"cpu_max_c":61.000004,"battery_c":41.600002,"ts":"2026-08-11T22:07:58Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:11:02] DONE  pixel6 calculator/baseline_debug rep8 PASS wall=248s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_baseline_debug_r8.log
+[00:11:02] START pixel6 androidskk/baseline_debug rep3 cfg=androidskk_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=65 status=3 (band=40-70)
+  top-up SKIPPED (level=65 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1412812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":0,"cpu_max_c":63.000004,"battery_c":42.300003,"ts":"2026-08-11T22:12:06Z"}
+[00:12:06] pixel6: hot (status=2 skin=0C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[00:13:06] pixel6: hot (status=2 skin=42.268963C BIG=46.000004C) — resting 60s screen-off, 60s so far
+[00:14:06] pixel6: hot (status=2 skin=41.7216C BIG=45.000004C) — resting 60s screen-off, 120s so far
+[00:15:07] pixel6: hot (status=2 skin=41.22736C BIG=46.000004C) — resting 60s screen-off, 181s so far
+[00:16:07] pixel6: cool after 241s (status=1 skin=40.9234C)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (31 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:18:44] DONE  pixel6 androidskk/baseline_debug rep3 PASS wall=462s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_baseline_debug_r3.log
+[00:18:44] START pixel6 documenter/bangcle_debug rep1 cfg=documenter_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=64 status=3 (band=40-70)
+  top-up SKIPPED (level=64 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1436562µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":41.75644,"cpu_max_c":61.000004,"battery_c":41.2,"ts":"2026-08-11T22:19:48Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:22:40] DONE  pixel6 documenter/bangcle_debug rep1 PASS wall=236s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_bangcle_debug_r1.log
+[00:22:40] START pixel6 itsok/baseline_debug rep1 cfg=itsok_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=63 status=3 (band=40-70)
+  top-up SKIPPED (level=63 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1443437µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.7136,"cpu_max_c":64.0,"battery_c":42.000004,"ts":"2026-08-11T22:23:44Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:26:56] DONE  pixel6 itsok/baseline_debug rep1 PASS wall=256s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_baseline_debug_r1.log
+[00:26:56] START pixel6 keep_recipe/baseline_debug rep6 cfg=keep_recipe_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=63 status=3 (band=40-70)
+  top-up SKIPPED (level=63 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1389375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.15388,"cpu_max_c":62.000004,"battery_c":42.100002,"ts":"2026-08-11T22:28:00Z"}
+[00:28:00] pixel6: hot (status=2 skin=43.15388C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[00:29:00] pixel6: hot (status=2 skin=42.484722C BIG=49.000004C) — resting 60s screen-off, 60s so far
+[00:30:01] pixel6: hot (status=2 skin=41.91032C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[00:31:01] pixel6: hot (status=2 skin=41.486603C BIG=48.000004C) — resting 60s screen-off, 181s so far
+[00:32:01] pixel6: hot (status=2 skin=41.1976C BIG=48.000004C) — resting 60s screen-off, 241s so far
+[00:33:02] pixel6: cool after 302s (status=1 skin=40.78884C)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:36:24] DONE  pixel6 keep_recipe/baseline_debug rep6 PASS wall=568s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_baseline_debug_r6.log
+[00:36:24] START pixel6 calculator/bangcle_debug rep9 cfg=calculator_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=62 status=3 (band=40-70)
+  top-up SKIPPED (level=62 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1421562µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.37064,"cpu_max_c":61.000004,"battery_c":41.7,"ts":"2026-08-11T22:37:28Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:40:31] DONE  pixel6 calculator/bangcle_debug rep9 PASS wall=247s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_bangcle_debug_r9.log
+[00:40:31] START pixel6 androidskk/bangcle_debug rep6 cfg=androidskk_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=61 status=3 (band=40-70)
+  top-up SKIPPED (level=61 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1405625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.096764,"cpu_max_c":64.0,"battery_c":42.7,"ts":"2026-08-11T22:41:35Z"}
+[00:41:35] pixel6: hot (status=2 skin=43.096764C BIG=64.0C) — resting 60s screen-off, 0s so far
+[00:42:35] pixel6: hot (status=2 skin=42.553402C BIG=48.000004C) — resting 60s screen-off, 60s so far
+[00:43:35] pixel6: hot (status=2 skin=41.95884C BIG=46.000004C) — resting 60s screen-off, 120s so far
+[00:44:36] pixel6: hot (status=2 skin=41.57208C BIG=45.000004C) — resting 60s screen-off, 180s so far
+[00:45:36] pixel6: hot (status=2 skin=41.27164C BIG=49.000004C) — resting 60s screen-off, 241s so far
+[00:46:36] pixel6: cool after 301s (status=1 skin=40.937637C)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (31 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:49:12] DONE  pixel6 androidskk/bangcle_debug rep6 PASS wall=521s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_bangcle_debug_r6.log
+[00:49:12] START pixel6 medtimer/freerasp_debug rep10 cfg=medtimer_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=60 status=3 (band=40-70)
+  top-up SKIPPED (level=60 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1622500µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":0,"cpu_max_c":62.000004,"battery_c":41.4,"ts":"2026-08-11T22:50:16Z"}
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  PORT WATCH: no mid-cell VBUS (50 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[00:54:28] DONE  pixel6 medtimer/freerasp_debug rep10 PASS wall=316s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_medtimer_freerasp_debug_r10.log
+[00:54:28] START pixel6 androidskk/allatori_debug rep2 cfg=androidskk_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=59 status=3 (band=40-70)
+  top-up SKIPPED (level=59 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1462187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":42.94008,"cpu_max_c":61.000004,"battery_c":42.500004,"ts":"2026-08-11T22:55:32Z"}
+[00:55:32] pixel6: hot (status=2 skin=42.94008C BIG=61.000004C) — resting 60s screen-off, 0s so far
+[00:56:32] pixel6: hot (status=2 skin=42.4204C BIG=46.000004C) — resting 60s screen-off, 60s so far
+[00:57:32] pixel6: hot (status=2 skin=41.9446C BIG=45.000004C) — resting 60s screen-off, 120s so far
+[00:58:32] pixel6: hot (status=2 skin=41.486603C BIG=45.000004C) — resting 60s screen-off, 180s so far
+[00:59:33] pixel6: hot (status=2 skin=41.20112C BIG=44.000004C) — resting 60s screen-off, 241s so far
+[01:00:33] pixel6: cool after 301s (status=1 skin=40.91916C)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (32 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:03:12] DONE  pixel6 androidskk/allatori_debug rep2 PASS wall=524s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_allatori_debug_r2.log
+[01:03:12] START pixel6 androidskk/baseline_debug rep10 cfg=androidskk_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=58 status=3 (band=40-70)
+  top-up SKIPPED (level=58 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1380625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":0,"cpu_max_c":63.000004,"battery_c":41.500004,"ts":"2026-08-11T23:04:16Z"}
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (32 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:06:56] DONE  pixel6 androidskk/baseline_debug rep10 PASS wall=224s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_baseline_debug_r10.log
+[01:06:56] START pixel6 keep_recipe/freerasp_debug rep9 cfg=keep_recipe_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=58 status=3 (band=40-70)
+  top-up SKIPPED (level=58 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1462500µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.44608,"cpu_max_c":61.000004,"battery_c":42.100002,"ts":"2026-08-11T23:08:00Z"}
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (41 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:11:27] DONE  pixel6 keep_recipe/freerasp_debug rep9 PASS wall=271s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_freerasp_debug_r9.log
+[01:11:27] START pixel6 pdfviewer/allatori_debug rep4 cfg=pdfviewer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=57 status=3 (band=40-70)
+  top-up SKIPPED (level=57 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1549375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.37348,"cpu_max_c":63.000004,"battery_c":42.9,"ts":"2026-08-11T23:12:31Z"}
+[01:12:31] pixel6: hot (status=2 skin=43.37348C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[01:13:31] pixel6: hot (status=2 skin=42.830643C BIG=46.000004C) — resting 60s screen-off, 60s so far
+[01:14:32] pixel6: hot (status=2 skin=42.29588C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[01:15:32] pixel6: hot (status=2 skin=41.8804C BIG=45.000004C) — resting 60s screen-off, 181s so far
+[01:16:32] pixel6: hot (status=2 skin=41.54232C BIG=49.000004C) — resting 60s screen-off, 241s so far
+[01:17:32] pixel6: hot (status=2 skin=41.252323C BIG=44.000004C) — resting 60s screen-off, 301s so far
+[01:18:33] pixel6: cool after 362s (status=1 skin=40.99604C)
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[01:21:43] DONE  pixel6 pdfviewer/allatori_debug rep4 PASS wall=616s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_allatori_debug_r4.log
+[01:21:43] START pixel6 androidskk/bangcle_debug rep5 cfg=androidskk_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=56 status=3 (band=40-70)
+  top-up SKIPPED (level=56 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1536250µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.402637,"cpu_max_c":62.000004,"battery_c":42.600002,"ts":"2026-08-11T23:22:47Z"}
+[01:22:47] pixel6: hot (status=2 skin=43.402637C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[01:23:48] pixel6: hot (status=2 skin=42.66072C BIG=46.000004C) — resting 60s screen-off, 61s so far
+[01:24:48] pixel6: hot (status=2 skin=42.125957C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[01:25:48] pixel6: hot (status=2 skin=41.720882C BIG=45.000004C) — resting 60s screen-off, 181s so far
+[01:26:48] pixel6: hot (status=2 skin=41.344837C BIG=48.000004C) — resting 60s screen-off, 241s so far
+[01:27:49] pixel6: cool after 301s (status=1 skin=41.052322C)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (31 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:30:26] DONE  pixel6 androidskk/bangcle_debug rep5 PASS wall=523s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_bangcle_debug_r5.log
+[01:30:26] START pixel6 calculator/bangcle_debug rep8 cfg=calculator_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=55 status=3 (band=40-70)
+  top-up SKIPPED (level=55 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1429375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.035843,"cpu_max_c":62.000004,"battery_c":41.600002,"ts":"2026-08-11T23:31:30Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:34:33] DONE  pixel6 calculator/bangcle_debug rep8 PASS wall=247s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_bangcle_debug_r8.log
+[01:34:33] START pixel6 linkhub/bangcle_debug rep1 cfg=linkhub_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=54 status=3 (band=40-70)
+  top-up SKIPPED (level=54 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1377187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.13456,"cpu_max_c":62.000004,"battery_c":42.500004,"ts":"2026-08-11T23:35:37Z"}
+[01:35:37] pixel6: hot (status=2 skin=43.13456C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[01:36:38] pixel6: hot (status=2 skin=42.544804C BIG=46.000004C) — resting 60s screen-off, 61s so far
+[01:37:38] pixel6: hot (status=2 skin=42.022163C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[01:38:38] pixel6: hot (status=2 skin=41.673363C BIG=45.000004C) — resting 60s screen-off, 181s so far
+[01:39:38] pixel6: hot (status=2 skin=41.29732C BIG=45.000004C) — resting 60s screen-off, 241s so far
+[01:40:39] pixel6: cool after 301s (status=1 skin=41.077843C)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  PORT WATCH: no mid-cell VBUS (45 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:44:22] DONE  pixel6 linkhub/bangcle_debug rep1 PASS wall=589s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_linkhub_bangcle_debug_r1.log
+[01:44:22] START pixel6 calculator/freerasp_debug rep2 cfg=calculator_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=53 status=3 (band=40-70)
+  top-up SKIPPED (level=53 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1445000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.364002,"cpu_max_c":62.000004,"battery_c":42.500004,"ts":"2026-08-11T23:45:26Z"}
+[01:45:26] pixel6: hot (status=2 skin=43.364002C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[01:46:27] pixel6: hot (status=2 skin=42.721363C BIG=49.000004C) — resting 60s screen-off, 61s so far
+[01:47:27] pixel6: hot (status=2 skin=42.19096C BIG=48.000004C) — resting 60s screen-off, 121s so far
+[01:48:27] pixel6: hot (status=2 skin=41.6804C BIG=48.000004C) — resting 60s screen-off, 181s so far
+[01:49:28] pixel6: hot (status=2 skin=0C BIG=44.000004C) — resting 60s screen-off, 242s so far
+[01:50:28] pixel6: cool after 302s (status=1 skin=41.07432C)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:53:35] DONE  pixel6 calculator/freerasp_debug rep2 PASS wall=553s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_freerasp_debug_r2.log
+[01:53:35] START pixel6 poetskingdom/bangcle_debug rep7 cfg=poetskingdom_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=52 status=3 (band=40-70)
+  top-up SKIPPED (level=52 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1616875µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":42.93656,"cpu_max_c":62.000004,"battery_c":42.4,"ts":"2026-08-11T23:54:39Z"}
+[01:54:39] pixel6: hot (status=2 skin=42.94008C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[01:55:39] pixel6: hot (status=2 skin=42.40108C BIG=50.000004C) — resting 60s screen-off, 60s so far
+[01:56:40] pixel6: hot (status=2 skin=41.884644C BIG=50.000004C) — resting 60s screen-off, 121s so far
+[01:57:40] pixel6: hot (status=2 skin=41.52792C BIG=47.000004C) — resting 60s screen-off, 181s so far
+[01:58:40] pixel6: hot (status=2 skin=41.20112C BIG=47.000004C) — resting 60s screen-off, 241s so far
+[01:59:40] pixel6: cool after 301s (status=1 skin=40.903522C)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:02:44] DONE  pixel6 poetskingdom/bangcle_debug rep7 PASS wall=549s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_bangcle_debug_r7.log
+[02:02:44] START pixel6 tipuous/bangcle_debug rep4 cfg=tipuous_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=51 status=3 (band=40-70)
+  top-up SKIPPED (level=51 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1690625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.68216,"cpu_max_c":61.000004,"battery_c":42.000004,"ts":"2026-08-12T00:03:48Z"}
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:07:06] DONE  pixel6 tipuous/bangcle_debug rep4 PASS wall=262s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_bangcle_debug_r4.log
+[02:07:06] START pixel6 pdfviewer/baseline_debug rep7 cfg=pdfviewer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=50 status=3 (band=40-70)
+  top-up SKIPPED (level=50 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1507500µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.298283,"cpu_max_c":64.0,"battery_c":42.7,"ts":"2026-08-12T00:08:10Z"}
+[02:08:10] pixel6: hot (status=2 skin=43.298283C BIG=64.0C) — resting 60s screen-off, 0s so far
+[02:09:11] pixel6: hot (status=2 skin=42.69344C BIG=46.000004C) — resting 60s screen-off, 61s so far
+[02:10:11] pixel6: hot (status=2 skin=42.18236C BIG=46.000004C) — resting 60s screen-off, 121s so far
+[02:11:11] pixel6: hot (status=2 skin=41.7914C BIG=45.000004C) — resting 60s screen-off, 181s so far
+[02:12:11] pixel6: hot (status=2 skin=41.449642C BIG=44.000004C) — resting 60s screen-off, 241s so far
+[02:13:12] pixel6: hot (status=2 skin=41.18264C BIG=47.000004C) — resting 60s screen-off, 302s so far
+[02:14:12] pixel6: cool after 362s (status=1 skin=40.9598C)
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[02:17:19] DONE  pixel6 pdfviewer/baseline_debug rep7 PASS wall=613s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_baseline_debug_r7.log
+[02:17:19] START pixel6 keep_recipe/bangcle_debug rep1 cfg=keep_recipe_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=49 status=3 (band=40-70)
+  top-up SKIPPED (level=49 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1501562µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.356964,"cpu_max_c":63.000004,"battery_c":42.000004,"ts":"2026-08-12T00:18:23Z"}
+[02:18:23] pixel6: hot (status=2 skin=43.356964C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[02:19:23] pixel6: hot (status=2 skin=42.6184C BIG=46.000004C) — resting 60s screen-off, 60s so far
+[02:20:23] pixel6: hot (status=2 skin=42.076603C BIG=46.000004C) — resting 60s screen-off, 120s so far
+[02:21:23] pixel6: hot (status=2 skin=41.657562C BIG=44.000004C) — resting 60s screen-off, 180s so far
+[02:22:24] pixel6: hot (status=2 skin=41.3158C BIG=44.000004C) — resting 60s screen-off, 241s so far
+[02:23:24] pixel6: cool after 301s (status=1 skin=41.082924C)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (41 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:26:48] DONE  pixel6 keep_recipe/bangcle_debug rep1 PASS wall=569s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_bangcle_debug_r1.log
+[02:26:48] START pixel6 keep_recipe/bangcle_debug rep6 cfg=keep_recipe_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=48 status=3 (band=40-70)
+  top-up SKIPPED (level=48 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1541250µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":0,"cpu_max_c":62.000004,"battery_c":42.000004,"ts":"2026-08-12T00:27:51Z"}
+[02:27:52] pixel6: cool after 1s (status=1 skin=42.705C)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:31:14] DONE  pixel6 keep_recipe/bangcle_debug rep6 PASS wall=265s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_bangcle_debug_r6.log
+[02:31:14] START pixel6 tipuous/bangcle_debug rep5 cfg=tipuous_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=47 status=3 (band=40-70)
+  top-up SKIPPED (level=47 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1348750µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.328323,"cpu_max_c":62.000004,"battery_c":42.800003,"ts":"2026-08-12T00:32:17Z"}
+[02:32:18] pixel6: hot (status=2 skin=43.328323C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[02:33:18] pixel6: hot (status=2 skin=42.807804C BIG=46.000004C) — resting 60s screen-off, 61s so far
+[02:34:18] pixel6: hot (status=2 skin=42.281643C BIG=46.000004C) — resting 60s screen-off, 121s so far
+[02:35:18] pixel6: hot (status=2 skin=41.8206C BIG=47.000004C) — resting 60s screen-off, 181s so far
+[02:36:18] pixel6: hot (status=2 skin=41.53512C BIG=48.000004C) — resting 60s screen-off, 241s so far
+[02:37:19] pixel6: hot (status=2 skin=41.252323C BIG=48.000004C) — resting 60s screen-off, 302s so far
+[02:38:19] pixel6: cool after 362s (status=1 skin=0C)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:41:39] DONE  pixel6 tipuous/bangcle_debug rep5 PASS wall=625s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_bangcle_debug_r5.log
+[02:41:39] START pixel6 pdfviewer/freerasp_debug rep8 cfg=pdfviewer_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=46 status=3 (band=40-70)
+  top-up SKIPPED (level=46 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1750000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.662838,"cpu_max_c":62.000004,"battery_c":42.000004,"ts":"2026-08-12T00:42:43Z"}
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (39 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[02:45:57] DONE  pixel6 pdfviewer/freerasp_debug rep8 PASS wall=258s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_freerasp_debug_r8.log
+[02:45:57] START pixel6 documenter/freerasp_debug rep4 cfg=documenter_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=45 status=3 (band=40-70)
+  top-up SKIPPED (level=45 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1377812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":44.264957,"cpu_max_c":63.000004,"battery_c":43.100002,"ts":"2026-08-12T00:47:01Z"}
+[02:47:01] pixel6: hot (status=2 skin=44.264957C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[02:48:01] pixel6: hot (status=2 skin=43.54444C BIG=47.000004C) — resting 60s screen-off, 60s so far
+[02:49:01] pixel6: hot (status=2 skin=42.874924C BIG=46.000004C) — resting 60s screen-off, 120s so far
+[02:50:01] pixel6: hot (status=2 skin=42.41744C BIG=48.000004C) — resting 60s screen-off, 180s so far
+[02:51:02] pixel6: hot (status=2 skin=42.0206C BIG=49.000004C) — resting 60s screen-off, 241s so far
+[02:52:02] pixel6: hot (status=2 skin=41.72808C BIG=45.000004C) — resting 60s screen-off, 301s so far
+[02:53:02] pixel6: hot (status=2 skin=41.43032C BIG=47.000004C) — resting 60s screen-off, 361s so far
+[02:54:02] pixel6: hot (status=2 skin=41.14132C BIG=49.000004C) — resting 60s screen-off, 421s so far
+[02:55:02] pixel6: cool after 481s (status=1 skin=40.89984C)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (35 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:57:56] DONE  pixel6 documenter/freerasp_debug rep4 PASS wall=719s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_freerasp_debug_r4.log
+[02:57:56] START pixel6 poetskingdom/bangcle_debug rep1 cfg=poetskingdom_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=44 status=3 (band=40-70)
+  top-up SKIPPED (level=44 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1431875µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.828125,"cpu_max_c":62.000004,"battery_c":42.000004,"ts":"2026-08-12T00:58:59Z"}
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:02:05] DONE  pixel6 poetskingdom/bangcle_debug rep1 PASS wall=249s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_bangcle_debug_r1.log
+[03:02:05] START pixel6 poetskingdom/freerasp_debug rep3 cfg=poetskingdom_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=43 status=3 (band=40-70)
+  top-up SKIPPED (level=43 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1355312µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.45812,"cpu_max_c":63.000004,"battery_c":43.000004,"ts":"2026-08-12T01:03:09Z"}
+[03:03:09] pixel6: hot (status=2 skin=43.45812C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[03:04:09] pixel6: hot (status=2 skin=42.91428C BIG=46.000004C) — resting 60s screen-off, 60s so far
+[03:05:09] pixel6: hot (status=2 skin=42.3152C BIG=45.000004C) — resting 60s screen-off, 120s so far
+[03:06:10] pixel6: hot (status=2 skin=0C BIG=45.000004C) — resting 60s screen-off, 181s so far
+[03:07:10] pixel6: hot (status=2 skin=41.57928C BIG=45.000004C) — resting 60s screen-off, 241s so far
+[03:08:10] pixel6: hot (status=2 skin=41.31212C BIG=44.000004C) — resting 60s screen-off, 301s so far
+[03:09:10] pixel6: cool after 361s (status=1 skin=41.03384C)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:12:22] DONE  pixel6 poetskingdom/freerasp_debug rep3 PASS wall=617s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_freerasp_debug_r3.log
+[03:12:22] START pixel6 calculator/freerasp_debug rep7 cfg=calculator_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=42 status=3 (band=40-70)
+  top-up SKIPPED (level=42 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1493437µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.01228,"cpu_max_c":62.000004,"battery_c":41.9,"ts":"2026-08-12T01:13:25Z"}
+[03:13:26] pixel6: hot (status=2 skin=43.01228C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[03:14:26] pixel6: hot (status=2 skin=42.42408C BIG=49.000004C) — resting 60s screen-off, 61s so far
+[03:15:26] pixel6: hot (status=2 skin=41.87336C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[03:16:26] pixel6: hot (status=2 skin=41.52792C BIG=48.000004C) — resting 60s screen-off, 181s so far
+[03:17:26] pixel6: hot (status=2 skin=41.23384C BIG=44.000004C) — resting 60s screen-off, 241s so far
+[03:18:27] pixel6: cool after 302s (status=1 skin=40.94484C)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:21:34] DONE  pixel6 calculator/freerasp_debug rep7 PASS wall=552s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_freerasp_debug_r7.log
+[03:21:34] START pixel6 calculator/allatori_debug rep4 cfg=calculator_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=41 status=3 (band=40-70)
+  top-up SKIPPED (level=41 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1510625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.964478,"cpu_max_c":62.000004,"battery_c":42.4,"ts":"2026-08-12T01:22:38Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:25:43] DONE  pixel6 calculator/allatori_debug rep4 PASS wall=249s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_allatori_debug_r4.log
+[03:25:43] START pixel6 documenter/bangcle_debug rep4 cfg=documenter_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=40 status=3 (band=40-70)
+  top-up SKIPPED (level=40 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1400937µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.606163,"cpu_max_c":62.000004,"battery_c":43.2,"ts":"2026-08-12T01:26:47Z"}
+[03:26:47] pixel6: hot (status=2 skin=43.606163C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[03:27:47] pixel6: hot (status=2 skin=43.055C BIG=46.000004C) — resting 60s screen-off, 60s so far
+[03:28:47] pixel6: hot (status=2 skin=42.47808C BIG=46.000004C) — resting 60s screen-off, 120s so far
+[03:29:48] pixel6: hot (status=2 skin=42.06292C BIG=46.000004C) — resting 60s screen-off, 181s so far
+[03:30:48] pixel6: hot (status=2 skin=41.69464C BIG=45.000004C) — resting 60s screen-off, 241s so far
+[03:31:48] pixel6: hot (status=2 skin=41.389843C BIG=44.000004C) — resting 60s screen-off, 301s so far
+[03:32:48] pixel6: hot (status=2 skin=41.14132C BIG=45.000004C) — resting 60s screen-off, 361s so far
+[03:33:49] pixel6: cool after 421s (status=1 skin=40.881363C)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:36:37] DONE  pixel6 documenter/bangcle_debug rep4 PASS wall=654s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_bangcle_debug_r4.log
+[03:36:37] START pixel6 calculator/freerasp_debug rep10 cfg=calculator_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=39 status=3 (band=40-70)
+  top-up: level=39 < 40 -> charging to >= 70 (stall cap 2400s)
+    band reached: level=70 >= 70 after 5743s
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1587500µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.12772,"cpu_max_c":58.000004,"battery_c":37.2,"ts":"2026-08-12T03:13:32Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:16:32] DONE  pixel6 calculator/freerasp_debug rep10 PASS wall=5995s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_freerasp_debug_r10.log
+[05:16:32] START pixel6 medtimer/baseline_debug rep6 cfg=medtimer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=69 status=3 (band=40-70)
+  top-up SKIPPED (level=69 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1479062µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":40.309483,"cpu_max_c":62.000004,"battery_c":39.0,"ts":"2026-08-12T03:17:36Z"}
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  PORT WATCH: no mid-cell VBUS (49 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:21:42] DONE  pixel6 medtimer/baseline_debug rep6 PASS wall=310s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_medtimer_baseline_debug_r6.log
+[05:21:42] START pixel6 linkhub/baseline_debug rep7 cfg=linkhub_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=68 status=3 (band=40-70)
+  top-up SKIPPED (level=68 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1371875µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":41.5222,"cpu_max_c":62.000004,"battery_c":40.0,"ts":"2026-08-12T03:22:46Z"}
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:25:47] DONE  pixel6 linkhub/baseline_debug rep7 PASS wall=244s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_linkhub_baseline_debug_r7.log
+[05:25:47] START pixel6 documenter/baseline_debug rep2 cfg=documenter_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=67 status=3 (band=40-70)
+  top-up SKIPPED (level=67 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1449062µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.13556,"cpu_max_c":63.000004,"battery_c":42.2,"ts":"2026-08-12T03:26:50Z"}
+[05:26:51] pixel6: hot (status=2 skin=43.13556C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[05:27:51] pixel6: hot (status=2 skin=42.415478C BIG=46.000004C) — resting 60s screen-off, 61s so far
+[05:28:51] pixel6: hot (status=2 skin=41.76364C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[05:29:51] pixel6: hot (status=2 skin=41.321438C BIG=44.000004C) — resting 60s screen-off, 181s so far
+[05:30:52] pixel6: cool after 242s (status=1 skin=41.016644C)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:33:43] DONE  pixel6 documenter/baseline_debug rep2 PASS wall=476s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_baseline_debug_r2.log
+[05:33:43] START pixel6 documenter/baseline_debug rep1 cfg=documenter_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=66 status=3 (band=40-70)
+  top-up SKIPPED (level=66 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1422500µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.563,"cpu_max_c":62.000004,"battery_c":41.9,"ts":"2026-08-12T03:34:47Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:37:38] DONE  pixel6 documenter/baseline_debug rep1 PASS wall=235s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_baseline_debug_r1.log
+[05:37:38] START pixel6 tipuous/freerasp_debug rep5 cfg=tipuous_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=65 status=3 (band=40-70)
+  top-up SKIPPED (level=65 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1437812µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.181797,"cpu_max_c":62.000004,"battery_c":42.600002,"ts":"2026-08-12T03:38:42Z"}
+[05:38:42] pixel6: hot (status=2 skin=43.181797C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[05:39:42] pixel6: hot (status=2 skin=42.51264C BIG=49.000004C) — resting 60s screen-off, 60s so far
+[05:40:43] pixel6: hot (status=2 skin=41.98156C BIG=48.000004C) — resting 60s screen-off, 121s so far
+[05:41:43] pixel6: hot (status=2 skin=41.621162C BIG=47.000004C) — resting 60s screen-off, 181s so far
+[05:42:43] pixel6: hot (status=2 skin=41.250362C BIG=45.000004C) — resting 60s screen-off, 241s so far
+[05:43:44] pixel6: cool after 301s (status=1 skin=40.94908C)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:47:05] DONE  pixel6 tipuous/freerasp_debug rep5 PASS wall=567s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_freerasp_debug_r5.log
+[05:47:05] START pixel6 tipuous/bangcle_debug rep9 cfg=tipuous_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=64 status=3 (band=40-70)
+  top-up SKIPPED (level=64 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1420625µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.62208,"cpu_max_c":62.000004,"battery_c":41.9,"ts":"2026-08-12T03:48:09Z"}
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[05:51:31] DONE  pixel6 tipuous/bangcle_debug rep9 PASS wall=266s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_bangcle_debug_r9.log
+[05:51:31] START pixel6 calculator/baseline_debug rep9 cfg=calculator_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=63 status=3 (band=40-70)
+  top-up SKIPPED (level=63 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1316562µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.199562,"cpu_max_c":63.000004,"battery_c":42.600002,"ts":"2026-08-12T03:52:35Z"}
+[05:52:35] pixel6: hot (status=2 skin=43.199562C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[05:53:35] pixel6: hot (status=2 skin=42.65704C BIG=46.000004C) — resting 60s screen-off, 60s so far
+[05:54:35] pixel6: hot (status=2 skin=42.1416C BIG=45.000004C) — resting 60s screen-off, 120s so far
+[05:55:36] pixel6: hot (status=2 skin=41.75164C BIG=50.000004C) — resting 60s screen-off, 181s so far
+[05:56:36] pixel6: hot (status=2 skin=41.3976C BIG=48.000004C) — resting 60s screen-off, 241s so far
+[05:57:36] pixel6: hot (status=2 skin=41.1086C BIG=48.000004C) — resting 60s screen-off, 301s so far
+[05:58:36] pixel6: cool after 361s (status=1 skin=40.882084C)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:01:39] DONE  pixel6 calculator/baseline_debug rep9 PASS wall=607s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_baseline_debug_r9.log
+[06:01:39] START pixel6 calculator/bangcle_debug rep2 cfg=calculator_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=62 status=3 (band=40-70)
+  top-up SKIPPED (level=62 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1419687µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.7208,"cpu_max_c":62.000004,"battery_c":41.800003,"ts":"2026-08-12T04:02:42Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:05:47] DONE  pixel6 calculator/bangcle_debug rep2 PASS wall=248s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_bangcle_debug_r2.log
+[06:05:47] START pixel6 poetskingdom/baseline_debug rep4 cfg=poetskingdom_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=62 status=3 (band=40-70)
+  top-up SKIPPED (level=62 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1438437µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.42776,"cpu_max_c":63.000004,"battery_c":42.9,"ts":"2026-08-12T04:06:51Z"}
+[06:06:51] pixel6: hot (status=2 skin=43.42776C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[06:07:52] pixel6: hot (status=2 skin=42.9106C BIG=47.000004C) — resting 60s screen-off, 61s so far
+[06:08:52] pixel6: hot (status=2 skin=42.3152C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[06:09:52] pixel6: hot (status=2 skin=41.93668C BIG=46.000004C) — resting 60s screen-off, 181s so far
+[06:10:52] pixel6: hot (status=2 skin=41.657562C BIG=45.000004C) — resting 60s screen-off, 241s so far
+[06:11:53] pixel6: hot (status=2 skin=41.37912C BIG=44.000004C) — resting 60s screen-off, 302s so far
+[06:12:53] pixel6: hot (status=2 skin=41.112118C BIG=47.000004C) — resting 60s screen-off, 362s so far
+[06:13:53] pixel6: cool after 422s (status=1 skin=40.870644C)
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:17:01] DONE  pixel6 poetskingdom/baseline_debug rep4 PASS wall=674s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_baseline_debug_r4.log
+[06:17:01] START pixel6 androidskk/bangcle_debug rep1 cfg=androidskk_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=61 status=3 (band=40-70)
+  top-up SKIPPED (level=61 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1447187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.75592,"cpu_max_c":62.000004,"battery_c":42.000004,"ts":"2026-08-12T04:18:05Z"}
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (32 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:20:45] DONE  pixel6 androidskk/bangcle_debug rep1 PASS wall=223s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_bangcle_debug_r1.log
+[06:20:45] START pixel6 documenter/bangcle_debug rep5 cfg=documenter_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=60 status=3 (band=40-70)
+  top-up SKIPPED (level=60 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1280000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.023003,"cpu_max_c":62.000004,"battery_c":42.500004,"ts":"2026-08-12T04:21:48Z"}
+[06:21:49] pixel6: hot (status=2 skin=43.023003C BIG=62.000004C) — resting 60s screen-off, 0s so far
+[06:22:49] pixel6: hot (status=2 skin=42.5376C BIG=46.000004C) — resting 60s screen-off, 61s so far
+[06:23:49] pixel6: hot (status=2 skin=42.060802C BIG=48.000004C) — resting 60s screen-off, 121s so far
+[06:24:49] pixel6: hot (status=2 skin=41.758682C BIG=45.000004C) — resting 60s screen-off, 181s so far
+[06:25:50] pixel6: hot (status=2 skin=41.41608C BIG=45.000004C) — resting 60s screen-off, 242s so far
+[06:26:50] pixel6: hot (status=2 skin=41.13412C BIG=45.000004C) — resting 60s screen-off, 302s so far
+[06:27:50] pixel6: cool after 362s (status=1 skin=40.94908C)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:30:40] DONE  pixel6 documenter/bangcle_debug rep5 PASS wall=595s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_bangcle_debug_r5.log
+[06:30:40] START pixel6 tipuous/allatori_debug rep1 cfg=tipuous_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=59 status=3 (band=40-70)
+  top-up SKIPPED (level=59 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1515937µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.66072,"cpu_max_c":62.000004,"battery_c":41.4,"ts":"2026-08-12T04:31:44Z"}
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:35:04] DONE  pixel6 tipuous/allatori_debug rep1 PASS wall=264s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_allatori_debug_r1.log
+[06:35:04] START pixel6 androidskk/baseline_debug rep7 cfg=androidskk_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=58 status=3 (band=40-70)
+  top-up SKIPPED (level=58 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1445000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":2,"skin_c":43.31408,"cpu_max_c":63.000004,"battery_c":42.600002,"ts":"2026-08-12T04:36:08Z"}
+[06:36:08] pixel6: hot (status=2 skin=43.31408C BIG=63.000004C) — resting 60s screen-off, 0s so far
+[06:37:09] pixel6: hot (status=2 skin=42.70908C BIG=46.000004C) — resting 60s screen-off, 61s so far
+[06:38:09] pixel6: hot (status=2 skin=42.19096C BIG=45.000004C) — resting 60s screen-off, 121s so far
+[06:39:09] pixel6: hot (status=2 skin=41.82836C BIG=45.000004C) — resting 60s screen-off, 181s so far
+[06:40:09] pixel6: hot (status=2 skin=41.509445C BIG=45.000004C) — resting 60s screen-off, 241s so far
+[06:41:09] pixel6: hot (status=2 skin=41.18264C BIG=45.000004C) — resting 60s screen-off, 301s so far
+[06:42:10] pixel6: cool after 362s (status=1 skin=41.01608C)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (32 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:44:48] DONE  pixel6 androidskk/baseline_debug rep7 PASS wall=584s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_baseline_debug_r7.log
+[06:44:48] START pixel6 calculator/allatori_debug rep9 cfg=calculator_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=58 status=3 (band=40-70)
+  top-up SKIPPED (level=58 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1406875µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":42.10608,"cpu_max_c":63.000004,"battery_c":41.500004,"ts":"2026-08-12T04:45:52Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (37 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:48:55] DONE  pixel6 calculator/allatori_debug rep9 PASS wall=247s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_allatori_debug_r9.log
+[06:48:55] START pixel6 documenter/freerasp_debug rep6 cfg=documenter_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=57 status=3 (band=40-70)
+  top-up SKIPPED (level=57 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1520000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":41.476,"cpu_max_c":63.000004,"battery_c":41.800003,"ts":"2026-08-12T04:49:59Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:52:52] DONE  pixel6 documenter/freerasp_debug rep6 PASS wall=236s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_freerasp_debug_r6.log
+[06:52:52] START pixel6 keep_recipe/freerasp_debug rep4 cfg=keep_recipe_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=56 status=3 (band=40-70)
+  top-up SKIPPED (level=56 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1577187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":40.9726,"cpu_max_c":61.000004,"battery_c":41.2,"ts":"2026-08-12T04:53:55Z"}
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (41 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[06:57:23] DONE  pixel6 keep_recipe/freerasp_debug rep4 PASS wall=271s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_freerasp_debug_r4.log
+[06:57:23] START pixel6 poetskingdom/baseline_debug rep1 cfg=poetskingdom_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=55 status=3 (band=40-70)
+  top-up SKIPPED (level=55 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1546562µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":40.17724,"cpu_max_c":62.000004,"battery_c":40.300003,"ts":"2026-08-12T04:58:27Z"}
+  mitmproxy replay: SKIP for poetskingdom (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:01:35] DONE  pixel6 poetskingdom/baseline_debug rep1 PASS wall=252s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_poetskingdom_baseline_debug_r1.log
+[07:01:35] START pixel6 androidskk/freerasp_debug rep7 cfg=androidskk_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=54 status=3 (band=40-70)
+  top-up SKIPPED (level=54 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1529062µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.9998,"cpu_max_c":61.000004,"battery_c":39.600002,"ts":"2026-08-12T05:02:39Z"}
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (32 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:05:19] DONE  pixel6 androidskk/freerasp_debug rep7 PASS wall=224s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_freerasp_debug_r7.log
+[07:05:19] START pixel6 calculator/allatori_debug rep5 cfg=calculator_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=54 status=3 (band=40-70)
+  top-up SKIPPED (level=54 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1429375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.44944,"cpu_max_c":61.000004,"battery_c":39.600002,"ts":"2026-08-12T05:06:23Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:09:26] DONE  pixel6 calculator/allatori_debug rep5 PASS wall=247s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_allatori_debug_r5.log
+[07:09:26] START pixel6 calculator/bangcle_debug rep5 cfg=calculator_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=53 status=3 (band=40-70)
+  top-up SKIPPED (level=53 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1517500µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.666523,"cpu_max_c":61.000004,"battery_c":39.4,"ts":"2026-08-12T05:10:30Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:13:28] DONE  pixel6 calculator/bangcle_debug rep5 PASS wall=242s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_bangcle_debug_r5.log
+[07:13:28] START pixel6 medtimer/allatori_debug rep5 cfg=medtimer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=52 status=3 (band=40-70)
+  top-up SKIPPED (level=52 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1509687µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.81688,"cpu_max_c":61.000004,"battery_c":39.5,"ts":"2026-08-12T05:14:32Z"}
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  PORT WATCH: no mid-cell VBUS (49 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:18:40] DONE  pixel6 medtimer/allatori_debug rep5 PASS wall=312s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_medtimer_allatori_debug_r5.log
+[07:18:40] START pixel6 calculator/baseline_debug rep10 cfg=calculator_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=51 status=3 (band=40-70)
+  top-up SKIPPED (level=51 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1721875µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":0,"cpu_max_c":61.000004,"battery_c":39.0,"ts":"2026-08-12T05:19:44Z"}
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  PORT WATCH: no mid-cell VBUS (36 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:22:45] DONE  pixel6 calculator/baseline_debug rep10 PASS wall=245s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_calculator_baseline_debug_r10.log
+[07:22:45] START pixel6 medtimer/bangcle_debug rep6 cfg=medtimer_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=50 status=3 (band=40-70)
+  top-up SKIPPED (level=50 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1479375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.627323,"cpu_max_c":61.000004,"battery_c":39.100002,"ts":"2026-08-12T05:23:49Z"}
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  PORT WATCH: no mid-cell VBUS (49 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:27:55] DONE  pixel6 medtimer/bangcle_debug rep6 PASS wall=310s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_medtimer_bangcle_debug_r6.log
+[07:27:55] START pixel6 documenter/baseline_debug rep8 cfg=documenter_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=49 status=3 (band=40-70)
+  top-up SKIPPED (level=49 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1563750µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.2706,"cpu_max_c":60.000004,"battery_c":38.2,"ts":"2026-08-12T05:28:59Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (33 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:31:47] DONE  pixel6 documenter/baseline_debug rep8 PASS wall=232s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_baseline_debug_r8.log
+[07:31:47] START pixel6 keep_recipe/freerasp_debug rep1 cfg=keep_recipe_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=48 status=3 (band=40-70)
+  top-up SKIPPED (level=48 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1628437µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.35328,"cpu_max_c":60.000004,"battery_c":38.7,"ts":"2026-08-12T05:32:50Z"}
+[07:32:51] pixel6: cool after 1s (status=1 skin=39.35328C)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (42 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:36:21] DONE  pixel6 keep_recipe/freerasp_debug rep1 PASS wall=273s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_freerasp_debug_r1.log
+[07:36:21] START pixel6 tipuous/allatori_debug rep5 cfg=tipuous_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=47 status=3 (band=40-70)
+  top-up SKIPPED (level=47 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1530000µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.363842,"cpu_max_c":60.000004,"battery_c":38.800003,"ts":"2026-08-12T05:37:24Z"}
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:40:46] DONE  pixel6 tipuous/allatori_debug rep5 PASS wall=264s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_tipuous_allatori_debug_r5.log
+[07:40:46] START pixel6 itsok/freerasp_debug rep2 cfg=itsok_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=46 status=3 (band=40-70)
+  top-up SKIPPED (level=46 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1499375µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.08556,"cpu_max_c":60.000004,"battery_c":38.0,"ts":"2026-08-12T05:41:49Z"}
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:44:59] DONE  pixel6 itsok/freerasp_debug rep2 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_itsok_freerasp_debug_r2.log
+[07:44:59] START pixel6 androidskk/bangcle_debug rep4 cfg=androidskk_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=45 status=3 (band=40-70)
+  top-up SKIPPED (level=45 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1863750µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.2678,"cpu_max_c":60.000004,"battery_c":38.600002,"ts":"2026-08-12T05:46:03Z"}
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (31 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:48:40] DONE  pixel6 androidskk/bangcle_debug rep4 PASS wall=220s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_bangcle_debug_r4.log
+[07:48:40] START pixel6 pdfviewer/freerasp_debug rep5 cfg=pdfviewer_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=45 status=3 (band=40-70)
+  top-up SKIPPED (level=45 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1431250µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.661118,"cpu_max_c":59.000004,"battery_c":38.2,"ts":"2026-08-12T05:49:43Z"}
+  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  PORT WATCH: no mid-cell VBUS (38 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[07:52:53] DONE  pixel6 pdfviewer/freerasp_debug rep5 PASS wall=253s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_pdfviewer_freerasp_debug_r5.log
+[07:52:53] START pixel6 linkhub/allatori_debug rep9 cfg=linkhub_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=44 status=3 (band=40-70)
+  top-up SKIPPED (level=44 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1597187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":40.20916,"cpu_max_c":60.000004,"battery_c":39.4,"ts":"2026-08-12T05:53:57Z"}
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  PORT WATCH: no mid-cell VBUS (45 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[07:57:42] DONE  pixel6 linkhub/allatori_debug rep9 PASS wall=289s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_linkhub_allatori_debug_r9.log
+[07:57:42] START pixel6 documenter/baseline_debug rep4 cfg=documenter_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=42 status=3 (band=40-70)
+  top-up SKIPPED (level=42 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1566562µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":40.26332,"cpu_max_c":61.000004,"battery_c":39.7,"ts":"2026-08-12T05:58:46Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[08:01:37] DONE  pixel6 documenter/baseline_debug rep4 PASS wall=234s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_baseline_debug_r4.log
+[08:01:37] START pixel6 androidskk/baseline_debug rep5 cfg=androidskk_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=41 status=3 (band=40-70)
+  top-up SKIPPED (level=41 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1545312µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":39.69856,"cpu_max_c":60.000004,"battery_c":38.600002,"ts":"2026-08-12T06:02:40Z"}
+[08:02:41] pixel6: cool after 1s (status=1 skin=39.69856C)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  PORT WATCH: no mid-cell VBUS (31 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[08:05:17] DONE  pixel6 androidskk/baseline_debug rep5 PASS wall=220s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_androidskk_baseline_debug_r5.log
+[08:05:17] START pixel6 keep_recipe/bangcle_debug rep4 cfg=keep_recipe_bangcle_debug_pixel6_wifi_ykush.json
+  pre-cell: level=41 status=3 (band=40-70)
+  top-up SKIPPED (level=41 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1462187µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.89824,"cpu_max_c":60.000004,"battery_c":38.600002,"ts":"2026-08-12T06:06:21Z"}
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  PORT WATCH: no mid-cell VBUS (41 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[08:09:48] DONE  pixel6 keep_recipe/bangcle_debug rep4 PASS wall=271s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_keep_recipe_bangcle_debug_r4.log
+[08:09:48] START pixel6 documenter/baseline_debug rep10 cfg=documenter_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=40 status=3 (band=40-70)
+  top-up SKIPPED (level=40 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1526875µA = ≥150mA)
+  THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":1,"skin_c":38.937317,"cpu_max_c":60.000004,"battery_c":38.2,"ts":"2026-08-12T06:10:52Z"}
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  PORT WATCH: no mid-cell VBUS (34 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
+  post-cell: port cut (AR re-enabled it at experiment end)
+[08:13:41] DONE  pixel6 documenter/baseline_debug rep10 PASS wall=233s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260811_194751_pixel6_documenter_baseline_debug_r10.log
+[08:13:41] START pixel6 keep_recipe/freerasp_debug rep5 cfg=keep_recipe_freerasp_debug_pixel6_wifi_ykush.json
+  pre-cell: level=39 status=3 (band=40-70)
+  top-up: level=39 < 40 -> charging to >= 70 (stall cap 2400s)

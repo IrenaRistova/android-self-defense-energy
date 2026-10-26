@@ -1,0 +1,1678 @@
+[01:00:40] pixel3 itsok/bangcle_debug rep5 — already completed, SKIP
+[01:00:40] pixel3 linkhub/baseline_debug rep9 — already completed, SKIP
+[01:00:40] pixel3 tipuous/bangcle_debug rep7 — already completed, SKIP
+[01:00:40] START pixel3 keep_recipe/baseline_debug rep5 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=67 status=3 (band=30-70)
+  top-up SKIPPED (level=67 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1975096µA = ≥150mA)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:06:03] DONE  pixel3 keep_recipe/baseline_debug rep5 PASS wall=323s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_keep_recipe_baseline_debug_r5.log
+[01:06:03] pixel3 androidskk/freerasp_debug rep6 — already completed, SKIP
+[01:06:03] pixel3 itsok/baseline_debug rep1 — already completed, SKIP
+[01:06:03] pixel3 medtimer/allatori_debug rep2 — already completed, SKIP
+[01:06:03] pixel3 androidskk/allatori_debug rep10 — already completed, SKIP
+[01:06:03] pixel3 itsok/baseline_debug rep4 — already completed, SKIP
+[01:06:03] pixel3 tipuous/baseline_debug rep9 — already completed, SKIP
+[01:06:03] pixel3 pdfviewer/baseline_debug rep8 — already completed, SKIP
+[01:06:03] pixel3 documenter/bangcle_debug rep10 — already completed, SKIP
+[01:06:03] pixel3 tipuous/bangcle_debug rep10 — already completed, SKIP
+[01:06:03] pixel3 linkhub/allatori_debug rep3 — already completed, SKIP
+[01:06:03] pixel3 poetskingdom/baseline_debug rep5 — already completed, SKIP
+[01:06:03] pixel3 calculator/freerasp_debug rep3 — already completed, SKIP
+[01:06:03] pixel3 linkhub/allatori_debug rep2 — already completed, SKIP
+[01:06:03] START pixel3 medtimer/bangcle_debug rep4 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=66 status=3 (band=30-70)
+  top-up SKIPPED (level=66 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-2073241µA = ≥150mA)
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:12:48] DONE  pixel3 medtimer/bangcle_debug rep4 PASS wall=405s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_medtimer_bangcle_debug_r4.log
+[01:12:48] START pixel3 calculator/allatori_debug rep1 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=64 status=3 (band=30-70)
+  top-up SKIPPED (level=64 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1204589µA = ≥150mA)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:17:24] DONE  pixel3 calculator/allatori_debug rep1 PASS wall=276s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_calculator_allatori_debug_r1.log
+[01:17:24] START pixel3 keep_recipe/baseline_debug rep8 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=63 status=3 (band=30-70)
+  top-up SKIPPED (level=63 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-970214µA = ≥150mA)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:22:34] DONE  pixel3 keep_recipe/baseline_debug rep8 PASS wall=310s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_keep_recipe_baseline_debug_r8.log
+[01:22:34] START pixel3 linkhub/bangcle_debug rep5 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=62 status=3 (band=30-70)
+  top-up SKIPPED (level=62 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-966796µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:27:22] DONE  pixel3 linkhub/bangcle_debug rep5 PASS wall=288s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_linkhub_bangcle_debug_r5.log
+[01:27:22] START pixel3 androidskk/baseline_debug rep8 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=60 status=3 (band=30-70)
+  top-up SKIPPED (level=60 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-925780µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:31:28] DONE  pixel3 androidskk/baseline_debug rep8 PASS wall=246s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_androidskk_baseline_debug_r8.log
+[01:31:28] START pixel3 tipuous/freerasp_debug rep1 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=59 status=3 (band=30-70)
+  top-up SKIPPED (level=59 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-664062µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:37:33] DONE  pixel3 tipuous/freerasp_debug rep1 PASS wall=364s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_tipuous_freerasp_debug_r1.log
+[01:37:33] START pixel3 keep_recipe/baseline_debug rep6 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=58 status=3 (band=30-70)
+  top-up SKIPPED (level=58 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-698730µA = ≥150mA)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:43:38] DONE  pixel3 keep_recipe/baseline_debug rep6 PASS wall=365s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_keep_recipe_baseline_debug_r6.log
+[01:43:38] START pixel3 tipuous/freerasp_debug rep7 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=57 status=3 (band=30-70)
+  top-up SKIPPED (level=57 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-635741µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:50:38] DONE  pixel3 tipuous/freerasp_debug rep7 PASS wall=420s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_tipuous_freerasp_debug_r7.log
+[01:50:38] START pixel3 androidskk/baseline_debug rep7 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=56 status=3 (band=30-70)
+  top-up SKIPPED (level=56 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-635253µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[01:54:56] DONE  pixel3 androidskk/baseline_debug rep7 PASS wall=258s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_androidskk_baseline_debug_r7.log
+[01:54:56] START pixel3 pdfviewer/freerasp_debug rep2 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=55 status=3 (band=30-70)
+  top-up SKIPPED (level=55 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-516601µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 2 response(s) served from flow during this cell
+[02:00:25] DONE  pixel3 pdfviewer/freerasp_debug rep2 PASS wall=329s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_pdfviewer_freerasp_debug_r2.log
+[02:00:25] START pixel3 tipuous/bangcle_debug rep9 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=53 status=3 (band=30-70)
+  top-up SKIPPED (level=53 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-569335µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:06:30] DONE  pixel3 tipuous/bangcle_debug rep9 PASS wall=364s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_tipuous_bangcle_debug_r9.log
+[02:06:30] START pixel3 linkhub/bangcle_debug rep6 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=51 status=3 (band=30-70)
+  top-up SKIPPED (level=51 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-573730µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:12:36] DONE  pixel3 linkhub/bangcle_debug rep6 PASS wall=366s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_linkhub_bangcle_debug_r6.log
+[02:12:36] START pixel3 pdfviewer/baseline_debug rep3 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=49 status=3 (band=30-70)
+  top-up SKIPPED (level=49 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-581542µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 1 response(s) served from flow during this cell
+[02:18:16] DONE  pixel3 pdfviewer/baseline_debug rep3 PASS wall=340s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_pdfviewer_baseline_debug_r3.log
+[02:18:16] START pixel3 pdfviewer/baseline_debug rep4 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=48 status=3 (band=30-70)
+  top-up SKIPPED (level=48 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-585937µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[02:23:33] DONE  pixel3 pdfviewer/baseline_debug rep4 PASS wall=317s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_pdfviewer_baseline_debug_r4.log
+[02:23:33] START pixel3 documenter/baseline_debug rep2 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=46 status=3 (band=30-70)
+  top-up SKIPPED (level=46 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-601562µA = ≥150mA)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:28:32] DONE  pixel3 documenter/baseline_debug rep2 PASS wall=298s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_documenter_baseline_debug_r2.log
+[02:28:32] START pixel3 keep_recipe/freerasp_debug rep4 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=44 status=3 (band=30-70)
+  top-up SKIPPED (level=44 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-593261µA = ≥150mA)
+  mitmproxy replay: SKIP for keep_recipe (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:34:08] DONE  pixel3 keep_recipe/freerasp_debug rep4 PASS wall=336s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_keep_recipe_freerasp_debug_r4.log
+[02:34:08] START pixel3 tipuous/baseline_debug rep4 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=43 status=3 (band=30-70)
+  top-up SKIPPED (level=43 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-610351µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:40:19] DONE  pixel3 tipuous/baseline_debug rep4 PASS wall=371s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_tipuous_baseline_debug_r4.log
+[02:40:19] START pixel3 calculator/freerasp_debug rep5 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=41 status=3 (band=30-70)
+  top-up SKIPPED (level=41 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-594726µA = ≥150mA)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:45:40] DONE  pixel3 calculator/freerasp_debug rep5 PASS wall=321s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_calculator_freerasp_debug_r5.log
+[02:45:40] START pixel3 pdfviewer/bangcle_debug rep8 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=39 status=3 (band=30-70)
+  top-up SKIPPED (level=39 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-664062µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[02:50:28] DONE  pixel3 pdfviewer/bangcle_debug rep8 PASS wall=288s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_pdfviewer_bangcle_debug_r8.log
+[02:50:28] START pixel3 tipuous/freerasp_debug rep6 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=37 status=3 (band=30-70)
+  top-up SKIPPED (level=37 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-607909µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:56:47] DONE  pixel3 tipuous/freerasp_debug rep6 PASS wall=379s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_tipuous_freerasp_debug_r6.log
+[02:56:47] START pixel3 documenter/freerasp_debug rep9 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=36 status=3 (band=30-70)
+  top-up SKIPPED (level=36 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-609374µA = ≥150mA)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:02:26] DONE  pixel3 documenter/freerasp_debug rep9 PASS wall=339s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_documenter_freerasp_debug_r9.log
+[03:02:26] START pixel3 itsok/freerasp_debug rep7 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=34 status=3 (band=30-70)
+  top-up SKIPPED (level=34 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-624999µA = ≥150mA)
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:07:33] DONE  pixel3 itsok/freerasp_debug rep7 PASS wall=307s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_itsok_freerasp_debug_r7.log
+[03:07:33] START pixel3 documenter/allatori_debug rep8 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=32 status=3 (band=30-70)
+  top-up SKIPPED (level=32 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-622558µA = ≥150mA)
+  mitmproxy replay: SKIP for documenter (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:12:35] DONE  pixel3 documenter/allatori_debug rep8 PASS wall=302s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_documenter_allatori_debug_r8.log
+[03:12:35] START pixel3 tipuous/bangcle_debug rep5 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=31 status=3 (band=30-70)
+  top-up SKIPPED (level=31 >= 30)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-620116µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:18:22] DONE  pixel3 tipuous/bangcle_debug rep5 PASS wall=347s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_tipuous_bangcle_debug_r5.log
+[03:18:22] START pixel3 androidskk/bangcle_debug rep5 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=29 status=3 (band=30-70)
+  top-up: level=29 < 30 -> charging to >= 70 (stall cap 2400s)
+    REFUSED: VBUS is present but pixel3 reports status=4 (not charging) and level has not moved off 29 in 5min.
+             Releasing the charge lock now instead of holding it for 40min. Backing off 1800s before retrying.
+             If this repeats: check the cable, then REBOOT the phone — a wedged fuel gauge looks exactly like this (2026-08-04).
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-608398µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:27:52] DONE  pixel3 androidskk/bangcle_debug rep5 PASS wall=570s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_androidskk_bangcle_debug_r5.log
+[03:27:52] START pixel3 linkhub/allatori_debug rep7 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=28 status=3 (band=30-70)
+  top-up SKIPPED: pixel3 refused charge 4min ago — backing off 26min more instead of holding the global charge lock while gaining nothing.
+                  Running under-band; cells FAIL at level < 25 if it never recovers. Check the cable, then reboot the phone (wedged fuel gauge, 2026-08-04).
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-435546µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:33:08] DONE  pixel3 linkhub/allatori_debug rep7 PASS wall=315s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_linkhub_allatori_debug_r7.log
+[03:33:08] START pixel3 medtimer/bangcle_debug rep2 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=26 status=3 (band=30-70)
+  top-up SKIPPED: pixel3 refused charge 9min ago — backing off 21min more instead of holding the global charge lock while gaining nothing.
+                  Running under-band; cells FAIL at level < 25 if it never recovers. Check the cable, then reboot the phone (wedged fuel gauge, 2026-08-04).
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-624023µA = ≥150mA)
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[03:39:29] DONE  pixel3 medtimer/bangcle_debug rep2 PASS wall=381s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260805_010029_pixel3_medtimer_bangcle_debug_r2.log
+[03:39:29] START pixel3 linkhub/bangcle_debug rep2 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:29] DONE  pixel3 linkhub/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:29] START pixel3 keep_recipe/freerasp_debug rep2 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:30] DONE  pixel3 keep_recipe/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:30] START pixel3 itsok/baseline_debug rep8 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:30] DONE  pixel3 itsok/baseline_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:30] START pixel3 keep_recipe/baseline_debug rep3 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:30] DONE  pixel3 keep_recipe/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:30] START pixel3 keep_recipe/baseline_debug rep2 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:30] DONE  pixel3 keep_recipe/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:30] START pixel3 itsok/allatori_debug rep6 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:30] DONE  pixel3 itsok/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:30] START pixel3 documenter/baseline_debug rep9 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:31] DONE  pixel3 documenter/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:31] START pixel3 medtimer/freerasp_debug rep4 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:31] DONE  pixel3 medtimer/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:31] START pixel3 pdfviewer/freerasp_debug rep10 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:31] DONE  pixel3 pdfviewer/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:31] START pixel3 medtimer/bangcle_debug rep1 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:31] DONE  pixel3 medtimer/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:31] START pixel3 keep_recipe/allatori_debug rep4 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:31] DONE  pixel3 keep_recipe/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:31] START pixel3 tipuous/allatori_debug rep9 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:32] DONE  pixel3 tipuous/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:32] START pixel3 documenter/bangcle_debug rep4 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:32] DONE  pixel3 documenter/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:32] START pixel3 tipuous/freerasp_debug rep5 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:32] DONE  pixel3 tipuous/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:32] START pixel3 pdfviewer/allatori_debug rep2 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:32] DONE  pixel3 pdfviewer/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:32] START pixel3 pdfviewer/bangcle_debug rep4 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:32] DONE  pixel3 pdfviewer/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:32] START pixel3 linkhub/freerasp_debug rep3 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:32] DONE  pixel3 linkhub/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:32] START pixel3 pdfviewer/bangcle_debug rep1 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:33] DONE  pixel3 pdfviewer/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:33] START pixel3 linkhub/bangcle_debug rep3 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:33] DONE  pixel3 linkhub/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:33] START pixel3 keep_recipe/bangcle_debug rep3 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:33] DONE  pixel3 keep_recipe/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:33] START pixel3 androidskk/baseline_debug rep5 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:33] DONE  pixel3 androidskk/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:33] START pixel3 linkhub/allatori_debug rep5 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:33] DONE  pixel3 linkhub/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:33] START pixel3 keep_recipe/baseline_debug rep9 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:33] DONE  pixel3 keep_recipe/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:33] START pixel3 calculator/bangcle_debug rep2 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:33] DONE  pixel3 calculator/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:33] START pixel3 documenter/allatori_debug rep7 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:34] DONE  pixel3 documenter/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:34] START pixel3 tipuous/allatori_debug rep1 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:34] DONE  pixel3 tipuous/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:34] START pixel3 androidskk/allatori_debug rep8 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:34] DONE  pixel3 androidskk/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:34] START pixel3 poetskingdom/baseline_debug rep10 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:34] DONE  pixel3 poetskingdom/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:34] START pixel3 itsok/allatori_debug rep5 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:34] DONE  pixel3 itsok/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:34] START pixel3 keep_recipe/bangcle_debug rep1 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:34] DONE  pixel3 keep_recipe/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:34] START pixel3 itsok/baseline_debug rep2 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:34] DONE  pixel3 itsok/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:34] START pixel3 tipuous/allatori_debug rep5 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:35] DONE  pixel3 tipuous/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:35] START pixel3 calculator/baseline_debug rep7 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:35] DONE  pixel3 calculator/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:35] START pixel3 calculator/allatori_debug rep9 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:35] DONE  pixel3 calculator/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:35] START pixel3 keep_recipe/bangcle_debug rep5 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:35] DONE  pixel3 keep_recipe/bangcle_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:35] START pixel3 poetskingdom/freerasp_debug rep4 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:35] DONE  pixel3 poetskingdom/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:35] START pixel3 poetskingdom/allatori_debug rep8 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:35] DONE  pixel3 poetskingdom/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:35] START pixel3 tipuous/freerasp_debug rep3 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:35] DONE  pixel3 tipuous/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:35] START pixel3 tipuous/freerasp_debug rep2 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:36] DONE  pixel3 tipuous/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:36] START pixel3 documenter/allatori_debug rep9 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:36] DONE  pixel3 documenter/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:36] START pixel3 keep_recipe/baseline_debug rep4 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:36] DONE  pixel3 keep_recipe/baseline_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:36] START pixel3 linkhub/freerasp_debug rep6 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:36] DONE  pixel3 linkhub/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:36] START pixel3 linkhub/allatori_debug rep9 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:36] DONE  pixel3 linkhub/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:36] START pixel3 documenter/bangcle_debug rep2 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:36] DONE  pixel3 documenter/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:36] START pixel3 poetskingdom/freerasp_debug rep2 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:36] DONE  pixel3 poetskingdom/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:36] START pixel3 pdfviewer/allatori_debug rep4 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 pdfviewer/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 tipuous/bangcle_debug rep3 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 tipuous/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 poetskingdom/allatori_debug rep1 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 poetskingdom/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 linkhub/freerasp_debug rep5 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 linkhub/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 linkhub/freerasp_debug rep8 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 linkhub/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 medtimer/baseline_debug rep6 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 medtimer/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 poetskingdom/freerasp_debug rep6 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 poetskingdom/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 itsok/freerasp_debug rep2 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:37] DONE  pixel3 itsok/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:37] START pixel3 calculator/baseline_debug rep5 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:38] DONE  pixel3 calculator/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:38] START pixel3 androidskk/baseline_debug rep3 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:38] DONE  pixel3 androidskk/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:38] START pixel3 androidskk/bangcle_debug rep2 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:38] DONE  pixel3 androidskk/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:38] START pixel3 documenter/freerasp_debug rep3 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:38] DONE  pixel3 documenter/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:38] START pixel3 medtimer/baseline_debug rep4 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:38] DONE  pixel3 medtimer/baseline_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:38] START pixel3 androidskk/freerasp_debug rep5 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:38] DONE  pixel3 androidskk/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:38] START pixel3 calculator/bangcle_debug rep1 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:38] DONE  pixel3 calculator/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:38] START pixel3 tipuous/baseline_debug rep3 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 tipuous/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 calculator/freerasp_debug rep7 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 calculator/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 pdfviewer/baseline_debug rep9 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 pdfviewer/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 androidskk/freerasp_debug rep9 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 androidskk/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 documenter/allatori_debug rep2 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 documenter/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 poetskingdom/bangcle_debug rep5 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 poetskingdom/bangcle_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 pdfviewer/allatori_debug rep10 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 pdfviewer/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 pdfviewer/allatori_debug rep7 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:39] DONE  pixel3 pdfviewer/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:39] START pixel3 poetskingdom/bangcle_debug rep1 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:40] DONE  pixel3 poetskingdom/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:40] START pixel3 itsok/bangcle_debug rep7 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:40] DONE  pixel3 itsok/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:40] START pixel3 itsok/allatori_debug rep4 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:40] DONE  pixel3 itsok/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:40] START pixel3 pdfviewer/baseline_debug rep7 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:40] DONE  pixel3 pdfviewer/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:40] START pixel3 androidskk/freerasp_debug rep10 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:40] DONE  pixel3 androidskk/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:40] START pixel3 poetskingdom/bangcle_debug rep9 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:40] DONE  pixel3 poetskingdom/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:40] START pixel3 documenter/baseline_debug rep8 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:40] DONE  pixel3 documenter/baseline_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:40] START pixel3 pdfviewer/allatori_debug rep9 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:41] DONE  pixel3 pdfviewer/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:41] START pixel3 calculator/allatori_debug rep2 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:41] DONE  pixel3 calculator/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:41] START pixel3 poetskingdom/allatori_debug rep2 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:41] DONE  pixel3 poetskingdom/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:41] START pixel3 calculator/bangcle_debug rep3 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:41] DONE  pixel3 calculator/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:41] START pixel3 keep_recipe/bangcle_debug rep4 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:41] DONE  pixel3 keep_recipe/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:41] START pixel3 itsok/allatori_debug rep7 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:41] DONE  pixel3 itsok/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:41] START pixel3 androidskk/bangcle_debug rep4 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:41] DONE  pixel3 androidskk/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:41] START pixel3 linkhub/bangcle_debug rep10 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:42] DONE  pixel3 linkhub/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:42] START pixel3 tipuous/baseline_debug rep2 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:42] DONE  pixel3 tipuous/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:42] START pixel3 pdfviewer/bangcle_debug rep2 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:42] DONE  pixel3 pdfviewer/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:42] START pixel3 itsok/baseline_debug rep3 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:42] DONE  pixel3 itsok/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:42] START pixel3 documenter/baseline_debug rep3 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:42] DONE  pixel3 documenter/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:42] START pixel3 documenter/bangcle_debug rep9 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:42] DONE  pixel3 documenter/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:42] START pixel3 medtimer/allatori_debug rep6 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:42] DONE  pixel3 medtimer/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:42] START pixel3 keep_recipe/baseline_debug rep7 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:43] DONE  pixel3 keep_recipe/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:43] START pixel3 poetskingdom/allatori_debug rep5 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:43] DONE  pixel3 poetskingdom/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:43] START pixel3 tipuous/freerasp_debug rep8 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:43] DONE  pixel3 tipuous/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:43] START pixel3 linkhub/bangcle_debug rep8 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:43] DONE  pixel3 linkhub/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:43] START pixel3 itsok/freerasp_debug rep1 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:43] DONE  pixel3 itsok/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:43] START pixel3 itsok/bangcle_debug rep3 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:43] DONE  pixel3 itsok/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:43] START pixel3 linkhub/baseline_debug rep10 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 linkhub/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 documenter/bangcle_debug rep6 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 documenter/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 medtimer/bangcle_debug rep5 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 medtimer/bangcle_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 itsok/baseline_debug rep5 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 itsok/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 documenter/freerasp_debug rep5 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 documenter/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 pdfviewer/freerasp_debug rep3 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 pdfviewer/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 medtimer/freerasp_debug rep10 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 medtimer/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 medtimer/allatori_debug rep5 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:44] DONE  pixel3 medtimer/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:44] START pixel3 pdfviewer/allatori_debug rep5 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:45] DONE  pixel3 pdfviewer/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:45] START pixel3 keep_recipe/bangcle_debug rep10 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:45] DONE  pixel3 keep_recipe/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:45] START pixel3 linkhub/bangcle_debug rep4 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:45] DONE  pixel3 linkhub/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:45] START pixel3 linkhub/baseline_debug rep6 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:45] DONE  pixel3 linkhub/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:45] START pixel3 calculator/bangcle_debug rep10 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:45] DONE  pixel3 calculator/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:45] START pixel3 calculator/allatori_debug rep7 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:45] DONE  pixel3 calculator/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:45] START pixel3 pdfviewer/freerasp_debug rep6 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:45] DONE  pixel3 pdfviewer/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:45] START pixel3 medtimer/freerasp_debug rep8 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 medtimer/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:46] START pixel3 pdfviewer/allatori_debug rep6 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 pdfviewer/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:46] START pixel3 calculator/allatori_debug rep8 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 calculator/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:46] START pixel3 poetskingdom/freerasp_debug rep1 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 poetskingdom/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:46] START pixel3 poetskingdom/allatori_debug rep9 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 poetskingdom/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:46] START pixel3 pdfviewer/bangcle_debug rep9 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 pdfviewer/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:46] START pixel3 documenter/allatori_debug rep10 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 documenter/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:46] START pixel3 androidskk/bangcle_debug rep7 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:46] DONE  pixel3 androidskk/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 keep_recipe/bangcle_debug rep8 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:47] DONE  pixel3 keep_recipe/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 medtimer/bangcle_debug rep7 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:47] DONE  pixel3 medtimer/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 calculator/allatori_debug rep3 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:47] DONE  pixel3 calculator/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 calculator/bangcle_debug rep7 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:47] DONE  pixel3 calculator/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 androidskk/bangcle_debug rep1 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:47] DONE  pixel3 androidskk/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 documenter/bangcle_debug rep3 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:47] DONE  pixel3 documenter/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 keep_recipe/freerasp_debug rep9 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:47] DONE  pixel3 keep_recipe/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:47] START pixel3 keep_recipe/allatori_debug rep9 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 keep_recipe/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 medtimer/bangcle_debug rep6 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 medtimer/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 androidskk/baseline_debug rep6 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 androidskk/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 androidskk/baseline_debug rep9 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 androidskk/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 itsok/freerasp_debug rep9 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 itsok/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 documenter/allatori_debug rep1 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 documenter/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 poetskingdom/freerasp_debug rep10 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 poetskingdom/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 androidskk/allatori_debug rep4 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:48] DONE  pixel3 androidskk/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:48] START pixel3 poetskingdom/allatori_debug rep6 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:49] DONE  pixel3 poetskingdom/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:49] START pixel3 keep_recipe/freerasp_debug rep8 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:49] DONE  pixel3 keep_recipe/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:49] START pixel3 itsok/bangcle_debug rep4 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:49] DONE  pixel3 itsok/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:49] START pixel3 poetskingdom/freerasp_debug rep3 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:49] DONE  pixel3 poetskingdom/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:49] START pixel3 linkhub/freerasp_debug rep7 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:49] DONE  pixel3 linkhub/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:49] START pixel3 medtimer/baseline_debug rep1 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:49] DONE  pixel3 medtimer/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:49] START pixel3 documenter/freerasp_debug rep6 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:49] DONE  pixel3 documenter/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:49] START pixel3 tipuous/baseline_debug rep1 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:50] DONE  pixel3 tipuous/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:50] START pixel3 androidskk/bangcle_debug rep3 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:50] DONE  pixel3 androidskk/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:50] START pixel3 medtimer/bangcle_debug rep10 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:50] DONE  pixel3 medtimer/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:50] START pixel3 pdfviewer/freerasp_debug rep1 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:50] DONE  pixel3 pdfviewer/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:50] START pixel3 poetskingdom/baseline_debug rep3 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:50] DONE  pixel3 poetskingdom/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:50] START pixel3 tipuous/allatori_debug rep2 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:50] DONE  pixel3 tipuous/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:50] START pixel3 tipuous/freerasp_debug rep10 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:51] DONE  pixel3 tipuous/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:51] START pixel3 itsok/freerasp_debug rep6 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:51] DONE  pixel3 itsok/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:51] START pixel3 pdfviewer/baseline_debug rep2 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:51] DONE  pixel3 pdfviewer/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:51] START pixel3 linkhub/baseline_debug rep8 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:51] DONE  pixel3 linkhub/baseline_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:51] START pixel3 calculator/baseline_debug rep8 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:51] DONE  pixel3 calculator/baseline_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:51] START pixel3 tipuous/freerasp_debug rep9 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:51] DONE  pixel3 tipuous/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:51] START pixel3 documenter/bangcle_debug rep1 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:51] DONE  pixel3 documenter/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:51] START pixel3 linkhub/baseline_debug rep3 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:52] DONE  pixel3 linkhub/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:52] START pixel3 calculator/baseline_debug rep3 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:52] DONE  pixel3 calculator/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:52] START pixel3 medtimer/baseline_debug rep10 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:52] DONE  pixel3 medtimer/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:52] START pixel3 medtimer/freerasp_debug rep5 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:52] DONE  pixel3 medtimer/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:52] START pixel3 keep_recipe/allatori_debug rep7 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:52] DONE  pixel3 keep_recipe/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:52] START pixel3 pdfviewer/bangcle_debug rep7 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:52] DONE  pixel3 pdfviewer/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:52] START pixel3 linkhub/freerasp_debug rep1 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:52] DONE  pixel3 linkhub/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:52] START pixel3 linkhub/freerasp_debug rep4 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:53] DONE  pixel3 linkhub/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:53] START pixel3 pdfviewer/bangcle_debug rep5 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:53] DONE  pixel3 pdfviewer/bangcle_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:53] START pixel3 tipuous/allatori_debug rep10 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:53] DONE  pixel3 tipuous/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:53] START pixel3 linkhub/freerasp_debug rep2 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:53] DONE  pixel3 linkhub/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:53] START pixel3 itsok/bangcle_debug rep10 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:53] DONE  pixel3 itsok/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:53] START pixel3 keep_recipe/baseline_debug rep1 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:53] DONE  pixel3 keep_recipe/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:53] START pixel3 keep_recipe/allatori_debug rep2 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:53] DONE  pixel3 keep_recipe/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:53] START pixel3 pdfviewer/baseline_debug rep1 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:54] DONE  pixel3 pdfviewer/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:54] START pixel3 androidskk/freerasp_debug rep3 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:54] DONE  pixel3 androidskk/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:54] START pixel3 calculator/freerasp_debug rep8 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:54] DONE  pixel3 calculator/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:54] START pixel3 medtimer/allatori_debug rep3 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:54] DONE  pixel3 medtimer/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:54] START pixel3 itsok/baseline_debug rep10 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:54] DONE  pixel3 itsok/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:54] START pixel3 pdfviewer/freerasp_debug rep9 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:55] DONE  pixel3 pdfviewer/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:55] START pixel3 androidskk/freerasp_debug rep8 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:55] DONE  pixel3 androidskk/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:55] START pixel3 medtimer/baseline_debug rep3 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:55] DONE  pixel3 medtimer/baseline_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:55] START pixel3 pdfviewer/bangcle_debug rep10 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:55] DONE  pixel3 pdfviewer/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:55] START pixel3 linkhub/baseline_debug rep1 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:55] DONE  pixel3 linkhub/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:55] START pixel3 calculator/baseline_debug rep2 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:55] DONE  pixel3 calculator/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:55] START pixel3 androidskk/freerasp_debug rep4 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:55] DONE  pixel3 androidskk/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:55] START pixel3 poetskingdom/freerasp_debug rep7 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 poetskingdom/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 tipuous/baseline_debug rep10 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 tipuous/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 calculator/freerasp_debug rep2 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 calculator/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 documenter/allatori_debug rep5 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 documenter/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 linkhub/baseline_debug rep4 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 linkhub/baseline_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 calculator/allatori_debug rep6 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 calculator/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 poetskingdom/baseline_debug rep8 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 poetskingdom/baseline_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 androidskk/allatori_debug rep3 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:56] DONE  pixel3 androidskk/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:56] START pixel3 keep_recipe/freerasp_debug rep10 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:57] DONE  pixel3 keep_recipe/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:57] START pixel3 tipuous/baseline_debug rep8 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:57] DONE  pixel3 tipuous/baseline_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:57] START pixel3 keep_recipe/bangcle_debug rep6 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:57] DONE  pixel3 keep_recipe/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:39:57] START pixel3 linkhub/baseline_debug rep5 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:57] DONE  pixel3 linkhub/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:39:57] START pixel3 documenter/allatori_debug rep4 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:57] DONE  pixel3 documenter/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:57] START pixel3 medtimer/allatori_debug rep7 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:57] DONE  pixel3 medtimer/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:57] START pixel3 tipuous/allatori_debug rep3 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:57] DONE  pixel3 tipuous/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:39:57] START pixel3 itsok/allatori_debug rep1 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:58] DONE  pixel3 itsok/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:58] START pixel3 calculator/baseline_debug rep10 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:58] DONE  pixel3 calculator/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:39:58] START pixel3 documenter/baseline_debug rep4 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:58] DONE  pixel3 documenter/baseline_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:58] START pixel3 linkhub/bangcle_debug rep9 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:58] DONE  pixel3 linkhub/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:58] START pixel3 pdfviewer/allatori_debug rep8 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:58] DONE  pixel3 pdfviewer/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:58] START pixel3 linkhub/allatori_debug rep4 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:58] DONE  pixel3 linkhub/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:58] START pixel3 keep_recipe/bangcle_debug rep9 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:58] DONE  pixel3 keep_recipe/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:39:58] START pixel3 calculator/baseline_debug rep4 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:59] DONE  pixel3 calculator/baseline_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:59] START pixel3 itsok/allatori_debug rep8 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:59] DONE  pixel3 itsok/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:59] START pixel3 calculator/freerasp_debug rep4 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:59] DONE  pixel3 calculator/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:59] START pixel3 medtimer/baseline_debug rep8 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:59] DONE  pixel3 medtimer/baseline_debug rep8 FAIL(safety-min-level) wall=0s
+[03:39:59] START pixel3 documenter/bangcle_debug rep7 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:59] DONE  pixel3 documenter/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:39:59] START pixel3 medtimer/allatori_debug rep4 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:59] DONE  pixel3 medtimer/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:39:59] START pixel3 calculator/freerasp_debug rep1 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:39:59] DONE  pixel3 calculator/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:39:59] START pixel3 poetskingdom/bangcle_debug rep10 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:00] DONE  pixel3 poetskingdom/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:00] START pixel3 tipuous/bangcle_debug rep6 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:00] DONE  pixel3 tipuous/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:00] START pixel3 documenter/freerasp_debug rep7 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:00] DONE  pixel3 documenter/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:00] START pixel3 medtimer/baseline_debug rep9 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:00] DONE  pixel3 medtimer/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:00] START pixel3 androidskk/baseline_debug rep10 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:00] DONE  pixel3 androidskk/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:00] START pixel3 medtimer/freerasp_debug rep1 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:00] DONE  pixel3 medtimer/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:00] START pixel3 itsok/baseline_debug rep6 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:00] DONE  pixel3 itsok/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:00] START pixel3 itsok/freerasp_debug rep8 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 itsok/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 linkhub/allatori_debug rep8 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 linkhub/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 keep_recipe/allatori_debug rep5 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 keep_recipe/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 tipuous/baseline_debug rep5 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 tipuous/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 poetskingdom/bangcle_debug rep2 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 poetskingdom/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 tipuous/bangcle_debug rep2 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 tipuous/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 poetskingdom/baseline_debug rep2 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 poetskingdom/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 poetskingdom/allatori_debug rep4 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:01] DONE  pixel3 poetskingdom/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:01] START pixel3 androidskk/allatori_debug rep6 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:02] DONE  pixel3 androidskk/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:02] START pixel3 pdfviewer/bangcle_debug rep6 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:02] DONE  pixel3 pdfviewer/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:02] START pixel3 linkhub/baseline_debug rep2 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:02] DONE  pixel3 linkhub/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:02] START pixel3 itsok/allatori_debug rep9 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:02] DONE  pixel3 itsok/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:02] START pixel3 androidskk/allatori_debug rep5 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:02] DONE  pixel3 androidskk/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:02] START pixel3 keep_recipe/bangcle_debug rep7 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:02] DONE  pixel3 keep_recipe/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:02] START pixel3 itsok/bangcle_debug rep8 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:02] DONE  pixel3 itsok/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:02] START pixel3 tipuous/bangcle_debug rep4 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:03] DONE  pixel3 tipuous/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:03] START pixel3 pdfviewer/allatori_debug rep1 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:03] DONE  pixel3 pdfviewer/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:03] START pixel3 linkhub/allatori_debug rep6 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:03] DONE  pixel3 linkhub/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:03] START pixel3 poetskingdom/baseline_debug rep9 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:03] DONE  pixel3 poetskingdom/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:03] START pixel3 pdfviewer/freerasp_debug rep5 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:03] DONE  pixel3 pdfviewer/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:03] START pixel3 tipuous/allatori_debug rep8 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:03] DONE  pixel3 tipuous/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:03] START pixel3 androidskk/bangcle_debug rep10 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 androidskk/bangcle_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 androidskk/allatori_debug rep1 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 androidskk/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 poetskingdom/allatori_debug rep7 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 poetskingdom/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 keep_recipe/allatori_debug rep1 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 keep_recipe/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 documenter/baseline_debug rep6 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 documenter/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 pdfviewer/allatori_debug rep3 cfg=pdfviewer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 pdfviewer/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 itsok/baseline_debug rep7 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 itsok/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 androidskk/baseline_debug rep1 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:04] DONE  pixel3 androidskk/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:04] START pixel3 linkhub/baseline_debug rep7 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:05] DONE  pixel3 linkhub/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:05] START pixel3 androidskk/freerasp_debug rep2 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:05] DONE  pixel3 androidskk/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:05] START pixel3 poetskingdom/bangcle_debug rep8 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:05] DONE  pixel3 poetskingdom/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:05] START pixel3 itsok/allatori_debug rep3 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:05] DONE  pixel3 itsok/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:05] START pixel3 keep_recipe/freerasp_debug rep6 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:05] DONE  pixel3 keep_recipe/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:05] START pixel3 documenter/baseline_debug rep1 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:06] DONE  pixel3 documenter/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:06] START pixel3 androidskk/bangcle_debug rep8 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:06] DONE  pixel3 androidskk/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:06] START pixel3 pdfviewer/baseline_debug rep6 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:06] DONE  pixel3 pdfviewer/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:06] START pixel3 pdfviewer/freerasp_debug rep8 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:06] DONE  pixel3 pdfviewer/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:06] START pixel3 tipuous/bangcle_debug rep1 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:06] DONE  pixel3 tipuous/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:06] START pixel3 documenter/freerasp_debug rep1 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:06] DONE  pixel3 documenter/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:06] START pixel3 androidskk/bangcle_debug rep6 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:07] DONE  pixel3 androidskk/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:07] START pixel3 medtimer/freerasp_debug rep6 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:07] DONE  pixel3 medtimer/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:07] START pixel3 keep_recipe/freerasp_debug rep5 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:07] DONE  pixel3 keep_recipe/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:07] START pixel3 calculator/bangcle_debug rep8 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:07] DONE  pixel3 calculator/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:07] START pixel3 linkhub/allatori_debug rep10 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:07] DONE  pixel3 linkhub/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:07] START pixel3 poetskingdom/baseline_debug rep7 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:07] DONE  pixel3 poetskingdom/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:07] START pixel3 calculator/freerasp_debug rep6 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:07] DONE  pixel3 calculator/freerasp_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:07] START pixel3 calculator/bangcle_debug rep6 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:08] DONE  pixel3 calculator/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:08] START pixel3 tipuous/allatori_debug rep4 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:08] DONE  pixel3 tipuous/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:08] START pixel3 poetskingdom/freerasp_debug rep5 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:08] DONE  pixel3 poetskingdom/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:08] START pixel3 itsok/allatori_debug rep2 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:08] DONE  pixel3 itsok/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:08] START pixel3 calculator/bangcle_debug rep9 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:08] DONE  pixel3 calculator/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:08] START pixel3 linkhub/freerasp_debug rep9 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:08] DONE  pixel3 linkhub/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:08] START pixel3 itsok/baseline_debug rep9 cfg=itsok_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:08] DONE  pixel3 itsok/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:08] START pixel3 itsok/freerasp_debug rep10 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:09] DONE  pixel3 itsok/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:09] START pixel3 androidskk/bangcle_debug rep9 cfg=androidskk_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:09] DONE  pixel3 androidskk/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:09] START pixel3 documenter/bangcle_debug rep5 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:09] DONE  pixel3 documenter/bangcle_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:09] START pixel3 tipuous/baseline_debug rep6 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:09] DONE  pixel3 tipuous/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:09] START pixel3 calculator/freerasp_debug rep10 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:09] DONE  pixel3 calculator/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:09] START pixel3 medtimer/allatori_debug rep10 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:09] DONE  pixel3 medtimer/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:09] START pixel3 itsok/bangcle_debug rep9 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:09] DONE  pixel3 itsok/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:09] START pixel3 linkhub/allatori_debug rep1 cfg=linkhub_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:10] DONE  pixel3 linkhub/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:10] START pixel3 documenter/freerasp_debug rep8 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:10] DONE  pixel3 documenter/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:10] START pixel3 pdfviewer/baseline_debug rep5 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:10] DONE  pixel3 pdfviewer/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:10] START pixel3 itsok/freerasp_debug rep3 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:10] DONE  pixel3 itsok/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:10] START pixel3 documenter/baseline_debug rep10 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:10] DONE  pixel3 documenter/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:10] START pixel3 androidskk/allatori_debug rep7 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:10] DONE  pixel3 androidskk/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:10] START pixel3 medtimer/freerasp_debug rep2 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:11] DONE  pixel3 medtimer/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:11] START pixel3 itsok/bangcle_debug rep6 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:11] DONE  pixel3 itsok/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:11] START pixel3 keep_recipe/baseline_debug rep10 cfg=keep_recipe_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:11] DONE  pixel3 keep_recipe/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:11] START pixel3 linkhub/bangcle_debug rep1 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:11] DONE  pixel3 linkhub/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:11] START pixel3 medtimer/allatori_debug rep8 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:11] DONE  pixel3 medtimer/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:11] START pixel3 calculator/allatori_debug rep4 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:11] DONE  pixel3 calculator/allatori_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:11] START pixel3 androidskk/baseline_debug rep2 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:11] DONE  pixel3 androidskk/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:11] START pixel3 poetskingdom/allatori_debug rep3 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:12] DONE  pixel3 poetskingdom/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:12] START pixel3 androidskk/allatori_debug rep9 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:12] DONE  pixel3 androidskk/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:12] START pixel3 poetskingdom/freerasp_debug rep9 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:12] DONE  pixel3 poetskingdom/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:12] START pixel3 pdfviewer/freerasp_debug rep4 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:12] DONE  pixel3 pdfviewer/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:12] START pixel3 calculator/freerasp_debug rep9 cfg=calculator_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:12] DONE  pixel3 calculator/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:12] START pixel3 keep_recipe/allatori_debug rep3 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:12] DONE  pixel3 keep_recipe/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:12] START pixel3 poetskingdom/freerasp_debug rep8 cfg=poetskingdom_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:12] DONE  pixel3 poetskingdom/freerasp_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:12] START pixel3 itsok/bangcle_debug rep1 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:13] DONE  pixel3 itsok/bangcle_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:13] START pixel3 poetskingdom/bangcle_debug rep3 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:13] DONE  pixel3 poetskingdom/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:13] START pixel3 tipuous/baseline_debug rep7 cfg=tipuous_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:13] DONE  pixel3 tipuous/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:13] START pixel3 medtimer/freerasp_debug rep3 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:13] DONE  pixel3 medtimer/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:13] START pixel3 tipuous/allatori_debug rep7 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:13] DONE  pixel3 tipuous/allatori_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:13] START pixel3 medtimer/bangcle_debug rep3 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:13] DONE  pixel3 medtimer/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:13] START pixel3 medtimer/bangcle_debug rep9 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:14] DONE  pixel3 medtimer/bangcle_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:14] START pixel3 androidskk/freerasp_debug rep1 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:14] DONE  pixel3 androidskk/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:14] START pixel3 documenter/freerasp_debug rep2 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:14] DONE  pixel3 documenter/freerasp_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:14] START pixel3 calculator/baseline_debug rep6 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:14] DONE  pixel3 calculator/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:14] START pixel3 documenter/freerasp_debug rep4 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:15] DONE  pixel3 documenter/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:15] START pixel3 calculator/allatori_debug rep5 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:15] DONE  pixel3 calculator/allatori_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:15] START pixel3 calculator/bangcle_debug rep4 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:15] DONE  pixel3 calculator/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:15] START pixel3 keep_recipe/freerasp_debug rep7 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:15] DONE  pixel3 keep_recipe/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:15] START pixel3 pdfviewer/freerasp_debug rep7 cfg=pdfviewer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:15] DONE  pixel3 pdfviewer/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:15] START pixel3 keep_recipe/freerasp_debug rep3 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:15] DONE  pixel3 keep_recipe/freerasp_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:15] START pixel3 documenter/allatori_debug rep3 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:16] DONE  pixel3 documenter/allatori_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:16] START pixel3 documenter/freerasp_debug rep10 cfg=documenter_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:16] DONE  pixel3 documenter/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:16] START pixel3 medtimer/freerasp_debug rep9 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:16] DONE  pixel3 medtimer/freerasp_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:16] START pixel3 calculator/bangcle_debug rep5 cfg=calculator_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:16] DONE  pixel3 calculator/bangcle_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:16] START pixel3 androidskk/baseline_debug rep4 cfg=androidskk_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:16] DONE  pixel3 androidskk/baseline_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:16] START pixel3 poetskingdom/bangcle_debug rep7 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:16] DONE  pixel3 poetskingdom/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:16] START pixel3 itsok/bangcle_debug rep2 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:17] DONE  pixel3 itsok/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:17] START pixel3 keep_recipe/bangcle_debug rep2 cfg=keep_recipe_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:17] DONE  pixel3 keep_recipe/bangcle_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:17] START pixel3 androidskk/freerasp_debug rep7 cfg=androidskk_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:17] DONE  pixel3 androidskk/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:17] START pixel3 linkhub/freerasp_debug rep10 cfg=linkhub_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:17] DONE  pixel3 linkhub/freerasp_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:17] START pixel3 keep_recipe/allatori_debug rep8 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:17] DONE  pixel3 keep_recipe/allatori_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:17] START pixel3 tipuous/freerasp_debug rep4 cfg=tipuous_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:17] DONE  pixel3 tipuous/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:17] START pixel3 documenter/allatori_debug rep6 cfg=documenter_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:17] DONE  pixel3 documenter/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:17] START pixel3 linkhub/bangcle_debug rep7 cfg=linkhub_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 linkhub/bangcle_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 documenter/baseline_debug rep5 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 documenter/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 medtimer/allatori_debug rep1 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 medtimer/allatori_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 itsok/freerasp_debug rep5 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 itsok/freerasp_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 medtimer/allatori_debug rep9 cfg=medtimer_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 medtimer/allatori_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 poetskingdom/allatori_debug rep10 cfg=poetskingdom_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 poetskingdom/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 medtimer/baseline_debug rep5 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 medtimer/baseline_debug rep5 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 keep_recipe/freerasp_debug rep1 cfg=keep_recipe_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:18] DONE  pixel3 keep_recipe/freerasp_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:18] START pixel3 medtimer/bangcle_debug rep8 cfg=medtimer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:19] DONE  pixel3 medtimer/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:19] START pixel3 poetskingdom/bangcle_debug rep4 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:19] DONE  pixel3 poetskingdom/bangcle_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:19] START pixel3 itsok/freerasp_debug rep4 cfg=itsok_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:19] DONE  pixel3 itsok/freerasp_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:19] START pixel3 poetskingdom/bangcle_debug rep6 cfg=poetskingdom_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:19] DONE  pixel3 poetskingdom/bangcle_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:19] START pixel3 medtimer/baseline_debug rep2 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:19] DONE  pixel3 medtimer/baseline_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:19] START pixel3 keep_recipe/allatori_debug rep6 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:19] DONE  pixel3 keep_recipe/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:19] START pixel3 calculator/baseline_debug rep9 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:19] DONE  pixel3 calculator/baseline_debug rep9 FAIL(safety-min-level) wall=0s
+[03:40:19] START pixel3 medtimer/baseline_debug rep7 cfg=medtimer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:20] DONE  pixel3 medtimer/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:20] START pixel3 calculator/baseline_debug rep1 cfg=calculator_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:20] DONE  pixel3 calculator/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:20] START pixel3 tipuous/bangcle_debug rep8 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:20] DONE  pixel3 tipuous/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:20] START pixel3 poetskingdom/baseline_debug rep1 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:20] DONE  pixel3 poetskingdom/baseline_debug rep1 FAIL(safety-min-level) wall=0s
+[03:40:20] START pixel3 medtimer/freerasp_debug rep7 cfg=medtimer_freerasp_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:20] DONE  pixel3 medtimer/freerasp_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:20] START pixel3 keep_recipe/allatori_debug rep10 cfg=keep_recipe_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:20] DONE  pixel3 keep_recipe/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:20] START pixel3 documenter/bangcle_debug rep8 cfg=documenter_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:20] DONE  pixel3 documenter/bangcle_debug rep8 FAIL(safety-min-level) wall=0s
+[03:40:20] START pixel3 pdfviewer/baseline_debug rep10 cfg=pdfviewer_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:21] DONE  pixel3 pdfviewer/baseline_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:21] START pixel3 itsok/allatori_debug rep10 cfg=itsok_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:21] DONE  pixel3 itsok/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:21] START pixel3 calculator/allatori_debug rep10 cfg=calculator_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:21] DONE  pixel3 calculator/allatori_debug rep10 FAIL(safety-min-level) wall=0s
+[03:40:21] START pixel3 poetskingdom/baseline_debug rep4 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:21] DONE  pixel3 poetskingdom/baseline_debug rep4 FAIL(safety-min-level) wall=0s
+[03:40:21] START pixel3 pdfviewer/bangcle_debug rep3 cfg=pdfviewer_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:21] DONE  pixel3 pdfviewer/bangcle_debug rep3 FAIL(safety-min-level) wall=0s
+[03:40:21] START pixel3 androidskk/allatori_debug rep2 cfg=androidskk_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:21] DONE  pixel3 androidskk/allatori_debug rep2 FAIL(safety-min-level) wall=0s
+[03:40:21] START pixel3 documenter/baseline_debug rep7 cfg=documenter_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:21] DONE  pixel3 documenter/baseline_debug rep7 FAIL(safety-min-level) wall=0s
+[03:40:21] START pixel3 tipuous/allatori_debug rep6 cfg=tipuous_allatori_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:22] DONE  pixel3 tipuous/allatori_debug rep6 FAIL(safety-min-level) wall=0s
+[03:40:22] START pixel3 poetskingdom/baseline_debug rep6 cfg=poetskingdom_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=24 status=3 (band=30-70)
+  ABORT: level=24 below SAFETY_MIN_LEVEL (25). Plug phone in + recharge before continuing.
+[03:40:22] DONE  pixel3 poetskingdom/baseline_debug rep6 FAIL(safety-min-level) wall=0s
+STREAM_SUMMARY pixel3 total=384 pass=28 fail=356 timeout=0 skipped=16

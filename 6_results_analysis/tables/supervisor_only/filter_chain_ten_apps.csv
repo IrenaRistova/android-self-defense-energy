@@ -1,0 +1,10 @@
+,pilot,series1,series2,series3,series pooled
+loaded,1200,1200,1200,1200,3600
+scientifically_valid,1120,1112,1106,1113,3331
+not a negative control,1070,1062,1057,1063,3182
+cohort (drop none),1070,1062,1057,1063,3182
+build type (drop itsok's release Allatori build),1041,1034,1027,1033,3094
+build parity (drop medtimer's packed build: coverage probes),1012,1004,998,1003,3005
+scenarios complete,1012,1004,998,1003,3005
+workload_joules > 0,1012,1004,998,1003,3005
+pilot regime (start >= 2026-08-07),740,1004,998,1003,3005

@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{The three protection families considered and their candidate tools. $^{*}$: the tool measured.}
+\label{tab:tools}
+\begin{tabular}{p{2.6cm}p{2.6cm}p{2.2cm}p{2.3cm}p{3.6cm}p{2.2cm}}
+\toprule
+\textbf{Family} & \textbf{Protects} & \textbf{Inserted} & \textbf{Acts} & \textbf{Candidate tools} & \textbf{References} \\
+\midrule
+Obfuscation (code transformation) & names, strings and control flow of the Java/DEX code & at build time (Gradle plugin or command line) & statically: the transformed code runs as it is & ProGuard, R8, DexGuard, Allatori$^{*}$, DashO, Obfuscapk & \cite{Faruki2017AndroidCodeProtectionSurvey} \\
+Packing (loader-based) & the DEX bytecode, encrypted as a payload & after compilation, on the APK (vendor service) & at run time: a stub decrypts and loads the payload & Bangcle$^{*}$, Qihoo 360 Jiagu, Tencent Legu, Ijiami, AliProtect, Baidu, Naga, Manxi, APKProtect, SecNeo & \cite{Duan2018AndroidUnpackers,Dong2022PackDiff,BlazquezTapiador2025AndroidProtectionWild} \\
+Runtime shielding (RASP) & the running application and its environment (debugger, root, hooks, tampering) & as an SDK at build time, or by wrapping the APK & at run time: checks and reacts & freeRASP$^{*}$, DexProtector, Appdome, Promon SHIELD, LIAPP, WhiteCryption, V-Key, Virbox Protector, AppSealing & \cite{Faruki2017AndroidCodeProtectionSurvey,BlazquezTapiador2025AndroidProtectionWild} \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Per-tool sources and reasons for exclusion: \texttt{candidate\_tools.csv} in the replication package. A fourth family, compilation of the bytecode to native code, was considered and not pursued; its one candidate, DroidPro, is a research prototype. freeRASP is freemium: an open-source integration layer around a proprietary binary core.
+\end{table*}

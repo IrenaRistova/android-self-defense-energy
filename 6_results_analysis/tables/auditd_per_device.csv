@@ -1,0 +1,13 @@
+device,technique,cells,with_auditd,with_auditd_main_process
+Pixel 3,Allatori,139,0,0
+Pixel 3,Bangcle,199,30,0
+Pixel 3,Control,224,29,0
+Pixel 3,freeRASP,232,232,232
+Pixel 6,Allatori,150,0,0
+Pixel 6,Bangcle,238,30,0
+Pixel 6,Control,269,30,0
+Pixel 6,freeRASP,269,269,269
+Pixel 9,Allatori,150,0,0
+Pixel 9,Bangcle,239,30,0
+Pixel 9,Control,267,30,0
+Pixel 9,freeRASP,269,269,269

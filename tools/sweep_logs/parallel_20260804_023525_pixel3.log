@@ -1,0 +1,25 @@
+[02:35:32] START pixel3 itsok/bangcle_debug rep5 cfg=itsok_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=65 status=3 (band=40-70)
+  top-up SKIPPED (level=65 >= 40)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-990233µA = ≥150mA)
+  mitmproxy replay: SKIP for itsok (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:40:08] DONE  pixel3 itsok/bangcle_debug rep5 PASS wall=276s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel3_itsok_bangcle_debug_r5.log
+[02:40:08] START pixel3 linkhub/baseline_debug rep9 cfg=linkhub_baseline_debug_pixel3_wifi_ykush.json
+  pre-cell: level=64 status=3 (band=40-70)
+  top-up SKIPPED (level=64 >= 40)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-882812µA = ≥150mA)
+  mitmproxy replay: SKIP for linkhub (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:45:57] DONE  pixel3 linkhub/baseline_debug rep9 PASS wall=349s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel3_linkhub_baseline_debug_r9.log
+[02:45:57] START pixel3 tipuous/bangcle_debug rep7 cfg=tipuous_bangcle_debug_pixel3_wifi_ykush.json
+  pre-cell: level=62 status=3 (band=40-70)
+  top-up SKIPPED (level=62 >= 40)
+  CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-625487µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:51:21] DONE  pixel3 tipuous/bangcle_debug rep7 PASS wall=324s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel3_tipuous_bangcle_debug_r7.log
+STREAM_SUMMARY pixel3 total=3 pass=3 fail=0 timeout=0 skipped=0

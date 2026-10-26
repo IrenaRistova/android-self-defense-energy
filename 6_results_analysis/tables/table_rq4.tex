@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{RQ4: mean difference from the control over the matched pairs, per device: memory (PSS, active phase, \%), threads that log (count), device-wide processor share in the active phase (points) and passive-phase length (\%). Bold: BH-adjusted $p < 0.05$; shaded: a detected increase.}
+\label{tab:rq4}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Device} & \textbf{Memory (\%)} & \textbf{Threads} & \textbf{CPU (pp)} & \textbf{Passive length (\%)} \\
+\midrule
+\multicolumn{5}{l}{\textit{Packing (Bangcle)}} \\
+Pixel 3 & \cellcolor{red!12}\textbf{+16.2} & $-$0.1 & +0.6 & +1.4 \\
+Pixel 6 & \cellcolor{red!12}\textbf{+9.3} & $-$0.1 & +0.2 & $-$2.0 \\
+Pixel 9 & \cellcolor{red!12}\textbf{+8.9} & +0.3 & $-$0.4 & +0.7 \\
+\midrule
+\multicolumn{5}{l}{\textit{Obfuscation (Allatori)}} \\
+Pixel 3 & +0.0 & $-$0.2 & +0.1 & +1.4 \\
+Pixel 6 & +0.0 & $-$0.2 & +0.1 & $-$0.1 \\
+Pixel 9 & +0.0 & $-$0.1 & +0.2 & $-$0.7 \\
+\midrule
+\multicolumn{5}{l}{\textit{Runtime shielding (freeRASP)}} \\
+Pixel 3 & \cellcolor{red!12}\textbf{+11.0} & \cellcolor{red!12}\textbf{+4.3} & \cellcolor{red!12}\textbf{+2.2} & \textbf{$-$9.3} \\
+Pixel 6 & \cellcolor{red!12}\textbf{+15.4} & \cellcolor{red!12}\textbf{+7.7} & \cellcolor{red!12}\textbf{+2.0} & \textbf{$-$1.1} \\
+Pixel 9 & \cellcolor{red!12}\textbf{+14.0} & \cellcolor{red!12}\textbf{+8.1} & \cellcolor{red!12}\textbf{+2.4} & $-$1.2 \\
+\bottomrule
+\end{tabular}
+\end{table}

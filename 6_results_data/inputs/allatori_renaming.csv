@@ -1,0 +1,11 @@
+app,verdict,classes_only_in_allatori,classes_only_in_baseline,short_named_new,apks
+calculator,OBFUSCATED,61,61,61,swept
+tipuous,OBFUSCATED,138,138,138,swept
+poetskingdom,OBFUSCATED,490,490,490,swept
+linkhub,WEAK_OR_NONE,0,52,0,swept
+medtimer,OBFUSCATED,400,400,398,swept
+androidskk,OBFUSCATED,65,48,65,swept
+keep_recipe,IDENTICAL_CLASS_SET,0,0,0,swept
+pdfviewer,OBFUSCATED,25,25,25,swept
+documenter,OBFUSCATED,143,143,143,swept
+itsok,OBFUSCATED,124,136,85,swept

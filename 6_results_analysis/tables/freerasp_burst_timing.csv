@@ -1,0 +1,5 @@
+device,core_from_s,core_to_s,extent_from_s,extent_to_s,peak_delta_w,peak_second_from,n_pairs
+all devices,4,15,4,19,2.0188195373590982,9,69
+Pixel 3,11,21,8,30,1.2811377301587303,13,21
+Pixel 6,4,15,4,16,3.333819115740741,6,24
+Pixel 9,4,12,3,16,2.112206976851852,8,24

@@ -1,0 +1,10 @@
+App,Category,Version,App classes,Scenarios,Devices,Bangcle,Allatori,freeRASP
+calculator,calculator,1.7.2,108,5,"P3, P6, P9",yes,yes,yes
+documenter,document viewer / converter,1.0.14.debug,189,5,"P3, P6, P9",yes,no working build,yes
+itsok,mental-health journal,0.0.1,395,10,"P3, P6, P9",yes,excluded: build type,yes
+keep_recipe,recipe manager,1.1,354,6,"P6, P9",yes,not transformed,yes
+linkhub,bookmark manager,2.1.0,852,5,"P3, P6, P9",yes,not transformed,yes
+medtimer,medication reminder,1.17.7,729,11,"P3, P6, P9",no pairs,active only,active only
+pdfviewer,PDF viewer,1.1,51,8,"P3, P6, P9",yes,yes,yes
+poetskingdom,creative writing / poetry editor,1.0.0,608,6,"P3, P6, P9",yes,yes,yes
+tipuous,receipt and tip tracker,1.30-debug,239,7,"P3, P6, P9",yes,yes,yes

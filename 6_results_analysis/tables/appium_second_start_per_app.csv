@@ -1,0 +1,13 @@
+app,action,second_start_phase,outcome,cells
+calculator,MAIN,passive,delivered to the running activity,357
+documenter,MAIN,active,new activity instance,179
+documenter,MAIN,active,no activity event,88
+itsok,MAIN,passive,new activity instance,1
+itsok,MAIN,passive,no activity event,266
+keep_recipe,MAIN,passive,new activity instance,180
+linkhub,SEND,active,new activity instance,240
+linkhub,SEND,passive,new activity instance,27
+medtimer,MAIN,passive,delivered to the running activity,266
+pdfviewer,MAIN,passive,no activity event,328
+poetskingdom,MAIN,passive,new activity instance,355
+tipuous,-,none,no second start,358

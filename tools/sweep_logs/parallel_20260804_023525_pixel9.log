@@ -1,0 +1,18 @@
+[02:35:36] START pixel9 calculator/allatori_debug rep2 cfg=calculator_allatori_debug_pixel9_wifi_ykush.json
+  pre-cell: level=65 status=3 (band=40-70)
+  top-up SKIPPED (level=65 >= 40)
+  CUT: verified — usb/online=0 on pixel9 (board port 1, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-2070312µA = ≥150mA)
+  mitmproxy replay: SKIP for calculator (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  POST-CELL: no AR output dir >= cell start matching phone_alias=Pixel 9-W — marked FAIL
+[02:40:36] DONE  pixel9 calculator/allatori_debug rep2 FAIL(ar_no_output_dir) wall=294s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel9_calculator_allatori_debug_r2.log
+[02:40:36] START pixel9 tipuous/allatori_debug rep3 cfg=tipuous_allatori_debug_pixel9_wifi_ykush.json
+  pre-cell: level=64 status=3 (band=40-70)
+  top-up SKIPPED (level=64 >= 40)
+  CUT: verified — usb/online=0 on pixel9 (board port 1, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1857812µA = ≥150mA)
+  mitmproxy replay: SKIP for tipuous (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:46:20] DONE  pixel9 tipuous/allatori_debug rep3 PASS wall=344s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel9_tipuous_allatori_debug_r3.log
+STREAM_SUMMARY pixel9 total=2 pass=1 fail=1 timeout=0 skipped=0

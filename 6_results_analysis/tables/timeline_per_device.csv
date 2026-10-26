@@ -1,0 +1,5 @@
+device,control_cells_with_log,launch_ttid_ms_median,launch_ttid_ms_mean,process_start_s,first_display_s,uiautomator2_server_start_s,appium_session_activity_start_s,passive_s,active_s,active_s_app_median_min,active_s_app_median_max
+Pixel 3,224,666.5,896.09375,-7.3580000000000005,-6.6915,1.75,3.478,30.805,110.0,94.0,126.0
+Pixel 6,269,305.0,433.32342007434943,-7.051,-6.714,2.459,3.772,25.4655,107.0,93.0,128.0
+Pixel 9,267,342.0,480.67790262172286,-8.12,-7.692,4.068,5.004,30.985,118.0,103.0,140.0
+all devices,760,382.5,586.3552631578947,-7.451,-6.9075,2.4705000000000004,3.781,29.553,113.0,95.0,133.0

@@ -1,0 +1,10 @@
+App,Builds,Same version,APK = run tables,Markers as expected,Differences
+calculator,4,yes,yes,yes,"NSC absent: Bangcle, freeRASP; INTERNET added: freeRASP"
+documenter,4,yes,yes,yes,INTERNET added: freeRASP
+itsok,4,yes,yes,yes,"NSC absent: Bangcle, freeRASP; INTERNET added: freeRASP; not a debug build: Allatori"
+keep_recipe,4,yes,yes,yes,"NSC absent: Allatori, Bangcle, freeRASP; INTERNET added: freeRASP"
+linkhub,4,yes,yes,yes,"NSC absent: Bangcle, freeRASP; INTERNET added: freeRASP"
+medtimer,4,yes,yes,yes,NSC absent: Bangcle
+pdfviewer,4,yes,yes,yes,none
+poetskingdom,4,yes,yes,yes,"NSC absent: Bangcle, freeRASP; INTERNET added: freeRASP"
+tipuous,4,yes,yes,yes,"NSC absent: Bangcle, freeRASP"

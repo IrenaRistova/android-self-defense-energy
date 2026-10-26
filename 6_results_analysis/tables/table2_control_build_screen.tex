@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Control-build screen: compiler-written source-file names in each control APK.}
+\label{tab:control-screen}
+\begin{tabular}{lrrrll}
+\toprule
+\textbf{App} & \textbf{Real / named} & \textbf{1-2 char} & \textbf{No attribute} & \textbf{Verdict} & \textbf{Cohort} \\
+\midrule
+androidskk & 0 / 236 & 158 & 14 & fail & excluded \\
+calculator & 91 / 98 & 0 & 10 & pass & in \\
+documenter & 158 / 177 & 0 & 12 & pass & in \\
+itsok & 329 / 378 & 0 & 17 & pass & in \\
+keep\_recipe & 231 / 341 & 0 & 13 & pass & in \\
+linkhub & 451 / 830 & 44 & 22 & warn & in \\
+medtimer & 338 / 714 & 0 & 15 & pass & in \\
+pdfviewer & 18 / 33 & 0 & 18 & pass & in \\
+poetskingdom & 497 / 594 & 0 & 14 & pass & in \\
+tipuous & 82 / 213 & 0 & 26 & pass & in \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Named: classes that carry a source-file attribute. Classes with no attribute are counted in neither direction; fewer than 10 named classes gives no verdict. Bangcle builds cannot be screened (encrypted DEX).
+\end{table*}

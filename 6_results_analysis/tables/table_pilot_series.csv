@@ -1,0 +1,5 @@
+Measure,Groups,Pilot median CV (%),Series median CV (%),Pilot groups > 15%,Series groups > 15%
+Active-phase energy,88,10.00,5.53,30 of 88,11 of 88
+Passive-phase energy,79,8.60,6.39,29 of 79,20 of 79
+Active-phase length,88,3.65,1.58,0 of 88,0 of 88
+Active-phase mean power,88,9.66,5.76,31 of 88,14 of 88

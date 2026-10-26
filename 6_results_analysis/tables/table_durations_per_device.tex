@@ -1,0 +1,40 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Phase length per cell (s) by device, build and phase, three series batches; each technique is listed under its own arm's control. medtimer's passive phase, which contains its introduction and is not in the passive-phase analysis, is given in its own row, over its analysed builds. Bold: the values the thesis states in words.}
+\label{tab:durations-device}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{4}{c}{\textbf{Passive phase (s)}} & \multicolumn{4}{c}{\textbf{Active phase (s)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+\textbf{Build} & \textbf{Cells} & \textbf{Mean} & \textbf{Median} & \textbf{SD} & \textbf{Cells} & \textbf{Mean} & \textbf{Median} & \textbf{SD} \\
+\midrule
+\multicolumn{9}{l}{\textit{Pixel 3}} \\
+Control (packing arm) & 196 & 34.2 & 30.8 & 9.2 & 196 & 111.7 & 114.0 & 11.5 \\
+Bangcle & 200 & 34.5 & 31.0 & 9.5 & 200 & 112.1 & 113.0 & 11.7 \\
+Control (obfuscation arm) & 109 & 35.6 & 32.4 & 6.8 & 137 & 109.6 & 108.0 & 11.0 \\
+Allatori & 111 & 36.0 & 32.6 & 7.8 & 140 & 109.8 & 108.0 & 10.7 \\
+Control (freeRASP arm) & 196 & 34.2 & \textbf{30.8} & 9.2 & 224 & 111.1 & \textbf{110.0} & 10.9 \\
+freeRASP & 202 & 30.6 & 28.5 & 8.0 & 232 & 110.5 & 108.5 & 10.7 \\
+medtimer, as measured & 87 & 104.8 & \textbf{104.9} & 2.6 & – & – & – & – \\
+\midrule
+\multicolumn{9}{l}{\textit{Pixel 6}} \\
+Control (packing arm) & 239 & 27.8 & 25.6 & 7.3 & 239 & 109.8 & 110.0 & 11.6 \\
+Bangcle & 238 & 27.1 & 25.2 & 6.4 & 238 & 109.4 & 110.0 & 11.3 \\
+Control (obfuscation arm) & 119 & 28.4 & 26.9 & 4.3 & 149 & 105.7 & 105.0 & 8.1 \\
+Allatori & 120 & 28.4 & 26.8 & 4.2 & 150 & 106.1 & 105.0 & 8.1 \\
+Control (freeRASP arm) & 239 & 27.8 & \textbf{25.6} & 7.3 & 269 & 109.1 & \textbf{108.0} & 11.1 \\
+freeRASP & 239 & 27.6 & 25.1 & 7.4 & 269 & 109.3 & 108.0 & 10.8 \\
+medtimer, as measured & 90 & 90.0 & \textbf{90.0} & 1.5 & – & – & – & – \\
+\midrule
+\multicolumn{9}{l}{\textit{Pixel 9}} \\
+Control (packing arm) & 238 & 33.3 & 30.9 & 7.7 & 238 & 120.2 & 118.0 & 11.1 \\
+Bangcle & 239 & 33.5 & 31.2 & 8.0 & 239 & 120.4 & 118.0 & 10.9 \\
+Control (obfuscation arm) & 118 & 34.8 & 33.2 & 5.6 & 147 & 118.1 & 116.0 & 7.2 \\
+Allatori & 120 & 34.6 & 32.6 & 5.7 & 150 & 118.1 & 116.0 & 7.2 \\
+Control (freeRASP arm) & 238 & 33.3 & \textbf{30.9} & 7.7 & 267 & 119.2 & \textbf{117.0} & 10.9 \\
+freeRASP & 239 & 32.9 & 30.5 & 8.0 & 269 & 119.5 & 118.0 & 10.7 \\
+medtimer, as measured & 89 & 107.2 & \textbf{107.5} & 2.8 & – & – & – & – \\
+\bottomrule
+\end{tabular}
+\end{table*}

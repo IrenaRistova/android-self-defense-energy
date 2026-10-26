@@ -1,0 +1,37 @@
+device,applications,window,build,intervals,median_wifi_mb,p10_wifi_mb,p90_wifi_mb,median_gap_s
+Pixel 3,medtimer,"passive phase, 4-15 s",Control,19,2.0613,2.01568,2.16622,35.357
+Pixel 3,medtimer,"passive phase, 4-15 s",freeRASP,27,2.0317,2.00868,2.0600199999999997,34.131
+Pixel 3,medtimer,"passive phase, other seconds",Control,94,1.64715,1.6274899999999999,1.69902,25.8995
+Pixel 3,medtimer,"passive phase, other seconds",freeRASP,93,1.654,1.63664,1.672,25.516
+Pixel 3,medtimer,active phase,Control,121,2.1206,1.9831,2.192,24.657
+Pixel 3,medtimer,active phase,freeRASP,123,2.1236,2.0170000000000003,2.17508,23.612
+Pixel 3,the other eight,"passive phase, 4-15 s",Control,95,1.996,1.95308,2.03948,37.508
+Pixel 3,the other eight,"passive phase, 4-15 s",freeRASP,315,1.7261,0.24936,1.9977,33.189
+Pixel 3,the other eight,"passive phase, other seconds",Control,117,1.9716,1.64374,2.0103999999999997,41.731
+Pixel 3,the other eight,"passive phase, other seconds",freeRASP,616,0.2803,0.20505,0.34955,4.1815
+Pixel 3,the other eight,active phase,Control,1129,2.148,1.86696,2.36966,20.899
+Pixel 3,the other eight,active phase,freeRASP,1478,2.0839499999999997,0.27969,2.3435599999999996,14.607
+Pixel 6,medtimer,"passive phase, 4-15 s",Control,30,2.13015,2.06942,2.1764900000000003,28.967
+Pixel 6,medtimer,"passive phase, 4-15 s",freeRASP,30,2.20385,2.08184,2.3687100000000014,25.740000000000002
+Pixel 6,medtimer,"passive phase, other seconds",Control,99,1.6832,1.2781799999999999,1.7181199999999999,21.115
+Pixel 6,medtimer,"passive phase, other seconds",freeRASP,123,1.6864,0.8919,1.73054,20.883
+Pixel 6,medtimer,active phase,Control,195,2.2005,1.73428,2.4065799999999995,17.219
+Pixel 6,medtimer,active phase,freeRASP,192,2.1877500000000003,1.7405,2.49647,15.836500000000001
+Pixel 6,the other eight,"passive phase, 4-15 s",Control,241,2.1163,1.9803,2.1603,29.988
+Pixel 6,the other eight,"passive phase, 4-15 s",freeRASP,966,0.2273,0.16544999999999999,2.14195,2.6665
+Pixel 6,the other eight,"passive phase, other seconds",Control,53,1.6675,0.74634,1.7732,21.568
+Pixel 6,the other eight,"passive phase, other seconds",freeRASP,211,0.2566,0.1767,1.3605,2.941
+Pixel 6,the other eight,active phase,Control,2088,2.26415,1.72621,2.7482100000000003,11.584
+Pixel 6,the other eight,active phase,freeRASP,2162,2.2297,0.8959500000000002,2.75177,9.9985
+Pixel 9,medtimer,"passive phase, 4-15 s",Control,33,2.1824,0.22000000000000003,2.52096,28.285
+Pixel 9,medtimer,"passive phase, 4-15 s",freeRASP,31,2.3598,1.6907,2.5198,27.83
+Pixel 9,medtimer,"passive phase, other seconds",Control,126,1.728,1.24635,1.81905,22.628999999999998
+Pixel 9,medtimer,"passive phase, other seconds",freeRASP,127,1.7438,1.68348,1.84128,22.604
+Pixel 9,medtimer,active phase,Control,187,2.1883,1.8376400000000002,2.6469600000000004,20.419
+Pixel 9,medtimer,active phase,freeRASP,202,2.2199999999999998,1.4468800000000002,2.67683,17.9335
+Pixel 9,the other eight,"passive phase, 4-15 s",Control,248,2.17945,1.7278100000000003,2.2763500000000003,31.9345
+Pixel 9,the other eight,"passive phase, 4-15 s",freeRASP,800,0.25225,0.14049,2.3407,2.8064999999999998
+Pixel 9,the other eight,"passive phase, other seconds",Control,145,1.7439,1.34786,1.80918,21.946
+Pixel 9,the other eight,"passive phase, other seconds",freeRASP,387,0.2246,0.15512,1.6239200000000016,3.101
+Pixel 9,the other eight,active phase,Control,2127,2.2585,1.70556,2.75904,12.146
+Pixel 9,the other eight,active phase,freeRASP,2254,2.2352999999999996,1.13027,2.7658400000000003,11.903500000000001

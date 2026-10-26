@@ -1,0 +1,8 @@
+Cause,Series 1,Series 2,Series 3,Total,Description
+Device unsuitable,40,40,40,120,one application–device pair never completed
+Application crashed,30,30,30,90,crashed repeatedly within the cell
+Scenario failed,15,15,15,45,a scenario did not complete
+Supply contamination,2,3,0,5,power reached the device mid-cell
+Harness fault,1,6,2,9,runner or power-control failure
+Total excluded,88,94,87,269,of 3600 cells
+Valid cells,1112,1106,1113,3331,

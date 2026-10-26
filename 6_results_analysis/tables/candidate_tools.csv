@@ -1,0 +1,23 @@
+tool,family,licence_or_access,why_not_used,example_or_evidence
+R8,obfuscation,open source (Android build tools),On debug builds R8 shrinks but does not rename; release builds were abandoned on 24 July 2026 because the packing service could not process them and release-mode R8 broke applications,"calculator's debug R8 build: 11.1 to 7.7 MB, class names unchanged (identity mapping)"
+ProGuard,obfuscation,open source,Superseded by R8 in the Android build,inventory note: renaming only
+DexGuard,obfuscation (with RASP features),commercial (Guardsquare),Access refused,requested access and pricing
+Allatori,obfuscation,commercial; academic licence (9.8 Educational),Measured,
+DashO,obfuscation,commercial (PreEmptive),Commercial licence required; evaluation access did not arrive in time (July 2026),"installer present, never activated"
+Obfuscapk,obfuscation,open source (academic),Not tried; doubts about maintenance,
+Bangcle,packing,commercial web service,Measured,
+Baidu packer,packing,commercial web service,Crashes about 2 s after launch on the Pixel 9 (Android 16): its hidden-API exemption call is denied,"one attempted run, 19 May 2026; no energy data"
+Qihoo 360 Jiagu,packing,commercial web service,No free tier; a licence could not be arranged in time (July 2026),nothing packed
+Tencent Legu,packing,commercial cloud service,No account; a meeting requested and not pursued,
+"Ijiami, AliProtect, Naga, Manxi, APKProtect",packing,commercial,No reply,
+SecNeo,packing,commercial,No contact recorded,
+freeRASP,runtime shielding,"freemium: open-source integration layer, proprietary binary core (Talsec)",Measured,
+DexProtector,runtime shielding,commercial (Licel),Its licence requirements could not be met within the project (July 2026),
+Virbox Protector,runtime shielding,commercial; time-limited trial,"Trial builds are for short-term internal evaluation only, and the licence requirements could not be met in time (July 2026)","8 release-build applications protected; scenario checks only, Pixel 3"
+Promon SHIELD,runtime shielding,commercial,No academic licence; the licence requirements could not be met in time,
+Appdome,runtime shielding,commercial service,Trial account only; licence terms not settled in time,
+"LIAPP, WhiteCryption, V-Key, AppSealing",runtime shielding,commercial,No reply,
+DroidPro,native compilation (family not pursued),research prototype,Reference only,
+"Kiwisec, NetEase YiDun",packing (also contacted),commercial,No reply,
+"Zimperium zShield, Verimatrix XTD Protect",runtime shielding (also contacted),commercial,No reply,
+"DexHunter, DexRay, DroidPDF","analysis tools, not protections",research,Not protection tools,

@@ -1,0 +1,11 @@
+app,variant,verdict,real_source_names,short_source_names,no_source_attribute,other_source_names,app_package_classes,short_name_packages,apk_sha256
+androidskk,baseline_debug,FAIL,0,158,14,78,250,jp.deadend.noname.skk:124;jp.deadend.noname.skk.engine:25;jp.deadend.noname.skk.p:9,5e45f6c72feef4f798a1f7e8fd364b206cd6624a4cb77f74290639c11686f538
+calculator,baseline_debug,PASS,91,0,10,7,108,,5f8b01e061ce24e80f6d10cf2b4f15e169a07f97895fc611208a129dbdd951d5
+documenter,baseline_debug,PASS,158,0,12,19,189,,c2f89cfab15b36a3b282ce5f7e689c31a05de98f5d7646afdcd2895f583c2440
+itsok,baseline_debug,PASS,329,0,17,49,395,,3ee7886aac032c264da705da6361d114d9f635875f51af346af74775ec7acfde
+keep_recipe,baseline_debug,PASS,231,0,13,110,354,,633a3068038339bc67d0f33e5891774a21a49d984ce310a1c9efe1aa03a33d24
+linkhub,baseline_debug,WARN,451,44,22,335,852,com.amrdeveloper.linkhub:2;com.amrdeveloper.linkhub.c:4;com.amrdeveloper.linkhub.f:4;com.amrdeveloper.linkhub.k:8;com.amrdeveloper.linkhub.ui:2;com.amrdeveloper.linkhub.ui.explorer:4;com.amrdeveloper.linkhub.ui.folder:4;com.amrdeveloper.linkhub.ui.importexport:4;com.amrdeveloper.linkhub.ui.link:4;com.amrdeveloper.linkhub.v:8,2cdfdb15ecd22938b5961146a5d4299963f0a597136674332eee1b89f8e94969
+medtimer,baseline_debug,PASS,338,0,15,376,729,,264257c281b69d11196b4286b30f9c02f1dded1f3fe6b7fe1a897aa60b10530f
+pdfviewer,baseline_debug,PASS,18,0,18,15,51,,807c5b98969531f94853db51e66afddd68874a0a3de9043f1a96f047baaa8ef5
+poetskingdom,baseline_debug,PASS,497,0,14,97,608,,0e7fdae2c140532185ba7024fb61fc3ff9e510c4b6ec355ae0bcfd0b6be68807
+tipuous,baseline_debug,PASS,82,0,26,131,239,,615ce8a348f8d32ceee3c09f393d3fe5b86c8f869c6667f88acd4c67695cb048

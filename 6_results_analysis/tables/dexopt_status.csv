@@ -1,0 +1,7 @@
+scope,group,cells,requested_speed,status_verify,status_speed
+analysed cells,Control,760,760,760,0
+analysed cells,Bangcle,677,677,677,0
+analysed cells,Allatori,440,440,440,0
+analysed cells,freeRASP,770,770,770,0
+"all series cells, nine applications",debuggable builds,3145,3145,3145,0
+"all series cells, nine applications",not debuggable (not analysed): itsok Allatori,90,90,0,90

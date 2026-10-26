@@ -7,9 +7,6 @@ same application: packing (Bangcle), obfuscation (Allatori) and runtime shieldin
 applications were measured on three generations of Google Pixel phones (Pixel 3, 6 and 9) in four batches of 1200
 measurements: a pilot and three series batches. The thesis analyses the three series batches, on nine applications.
 
-> **Upload in progress (26 October 2026).** The supplementary material and the run tables are here. The notebooks,
-> scripts, inputs and scenarios follow later today.
-
 This repository holds everything needed to recompute every table, figure and number of the thesis from the measurement
 data, and the code that took the measurements. The supplementary material cited in the thesis (Tables S1 to S16 and
 Figures S1 to S3) is [`6_results_analysis/supplementary/supplementary.pdf`](6_results_analysis/supplementary/supplementary.pdf).
@@ -48,7 +45,8 @@ PYTHON=.venv/bin/python JUPYTER=.venv/bin/jupyter bash rebuild.sh
 `rebuild.sh` converts `per_device_notebook.py` into `Per_Device_Analysis.ipynb`, runs the five notebooks in order (about
 two minutes) and rewrites `6_results_analysis/tables/`, `figures/`, `MANIFEST.csv` and `tables/README.md`. Every table
 comes out byte-identical to the committed one, so `git status` afterwards shows only the notebooks (execution metadata)
-and the figure PDFs (creation date) as changed. To rebuild the supplement PDF as well:
+and the figure PDFs (creation date) as changed. Matplotlib picks the first Linux Libertine cut its font cache lists, so
+on another machine the figures can come out in the other cut of the typeface; their content is the same. To rebuild the supplement PDF as well:
 `TECTONIC=/path/to/tectonic python3 6_results_analysis/make_supplement.py`.
 
 `6_results_analysis/trace_numbers.py <file.tex>` traces every number in a LaTeX file to the table cells it can come

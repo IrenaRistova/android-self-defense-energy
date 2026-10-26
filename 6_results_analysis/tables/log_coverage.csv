@@ -1,0 +1,5 @@
+batch,cells_run,cells_with_log,analysed_cells,analysed_with_log
+series1,1200,1200,884,884
+series2,1200,1199,879,878
+series3,1200,1198,884,883
+all series,3600,3597,2647,2645

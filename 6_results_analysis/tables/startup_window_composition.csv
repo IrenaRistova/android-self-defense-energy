@@ -1,0 +1,21 @@
+event,technique,cells,median_s,p5_s,p95_s
+cold launch: application process starts,Control,760,-7.451,-8.364500000000001,-6.915900000000001
+cold launch: application process starts,Bangcle,676,-7.3475,-8.501999999999999,-6.91775
+cold launch: application process starts,Allatori,439,-7.446,-8.4678,-6.9278
+cold launch: application process starts,freeRASP,770,-7.2255,-8.341,-6.7419
+cold launch: first display,Control,760,-6.9075,-7.93115,-6.115400000000003
+cold launch: first display,Bangcle,676,-6.452,-7.71675,-4.67825
+cold launch: first display,Allatori,439,-6.802,-7.851,-5.3806
+cold launch: first display,freeRASP,770,-6.565,-7.828,-5.79045
+Appium's UiAutomator2 server starts,Control,673,2.471,1.672,4.8469999999999995
+Appium's UiAutomator2 server starts,Bangcle,676,2.4755000000000003,1.684,5.02375
+Appium's UiAutomator2 server starts,Allatori,350,2.4779999999999998,1.70945,4.68755
+Appium's UiAutomator2 server starts,freeRASP,680,2.464,1.286,4.6231
+"Appium sends the launch intent again (session start, five of the passive phase's eight applications; no new process)",Control,406,3.759,-7.6775,7.0555
+"Appium sends the launch intent again (session start, five of the passive phase's eight applications; no new process)",Bangcle,408,3.7575,-7.97265,7.25125
+"Appium sends the launch intent again (session start, five of the passive phase's eight applications; no new process)",Allatori,260,3.8495,3.3937,6.9491
+"Appium sends the launch intent again (session start, five of the passive phase's eight applications; no new process)",freeRASP,413,3.613,-7.7094,6.8264
+first scenario: the passive phase ends,Control,673,29.447,22.3216,49.3546
+first scenario: the passive phase ends,Bangcle,676,29.7485,21.72,49.73675
+first scenario: the passive phase ends,Allatori,350,31.343,24.40005,46.595600000000005
+first scenario: the passive phase ends,freeRASP,680,28.369500000000002,21.9569,49.8312

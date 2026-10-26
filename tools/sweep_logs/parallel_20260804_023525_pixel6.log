@@ -1,0 +1,27 @@
+[02:35:34] START pixel6 androidskk/baseline_debug rep9 cfg=androidskk_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=66 status=3 (band=40-70)
+  top-up SKIPPED (level=66 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1526562µA = ≥150mA)
+  mitmproxy replay: SKIP for androidskk (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:39:43] DONE  pixel6 androidskk/baseline_debug rep9 PASS wall=249s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel6_androidskk_baseline_debug_r9.log
+[02:39:43] START pixel6 pdfviewer/baseline_debug rep1 cfg=pdfviewer_baseline_debug_pixel6_wifi_ykush.json
+  pre-cell: level=65 status=3 (band=40-70)
+  top-up SKIPPED (level=65 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1661562µA = ≥150mA)
+  mitmproxy replay: proxy ON for pdfviewer → 198.51.100.75:8080 (readback OK)
+  post-cell: port cut (AR re-enabled it at experiment end)
+  mitmproxy replay: proxy OFF for pdfviewer
+  mitmproxy replay: 5 response(s) served from flow during this cell
+[02:44:19] DONE  pixel6 pdfviewer/baseline_debug rep1 PASS wall=276s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel6_pdfviewer_baseline_debug_r1.log
+[02:44:19] START pixel6 medtimer/allatori_debug rep10 cfg=medtimer_allatori_debug_pixel6_wifi_ykush.json
+  pre-cell: level=64 status=3 (band=40-70)
+  top-up SKIPPED (level=64 >= 40)
+  CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
+  MAINTENANCE GUARD: active-load OK (-1437500µA = ≥150mA)
+  mitmproxy replay: SKIP for medtimer (no .flow file)
+  post-cell: port cut (AR re-enabled it at experiment end)
+[02:50:05] DONE  pixel6 medtimer/allatori_debug rep10 PASS wall=345s log=/home/irena/Documents/Master Experiment/tools/sweep_logs/parallel_20260804_023525_pixel6_medtimer_allatori_debug_r10.log
+STREAM_SUMMARY pixel6 total=3 pass=3 fail=0 timeout=0 skipped=0

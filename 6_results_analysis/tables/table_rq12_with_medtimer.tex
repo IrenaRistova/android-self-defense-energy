@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{RQ1 (active phase) and RQ2 (passive phase): $\Delta$E (\%) per technique and device, the mean of n matched pairs with its 95\% interval, the BH-adjusted Wilcoxon $p$ and the magnitude of Cliff's $\delta$~\cite{romano2006cliff}. Bold: adjusted $p < 0.05$; shaded: a detected energy cost. As measured: medtimer's packed build in the packing arm and medtimer in the passive phase.}
+\label{tab:rq12-with-medtimer}
+\begin{tabular}{lrrrlrrrl}
+\toprule
+ & \multicolumn{4}{c}{\textbf{Active phase (RQ1)}} & \multicolumn{4}{c}{\textbf{Passive phase (RQ2)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+\textbf{Device} & \textbf{n} & \textbf{$\Delta$E (\%) [95\% CI]} & \textbf{p (BH)} & \textbf{Cliff's $\delta$} & \textbf{n} & \textbf{$\Delta$E (\%) [95\% CI]} & \textbf{p (BH)} & \textbf{Cliff's $\delta$} \\
+\midrule
+\multicolumn{9}{l}{\textit{Bangcle (packing)}} \\
+Pixel 3 & 24 & \cellcolor{red!12}\textbf{+0.89 [+0.23, +1.55]} & \textbf{0.018} & \textbf{small} & 24 & +0.88 [$-$0.27, +2.04] & 0.341 & negligible \\
+Pixel 6 & 27 & +0.43 [$-$0.43, +1.28] & 0.632 & negligible & 27 & +0.16 [$-$0.88, +1.20] & 0.732 & negligible \\
+Pixel 9 & 27 & $-$0.64 [$-$2.59, +1.31] & 0.662 & negligible & 27 & $-$0.78 [$-$3.06, +1.50] & 0.674 & negligible \\
+\midrule
+\multicolumn{9}{l}{\textit{Allatori (obfuscation)}} \\
+Pixel 3 & 15 & $-$0.19 [$-$1.19, +0.81] & 0.674 & negligible & 15 & +0.84 [$-$0.96, +2.65] & 0.674 & negligible \\
+Pixel 6 & 15 & +0.09 [$-$0.72, +0.90] & 1.000 & negligible & 15 & $-$0.44 [$-$1.39, +0.52] & 0.674 & negligible \\
+Pixel 9 & 15 & $-$1.21 [$-$4.46, +2.05] & 0.632 & negligible & 15 & $-$1.49 [$-$5.01, +2.04] & 0.594 & negligible \\
+\midrule
+\multicolumn{9}{l}{\textit{freeRASP (runtime shielding)}} \\
+Pixel 3 & 24 & \cellcolor{red!12}\textbf{+8.04 [+5.41, +10.67]} & \textbf{$<$ 0.001} & \textbf{large} & 24 & \cellcolor{red!12}\textbf{+29.56 [+24.07, +35.05]} & \textbf{$<$ 0.001} & \textbf{large} \\
+Pixel 6 & 27 & \cellcolor{red!12}\textbf{+4.04 [+2.48, +5.61]} & \textbf{$<$ 0.001} & \textbf{medium} & 27 & \cellcolor{red!12}\textbf{+39.64 [+32.59, +46.70]} & \textbf{$<$ 0.001} & \textbf{large} \\
+Pixel 9 & 27 & +0.54 [$-$1.93, +3.01] & 0.632 & negligible & 27 & \cellcolor{red!12}\textbf{+17.10 [+12.72, +21.47]} & \textbf{$<$ 0.001} & \textbf{large} \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{RQ2, passive phase: each technique against its unprotected control, per device.}
+\label{tab:rq2}
+\begin{tabular}{lrrrrrlr}
+\toprule
+\textbf{Device} & \textbf{n} & \textbf{$\Delta$E (\%) [95\% CI]} & \textbf{V} & \textbf{p (BH)} & \textbf{Cliff's $\delta$ [95\% CI]} & \textbf{Magnitude} & \textbf{MDE (\%)} \\
+\midrule
+\multicolumn{8}{l}{\textit{Bangcle (packing)}} \\
+Pixel 3 & 21 & +0.90 [$-$0.44, +2.23] & 151 & 0.515 & +0.07 [$-$0.05, +0.18] & negligible & 1.88 \\
+Pixel 6 & 24 & $-$0.02 [$-$1.10, +1.06] & 156 & 0.970 & +0.01 [$-$0.08, +0.11] & negligible & 1.53 \\
+Pixel 9 & 24 & $-$0.48 [$-$2.85, +1.88] & 138 & 0.960 & $-$0.01 [$-$0.10, +0.08] & negligible & 3.35 \\
+\midrule
+\multicolumn{8}{l}{\textit{Allatori (obfuscation)}} \\
+Pixel 3 & 12 & +0.68 [$-$1.61, +2.98] & 38 & 0.970 & $-$0.09 [$-$0.20, +0.02] & negligible & 3.21 \\
+Pixel 6 & 12 & $-$0.53 [$-$1.72, +0.66] & 30 & 0.778 & $-$0.06 [$-$0.20, +0.09] & negligible & 1.67 \\
+Pixel 9 & 12 & $-$1.04 [$-$5.38, +3.31] & 29 & 0.778 & $-$0.04 [$-$0.18, +0.10] & negligible & 6.08 \\
+\midrule
+\multicolumn{8}{l}{\textit{freeRASP (runtime shielding)}} \\
+\textbf{Pixel 3} & \textbf{21} & \textbf{+32.37 [+27.23, +37.50]} & \textbf{231} & \textbf{$<$ 0.001} & \textbf{+0.99 [+0.99, +1.00]} & \textbf{large} & \textbf{7.25} \\
+\textbf{Pixel 6} & \textbf{24} & \textbf{+43.97 [+38.25, +49.69]} & \textbf{300} & \textbf{$<$ 0.001} & \textbf{+0.99 [+0.97, +1.00]} & \textbf{large} & \textbf{8.09} \\
+\textbf{Pixel 9} & \textbf{24} & \textbf{+19.11 [+14.89, +23.33]} & \textbf{300} & \textbf{$<$ 0.001} & \textbf{+0.57 [+0.48, +0.66]} & \textbf{large} & \textbf{5.97} \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize n: matched pairs (one application in one series batch). $\Delta$E: mean per-pair relative difference with 95\% paired t-interval. V: Wilcoxon signed-rank statistic (sum of the ranks of the positive differences), two-sided, exact p; p (BH): Benjamini-Hochberg adjusted within the research question's nine comparisons. Cliff's $\delta$: protected cells against the same application's control cells on the same device and batch, averaged over pairs, with 95\% bootstrap interval over pairs; magnitude after \cite{romano2006cliff}. MDE: minimum detectable effect at 80\% power. Bold: adjusted $p < 0.05$.
+\end{table*}
