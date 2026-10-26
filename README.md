@@ -21,5 +21,4 @@ The package is being uploaded. It will contain:
 ## Data kept outside this repository
 
 The raw per-measurement logs (Android system logs and harness logs), the 40 measured APKs and the raw energy
-samples are not in this repository because of their size. The logs and the APKs are shared with the examiners on
-request.
+samples are not in this repository because of their size. They can be shared on request.
