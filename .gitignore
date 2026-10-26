@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 *.nbconvert.log
+# headless-browser profile and output of the execution-diagram generator
+scratchpad/analysis/execution_diagram/_render/
+scratchpad/analysis/execution_diagram/out/
