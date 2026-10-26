@@ -56,8 +56,8 @@ import time
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 # This script writes the map here; on a new set-up its first run creates the file
-# and its folder (the map is not part of this package).
-MAP_PATH = REPO / "specs/todo-roadmap/master-experiment-scale/ykush_portmap.json"
+# (the map is not part of this package).
+MAP_PATH = REPO / "tools" / "ykush_portmap.json"
 YKUSH_BIN = os.environ.get("YKUSH_BIN", "/usr/bin/ykushcmd")
 # Replicators set YKUSH_SERIAL to their own board's serial.
 YKUSH_SERIAL = os.environ.get("YKUSH_SERIAL", "<ykush-serial>")

@@ -33,7 +33,7 @@ authoritative ``run_ts -> sweep_tag`` mapping with no guessing from mtimes.
 
 WHAT THIS TOOL DOES
 -------------------
-``index``  build specs/sweep_log_index.csv mapping every log file to its tag.
+``index``  build 6_results_data/sweep_log_index.csv mapping every log file to its tag.
 ``check``  report which files cannot be attributed, and any run_ts claimed by
            more than one tag (which would mean the mapping is unsound).
 ``move``   reorganise into tools/sweep_logs/by_tag/<tag>/{logcat,streams}/.
@@ -63,7 +63,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 LOG_DIR = REPO_ROOT / "tools" / "sweep_logs"
 LOGCAT_DIR = LOG_DIR / "logcat"
 BY_TAG = LOG_DIR / "by_tag"
-INDEX_CSV = REPO_ROOT / "specs" / "sweep_log_index.csv"
+INDEX_CSV = REPO_ROOT / "6_results_data" / "sweep_log_index.csv"
 
 RUN_TS_RE = re.compile(r"(?P<ts>\d{8}_\d{6})")
 TAG_RE = re.compile(r"sweep tag:\s*(?P<tag>\S+)")

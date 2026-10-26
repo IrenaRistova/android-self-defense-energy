@@ -492,7 +492,7 @@ def cmd_batch(pattern: Optional[str], out_csv: Optional[Path],
             "native_libs": ";".join(sorted(c["native_libs"])),
             "exceptions": ";".join(f"{k2}x{v}" for k2, v in c["exceptions"].most_common(3)),
         })
-    dest = out_csv or (REPO_ROOT / "specs" / "logcat_app_activity.csv")
+    dest = out_csv or (REPO_ROOT / "6_results_data" / "inputs" / "logcat_app_activity.csv")
     with open(dest, "w", newline="") as fh:
         w = _csv.DictWriter(fh, fieldnames=cols)
         w.writeheader()

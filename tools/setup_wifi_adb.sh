@@ -97,7 +97,7 @@ echo ""
 # package and no script here reads it: the sweep scripts keep serials and
 # addresses in their own tables (WIFI_ADDR, SERIAL_OF), which a replicator edits
 # instead, and tools/ykush_calibrate.py maps phones to hub ports.
-echo "Add to specs/todo-roadmap/master-experiment-scale/device_state.yaml:"
+echo "Add to your device registry (device_state.yaml):"
 echo "  - serial:    $SERIAL"
 echo "    wifi_addr: $IP:5555"
 echo "    hub:       <hub-id from \`sudo uhubctl\`, e.g. 3-6.1>"

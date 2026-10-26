@@ -3,8 +3,7 @@
 
 An independent implementation of the analysis: the notebooks in
 6_results_analysis/notebooks/ check their own numbers against its output. The
-default run writes `specs/thesis_numbers.json`; the package holds that output as
-`6_results_data/derived/thesis_numbers_reference.json`, and the output of the run
+default run writes `6_results_data/derived/thesis_numbers_reference.json`, and the output of the run
 with `--exclude-apps ''` (androidskk kept, ten applications) as
 `6_results_data/derived/thesis_numbers_ten_apps_sensitivity.json`.
 
@@ -24,7 +23,7 @@ How it computes intervals and tests:
 
 The notebooks check the cell counts of this filter chain against their own.
 
-Usage:  python3 scratchpad/analysis/thesis_numbers.py [--out specs/thesis_numbers.json]
+Usage:  python3 scratchpad/analysis/thesis_numbers.py [--out 6_results_data/derived/thesis_numbers_reference.json]
 """
 from __future__ import annotations
 import argparse, collections, csv, json, math, os, random, statistics as st, sys
@@ -286,7 +285,7 @@ def ci_clustered(recs, n_resample=20000):
 # ---------------------------------------------------------------- main
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="specs/thesis_numbers.json")
+    ap.add_argument("--out", default="6_results_data/derived/thesis_numbers_reference.json")
     ap.add_argument("--resamples", type=int, default=6000)
     ap.add_argument("--exclude-apps", default=DEFAULT_EXCLUDE,
                     help="comma-separated apps dropped from every arm ('' = none)")

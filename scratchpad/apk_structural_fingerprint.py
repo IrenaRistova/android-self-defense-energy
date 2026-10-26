@@ -88,13 +88,13 @@ SHORT_CLASS_RE = re.compile(rb"L(?:[a-z]{1,2}/){0,3}[a-z]{1,2};")
 def load_known_broken_builds():
     """(app, variant) pairs whose build is known-bad and excluded from sweeps.
 
-    Encoded in specs/invalidated_builds.csv as an ``invalid_before_utc`` far in
+    Encoded in 6_results_data/invalidated_builds.csv as an ``invalid_before_utc`` far in
     the future: "no cell of this pair is valid yet, at any timestamp". Anything
     with a real timestamp is a build that HAS been fixed, and must still trip
     the gate if it somehow regresses. The ledger is not part of this package;
     without it the set is empty.
     """
-    ledger = REPO / "specs" / "invalidated_builds.csv"
+    ledger = REPO / "6_results_data" / "invalidated_builds.csv"
     out = set()
     if not ledger.exists():
         return out
@@ -432,7 +432,7 @@ def main():
             total += b
         print(f"  {'TOTAL':<14s} {'':<16s} {total:>10d} bytes")
 
-    out = Path(args.out or REPO / "specs" / "apk_structural_fingerprint.csv")
+    out = Path(args.out or REPO / "6_results_data" / "inputs" / "apk_structural_fingerprint.csv")
     if rows:
         fields = sorted({k for r in rows for k in r.keys()})
         with open(out, "w", newline="") as f:

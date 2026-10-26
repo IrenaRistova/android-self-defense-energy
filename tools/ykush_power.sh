@@ -67,7 +67,7 @@ YKUSH_LOCK="${YKUSH_LOCK:-/tmp/ykush_${YKUSH_SERIAL}.lock}"
 YKUSH_CALL_TIMEOUT="${YKUSH_CALL_TIMEOUT:-10}"
 # The port map is created by tools/ykush_calibrate.py on a new set-up (it is not
 # part of this package).
-YKUSH_PORTMAP="${YKUSH_PORTMAP:-$(dirname "${BASH_SOURCE[0]}")/../specs/todo-roadmap/master-experiment-scale/ykush_portmap.json}"
+YKUSH_PORTMAP="${YKUSH_PORTMAP:-$(dirname "${BASH_SOURCE[0]}")/ykush_portmap.json}"
 
 _yk_err() { printf '[ykush_power] %s\n' "$*" >&2; }
 

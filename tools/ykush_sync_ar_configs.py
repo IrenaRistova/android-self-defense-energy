@@ -50,7 +50,7 @@ REPO = pathlib.Path(__file__).resolve().parent.parent
 AR_DIR = REPO / "android-runner/examples/batterymanager"
 WRAPPER = REPO / "tools/ykush_ar_power.sh"
 # Created by tools/ykush_calibrate.py on a new set-up (the map is not part of this package).
-PORTMAP = REPO / "specs/todo-roadmap/master-experiment-scale/ykush_portmap.json"
+PORTMAP = REPO / "tools" / "ykush_portmap.json"
 
 # The final sweep cohort: 10 apps, each in the four variants below.
 COHORT = [

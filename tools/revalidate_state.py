@@ -82,7 +82,7 @@ def main() -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--sweep-tag", required=True)
     ap.add_argument("--run-table", default=None,
-                    help="default: specs/run_table_extended_<tag>.csv")
+                    help="default: 6_results_data/run_tables/run_table_extended_<tag>.csv")
     ap.add_argument("--apply", action="store_true",
                     help="actually rewrite the state CSVs (default: dry run)")
     ap.add_argument("--include-futile", action="store_true",
@@ -90,7 +90,7 @@ def main() -> int:
     args = ap.parse_args()
 
     rt_path = Path(args.run_table) if args.run_table else \
-        REPO / "specs" / f"run_table_extended_{args.sweep_tag}.csv"
+        REPO / "6_results_data" / "run_tables" / f"run_table_extended_{args.sweep_tag}.csv"
     state_dir = REPO / "tools" / "sweep_logs" / f"state_{args.sweep_tag}"
 
     if not rt_path.exists():

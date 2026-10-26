@@ -6,3 +6,5 @@ __pycache__/
 # headless-browser profile and output of the execution-diagram generator
 scratchpad/analysis/execution_diagram/_render/
 scratchpad/analysis/execution_diagram/out/
+# written by tools/ykush_calibrate.py on each set-up
+tools/ykush_portmap.json

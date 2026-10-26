@@ -7,7 +7,7 @@ Covered (the four batches of the final experiment: pilot, series 1-3):
               four run tables (battery samples, Android Runner's timestamped log, scenario timings,
               CPU/memory samples, frame times, crash and session status)
   logcat      tools/sweep_logs/logcat/<logfile>, for every capture the sweep-log index
-              (specs/sweep_log_index.csv, tools/organise_sweep_logs.py) attributes to the batch's
+              (6_results_data/sweep_log_index.csv, tools/organise_sweep_logs.py) attributes to the batch's
               sweep tag: all of them, including superseded attempts and truncated captures, so an
               archive built from this list is complete. Corrected 2026-10-05: this used to list only
               the files named in logcat_activity_<batch>.csv, and the series-1 table was stale (built

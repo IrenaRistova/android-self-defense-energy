@@ -39,7 +39,7 @@ INCLUSION_FOLDER = {
 def upstream_test_counts() -> dict:
     import json as _json
     try:
-        d = _json.load(open(REPO / "specs" / "app_inclusion.json"))
+        d = _json.load(open(REPO / "6_results_data" / "app_inclusion.json"))
     except Exception:
         return {}
     by_folder = {a["app_folder"]: a for a in d.get("apps", [])}
@@ -137,7 +137,7 @@ def dex_counts(apk: pathlib.Path, pkg: str) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--csv", default="specs/app_characteristics.csv")
+    ap.add_argument("--csv", default="6_results_data/inputs/app_characteristics.csv")
     a = ap.parse_args()
     tool = aapt()
     if not tool:

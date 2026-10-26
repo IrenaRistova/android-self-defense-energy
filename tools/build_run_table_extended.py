@@ -7,11 +7,11 @@ Pure-function aggregator that consumes:
   * ``appium_android_tests/<app>/scenarios.py`` (planned scenario counts)
 
 and produces:
-  * ``specs/run_table_extended_<TAG>.csv``: one wide row per canonical
+  * ``6_results_data/run_tables/run_table_extended_<TAG>.csv``: one wide row per canonical
     (sweep_tag, app, phone, variant, rep) cell, sorted so matched-pair
     siblings sit adjacent. The published run tables in
     ``6_results_data/run_tables/`` are copies of these files.
-  * ``specs/per_scenario_long_<TAG>.csv``: long-format sibling with
+  * ``6_results_data/run_tables/per_scenario_long_<TAG>.csv``: long-format sibling with
     one row per scenario execution within a canonical cell.
   * ``tools/sweep_logs/state_<TAG>/ingest_report.json``: diagnostic sidecar
     (row counts by verdict, missing run_ids, output sha256s).
@@ -79,8 +79,8 @@ Usage:
   python3 tools/build_run_table_extended.py \\
       --sweep-tag final_ykush_2026-08-04 \\
       --ar-output-dir android-runner/examples/batterymanager/output \\
-      --out specs/run_table_extended_final_ykush_2026-08-04.csv \\
-      --per-scenario-out specs/per_scenario_long_final_ykush_2026-08-04.csv
+      --out 6_results_data/run_tables/run_table_extended_final_ykush_2026-08-04.csv \\
+      --per-scenario-out 6_results_data/run_tables/per_scenario_long_final_ykush_2026-08-04.csv
 
 Notes:
   * EXTRA_VOLTAGE in the BatteryManager CSV is millivolts (not microvolts),
@@ -136,8 +136,8 @@ DEFAULT_AR_OUTPUT = REPO_ROOT / "android-runner" / "examples" / "batterymanager"
 DEFAULT_STATE_DIR_TMPL = REPO_ROOT / "tools" / "sweep_logs" / "state_{tag}"
 # Default outputs. The published run tables (6_results_data/run_tables/) are
 # copies of the run_table_extended_<tag>.csv files written here.
-DEFAULT_OUT_TMPL = REPO_ROOT / "specs" / "run_table_extended_{tag}.csv"
-DEFAULT_PER_SCENARIO_OUT_TMPL = REPO_ROOT / "specs" / "per_scenario_long_{tag}.csv"
+DEFAULT_OUT_TMPL = REPO_ROOT / "6_results_data" / "run_tables" / "run_table_extended_{tag}.csv"
+DEFAULT_PER_SCENARIO_OUT_TMPL = REPO_ROOT / "6_results_data" / "run_tables" / "per_scenario_long_{tag}.csv"
 DEFAULT_INGEST_REPORT_TMPL = REPO_ROOT / "tools" / "sweep_logs" / "state_{tag}" / "ingest_report.json"
 
 APPIUM_TESTS_ROOT = REPO_ROOT / "appium_android_tests"
@@ -1644,7 +1644,7 @@ _INVALIDATED_BUILDS_CACHE: Optional[List[Tuple[str, str, str, str]]] = None
 
 
 def load_invalidated_builds() -> List[Tuple[str, str, str, str]]:
-    """Read specs/invalidated_builds.csv -> [(app, variant, before_utc, reason)].
+    """Read 6_results_data/invalidated_builds.csv -> [(app, variant, before_utc, reason)].
 
     ``variant == "ALL"`` applies to every variant of that app (used for the
     poetskingdom scenario-list change, where the APKs were fine but the
@@ -1657,7 +1657,7 @@ def load_invalidated_builds() -> List[Tuple[str, str, str, str]]:
     # This ledger is not part of the published package. The published run tables
     # were built with it and already carry its verdicts (none of their cells is
     # STALE_BUILD); without the file, no cell is marked.
-    path = REPO_ROOT / "specs" / "invalidated_builds.csv"
+    path = REPO_ROOT / "6_results_data" / "invalidated_builds.csv"
     if path.exists():
         try:
             with open(path, newline="") as f:
@@ -1980,13 +1980,13 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     p.add_argument("--ar-output-dir", default=str(DEFAULT_AR_OUTPUT),
                    help="Root of AR run_id folders (default: %(default)s)")
     p.add_argument("--out", default=None,
-                   help="Output CSV (default: specs/run_table_extended_<TAG>.csv)")
+                   help="Output CSV (default: 6_results_data/run_tables/run_table_extended_<TAG>.csv)")
     p.add_argument("--per-scenario-out", default=None,
-                   help="Long-format per-scenario CSV (default: specs/per_scenario_long_<TAG>.csv)")
+                   help="Long-format per-scenario CSV (default: 6_results_data/run_tables/per_scenario_long_<TAG>.csv)")
     p.add_argument("--ingest-report", default=None,
                    help="Ingest diagnostic JSON (default: tools/sweep_logs/state_<TAG>/ingest_report.json)")
     p.add_argument("--dry-run", action="store_true",
-                   help="Write CSVs to /tmp instead of specs/ (report stays in state dir).")
+                   help="Write CSVs to /tmp instead of 6_results_data/run_tables/ (report stays in state dir).")
     return p.parse_args(argv)
 
 

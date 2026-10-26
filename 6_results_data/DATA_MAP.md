@@ -73,7 +73,7 @@ hardware addresses and the device serials removed.
 | stream logs (incl. thermal readings): per cell and per session raw, on request; per phone in this package | `tools/sweep_logs/` | per cell `parallel_<session>_<phone>_<app>_<variant>_r<rep>.log`; per phone `parallel_<session>_<phone>.log`; per session `parallel_<session>.log` | 14,388 sweep logs in all, 0.2 GB; the 38 per-phone logs are in this package |
 | proxy logs, pdfviewer's cells only (raw, on request) | `tools/sweep_logs/` | `mitmproxy_<sweep tag>.log` | 4 |
 | the 40 measured APKs (on request) | not in this package | run tables' `apk_path` (the builds' original location) | 40, 1.4 GB |
-| the sweep-log index: every log file and its sweep tag | `specs/sweep_log_index.csv` | built by `tools/organise_sweep_logs.py index` (2026-10-05), which reads the wrapper logs and each session's own log | 13,372 files attributed |
+| the sweep-log index: every log file and its sweep tag | `6_results_data/sweep_log_index.csv` | built by `tools/organise_sweep_logs.py index` (2026-10-05), which reads the wrapper logs and each session's own log | 13,372 files attributed |
 
 **One Android Runner run folder** (`<run_id>/`):
 - `config.json`, `experiment.log` (timestamped), `progress.xml`, `Aggregated_Results_*.csv`;

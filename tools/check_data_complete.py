@@ -26,7 +26,7 @@ B  log captures [raw]. For every cell, B looks at every capture on disk with its
    - the table lists a capture that overlaps nothing measured;
    - the table lists a cell twice.
    B also checks the index itself: every capture of a measured run must be attributed to that batch's
-   tag in `specs/sweep_log_index.csv`. Until 2026-10-05 the pilot's first session (20260804_025319,
+   tag in `6_results_data/sweep_log_index.csv`. Until 2026-10-05 the pilot's first session (20260804_025319,
    81 captures) was missing from the index. Its session log names its tag, but only wrapper logs were
    read, so 76 pilot cells looked unlogged.
 C  the per-cell inputs the notebooks join, against the analysed cells:
@@ -76,7 +76,7 @@ from logcat_app_parser import cell_key  # noqa: E402  capture filename -> phone,
 DATA = ROOT / "6_results_data"
 LOGCAT = ROOT / "tools" / "sweep_logs" / "logcat"
 AR = ROOT / "android-runner" / "examples" / "batterymanager" / "output"
-INDEX = ROOT / "specs" / "sweep_log_index.csv"
+INDEX = ROOT / "6_results_data" / "sweep_log_index.csv"
 MANIFEST = DATA / "raw_manifest.csv.gz"
 BATCHES = {  # thesis name: (sweep tag, run table)
     "pilot": ("final_ykush_2026-08-04", "run_table_extended_final_ykush_2026-08-04.csv"),

@@ -71,7 +71,7 @@ from `app_characteristics.csv`, keyed by the application named in the capture's 
 - **Coverage:** 2,734 of the 2,736 analysed series cells have a log of their measured run; the
   pilot, 1,199 of 1,200 cells.
 
-**The index.** `specs/sweep_log_index.csv` maps every log file to its sweep tag, and `--sweep-tag`
+**The index.** `6_results_data/sweep_log_index.csv` maps every log file to its sweep tag, and `--sweep-tag`
 selects captures through it. `tools/organise_sweep_logs.py` builds it from the wrapper logs and from
 each session's own log (`parallel_<run_ts>.log`), whose header names the tag. The pilot's first
 session (20260804_025319, 81 captures) has no wrapper log, so only its own log attributes it.

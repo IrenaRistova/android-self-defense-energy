@@ -23,9 +23,9 @@ Figures S1 to S3) is [`6_results_analysis/supplementary/supplementary.pdf`](6_re
 | `6_results_data/derived/` | Results of an independent reference implementation (`scratchpad/analysis/thesis_numbers.py`), which the notebooks print next to their own numbers as a cross-check. |
 | `6_results_data/DATA_MAP.md` | Where every file comes from: batches, tags, sessions, clocks, raw files and derived inputs. |
 | `6_results_data/raw_manifest.csv.gz` | Size and SHA-256 of every raw file, so that the raw data (see below) can be checked. |
+| `6_results_data/sweep_log_index.csv` | Maps every raw log file of the four batches to its batch. |
 | `tools/` | The measurement harness (batch scheduler, thermal gate, power control, network replay, checks) and the data pipeline from raw logs to run tables and inputs. |
 | `tools/sweep_logs/` | The 38 per-phone scheduler logs of the four batches, from which Table S4 (the thermal gate) is computed. |
-| `specs/sweep_log_index.csv` | Maps every raw log file of the four batches to its batch. |
 | `appium_android_tests/` | The interaction scenarios of the ten measured applications and their shared library. |
 | `android-runner/` | The Android Runner configurations, hook scripts and framework changes used in the experiment, with instructions ([`android-runner/README.md`](android-runner/README.md)). |
 | `scratchpad/` | Scripts developed next to the analysis: the source of `Per_Device_Analysis` (`analysis/per_device_notebook.py`, converted by `analysis/py2nb.py`), the reference implementation, the producers of some inputs, the generator of the execution diagram, and the APK fingerprint modules the build checks import. |
