@@ -90,15 +90,18 @@ do not.
 ## Data kept outside this repository
 
 The raw Android system logs, the per-measurement logs, the raw energy samples, the 40 measured APKs and the network
-recording replayed for pdfviewer are not in this repository because of their size. They can be shared on request.
+recording replayed for pdfviewer are not in this repository because of their size. They can be shared on request: open an
+issue in this repository.
 `6_results_data/raw_manifest.csv.gz` lists every raw file with its size and SHA-256. In the 38 scheduler logs under
-`tools/sweep_logs/`, local network addresses are replaced by documentation addresses (198.51.100.x), so the checksums
+`tools/sweep_logs/`, local network addresses are replaced by documentation addresses (198.51.100.x and 203.0.113.x), so the checksums
 of these 38 files differ from the manifest.
 
 ## Applications
 
 The applications come from the AndroT dataset of Android applications with tests (Muradyan and Fazzini, MSR 2026).
-Their upstream repositories are cited in the thesis. `6_results_analysis/tables/candidate_tools.csv` lists the
+Each one is built from a pinned commit of its open-source repository, and
+`6_results_data/inputs/app_characteristics.csv` gives each application's package name and version.
+`6_results_analysis/tables/candidate_tools.csv` lists the
 self-defense tools that were considered and why each was or was not used, and `exclusions_by_cause.csv` gives the
 excluded measurements by cause.
 

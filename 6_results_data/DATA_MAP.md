@@ -131,7 +131,7 @@ is checked by `tools/check_data_complete.py`.
 | `inputs/post_charge_k_window.csv` | `scratchpad/analysis/topup_ground_truth.py` (written as `topup_ground_truth.csv`, published under this name); `scratchpad/analysis/cold_cell_rule.py` only fixes K per phone | run tables, sweep logs | all 4,800 cells |
 | `inputs/variant_permissions.csv` | `tools/extract_variant_permissions.py` (2026-10-05) | the APKs the series cells ran (`aapt2 dump permissions`), hashes checked against the run tables | all 40 series builds (`variant_permissions.PROVENANCE.md`) |
 | `inputs/clock_offset_series.csv` | `tools/extract_clock_offset.py` (2026-10-25) | Android Runner's `experiment.log` (profiler start, laptop clock, ms), battery samples (phone clock), run tables | every series cell with a run and samples (`clock_offset.PROVENANCE.md`) |
-| static: `app_characteristics.csv`, `variant_parity.csv`, the build screens, `allatori_*` | the scripts named in their PROVENANCE files | the APKs | the builds |
+| static: `app_characteristics.csv`, `variant_parity.csv`, the build screens, `coverage_screen.csv`, `allatori_*` | the scripts named in their PROVENANCE files | the APKs | the builds |
 | `raw_manifest.csv.gz` | `tools/raw_data_manifest.py` | everything in §2 | every raw file, with `used_by_results` |
 
 **After regenerating any input:**

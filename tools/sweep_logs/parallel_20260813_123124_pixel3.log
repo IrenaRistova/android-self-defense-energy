@@ -555,7 +555,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1241210µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":40.465,"cpu_max_c":57.200005,"battery_c":39.300003,"ts":"2026-08-13T12:20:57Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (39 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -599,7 +599,7 @@
   MAINTENANCE GUARD: active-load OK (-1160155µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":39.427002,"cpu_max_c":56.2,"battery_c":37.9,"ts":"2026-08-13T13:22:55Z"}
 [15:22:56] pixel3: cool after 1s (status=1 skin=39.427002C)
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (54 samples, 15 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -662,7 +662,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1202147µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":40.406002,"cpu_max_c":57.500004,"battery_c":39.0,"ts":"2026-08-13T13:56:17Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -717,7 +717,7 @@
   MAINTENANCE GUARD: active-load OK (-1206542µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":40.348003,"cpu_max_c":57.500004,"battery_c":38.9,"ts":"2026-08-13T14:20:24Z"}
 [16:20:25] pixel3: cool after 1s (status=1 skin=40.348003C)
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (39 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -851,7 +851,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1196776µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":39.583,"cpu_max_c":56.2,"battery_c":38.100002,"ts":"2026-08-13T16:07:10Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -914,7 +914,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1211913µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":40.406002,"cpu_max_c":57.500004,"battery_c":39.2,"ts":"2026-08-13T16:33:52Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -1142,7 +1142,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1173339µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":39.375,"cpu_max_c":56.2,"battery_c":37.800003,"ts":"2026-08-13T19:02:40Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (39 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -1164,7 +1164,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1203612µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":40.406002,"cpu_max_c":58.200005,"battery_c":39.5,"ts":"2026-08-13T19:12:08Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (39 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -1177,7 +1177,7 @@
   MAINTENANCE GUARD: active-load OK (-1028319µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":41.104,"cpu_max_c":55.600002,"battery_c":40.300003,"ts":"2026-08-13T19:16:27Z"}
 [21:16:28] pixel3: cool after 1s (status=1 skin=41.104C)
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer

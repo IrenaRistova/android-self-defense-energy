@@ -51,6 +51,19 @@ One row is one **cell**: one application × one technique × one device × one r
 | `variant_parity.csv` | Descriptive_Statistics, Phase_Analysis | one row per build: version, SDKs, NSC, INTERNET, debuggable, protection marker, hash vs run tables |
 | `allatori_renaming.csv` | Headline_Effects (Table 5) | classes Allatori renamed, measured on the swept APKs |
 
+## Builds the analysis sets aside
+
+The run tables keep every measurement. Apart from the two negative controls (column `negative_control`), they do not
+mark the builds the analysis leaves out; `6_results_analysis/notebooks/thesis_lib.py` removes them (`EXCLUDED_APPS`,
+`EXCLUDED_BUILDS` and `PASSIVE_EXCLUDED_APPS`), and each reason can be checked in this package:
+
+| left out | reason | where to check |
+|---|---|---|
+| androidskk, every build | its unprotected control already carries obfuscated code | Table S1, `inputs/control_build_screen.csv` |
+| itsok's Allatori build | a release build in an otherwise all-debug experiment | Table S10, `inputs/variant_parity.csv` (`debuggable`) |
+| medtimer's packed build | it carries JaCoCo coverage probes that its control lacks | `inputs/coverage_screen.csv` |
+| medtimer in the passive phase, every build | its introduction screens put interaction into that phase | Table S3 |
+
 The build checks, like the static code effects, are measured from the APKs, which are not in
 this package (available on request); `inputs/build_checks.PROVENANCE.md` gives the command for each.
 

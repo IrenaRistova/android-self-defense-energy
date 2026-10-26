@@ -148,7 +148,7 @@
 [00:54:36] pixel9: hot (status=1 skin=39.64938C BIG=44.000004C) — resting 60s, 1746s so far
 [00:55:36] pixel9: STILL HOT after 30min (status=1 skin=38.884094C BIG=43.000004C) — proceeding anyway, cell is thermally degraded
   THERMAL: gave up waiting — cell is thermally degraded, flag it in analysis
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (43 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -280,7 +280,7 @@
   CUT: verified — usb/online=0 on pixel9 (board port 1, attempt 1)
   MAINTENANCE GUARD: active-load OK (-788281µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel9","ok":true,"thermal_status":1,"skin_c":41.197323,"cpu_max_c":49.000004,"battery_c":40.2,"ts":"2026-08-10T01:37:11Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (43 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer

@@ -1,6 +1,6 @@
 # Tables: source notebooks
 
-Every table here is written by a notebook under `6_results_analysis/notebooks/`. **BODY** tables appear in the thesis (`.tex` to `\input`, `.csv` for the data); **REPO** tables are cited by path; **SUPERVISOR** tables (`supervisor_only/`) are never cited. This list is generated from `../MANIFEST.csv`, which also covers the figures.
+Every table here is written by a notebook under `6_results_analysis/notebooks/`. **BODY** tables appear in the thesis (`.tex` to `\input`, `.csv` for the data); **REPO** tables are cited by path; **SENSITIVITY** tables (`sensitivity_ten_apps/`) hold the ten-application sensitivity check, which the thesis does not cite. This list is generated from `../MANIFEST.csv`, which also covers the figures.
 
 **The `.tex` tables were test-compiled on 2026-10-02** in ACM `sigconf` (Tectonic 0.15.0): all compile; Table 1 is a `table*` (both columns). The `.csv` beside each holds the same table.
 
@@ -119,12 +119,12 @@ Every table here is written by a notebook under `6_results_analysis/notebooks/`.
 | `variant_parity_full.csv` | 4 Planning (variants) | one row per build (36): version, SDKs, NSC, INTERNET, marker, hash | `Descriptive_Statistics.ipynb` |
 | `workload_duration.csv` | 4 Planning / 5 Execution (active-phase length) | workload-window duration over the analysed series cells, overall and per application; Pixel 3 control medians against the 100-130 s band | `Descriptive_Statistics.ipynb` |
 
-## SUPERVISOR
+## SENSITIVITY
 
 | File | Thesis section | What it holds | Notebook |
 |---|---|---|---|
-| `supervisor_only/filter_chain_ten_apps.csv` | none | filter chain with androidskk kept (ten applications); not cited in the thesis | `Descriptive_Statistics.ipynb` |
-| `supervisor_only/scenarios_ten_apps.csv` | none | scenario counts with androidskk; not cited in the thesis | `Descriptive_Statistics.ipynb` |
-| `supervisor_only/sensitivity_ten_vs_nine_apps.csv` | none | headline delta-E with and without androidskk; not cited in the thesis | `Headline_Effects.ipynb` |
+| `sensitivity_ten_apps/filter_chain_ten_apps.csv` | none | filter chain with androidskk kept (ten applications); not cited in the thesis | `Descriptive_Statistics.ipynb` |
+| `sensitivity_ten_apps/scenarios_ten_apps.csv` | none | scenario counts with androidskk; not cited in the thesis | `Descriptive_Statistics.ipynb` |
+| `sensitivity_ten_apps/sensitivity_ten_vs_nine_apps.csv` | none | headline delta-E with and without androidskk; not cited in the thesis | `Headline_Effects.ipynb` |
 
 To regenerate: run the notebooks from `6_results_analysis/notebooks/` (see the top-level `README.md`). Inputs: `6_results_data/run_tables/` and `6_results_data/inputs/`.

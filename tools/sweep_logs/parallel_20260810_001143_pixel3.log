@@ -30,7 +30,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-2038573µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":0,"skin_c":34.607002,"cpu_max_c":62.800003,"battery_c":33.0,"ts":"2026-08-09T22:12:58Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (41 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -44,7 +44,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-2148924µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":0,"skin_c":37.187,"cpu_max_c":65.4,"battery_c":35.9,"ts":"2026-08-09T22:17:28Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: REAL VBUS — port 3 ON for 2 of 41 samples MID-CELL (trailing teardown run was 3). /home/irena/Documents/Master Experiment/tools/sweep_logs/portwatch_20260810_001143_pixel3_pdfviewer_baseline_debug_r3.log
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -160,7 +160,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1180175µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":40.465,"cpu_max_c":58.9,"battery_c":39.7,"ts":"2026-08-09T23:31:29Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (41 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -201,7 +201,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-947753µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":42.093002,"cpu_max_c":56.2,"battery_c":41.800003,"ts":"2026-08-09T23:35:56Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (41 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -450,7 +450,7 @@
   CUT: verified — usb/online=0 on pixel3 (board port 3, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1003417µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel3","ok":true,"thermal_status":1,"skin_c":42.209003,"cpu_max_c":57.200005,"battery_c":41.7,"ts":"2026-08-10T00:36:33Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (41 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -486,7 +486,7 @@
 [02:43:02] pixel3: hot (status=2 skin=41.686C BIG=45.800003C) — resting 60s screen-off, 120s so far
 [02:44:03] pixel3: hot (status=2 skin=41.104C BIG=45.100002C) — resting 60s screen-off, 181s so far
 [02:45:03] pixel3: cool after 241s (status=1 skin=40.639004C)
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (41 samples, 4 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
@@ -528,7 +528,7 @@
 [02:50:31] pixel3: hot (status=2 skin=41.918003C BIG=45.800003C) — resting 60s screen-off, 60s so far
 [02:51:32] pixel3: hot (status=2 skin=41.279003C BIG=44.800003C) — resting 60s screen-off, 121s so far
 [02:52:32] pixel3: cool after 181s (status=1 skin=40.755C)
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (40 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer

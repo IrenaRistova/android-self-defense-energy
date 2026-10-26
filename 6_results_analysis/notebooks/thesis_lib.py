@@ -51,7 +51,7 @@ DATA = ROOT / "6_results_data"
 ANALYSIS = ROOT / "6_results_analysis"
 TABLES = ANALYSIS / "tables"
 FIGURES = ANALYSIS / "figures"
-SUPERVISOR = TABLES / "supervisor_only"   # ten-application sensitivity; never cited in the thesis
+SENSITIVITY = TABLES / "sensitivity_ten_apps"   # ten-application sensitivity (androidskk kept); not cited in the thesis
 MANIFEST = ANALYSIS / "MANIFEST.csv"
 HEADLINE_NUMBERS = TABLES / "headline_numbers.json"
 
@@ -488,13 +488,13 @@ def write_tex(df: pd.DataFrame, stem: str, caption: str, label: str, colfmt: str
 
 
 def register(paths, placement: str, section: str, description: str, notebook: str):
-    """Record artifacts in MANIFEST.csv: path, BODY | APPENDIX | SUPPLEMENT | REPO | SUPERVISOR, thesis
+    """Record artifacts in MANIFEST.csv: path, BODY | APPENDIX | SUPPLEMENT | REPO | SENSITIVITY, thesis
     section, one-line description, source notebook. SUPPLEMENT: a numbered supplementary item
     (Table/Figure S1, S2, ...) in the replication package's supplementary.pdf, which the thesis cites.
     Re-running a notebook replaces its own rows only."""
     if isinstance(paths, str):
         paths = [paths]
-    assert placement in ("BODY", "APPENDIX", "SUPPLEMENT", "REPO", "SUPERVISOR"), placement
+    assert placement in ("BODY", "APPENDIX", "SUPPLEMENT", "REPO", "SENSITIVITY"), placement
     cols = ["path", "placement", "thesis_section", "description", "notebook", "status"]
     m = pd.read_csv(MANIFEST) if MANIFEST.exists() else pd.DataFrame(columns=cols)
     m = m[~m["path"].isin(paths)]
@@ -503,7 +503,7 @@ def register(paths, placement: str, section: str, description: str, notebook: st
                              status="test-compiled with check_tables_compile.py: PASS on 2026-10-02 (ACM sigconf, Tectonic 0.15.0); re-run after regenerating"
                              if p.endswith(".tex") else "") for p in paths])
     m = pd.concat([m, new], ignore_index=True)
-    m["_o"] = m["placement"].map({"BODY": 0, "APPENDIX": 1, "REPO": 2, "SUPERVISOR": 3})
+    m["_o"] = m["placement"].map({"BODY": 0, "APPENDIX": 1, "REPO": 2, "SENSITIVITY": 3})
     m = m.sort_values(["_o", "path"]).drop(columns="_o")
     m.to_csv(MANIFEST, index=False)
 

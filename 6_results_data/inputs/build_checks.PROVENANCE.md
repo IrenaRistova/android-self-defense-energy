@@ -1,6 +1,6 @@
 # Build-check inputs: provenance
 
-Four inputs to the results notebooks are measured from the APKs themselves. The APKs
+These inputs are measured from the APKs themselves. The APKs
 are not in this package (available on request), so no notebook can
 regenerate these files; each is one command, run on 2026-10-02, over **the exact
 APK every Android Runner config swept** (resolved from the Android Runner configurations, published as
@@ -13,6 +13,7 @@ APK every Android Runner config swept** (resolved from the Android Runner config
 | `allatori_build_screen.csv` | `tools/verify_baseline_not_obfuscated.py --all --variant allatori_debug --csv …` | the same rule on the Allatori builds: how much of the signature obfuscation leaves, the basis for the minimum below |
 | `variant_parity.csv` | `tools/verify_variant_parity.py --csv …` | do the four builds of each app differ only by the protection? |
 | `allatori_renaming.csv` | `tools/verify_allatori_obfuscation.py --swept --csv …` | how many of each app's own classes did Allatori rename? |
+| `coverage_screen.csv` | `tools/check_coverage_instrumentation.py` | does any measured APK carry JaCoCo coverage instrumentation? |
 
 ## The control-build screen
 
@@ -95,3 +96,13 @@ consequence, and are disclosed rather than hidden:
   and all four pdfviewer builds carry it.
 - **minSdk**: documenter and itsok freeRASP builds raise minSdk to 23 (the SDK's
   floor). All three test devices run far above it; no effect on what runs.
+
+## Coverage instrumentation
+
+`coverage_screen.csv` has one row for each of the 40 APKs measured in the three series batches, found through the
+run tables' `apk_path` and identified by `apk_sha256`. It counts the JaCoCo files in the APK
+(`jacoco-agent.properties` and the JaCoCo runtime's `jacoco.properties`) and the `jacocoInit` references in its DEX
+files; of a packed build only the part the packer leaves unencrypted can be read. Only medtimer's packed build
+(`bangcle_debug`) has any: 2 files and 1 reference. Its control has none, which is why the analysis sets that build
+aside (`EXCLUDED_BUILDS` in `6_results_analysis/notebooks/thesis_lib.py`). The file is documentation: no notebook reads
+it.

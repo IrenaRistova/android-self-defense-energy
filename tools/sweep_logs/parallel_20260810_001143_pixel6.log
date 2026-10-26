@@ -194,7 +194,7 @@
   CUT: verified — usb/online=0 on pixel6 (board port 2, attempt 1)
   MAINTENANCE GUARD: active-load OK (-1644687µA = ≥150mA)
   THERMAL pre-cell: {"phone":"pixel6","ok":true,"thermal_status":0,"skin_c":37.752438,"cpu_max_c":59.000004,"battery_c":35.800003,"ts":"2026-08-09T22:32:46Z"}
-  mitmproxy replay: proxy ON for pdfviewer → 192.168.178.23:8080 (readback OK)
+  mitmproxy replay: proxy ON for pdfviewer → 203.0.113.23:8080 (readback OK)
   PORT WATCH: no mid-cell VBUS (37 samples, 3 teardown). Any STATUS=2 this cell is a charger-driver artifact, not VBUS.
   post-cell: port cut (AR re-enabled it at experiment end)
   mitmproxy replay: proxy OFF for pdfviewer
