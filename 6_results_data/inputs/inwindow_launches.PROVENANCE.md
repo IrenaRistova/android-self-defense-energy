@@ -15,7 +15,7 @@ last. Series batches only, every captured cell; the notebooks restrict them to t
 cells (the filter chain). Regenerated 2026-10-05 from the current logcat inputs
 (`logcat_activity.PROVENANCE.md`): 1,442 launches.
 
-- **A cell's first launch never qualifies,** because it precedes the energy measurement
+- **A cell's first launch does not qualify,** because it precedes the energy measurement
   (`launch_timing.PROVENANCE.md`).
 - **In the analysed cells, the qualifying launches are poetskingdom's, plus one other.** Its
   workload terminates and relaunches the application by design, for every build
@@ -26,7 +26,7 @@ cells (the filter chain). Regenerated 2026-10-05 from the current logcat inputs
 
 - `batch`, `phone`, `app`, `variant`, `rep`: the cell.
 - `launch_number`: the launch's position among the cell's cold launches. 1 is the first, which
-  is never in this file.
+  is not in this file except in one row (series 2, Pixel 3, poetskingdom, control, rep 8).
 - `ttid_ms`: the launch's time to initial display, from
   `ActivityTaskManager: Displayed <package>/<activity> ...: +XsYms`.
 - **The launch window** runs from the launch request (the display's log time minus `ttid_ms`)

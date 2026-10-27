@@ -11,8 +11,10 @@
 # and CSV is byte-identical to the committed one.
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PY="${PYTHON:-python3}"
-JUPYTER="${JUPYTER:-jupyter}"
+# Resolve the interpreters before changing folder, so relative paths such as .venv/bin/python work.
+abspath() { case "$1" in /*) printf '%s' "$1" ;; */*) printf '%s/%s' "$PWD" "$1" ;; *) command -v "$1" ;; esac; }
+PY="$(abspath "${PYTHON:-python3}")"
+JUPYTER="$(abspath "${JUPYTER:-jupyter}")"
 cd "$ROOT/6_results_analysis/notebooks"
 "$PY" "$ROOT/scratchpad/analysis/py2nb.py" "$ROOT/scratchpad/analysis/per_device_notebook.py" Per_Device_Analysis.ipynb
 # The notebooks append to these two files, so they start empty.

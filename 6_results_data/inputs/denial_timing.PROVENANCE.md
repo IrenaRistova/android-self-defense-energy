@@ -11,7 +11,7 @@ processes. Those are the processes `am_proc_start` reports under its package, it
 its own sub-processes (`logcat_activity.PROVENANCE.md`).
 
 **Which cells.** Every series cell whose `auditd_lines` in `logcat_activity_<batch>.csv` is
-above zero: 1,123 cells.
+above zero and that has a run: 1,123 cells (one more cell has such lines but no run).
 - **Most are freeRASP builds.** Every freeRASP cell with a capture has such lines.
 - **The rest are documenter's other builds.** Its conversion worker (`:pdf2htmlEXWorker`) logs one
   denial per cell, a read of the root directory, in every build.

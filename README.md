@@ -15,8 +15,8 @@ Figures S1 to S3) is [`6_results_analysis/supplementary/supplementary.pdf`](6_re
 
 | Folder | What it holds |
 | --- | --- |
-| `6_results_analysis/notebooks/` | The five notebooks that produce every table, figure and number, and their two libraries (`thesis_lib.py`, `per_device_lib.py`). `Per_Device_Analysis` makes the tables and figures of the thesis body. |
-| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body, appendix, supplement or repository only. |
+| `6_results_analysis/notebooks/` | The five notebooks that produce every table, figure and number, and their two libraries (`thesis_lib.py`, `per_device_lib.py`). `Per_Device_Analysis` makes most of the tables and figures of the thesis body. |
+| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body, appendix, supplement or repository only. The execution diagram (`figures/figure_execution.*`) is drawn by `scratchpad/analysis/execution_diagram/make_execution.py`. |
 | `6_results_analysis/supplementary/` | `supplementary.pdf` (Tables S1 to S16, Figures S1 to S3), its LaTeX source, and `INDEX.md`, which maps every table and figure of the thesis to its file and notebook. |
 | `6_results_data/run_tables/` | The four run tables, one row per measurement (4 x 1200 rows), with each measurement's validity verdict. `RUN_TABLE_COLUMNS_EXPLANATION.md` explains the columns. |
 | `6_results_data/inputs/` | Per-measurement and per-build inputs extracted from the raw logs and APKs. Each `<name>.PROVENANCE.md` gives the command that made the file. |
@@ -94,7 +94,7 @@ recording replayed for pdfviewer are not in this repository because of their siz
 issue in this repository.
 `6_results_data/raw_manifest.csv.gz` lists every raw file with its size and SHA-256. In the 38 scheduler logs under
 `tools/sweep_logs/`, local network addresses are replaced by documentation addresses (198.51.100.x and 203.0.113.x), so the checksums
-of these 38 files differ from the manifest.
+of 36 of these 38 files differ from the manifest (the two logs of the pilot's false start held no address).
 
 ## Applications
 

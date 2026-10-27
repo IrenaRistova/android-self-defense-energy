@@ -90,12 +90,11 @@ with the same inverted sign. The ratio
 `bangcle_avg_power / baseline_avg_power` is identical whether we
 multiply both by +1 or both by -1. The matched-pair claim holds.
 
-### `verified_discharge` gate: **AFFECTED** ❌
+### `verified_discharge` gate: not affected
 
-`before_experiment_apply_device_state.py` and `_lib_device_state.py`
-check `current_now < 0` to verify the phone is in discharge state.
-On Pixel 3 this gate is **inverted**: it would say "USB-supplying"
-during a real discharge and "verified_discharge" while charging.
+A first assessment marked this gate as affected. The gate (`verify_discharging` in `_lib_device_state.py`)
+reads sysfs `battery/current_now`, which uses the modern sign convention on the Pixel 3, so it is not affected
+(see the table below).
 
 ### Cross-device absolute-energy comparisons: **AFFECTED for raw current** ⚠️
 

@@ -289,7 +289,7 @@ default on empty/non-numeric).
 | `APPIUM_APP`                         | Android Runner wrapper | set by the wrapper     | App id; each `interaction_appium_<app_id>.py` sets it (`os.environ.setdefault`) and imports `appium_android_tests.<app_id>`. |
 | `APPIUM_WORKLOAD`                    | per-app module       | per-app default          | Selects the scenario suite within a per-app module; the modules in this repository implement only `espresso_mirror`. |
 | `APPIUM_BUILD_LABEL`                 | per-app module       | `""`                     | Free-form tag (`baseline` / `r8` / `allatori` / `bangcle`) included in JSONL rows + scenario report. Lets one config run across multiple variant builds while keeping rows distinguishable. |
-| `APPIUM_USE_VIEW_IDS`                | per-app module       | `false`                  | If truthy, opportunistically type into `<package>:id/...` views (espresso-mirror always uses IDs since that's its purpose). |
+| `APPIUM_USE_VIEW_IDS`                | per-app module       | `false`                  | Not read by the modules in this repository (linkhub only prints it). |
 | `APPIUM_UI_DUMP_DIR`                 | `_lib.coverage`      | `<OUTPUT_DIR>/appium_ui_dumps` | Override directory for `page_source` XML dumps.                                       |
 | `APPIUM_UI_DUMP_MAX`                 | `_lib.coverage`      | `32`                     | Max XML dumps per process. `0` disables.                                                  |
 | `APPIUM_SAVE_UI_ON_MISS`             | `_lib.coverage`      | `false`                  | If truthy, dump `page_source` on tracked-step misses (startup failures always dump regardless). |
@@ -319,11 +319,9 @@ the app died and the device idled.
 `Scripts/after_run.py` invokes `Scripts/detect_crash_anr.py` after every
 Run. The detector:
 
-1. Runs `am force-stop <package>` to ensure no zombie process leaks into
-   the next Run's energy window.
-2. Parses logcat for crash / ANR signatures (`FATAL EXCEPTION`,
+1. Parses logcat for crash / ANR signatures (`FATAL EXCEPTION`,
    `ANR in <pkg>`, system error dialog markers).
-3. Writes
+2. Writes
    `output/<run_id>/data/<device>/<subject_slug>/crash_anr_status.json`
    with one of `none` / `crash` / `anr` / `system_error_dialog` /
    `lost_foreground`, plus the matching log lines as evidence.

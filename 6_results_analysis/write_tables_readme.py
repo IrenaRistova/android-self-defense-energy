@@ -17,7 +17,7 @@ Every table here is written by a notebook under `6_results_analysis/notebooks/`.
 **The `.tex` tables were test-compiled on 2026-10-02** in ACM `sigconf` (Tectonic 0.15.0): all compile; Table 1 is a `table*` (both columns). The `.csv` beside each holds the same table.
 """
 FOOT = ("To regenerate: run the notebooks from `6_results_analysis/notebooks/` (see the top-level `README.md`). "
-        "Inputs: `6_results_data/run_tables/` and `6_results_data/inputs/`.")
+        "Inputs: `6_results_data/run_tables/`, `6_results_data/inputs/`, `6_results_data/derived/` and, for Table S4, `tools/sweep_logs/`.")
 
 
 def main():
@@ -27,13 +27,13 @@ def main():
     a = ap.parse_args()
     rows = [r for r in csv.DictReader(open(a.manifest, encoding="utf-8")) if r["path"].startswith("tables/")]
     out = [HEAD]
-    for placement in ("BODY", "REPO", "SENSITIVITY"):
+    for placement in ("BODY", "APPENDIX", "SUPPLEMENT", "REPO", "SENSITIVITY"):
         group = {}
         for r in sorted(rows, key=lambda r: r["path"]):
             if r["placement"] != placement:
                 continue
             f = r["path"][len("tables/"):]
-            stem = f.rsplit(".", 1)[0] if placement == "BODY" else f      # a body table's .csv and .tex share a row
+            stem = f.rsplit(".", 1)[0] if placement in ("BODY", "APPENDIX", "SUPPLEMENT") else f      # a body table's .csv and .tex share a row
             group.setdefault(stem, [r, []])[1].append(f)
         out += [f"## {placement}", "", "| File | Thesis section | What it holds | Notebook |", "|---|---|---|---|"]
         for r, files in group.values():

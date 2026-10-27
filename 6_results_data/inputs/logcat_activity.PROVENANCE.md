@@ -60,21 +60,22 @@ from `app_characteristics.csv`, keyed by the application named in the capture's 
 
 ## Which captures are kept
 
-- **Series 1** ran in three sessions, on 10, 11 and 13 August. Its file has 1,200 rows, every one
-  a capture of the measured run.
+- **Series 1** ran in three sessions, on 10, 11 and 13 August. Its file has 1,200 rows, and every analysed cell has a capture
+  of its measured run. A row with a blank `capture_matches_run` has none (2 in series 1, 4 in series 2 and 2 in
+  series 3: cells that never ran or lost their capture).
 - **Superseded captures**, of earlier attempts at cells that were re-run, are dropped in every
   batch. The pilot had 100 of this kind, and 8 more from a false-start session (20260804_023525).
 - **Truncated captures:** three captures stop 8–19 s before the first battery sample (series 2:
   Pixel 3 calculator Bangcle rep 6; series 3: Pixel 3 androidskk Allatori rep 5 and Pixel 3
   poetskingdom Allatori rep 5). They overlap nothing measured and are dropped too. One pilot cell
   lost its only capture the same way.
-- **Coverage:** 2,734 of the 2,736 analysed series cells have a log of their measured run; the
+- **Coverage:** 2,645 of the 2,647 analysed series cells have a log of their measured run; the
   pilot, 1,199 of 1,200 cells.
 
-**The index.** `6_results_data/sweep_log_index.csv` maps every log file to its sweep tag, and `--sweep-tag`
+**The index.** `6_results_data/sweep_log_index.csv` maps every log file of the four batches (9,881) to its sweep tag, and `--sweep-tag`
 selects captures through it. `tools/organise_sweep_logs.py` builds it from the wrapper logs and from
 each session's own log (`parallel_<run_ts>.log`), whose header names the tag. The pilot's first
-session (20260804_025319, 81 captures) has no wrapper log, so only its own log attributes it.
+session after the false start (20260804_025319, 81 captures) has no wrapper log, so only its own log attributes it.
 
 **The check.** `tools/check_data_complete.py` compares these tables with every capture on disk, by
 time overlap with the measured run, so it does not depend on the index. See

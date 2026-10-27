@@ -42,21 +42,22 @@ The `(?:\s+round=\d+)?` non-capturing group is CRITICAL. Regexes that expect `->
 
 ---
 
-## Per-app format table (the eleven-app cohort of 2026-07-25)
+## Per-app format table (the ten measured applications)
 
 | App | Format | Notes |
 |---|---|---|
-| calculator | A | Standard JSON coverage |
-| tipuous | A | Uses `strict_ok` computation in scoring module |
-| poetskingdom | A | Scenario list changed 2026-07-29: filter cells by ts_start_utc ≥ 2026-07-29T20:00Z |
-| linkhub | A | Uses `strict_ok` computation in scoring module |
+| documenter | A | Relaxed scoring for homeScrollAndIdle and openDocumentAttempt (they pass on the primary action alone) |
+| linkhub | A | `strict_ok` computed in the scoring module |
+| tipuous | A | `strict_ok` computed in the scoring module |
+| calculator | **B** basic | |
+| itsok | **B** basic | |
+| keep_recipe | **B** basic | |
 | medtimer | **B** basic | `log("scenario %s -> success=%s strict=%s wall=%.2fs" % ...)` |
+| pdfviewer | **B** basic | Needs the mitmproxy replay for `S9_open_online_pdf` and `S10_show_inline_pdf` |
+| poetskingdom | **B** basic | |
 | **androidskk** | **B with round** | `log("scenario %s round=%d -> success=%s strict=%s wall=%.2fs" % ...)`; the parser must include `round=N` |
-| itsok | A | Standard JSON coverage |
-| keep_recipe | **B** basic | Same shape as medtimer |
-| another_notes | A | Standard JSON coverage |
-| documenter | A | Has RELAXED scoring for homeScrollAndIdle + openDocumentAttempt (they pass on primary action alone). |
-| pdfviewer | A | Requires mitmproxy for `S9_open_online_pdf` + `S10_show_inline_pdf` |
+
+`tools/scenario_log_parser.py` reads both formats.
 
 ## Other apps with scenarios (not measured in the four batches; same formats)
 

@@ -69,8 +69,8 @@ energies, a median difference of 0.13% (post-launch) and 0.09% (workload).
     (Pixel 6 `VIRTUAL-SKIN-CPU-GPU`, Pixel 9 `VIRTUAL-SKIN-SOC`).
   - Each reading is the average since that zone's previous reading, a median of 7.0 s.
   - A window is reported only when the readings cover 80% of it.
-- `rail_<window>_battery`: the battery power over the same window.
-- `rail_max_<rail>`: the cell's highest single reading.
+- `rail_<window>_battery`: the battery power over the same window (not for `before`).
+- `rail_max_<rail>`: the cell's highest single reading (not for `cpu_total`).
 - `rail_reading_interval_s`: the median time between readings.
 - The Pixel 3 has no such log.
 

@@ -4,12 +4,13 @@
 before explaining any gap in the data, run:
 
 ```
-python3 tools/check_data_complete.py
+.venv/bin/python tools/check_data_complete.py
 ```
 
 It compares every derived input with the raw files and the run tables. Its exit status is 0 when
 every check passes and 1 when any check fails. It runs in about 15 seconds. Without the raw data
-(§2), `python3 tools/check_data_complete.py --no-raw` runs only the checks that need none.
+(§2), `.venv/bin/python tools/check_data_complete.py --no-raw` runs only the checks that need none (`.venv` is the
+environment the top-level README creates).
 
 > **The rule: never explain a gap from a derived file. Check the raw data.**
 
@@ -73,7 +74,7 @@ hardware addresses and the device serials removed.
 | stream logs (incl. thermal readings): per cell and per session raw, on request; per phone in this package | `tools/sweep_logs/` | per cell `parallel_<session>_<phone>_<app>_<variant>_r<rep>.log`; per phone `parallel_<session>_<phone>.log`; per session `parallel_<session>.log` | 14,388 sweep logs in all, 0.2 GB; the 38 per-phone logs are in this package |
 | proxy logs, pdfviewer's cells only (raw, on request) | `tools/sweep_logs/` | `mitmproxy_<sweep tag>.log` | 4 |
 | the 40 measured APKs (on request) | not in this package | run tables' `apk_path` (the builds' original location) | 40, 1.4 GB |
-| the sweep-log index: every log file and its sweep tag | `6_results_data/sweep_log_index.csv` | built by `tools/organise_sweep_logs.py index` (2026-10-05), which reads the wrapper logs and each session's own log | 13,372 files attributed |
+| the sweep-log index: every log file of the four batches and its sweep tag | `6_results_data/sweep_log_index.csv` | `tools/organise_sweep_logs.py index` (2026-10-05), which reads the wrapper logs and each session's own log; the published copy keeps only the four batch tags | 9,881 files (4,914 logcat, 4,967 stream) |
 
 **One Android Runner run folder** (`<run_id>/`):
 - `config.json`, `experiment.log` (timestamped), `progress.xml`, `Aggregated_Results_*.csv`;
@@ -88,7 +89,8 @@ hardware addresses and the device serials removed.
 
 **The logcat folder holds more than the batches.** It has 4,960 files. The other 46 come from test
 and smoke runs (for example `SHORT_VALIDATION_20260731`, `smoke_ykush_020558` and the
-`*_validate` sessions), and the index attributes each to its own tag.
+`*_validate` sessions), and the full index that `organise_sweep_logs.py index` writes attributes each to its own
+tag; the published index keeps only the four batches.
 - **Never glob the folder.** A glob once matched 2,282 files where 928 belonged to the batch.
 - **To get a batch's files,** use `resolve_logs_for_tag(<sweep tag>)` from
   `tools/organise_sweep_logs.py`.
@@ -116,8 +118,11 @@ A cell is `(batch, phone, app, variant, rep)`. Apart from the log tables in
 
 ## 4. The derived inputs and what each is built from
 
-The notebooks read only `6_results_data/run_tables/` and `6_results_data/inputs/`. Every input below
-is checked by `tools/check_data_complete.py`.
+The notebooks read `6_results_data/run_tables/` and `6_results_data/inputs/`, the reference results in
+`6_results_data/derived/` (as a cross-check) and, for Table S4, the scheduler logs in `tools/sweep_logs/` through
+`6_results_data/sweep_log_index.csv`. `tools/check_data_complete.py` checks the log tables and the inputs
+`dexopt_status`, `post_charge_k_window`, `mechanism_cells`, `clock_offset`, `launch_timing`, `denial_timing` and
+`variant_permissions` against the raw files and the run tables.
 
 | input | built by | from | covers |
 |---|---|---|---|
@@ -131,11 +136,11 @@ is checked by `tools/check_data_complete.py`.
 | `inputs/post_charge_k_window.csv` | `scratchpad/analysis/topup_ground_truth.py` (written as `topup_ground_truth.csv`, published under this name); `scratchpad/analysis/cold_cell_rule.py` only fixes K per phone | run tables, sweep logs | all 4,800 cells |
 | `inputs/variant_permissions.csv` | `tools/extract_variant_permissions.py` (2026-10-05) | the APKs the series cells ran (`aapt2 dump permissions`), hashes checked against the run tables | all 40 series builds (`variant_permissions.PROVENANCE.md`) |
 | `inputs/clock_offset_series.csv` | `tools/extract_clock_offset.py` (2026-10-25) | Android Runner's `experiment.log` (profiler start, laptop clock, ms), battery samples (phone clock), run tables | every series cell with a run and samples (`clock_offset.PROVENANCE.md`) |
-| static: `app_characteristics.csv`, `variant_parity.csv`, the build screens, `coverage_screen.csv`, `allatori_*` | the scripts named in their PROVENANCE files | the APKs | the builds |
+| static: `app_characteristics.csv`, `variant_parity.csv`, the build screens, `coverage_screen.csv`, `allatori_*` | the scripts named in their PROVENANCE files; `app_characteristics.csv` by `scratchpad/analysis/app_characteristics.py`; `selection_funnel.csv` names the source of each count in its `source` column | the APKs | the builds |
 | `raw_manifest.csv.gz` | `tools/raw_data_manifest.py` | everything in §2 | every raw file, with `used_by_results` |
 
 **After regenerating any input:**
-1. Run `python3 tools/check_data_complete.py`.
+1. Run `.venv/bin/python tools/check_data_complete.py`.
 2. Rebuild the notebooks (see `README.md` at the top level).
 3. Rebuild the manifest if a log table changed.
 
@@ -163,5 +168,6 @@ away later.
 | runs without battery samples | 2 | both invalid, so no result uses them: series 1, Pixel 9, pdfviewer, control, rep 1 (`HUB_ABORTED`); series 2, Pixel 9, calculator, Bangcle, rep 9 (`AR_INTERNAL`) |
 | cells without any run | pilot 0, series 1 1, series 2 3, series 3 2 | the cell never produced a run |
 
-**The result:** 2,734 of the 2,736 analysed series cells have a log of their measured run. Series 1
+**The result:** 2,645 of the 2,647 analysed series cells have a log of their measured run
+(`6_results_analysis/tables/log_coverage.csv`). Series 1
 is complete.

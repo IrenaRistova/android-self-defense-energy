@@ -30,10 +30,10 @@ One row is one **cell**: one application × one technique × one device × one r
 
 | column | why |
 |---|---|
-| `battery_temp_avg_c`, `battery_temp_max_c` | both are the **same pre-cell snapshot**, equal to floating-point noise in all 4800 rows. The battery broadcast holds one value for the whole cell |
+| `battery_temp_avg_c`, `battery_temp_max_c` | both are the **same pre-cell snapshot**, equal to floating-point noise in every row that has them (8 of the 4,800 are blank). The battery broadcast holds one value for the whole cell |
 | `teardown_joules` | not a measured phase. The profiler stops asynchronously and USB power is restored while it is still sampling, so it contains charge current |
 | `thermal_status_pre`, `thermal_skin_pre_c`, `thermal_cpu_pre_c` | **void for the pilot**: an unscoped file glob imported series 1's readings. ~97% correct for the series |
-| `wall_s` | includes the battery top-up before the cell and reaches ~7000 s. The measurement window is `duration_whole_window_s` |
+| `wall_s` | includes the battery top-up before the cell and reaches about 7,700 s in the series and 11,556 s in the pilot. The measurement window is `duration_whole_window_s` |
 | `cell_failure_class` | a later label can overwrite an earlier one: one series-3 cell that tripped the power-integrity gate is labelled `DEVICE_UNSUITABLE`. It is excluded either way |
 
 ## Other inputs (`inputs/`)
@@ -45,11 +45,11 @@ One row is one **cell**: one application × one technique × one device × one r
 | `allatori_static_code_effects.csv` | Mechanism_Analysis | measured from the APKs; no notebook regenerates it (see its PROVENANCE file) |
 | `app_characteristics.csv` | Descriptive_Statistics, Mechanism_Analysis | per-app category, size, SDK levels, permissions |
 | `selection_funnel.csv` | Descriptive_Statistics | every count with its source |
-| `control_build_screen.csv` | Descriptive_Statistics (Table 3) | source-file-name screen of the ten control APKs, with packages of any 1–2 character names |
+| `control_build_screen.csv` | Descriptive_Statistics (Table S1) | source-file-name screen of the ten control APKs, with packages of any 1–2 character names |
 | `freerasp_build_screen.csv` | Descriptive_Statistics | the same screen on the freeRASP builds, for comparison |
 | `allatori_build_screen.csv` | Descriptive_Statistics | the same screen on the Allatori builds: the basis for the screen's minimum |
 | `variant_parity.csv` | Descriptive_Statistics, Phase_Analysis | one row per build: version, SDKs, NSC, INTERNET, debuggable, protection marker, hash vs run tables |
-| `allatori_renaming.csv` | Headline_Effects (Table 5) | classes Allatori renamed, measured on the swept APKs |
+| `allatori_renaming.csv` | Headline_Effects (Table S10) | classes Allatori renamed, measured on the swept APKs |
 
 ## Builds the analysis sets aside
 
