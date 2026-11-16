@@ -322,8 +322,8 @@ def _b1_tex(kind, unit, stem, caption, label, placement, section, desc, extra=No
 
 print(_b1_tex("energy", "J", "table_descriptives_per_device",
               caption="Energy per run (J) by device, build and phase, three series batches; each technique is listed under its own arm's control.",
-              label="tab:descriptives-device", placement="SUPPLEMENT", section="Supplement (descriptives)",
-              desc="CAIN Table III: energy per cell per device x build, passive and active phase: cells, mean, median, SD; "
+              label="tab:descriptives-device", placement="ONLINE_APPENDIX", section="Online appendix (descriptives)",
+              desc="CAIN Table III: energy per run per device x build, passive and active phase: runs, mean, median, SD; "
                    "each technique under its own arm's control").to_string(index=False))
 def _b1_medtimer(dev):
     """medtimer's passive phase, which contains its introduction and is not in the passive analysis, over its
@@ -350,8 +350,8 @@ _b1_tex("duration", "s", "table_durations_per_device",
         caption="Phase duration per run (s) by device, build and phase, three series batches; each technique is listed under its own arm's "
                 "control. medtimer's passive phase, which contains its introduction and is not in the passive-phase analysis, is given in its "
                 "own row, over its analysed builds. Bold: the values the thesis states in words.",
-        label="tab:durations-device", placement="SUPPLEMENT", section="Supplement (descriptives: phase lengths)",
-        desc="phase length per cell per device x build, passive and active: cells, mean, median, SD; medtimer's passive phase as measured",
+        label="tab:durations-device", placement="ONLINE_APPENDIX", section="Online appendix (descriptives: phase durations)",
+        desc="phase duration per run per device x build, passive and active: runs, mean, median, SD; medtimer's passive phase as measured",
         extra=_b1_medtimer, bold=_b1_bold)
 
 # %% [markdown]
@@ -381,7 +381,7 @@ T.register(P.write_tex_grouped(
     label="tab:normality", colfmt="lrrrrr", groups=[("", 2), ("Raw", 2), ("Log", 2)],
     blocks={3 * i: f"{P.PHASE_DISPLAY[ph]} phase, {t}" for i, (ph, t) in enumerate((ph, t) for ph in ("active", "passive") for t in TECHS)},
     star=False, bold_rows=[i for i, r in enumerate(norm.itertuples()) if not r.normal_raw]),
-    "SUPPLEMENT", "Supplement (normality)", "Shapiro-Wilk W and p per comparison, raw and log", NB)
+    "ONLINE_APPENDIX", "Online appendix (normality)", "Shapiro-Wilk W and p per comparison, raw and log", NB)
 print(norm.round(3).to_string(index=False))
 T.record("normality", normal_raw=f"{int(norm['normal_raw'].sum())} of 18", normal_log=f"{int(norm['normal_log'].sum())} of 18",
          rejected_raw=[f"{r.technique} {r.phase.lower()} {r.device}" for r in norm.itertuples() if not r.normal_raw])
@@ -491,7 +491,7 @@ def _rq12(tx, stem, label, placement, section, desc, caption_extra="", caption=N
     return out
 
 
-print(_rq12(tests, "table_rq12", "tab:rq12", "BODY", "6 Results (RQ1 and RQ2)",
+print(_rq12(tests, "table_rq12", "tab:rq12", "BODY", "7 Results (RQ1 and RQ2)",
             "RQ1 and RQ2 merged: per technique x device, both phases: delta-E with CI, BH p, Cliff's delta magnitude (values in the CSV)",
             # a short caption; the methods are in the thesis's Data Analysis. Bold and shading need |delta| >= 0.147
             caption="Energy difference $\\Delta$E (\\%) of each technique from its control, per device and phase. Bold: adjusted "
@@ -750,7 +750,7 @@ _vi_h = [Line2D([], [], ls="", marker="o", ms=3, mfc="0.45", mec="white", mew=0.
          Line2D([], [], color="0.1", lw=0.7, label="Median")]
 fig.legend(handles=_vi_h, loc="outside lower center", ncol=3, frameon=False, fontsize=6.5, handlelength=1.3,
            columnspacing=1.0, handletextpad=0.4)
-T.register(T.save_figure(fig, "figure_rq12_violins", T.FIG_SINGLE), "BODY", "6 Results (RQ1 and RQ2)",
+T.register(T.save_figure(fig, "figure_rq12_violins", T.FIG_SINGLE), "BODY", "7 Results (RQ1 and RQ2)",
            "violin plots of the per-pair delta-E vs. control (one dot per matched pair, the pairs of Table 1), one column: rows runtime "
            "shielding (freeRASP), packing (Bangcle), obfuscation (Allatori); columns passive (RQ1), active (RQ2) phase; devices side by "
            "side, each panel its own y-axis; diamond: mean (= Table 1), line: median; dark violin: non-negligible difference "
@@ -780,7 +780,7 @@ for i, (ph, t) in enumerate((ph, t) for ph in ("active", "passive") for t in TEC
             ax.set_ylabel("ΔE (%)")
         if i == 5:
             ax.set_xlabel("normal quantile")
-T.register(T.save_figure(fig, "qq_per_device", T.FIG_DOUBLE), "SUPPLEMENT", "Supplement (normality)",
+T.register(T.save_figure(fig, "qq_per_device", T.FIG_DOUBLE), "ONLINE_APPENDIX", "Online appendix (normality)",
            "Q-Q plots of the per-pair relative differences, 18 comparisons, with the Shapiro-Wilk p", NB)
 
 # %% [markdown]
@@ -803,7 +803,7 @@ _l3 = pd.concat(pd.read_csv(T.DATA / "inputs" / f"logcat_activity_{b}.csv", dtyp
 _l3 = _l3.drop_duplicates(key, keep="last")
 cm = (series.merge(_m3[key + ["ar_cpu_post_launch", "ar_cpu_workload", "ar_mem_mb_post_launch", "ar_mem_mb_workload"]], on=key, how="left",
                    validate="one_to_one").merge(_l3[key + ["threads"]], on=key, how="left", validate="one_to_one"))
-METRICS = {"length": ("duration_pre_workload_s", "duration_workload_s", "Phase length (s)"),
+METRICS = {"length": ("duration_pre_workload_s", "duration_workload_s", "Phase duration (s)"),
            "cpu": ("ar_cpu_post_launch", "ar_cpu_workload", "CPU, device-wide (%)"),
            "memory": ("ar_mem_mb_post_launch", "ar_mem_mb_workload", "Memory, app PSS (MB)"),
            "threads": ("threads", "threads", "Threads (log-derived)")}
@@ -852,7 +852,7 @@ _f3 = T.TABLES / "table_rq3_correlations.tex"           # one column, so a small
 import re as _re
 _t3 = _f3.read_text().replace("\\small\n", "\\footnotesize\n\\setlength{\\tabcolsep}{3.2pt}\n", 1)
 _f3.write_text(_re.sub(r"(?<![\w$])-\.(?=\d)", "$-$.", _t3))             # a minus sign, not a hyphen, before ".26"
-T.register(_r3_paths, "BODY", "6 Results (RQ4)", "RQ4 table: Spearman rho per device x build, both phases, one column (bold = BH < 0.05, "
+T.register(_r3_paths, "BODY", "7 Results (RQ4)", "RQ4 table: Spearman rho per device x build, both phases, one column (bold = BH < 0.05, "
            "no stars; BH over 96)", NB)
 print(_r3_tab.to_string(index=False))
 T.record("rq3.cain", significant=f"{int((rq3['p_bh'] < P.ALPHA).sum())} of {len(rq3)}", method="Spearman, cells pooled over applications, BH over 96",
@@ -883,19 +883,19 @@ def _r3_fig(ph, stem, placement):
             ax.spines[["top", "right"]].set_visible(False)
     fig.legend(handles=[Line2D([], [], color=T.COLOURS[b], ls=styles[b], lw=1.1, marker="o", ms=3, label=b) for b in BUILDS],
                loc="outside lower center", ncol=4, frameon=False)
-    T.register(T.save_figure(fig, stem, T.FIG_DOUBLE), placement, "6 Results (RQ4)" if placement == "BODY" else "Supplement (RQ4)",
-               f"RQ4 scatter, {ph} phase: per-cell energy against phase length, CPU, memory, threads (rows) per device (columns); colour = build, "
+    T.register(T.save_figure(fig, stem, T.FIG_DOUBLE), placement, "7 Results (RQ4)" if placement == "BODY" else "Online appendix (RQ4)",
+               f"RQ4 scatter, {ph} phase: per-run energy against phase duration, CPU, memory, threads (rows) per device (columns); colour = build, "
                "least-squares line per build", NB)
 
 
-_r3_fig("active", "figure_rq3_active", "SUPPLEMENT")
-_r3_fig("passive", "figure_rq3_passive", "SUPPLEMENT")
+_r3_fig("active", "figure_rq3_active", "ONLINE_APPENDIX")
+_r3_fig("passive", "figure_rq3_passive", "ONLINE_APPENDIX")
 
 # %% [markdown]
-# ### The compact RQ3 figure for the body: phase length only
+# ### The compact RQ3 figure: phase duration only, Figure OA2 of the online appendix
 #
-# Rows: the passive and the active phase; columns: the devices; one point per cell, a least-squares line per build.
-# At the same phase length, freeRASP's passive-phase line lies above the others.
+# Rows: the passive and the active phase; columns: the devices; one point per run, a least-squares line per build.
+# At the same phase duration, freeRASP's passive-phase line lies above the others.
 
 # %%
 _rl_style = {"Control": "-", "Bangcle": "--", "Allatori": "-.", "freeRASP": ":"}
@@ -918,9 +918,9 @@ for j, ph in enumerate(("passive", "active")):
     axes[-1, j].set_xlabel("Phase duration (s)")
 fig.legend(handles=[Line2D([], [], color=T.COLOURS[b], ls=_rl_style[b], lw=1.2, label=b) for b in BUILDS],
            loc="outside lower center", ncol=4, frameon=False, handlelength=2.0, columnspacing=1.0)
-T.register(T.save_figure(fig, "figure_rq3_length", T.FIG_SINGLE), "BODY", "6 Results (RQ4)",
-           "energy per cell against phase length, per device (rows) and phase (columns: passive, active): one point per cell, a "
-           "least-squares line per build (one column)", NB)
+T.register(T.save_figure(fig, "figure_rq3_length", T.FIG_SINGLE), "ONLINE_APPENDIX", "Online appendix (RQ4)",
+           "energy per run against phase duration, per device (rows) and phase (columns: passive, active): one point per run, a "
+           "least-squares line per build", NB)
 
 # %%
 # The difference-based version: per technique, phase and device, Spearman of the pairs' delta-E with the pairs' differences
@@ -1029,8 +1029,8 @@ T.register(T.write_tex(_r4_tab, "table_rq4", caption=(
     "passive-phase duration (\\%), per device. Bold: adjusted $p < 0.05$; shaded: a non-negligible increase."),
     label="tab:rq4", colfmt="lrrrr", blocks=_r4_blocks,
     star=False, colsep="4pt", bold_cells=_r4_bold, shade_cells=_r4_shade),
-    "BODY", "6 Results (RQ3)", "RQ3 body table: mean difference per technique x device in memory (active, %), threads (count), "
-    "CPU (active, points), passive length (%); bold = BH < 0.05 within RQ3", NB)
+    "BODY", "7 Results (RQ3)", "RQ3 body table: mean difference per technique x device in memory (active, %), threads (count), "
+    "CPU (active, points), passive-phase duration (%); bold = BH < 0.05 within RQ3", NB)
 print(_r4_tab.to_string(index=False))
 
 # why the processor share is compared in the active phase only: how often the device-wide figure changes inside the
@@ -1042,7 +1042,7 @@ _r4_ref = _r4_ref.dropna(subset=["ar_cpu_changes_post_launch"])
 _r4_refresh = {DEV[d]: 100 * float((_r4_ref.loc[_r4_ref["phone"] == d, "ar_cpu_changes_post_launch"] > 0).mean()) for d in DEVS}
 print("device-wide CPU figure refreshed inside the passive phase (% of measurements):", {k: round(v, 1) for k, v in _r4_refresh.items()})
 
-# the supplementary table: every test of RQ4
+# the online appendix table: every test of RQ3
 _r4_full, _r4_fb, _r4_fblocks = [], set(), {}
 for _rk, _rh, _rph, _rcol, _runit in _R4:
     _r4_fblocks[len(_r4_full)] = _rh
@@ -1051,7 +1051,7 @@ for _rk, _rh, _rph, _rcol, _runit in _R4:
             r = _r4_get(_rk, t, dev)
             _r4_full.append({"Technique": t, "Device": DEV[dev], "Pairs": int(r.n),
                              "Difference [95% CI]": f"{P.signed(r.difference, 2)} {P.ci_text(r.ci_lo, r.ci_hi, 2)}",
-                             "Higher": f"{r.higher} of {r.n}", "p (BH)": P.fmt_p(r.p_bh), "Cliff's δ": P.signed(r.cliff, 2)})
+                             "Higher": f"{r.higher} of {r.n}", "p (BH)": P.fmt_p(r.p_bh), "Cliff's δ": P.signed(r.cliff, 3)})
             if r.significant:
                 _r4_fb.add((len(_r4_full) - 1, 3))
 _r4_full = pd.DataFrame(_r4_full)
@@ -1059,13 +1059,13 @@ _paths = T.write_tex(_r4_full, "table_rq4_full", caption=(
     "RQ3 in full: the protected build minus its control on the matched pairs, per characteristic, technique and device, with "
     "the 95\\% interval, the pairs in which the protected build is higher, the BH-adjusted $p$ (within RQ3's 54 tests) and "
     "Cliff's $\\delta$ within pairs. The processor share is given for the active phase only: inside the passive phase the "
-    f"device-wide figure changes in only {min(_r4_refresh.values()):.0f} to {max(_r4_refresh.values()):.0f}\\% of the measurements, so it "
-    "mostly carries the load from before the phase. Threads are counted once per measurement, over the "
-    "whole run, its launch included; the count is a lower bound (threads that never log are not seen). Bold: BH-adjusted "
+    f"device-wide figure changes in only {min(_r4_refresh.values()):.0f} to {max(_r4_refresh.values()):.0f}\\% of the runs, so it "
+    "mostly carries the load from before the phase. Threads are counted once per run, its launch included;"
+    " the count is a lower bound (threads that never log are not seen). Bold: BH-adjusted "
     "$p < 0.05$."), label="tab:rq4-full", colfmt="llrrrrr", blocks=_r4_fblocks, star=True, bold_cells=_r4_fb)
 _f = T.TABLES / "table_rq4_full.tex"
-_f.write_text(_f.read_text().replace("\\small\n", "\\footnotesize\n", 1))      # 54 rows: one supplement page
-T.register(_paths, "SUPPLEMENT", "Supplement (RQ3)", "RQ3 in full: all 54 tests with intervals, pairs higher, BH p and Cliff's delta", NB)
+_f.write_text(_f.read_text().replace("\\small\n", "\\footnotesize\n", 1))      # 54 rows: one online appendix page
+T.register(_paths, "ONLINE_APPENDIX", "Online appendix (RQ3)", "RQ3 in full: all 54 tests with intervals, pairs higher, BH p and Cliff's delta", NB)
 _sig = rq4[rq4["significant"]]
 T.record("rq4", tests=len(rq4), cpu_refreshed_in_passive_pct=_r4_refresh, significant=f"{len(_sig)} of {len(rq4)}", family="BH within RQ4",
          freerasp_threads={DEV[d]: round(float(_r4_get("threads", "freeRASP", d).difference), 2) for d in DEVS},
@@ -1104,12 +1104,12 @@ for ph in ("active", "passive"):
     tab.columns = ["Application"] + [DEV[d].replace("Pixel ", "P") for d in DEVS] * 3
     T.register(P.write_tex_grouped(tab, f"table_per_app_{ph}", bold_cells=bold,
                                    caption=f"Per application, {ph} phase: mean $\\Delta E$ (\\%) of its matched pairs (three series batches) per technique and "
-                                           "device. –: no pair (packing leaves out medtimer, the obfuscation arm covers five applications, keep\\_recipe has no Pixel~3 cells"
+                                           "device. –: no pair (packing leaves out medtimer, the obfuscation arm covers five applications, keep\\_recipe has no Pixel~3 runs"
                                            + ("). medtimer is not in the passive-phase analysis, whose phase for it contains its introduction; its row "
                                               "gives its runtime-shielding values from that phase as measured, for the comparison in the Discussion. Bold: the "
                                               "values the thesis states in words." if ph == "passive" else ")."),
                                    label=f"tab:per-app-{ph}", colfmt="l" + "rrr" * 3, groups=[("", 1)] + [(t, 3) for t in TECHS], star=True),
-               "SUPPLEMENT", "Supplement (per application)", f"mean delta-E per application x technique x device, {ph} phase", NB)
+               "ONLINE_APPENDIX", "Online appendix (per application)", f"mean delta-E per application x technique x device, {ph} phase", NB)
     print(tab.to_string(index=False))
 
 # %% [markdown]
@@ -1122,10 +1122,10 @@ _ln_tab = pd.DataFrame({"Device": _ln["device"], "Pairs": _ln["pairs"],     # on
                         "Δ (ms) [95% CI]": [f"{P.signed(m, 0)} {P.ci_text(lo, hi, 0)}" for m, lo, hi in zip(_ln["delta_ms"], _ln["ms_ci_lo"], _ln["ms_ci_hi"])],
                         "Δ (%) [95% CI]": [f"{P.signed(m, 1)} {P.ci_text(lo, hi, 1)}" for m, lo, hi in zip(_ln["delta_pct"], _ln["ci_lo"], _ln["ci_hi"])]})
 T.register(T.write_tex(_ln_tab.reset_index(drop=True), "table_launch_per_device",
-                       caption="Time to initial display, technique minus control, per device: mean of the matched pairs with its 95\\% paired $t$-interval.",
+                       caption="Time to first display, technique minus control, per device: mean of the matched pairs with its 95\\% paired $t$-interval.",
                        label="tab:launch", colfmt="lrrr", blocks={0: "Bangcle (packing)", 3: "Allatori (obfuscation)", 6: "freeRASP (runtime shielding)"},
                        star=True),      # one column wide, in a page-wide float so it can share the appendix page with Table 8
-           "SUPPLEMENT", "Supplement (the launch)", "launch time to first display per technique x device", NB)
+           "ONLINE_APPENDIX", "Online appendix (the launch)", "launch time to first display per technique x device", NB)
 print(_ln_tab.to_string(index=False))
 
 _bu = pd.read_csv(T.DATA / "inputs" / "mechanism_cells_series.csv", dtype={"rep": str}).merge(series[key], on=key, how="inner")
@@ -1494,7 +1494,7 @@ for r in cost_steps.itertuples():
              delta=r.delta, ci95=[r.ci_lo, r.ci_hi], p_wilcoxon=r.p_wilcoxon, pairs=r.pairs)
 
 # %% [markdown]
-# ## Supplement: the tables behind the numbers the text gives in words
+# ## Online appendix: the tables behind the numbers the text gives in words
 #
 # The thesis text points to these tables instead of giving every number; every value the text states in words
 # is set in bold, so a reader can go from the sentence to the number. Built from the tables above and from Mechanism
@@ -1543,12 +1543,12 @@ add("Extra energy, whole phase (J)", [_ci(_bw[dv]["extra_j"], _bw[dv]["ci_lo"], 
 _share = [100 * _bc[dv]["extra_j"] / _bw[dv]["extra_j"] for dv in _C3] + [100 * _pc["delta"] / _pw["delta"]]
 add("The core's share of the extra energy (%)", [f"{v:.0f}" for v in _share])
 i_lp = len(rows)
-add("freeRASP, per measurement", [f"{_lp.loc[(dv, 'freeRASP'), 'per_cell_post_launch']:.2f}" for dv in _C3]
+add("freeRASP, per run", [f"{_lp.loc[(dv, 'freeRASP'), 'per_cell_post_launch']:.2f}" for dv in _C3]
     + [f"{_lp.loc[('all devices', 'freeRASP'), 'per_cell_post_launch']:.2f}"])
-add("freeRASP, measurements with any (%)", [f"{_lp.loc[(dv, 'freeRASP'), 'cells_with_any_post_launch_pct']:.0f}" if
+add("freeRASP, runs with any (%)", [f"{_lp.loc[(dv, 'freeRASP'), 'cells_with_any_post_launch_pct']:.0f}" if
                                              _lp.loc[(dv, 'freeRASP'), 'per_cell_post_launch'] > 0 else "0" for dv in _C3]
     + [f"{_lp.loc[('all devices', 'freeRASP'), 'cells_with_any_post_launch_pct']:.0f}"])
-add("Every other build, per measurement", ["0"] * 4)
+add("Every other build, per run", ["0"] * 4)
 i_wf = len(rows)
 add("Pairs", [int(_wf.loc[dv, "n_pairs"]) for dv in _C3] + [int(_wf.loc["all devices", "n_pairs"])])
 add("Control (kB/s)", [f"{_wf.loc[dv, 'control_mean']:.0f}" for dv in _C3 + ["all devices"]])
@@ -1558,7 +1558,7 @@ _ad_fr = [(int(_ad.loc[(dv, "freeRASP"), "with_auditd_main_process"]), int(_ad.l
 _ad_ot = [(0, int(sum(_ad.loc[(dv, b), "cells"] for b in _OTHER if (dv, b) in _ad.index))) for dv in _C3]
 add("freeRASP: with a denial", [f"{a} of {n}" for a, n in _ad_fr] + [f"{sum(a for a, _ in _ad_fr)} of {sum(n for _, n in _ad_fr)}"])
 add("Other builds: from the main process", [f"{a} of {n}" for a, n in _ad_ot] + [f"0 of {sum(n for _, n in _ad_ot)}"])
-assert all(a == n for a, n in _ad_fr), "a shielded measurement without a denial from the library"
+assert all(a == n for a, n in _ad_fr), "a shielded run without a denial from the library"
 mech = pd.DataFrame(rows)
 _mb = ({(4, j) for j in range(1, 5)} | {(i_lp, 2), (i_lp, 3)} | {(i_wf + 2, j) for j in range(1, 4)}
        | {(i_ad, j) for j in range(1, 5)} | {(i_ad + 1, j) for j in range(1, 5)})
@@ -1569,11 +1569,11 @@ T.register(T.write_tex(mech, "table_freerasp_mechanism", caption=(
     label="tab:freerasp-mechanism", colfmt="lrrrr", bold_cells=_mb,
     blocks={0: "The burst: the eight applications of the passive-phase analysis",
             i_lp: "Requests rejected by other applications' local web servers (the eight applications)",
-            i_wf: "Wi-Fi traffic over the whole measurement (all nine applications)",
-            i_ad: "SELinux denials of file and directory accesses (all analysed measurements)"},
+            i_wf: "Wi-Fi traffic over the whole run (all nine applications)",
+            i_ad: "SELinux denials of file and directory accesses (all analysed runs)"},
     notes="Core of the burst: each device's own window of highest extra power; for all devices together, 4-15 s. "
           "The rejected requests are logged by two unrelated applications on the devices; the Pixel 3 logs none."),
-    "SUPPLEMENT", "Supplement (runtime shielding per device, exploratory)",
+    "ONLINE_APPENDIX", "Online appendix (runtime shielding per device, exploratory)",
     "freeRASP per device: the burst's core and its share of the passive phase's extra energy, rejected local-server requests, "
     "Wi-Fi traffic, SELinux denials", NB)
 print(mech.to_string(index=False))
@@ -1613,29 +1613,29 @@ T.register(T.write_tex(active_cost, "table_freerasp_active_cost", caption=(
     "energy explains. Extra energy: freeRASP minus control, mean of matched pairs with its 95\\% paired $t$-interval. " + _BOLD),
     label="tab:freerasp-active-cost", colfmt="lrrr", bold_cells=_ab,
     blocks={0: "All applications", i8: "The eight applications measured on all three devices"},
-    notes="The share of the fall: the part of the drop from the Pixel 3's percentage that the larger control alone accounts for, "
+    notes="The share of the fall: the part of the drop from the Pixel 3's percentage that the larger control energy explains, "
           "averaged over the two orders of decomposing the change (in brackets, each order). Steps in the extra energy between "
           f"devices, matched on application and batch over the eight applications: {_steps_txt}."),
-    "SUPPLEMENT", "Supplement (freeRASP's active-phase cost)",
+    "ONLINE_APPENDIX", "Online appendix (freeRASP's active-phase cost)",
     "freeRASP's active-phase extra energy per device with the control's energy, and the share of the fall in percent the larger control explains", NB)
 print(active_cost.to_string(index=False))
 
 # --- the fuel gauge --------------------------------------------------------------------------------------------------
 _fg = pd.read_csv(T.TABLES / "fuel_gauge_resolution.csv").set_index("phone")
 rows, add = _rows(["", *_C3])
-add("Measurements", [int(_fg.loc[d, "cells"]) for d in DEVS])
+add("Runs", [int(_fg.loc[d, "cells"]) for d in DEVS])
 add("Median interval between changes (ms)", [f"{_fg.loc[d, 'gauge_update_ms_median']:.0f}" for d in DEVS])
-add("Range over the measurements (ms)", [f"{_fg.loc[d, 'gauge_update_ms_min']:.0f}–{_fg.loc[d, 'gauge_update_ms_max']:.0f}" for d in DEVS])
+add("Range over the runs (ms)", [f"{_fg.loc[d, 'gauge_update_ms_min']:.0f}–{_fg.loc[d, 'gauge_update_ms_max']:.0f}" for d in DEVS])
 add("Changes per second", [f"{1000 / _fg.loc[d, 'gauge_update_ms_median']:.1f}" for d in DEVS])
 add("Readings during one launch, control", [f"{_fg.loc[d, 'gauge_updates_in_launch_median_baseline']:.0f}" for d in DEVS])
 add("Readings during one launch, packed", [f"{_fg.loc[d, 'gauge_updates_in_launch_median_bangcle']:.0f}" for d in DEVS])
 gauge = pd.DataFrame(rows)
 T.register(T.write_tex(gauge, "table_fuel_gauge", caption=(
     "How often the battery's current reading changes, per device: the median interval between successive changes within a "
-    "measurement (poetskingdom's analysed measurements, every build), and how many distinct readings one launch spans (median over "
-    "poetskingdom's relaunches during its workload). The voltage is read once per measurement. " + _BOLD),
+    "run (poetskingdom's analysed runs, every build), and how many distinct readings one launch spans (median over "
+    "poetskingdom's relaunches during its workload). The voltage is read once per run. " + _BOLD),
     label="tab:fuel-gauge", colfmt="lrrr", bold_cells={(1, 1), (1, 2), (1, 3), (3, 1), (3, 2), (3, 3)}),
-    "SUPPLEMENT", "Supplement (the fuel gauge)", "the fuel gauge's update interval per device, and the readings one launch spans", NB)
+    "ONLINE_APPENDIX", "Online appendix (the fuel gauge)", "the fuel gauge's update interval per device, and the readings one launch spans", NB)
 print(gauge.to_string(index=False))
 
 # --- arrival temperature -------------------------------------------------------------------------------------------
@@ -1671,13 +1671,13 @@ _tb.add((i_adj + [(ph, t) for ph in ("active", "passive") for t in TECHS].index(
 assert (_ta["significant"] == _ta["significant_adjusted"]).all(), "the adjustment changes a verdict: the caption says it does not"
 T.register(T.write_tex(temp_tab, "table_arrival_temperature", caption=(
     "Arrival temperature per device: how strongly power depends on it, how far each technique's arrival temperature differs from "
-    "its control's, and the comparisons recomputed with every measurement's energy adjusted to its device's mean arrival "
+    "its control's, and the comparisons recomputed with every run's energy adjusted to its device's mean arrival "
     "temperature, which changes no verdict. " + _BOLD),
     label="tab:arrival-temperature", colfmt="lrrr", bold_cells=_tb,
     blocks={0: "Power change per degree of arrival temperature (% per °C, within groups)",
             i_bal: "Arrival temperature, technique minus control (°C), mean of matched pairs with its 95% paired t-interval",
             i_adj: "With energies adjusted: shift in ΔE (percentage points) / change in the interval's width (%)"}),
-    "SUPPLEMENT", "Supplement (arrival temperature)",
+    "ONLINE_APPENDIX", "Online appendix (arrival temperature)",
     "per device: power against arrival temperature, the balance of each technique against its control, and the adjusted comparisons", NB)
 print(temp_tab.to_string(index=False))
 
@@ -1714,7 +1714,7 @@ T.register(T.write_tex(sampler_tab, "table_sampler_load", caption=(
     notes="* The Pixel 3 logs no power rails: the newer devices' highest cluster readings stand in for its own. The power at which "
           "the verdict would change: the lowest power that, held during the extra collection time, makes the comparison "
           "non-significant after the Benjamini-Hochberg adjustment; '–': the comparison is not significant."),
-    "SUPPLEMENT", "Supplement (the memory sampler's load)",
+    "ONLINE_APPENDIX", "Online appendix (the memory sampler's load)",
     "freeRASP's extra collection time per device, active phase, and the share of delta-E it could account for at three powers", NB)
 print(sampler_tab.to_string(index=False))
 
@@ -1779,7 +1779,7 @@ def _cvs(d, col):
 
 rows = []
 for lab, col in (("Active-phase energy", "workload_joules"), ("Passive-phase energy", "pre_workload_joules"),
-                 ("Active-phase length", "duration_workload_s"), ("Active-phase mean power", "watts")):
+                 ("Active-phase duration", "duration_workload_s"), ("Active-phase mean power", "watts")):
     _x = T.PASSIVE_EXCLUDED_APPS if col == "pre_workload_joules" else ()      # the passive phase's analysis set
     a, b = _cvs(_pl[~_pl["app"].isin(_x)], col), _cvs(_se[~_se["app"].isin(_x)], col)
     common = a.index.intersection(b.index)
@@ -1835,13 +1835,12 @@ print(f"lowest battery level a cell started at: pilot cells used {_lowest['pilot
 
 T.register(T.write_tex(_ps, "table_pilot_series", caption=(
     "Repeatability, pilot against series: median within-group coefficient of variation over the groups (application, device, build) "
-    "with at least three valid measurements in both, and the groups above 15\\%. Among the things that changed between the two are the "
-    f"thermal gate and the longer measurement timeout, which only the pilot's last {_pl_gated} measurements had, and the lowest battery "
-    "level at which measurements started, so this comparison alone cannot credit the reduction to any one of them. The thermal-gate "
-    "table tests cooler starts inside the pilot. The pilot measurements from before the external supply was fitted are not used. The "
+    "with at least three valid runs in both, and the groups above 15\\%. Other settings also changed between the pilot and the series. "
+    "The thermal-gate table tests cooler starts inside the pilot. The pilot runs from before the external supply was fitted are not "
+    "used. The "
     "passive-phase row leaves out medtimer, as the passive-phase analysis does. Bold: the values the thesis states in words."),
     label="tab:pilot-series", colfmt="lrrrrr", star=True,
-    bold_cells={(int(_ps.index[_ps["Measure"] == "Active-phase energy"][0]), j) for j in (2, 3)}), "SUPPLEMENT", "Supplement (pilot to series)", "pilot vs series repeatability over the common groups", NB)
+    bold_cells={(int(_ps.index[_ps["Measure"] == "Active-phase energy"][0]), j) for j in (2, 3)}), "ONLINE_APPENDIX", "Online appendix (pilot to series)", "pilot vs series repeatability over the common groups", NB)
 print(_ps.to_string(index=False))
 T.record("pilot_series", **{r["Measure"]: [r["Pilot median CV (%)"], r["Series median CV (%)"], r["Pilot groups > 15%"], r["Series groups > 15%"]]
                             for r in rows},
@@ -1951,7 +1950,7 @@ _tg_kept = pd.concat(g.sort_values("battery_temp_avg_c", kind="stable").head(_kn
 _tg_p95 = dict(kept=float(_tg_kept["battery_temp_avg_c"].quantile(0.95)), series=float(_tg_se["battery_temp_avg_c"].quantile(0.95)))
 print("never-rested series measurements:", _tg_u, "| start-temperature p95, kept pilot vs series:", _tg_p95)
 assert abs(_tg_e["pilot"] - float(_ps.loc[_ps["Measure"] == "Active-phase energy", "Pilot median CV (%)"].iloc[0])) < 0.006, \
-    "the test's groups are not Table S4's"
+    "the test's groups are not Table OA7's"
 _tq = {g: d["battery_temp_avg_c"] for g, d in (("pilot", _tg_pl), ("series", _tg_se))}
 rows, _tgb, _blk = [], set(), {}
 _blk[len(rows)] = "Charging, from the external supply on (stream logs)"
@@ -1967,30 +1966,30 @@ _blk[len(rows)] = "What the gate does (series)"
 rows.append({"": "Arrival status none / light / moderate or worse (%)", "Pilot": "–",
              "Series": " / ".join(f"{_ts_share[k]:.1f}" for k in ("none", "light", "rested"))})
 _tgb |= {(len(rows) - 1, 2)}
-rows.append({"": "Measurements the gate rested first (of analysed)", "Pilot": "–", "Series": f"{int((_ts >= 2).sum())} of {len(_ts)}"})
+rows.append({"": "Runs the gate rested first (of analysed)", "Pilot": "–", "Series": f"{int((_ts >= 2).sum())} of {len(_ts)}"})
 _tgb |= {(len(rows) - 1, 2)}
 rows.append({"": "Rests that gave up while still hot", "Pilot": "–", "Series": f"{_fs_series['still_hot']}"})
-_blk[len(rows)] = "Battery temperature when a measurement starts (°C)"
+_blk[len(rows)] = "Battery temperature when a run starts (°C)"
 for lab, f in (("Median", lambda t: t.median()), ("95th percentile", lambda t: t.quantile(0.95)), ("Maximum", lambda t: t.max())):
     rows.append({"": lab, "Pilot": f"{f(_tq['pilot']):.1f}", "Series": f"{f(_tq['series']):.1f}"})
 _tgb |= {(len(rows) - 1, 1), (len(rows) - 1, 2)}
-_blk[len(rows)] = f"Variation between repeated measurements (median within-group CV, %; {_tg_e['groups']} groups)"
-for lab, r in (("Active-phase energy", _tg_e), ("Active-phase length", _tg_d)):
+_blk[len(rows)] = f"Variation between repeated runs (median within-group CV, %; {_tg_e['groups']} groups)"
+for lab, r in (("Active-phase energy", _tg_e), ("Active-phase duration", _tg_d)):
     i0 = len(rows)
-    rows += [{"": f"{lab}: all measurements", "Pilot": f"{r['pilot']:.2f}", "Series": f"{r['series']:.2f}"},
+    rows += [{"": f"{lab}: all runs", "Pilot": f"{r['pilot']:.2f}", "Series": f"{r['series']:.2f}"},
              {"": "the coolest-starting 74 % of each group", "Pilot": f"{r['coolest']:.2f}", "Series": "–"},
              {"": "a random 74 % of each group", "Pilot": f"{r['random']:.2f} [{r['random_lo']:.2f}, {r['random_hi']:.2f}]", "Series": "–"},
              {"": "share of the drop reproduced: coolest / random (%)",
               "Pilot": f"{round(r['closed_coolest_pct']) + 0:.0f} / {round(r['closed_random_pct']) + 0:.0f}", "Series": "–"}]
     _tgb |= {(i0 + 3, 1)}
     if r is _tg_e:
-        rows.append({"": f"measurements the gate did not rest ({_tg_u['groups']} groups)", "Pilot": "–",
+        rows.append({"": f"runs the gate did not rest ({_tg_u['groups']} groups)", "Pilot": "–",
                      "Series": f"{_tg_u['unrested']:.2f}"})
 thermal = pd.DataFrame(rows)
 T.register(T.write_tex(thermal, "table_thermal_gate", caption=(
-    "The thermal gate (exploratory): phones that ran down, the thermal status at which measurements arrive, the battery temperature "
-    "at which they start, and a test inside the pilot of whether cooler starts alone make repeated measurements steadier. The pilot ran "
-    "without the gate (apart from its last " + str(_pl_gated) + " measurements), the series with it. Bold: the values the thesis "
+    "The thermal gate (exploratory): phones that ran down, the thermal status at which runs arrive, the battery temperature "
+    "at which they start, and a test inside the pilot of whether cooler starts make repeated runs steadier. The pilot ran "
+    "without the gate (apart from its last " + str(_pl_gated) + " runs), the series with it. Bold: the values the thesis "
     "states in words."),
     label="tab:thermal-gate", colfmt="lrr", bold_cells=_tgb,
     blocks=_blk,
@@ -1998,16 +1997,16 @@ T.register(T.write_tex(thermal, "table_thermal_gate", caption=(
           "successful top-up when the phone next reaches the top of its charge band. Stops: phone streams the harness stopped at its "
           "battery safety floor, counted in each batch's stream logs. Before the "
           "external supply was fitted, top-ups ran on laptop power, which could not always charge a phone, so the comparison starts at "
-          "the supply. Arrival status: Android's thermal status read before each analysed series measurement (0 none, 1 light, 2 "
+          "the supply. Arrival status: Android's thermal status read before each analysed series run (0 none, 1 light, 2 "
           "moderate or worse); the gate rests only the last group, then measures. Temperature: "
-          "the battery temperature Android reports, read once before each measurement; analysed measurements, the pilot's from the "
-          "external supply on. Variation: within each application, device and build with at least three measurements in both "
-          "regimes. Keeping the coolest-starting 74 % of each pilot group drops its hottest quarter of measurements and leaves a start "
+          "the battery temperature Android reports, read once before each run; analysed runs, the pilot's from the "
+          "external supply on. Variation: within each application, device and build with at least three runs in both "
+          "regimes. Keeping the coolest-starting 74 % of each pilot group drops its hottest quarter of runs and leaves a start "
           f"temperature 95th percentile of {_tg_p95['kept']:.1f} °C, close to the series' {_tg_p95['series']:.1f} °C; "
           f"the random subsets are {_TG_DRAWS} draws (mean, 95 % band). The share reproduced is the part of the drop from the pilot's "
-          "to the series' value that the subset alone achieves."),
-    "SUPPLEMENT", "Supplement (the thermal gate)",
-    "the thermal gate: safety-floor stops per regime, pre-measurement battery temperature, and the within-pilot coolest-subset test", NB)
+          "to the series' value that the subset achieves."),
+    "ONLINE_APPENDIX", "Online appendix (the thermal gate)",
+    "the thermal gate: safety-floor stops per regime, battery temperature before each run, and the within-pilot coolest-subset test", NB)
 print(thermal.to_string(index=False))
 T.record("thermal_gate", safety_floor_stops={b: _fs[b]["stops"] for b in _fs}, stream_logs={b: _fs[b]["logs"] for b in _fs},
          pilot_stops_after_external_supply=_fs["pilot"]["stops_after"], pilot_logs_after_external_supply=_fs["pilot"]["logs_after"],
@@ -2028,13 +2027,15 @@ T.register(T.write_tex(_st_tab, "table_obfuscation_static", caption=(
     "renamed, string-decryption routines added and their call sites, and the change in instructions and branches. Bold: the "
     "largest change in instructions, which the thesis states in words."),
     label="tab:obfuscation-static", colfmt="lrrrrr", star=True,
-    bold_cells={(int(_st["app_code_instructions_pct"].abs().values.argmax()), 4)}), "SUPPLEMENT", "Supplement (obfuscation)", "Allatori static changes per application", NB)
+    bold_cells={(int(_st["app_code_instructions_pct"].abs().values.argmax()), 4)}), "ONLINE_APPENDIX", "Online appendix (obfuscation)", "Allatori static changes per application", NB)
 print(_st_tab.to_string(index=False))
 
 # %% [markdown]
 # ## Appendix: the protection families and the candidate tools
 #
-# One row per family; the tool measured is marked. Per-tool reasons for exclusion are in the replication package
+# Panel (a): one row per family, the tool measured marked. Panel (b): the three measured tools (vendor, version,
+# licence and cost, key characteristic), from the vendors' own pages, read 16 Nov 2026, and the measured builds.
+# Per-tool reasons for exclusion are in the replication package
 # (`candidate_tools.csv`).
 
 # %%
@@ -2049,18 +2050,51 @@ _fam = [("Obfuscation (code transformation)", "names, strings and control flow o
          "as an SDK at build time, or by wrapping the APK", "at run time: checks and reacts",
          "freeRASP$^{*}$, DexProtector, Appdome, Promon SHIELD, LIAPP, WhiteCryption, V-Key, Virbox Protector, AppSealing",
          r"\cite{Faruki2017AndroidCodeProtectionSurvey,BlazquezTapiador2025AndroidProtectionWild}")]
+# (b) the three measured tools. Vendor, licence, cost and mechanism from the vendors' own pages, read 16 Nov 2026 (keys oa_* in
+# ../online_appendix/references.bib). Versions are those the builds used: Allatori 9.8 Educational and freeRASP
+# TalsecSecurity-Community 18.0.2 (tools/pack_freerasp.sh); the packing service reports no version.
+_measured = [
+    ("Allatori", "Obfuscation", r"Smardec Inc.\ (country not stated)~\cite{oa_allatori_overview}",
+     r"9.8, educational edition (released 1~June 2026)~\cite{oa_allatori_changelog}",
+     r"Educational licence (used here): free on request. Commercial: US\$290 per developer, a licence with no time limit (12 months of updates included)~\cite{oa_allatori_price}",
+     r"Renames classes, methods and fields, encrypts strings (an added method decrypts them at run time) and obfuscates "
+     r"control flow, in the compiled classes at build time~\cite{oa_allatori_doc}"),
+    ("Bangcle", "Packing", r"Beijing Bangcle Security Technology Co., Ltd.\ (China)~\cite{oa_bangcle_agreement}",
+     "None reported by the service (builds packed in May and June 2026)",
+     r"Standard tier (used here): free. Customised hardening: paid, price on request~\cite{oa_bangcle_faq}",
+     r"Encrypts the bytecode into a payload that a stub decrypts and loads at run time, applied to the finished "
+     r"APK~\cite{oa_bangcle_features}"),
+    ("freeRASP", "Runtime shielding", r"Talsec, Lynx SFT s.r.o.\ (Czech Republic)~\cite{oa_talsec_contact}",
+     r"Community 18.0.2 (released 10~February 2026)~\cite{oa_freerasp_release}",
+     r"Community tier (used here): free up to 100,000 devices, with mandatory data collection by the vendor. Paid plans "
+     r"from EUR~284 per month~\cite{oa_freerasp_fup,oa_talsec_plans}",
+     r"A library in the application's process that checks for root, debuggers, hooking frameworks, emulators and "
+     r"tampering, at launch and periodically~\cite{oa_freerasp_features,oa_freerasp_faq}"),
+]
+_rag = r">{\raggedright\arraybackslash}"
 _tex = [r"\begin{table*}[t]", r"\centering", r"\small",
-        r"\caption{The three protection families considered and their candidate tools. $^{*}$: the tool measured.}", r"\label{tab:tools}",
+        r"\caption{The three protection families considered, their candidate tools and the three tools measured. $^{*}$: the tool measured.}",
+        r"\label{tab:tools}", r"\textbf{(a)} The three protection families and their candidate tools\par\smallskip",
         r"\begin{tabular}{p{2.6cm}p{2.6cm}p{2.2cm}p{2.3cm}p{3.6cm}p{2.2cm}}", r"\toprule",
         r"\textbf{Family} & \textbf{Protects} & \textbf{Inserted} & \textbf{Acts} & \textbf{Candidate tools} & \textbf{References} \\", r"\midrule"]
 _tex += [" & ".join(row) + r" \\" for row in _fam]
 _tex += [r"\bottomrule", r"\end{tabular}",
          r"\par\smallskip\footnotesize Per-tool sources and reasons for exclusion: \texttt{candidate\_tools.csv} in the replication package. A fourth family, compilation of the bytecode to native code, was considered and not pursued; its one "
          r"candidate, DroidPro, is a research prototype. freeRASP is freemium: an open-source integration layer around a proprietary binary core.",
+         r"\par\bigskip\small", r"\textbf{(b)} The three tools measured\par\smallskip",
+         r"\begin{tabular}{" + "".join(f"{_rag}p{{{w}cm}}" for w in ("1.3", "1.7", "2.6", "2.3", "3.8", "3.8")) + "}", r"\toprule",
+         r"\textbf{Tool} & \textbf{Family} & \textbf{Vendor (country)} & \textbf{Version} & \textbf{Licence and cost} & \textbf{Key characteristic} \\",
+         r"\midrule"]
+_tex += [" & ".join(row) + r" \\" for row in _measured]
+_tex += [r"\bottomrule", r"\end{tabular}",
+         r"\par\smallskip\footnotesize Vendor websites read on 16 November 2026. Versions are those used for the measured builds. Smardec's "
+         r"website and licence give no address or country. Allatori's licence has no time limit. Bangcle's company name is translated "
+         r"from Chinese. Talsec's main office is in Brno. freeRASP runs here in passive mode: it logs each threat and never stops the application.",
          r"\end{table*}"]
 (T.TABLES / "table_tool_families.tex").write_text("\n".join(_tex) + "\n")
-T.register("tables/table_tool_families.tex", "SUPPLEMENT", "Supplement (candidate tools)", "one row per protection family: what it protects, where it is "
-           "inserted, how it acts, candidate tools (measured one marked), references", NB)
+T.register("tables/table_tool_families.tex", "ONLINE_APPENDIX", "Online appendix (candidate and measured tools)", "(a) one row per protection "
+           "family: what it protects, where it is inserted, how it acts, candidate tools (measured one marked), references; (b) the three "
+           "measured tools: vendor and country, version, licence and cost, key characteristic, with the vendors' pages as sources (read 16 Nov 2026)", NB)
 
 _tools = pd.DataFrame([
     ("R8", "obfuscation", "open source (Android build tools)", "On debug builds R8 shrinks but does not rename; release builds were abandoned on 24 July 2026 because the packing service could not process them and release-mode R8 broke applications", "calculator's debug R8 build: 11.1 to 7.7 MB, class names unchanged (identity mapping)"),
@@ -2180,7 +2214,7 @@ axc.set_xticks([0, 30, 60, 90, 120])
 axc.spines[["top", "right", "left"]].set_visible(False)
 axc.spines["bottom"].set_bounds(_tl_proc, _tl_end)
 axc.set_xlabel("Time from the first energy sample (s)")
-T.register(T.save_figure(fig, "figure_run", T.FIG_SINGLE), "BODY", "5 Experiment execution (one run to scale)",
+T.register(T.save_figure(fig, "figure_run", T.FIG_SINGLE), "BODY", "3 Experiment Definition (one run to scale)",
            "one measured run to scale (pooled medians): launch, passive phase, active phase; phase names in bold, no other labels on the phases", NB)
 
 # %% [markdown]

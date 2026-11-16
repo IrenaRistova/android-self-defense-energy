@@ -13,16 +13,16 @@ their controls at run time (memory, threads, processor share, phase duration); a
 characteristics correlate with energy.
 
 This repository holds everything needed to recompute every table, figure and number of the thesis from the measurement
-data, and the code that took the measurements. The thesis's appendix (Tables S1 to S20 and Figures S1 to S3) is
-[`6_results_analysis/supplementary/supplementary.pdf`](6_results_analysis/supplementary/supplementary.pdf).
+data, and the code that took the measurements. The thesis's online appendix (Tables OA1 to OA20 and Figures OA1 to OA4) is
+[`6_results_analysis/online_appendix/online_appendix.pdf`](6_results_analysis/online_appendix/online_appendix.pdf).
 
 ## Contents
 
 | Folder | What it holds |
 | --- | --- |
 | `6_results_analysis/notebooks/` | The five notebooks that produce every table, figure and number, and their two libraries (`thesis_lib.py`, `per_device_lib.py`). `Per_Device_Analysis` makes most of the tables and figures of the thesis body. |
-| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body (BODY), the appendix PDF (SUPPLEMENT), repository only (REPO), or the ten-application sensitivity check that the thesis does not cite (SENSITIVITY, in `tables/sensitivity_ten_apps/`). The execution diagram (`figures/figure_execution.*`) is drawn by `scratchpad/analysis/execution_diagram/make_execution.py`. |
-| `6_results_analysis/supplementary/` | `supplementary.pdf`, the thesis's appendix (Tables S1 to S20, Figures S1 to S3), its LaTeX source, `references.bib` (the works Table S17 cites), and `INDEX.md`, which maps every table and figure of the thesis to its file and notebook. |
+| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body (BODY), the online appendix (ONLINE_APPENDIX), repository only (REPO), or the ten-application sensitivity check that the thesis does not cite (SENSITIVITY, in `tables/sensitivity_ten_apps/`). The execution diagram (`figures/figure_execution.*`) is drawn by `scratchpad/analysis/execution_diagram/make_execution.py`. |
+| `6_results_analysis/online_appendix/` | `online_appendix.pdf`, the thesis's online appendix (Tables OA1 to OA20, Figures OA1 to OA4), its LaTeX source, `references.bib` (the works and vendor pages Table OA5 cites), and `INDEX.md`, which maps every table and figure of the thesis to its file and notebook. |
 | `6_results_data/run_tables/` | The four run tables, one row per run (4 x 1200 rows), with each run's validity verdict. `RUN_TABLE_COLUMNS_EXPLANATION.md` explains the columns. |
 | `6_results_data/inputs/` | Per-run and per-build inputs extracted from the raw logs and APKs. Each `<name>.PROVENANCE.md` gives the command that made the file. |
 | `6_results_data/derived/` | Results of an independent reference implementation (`scratchpad/analysis/thesis_numbers.py`), which the notebooks print next to their own numbers as a cross-check. |
@@ -30,7 +30,7 @@ data, and the code that took the measurements. The thesis's appendix (Tables S1 
 | `6_results_data/raw_manifest.csv.gz` | Size and SHA-256 of every raw file, so that the raw data (see below) can be checked. |
 | `6_results_data/sweep_log_index.csv` | Maps every raw log file of the four batches to its batch. |
 | `tools/` | The measurement harness (batch scheduler, thermal gate, power control, network replay, checks) and the data pipeline from raw logs to run tables and inputs. |
-| `tools/sweep_logs/` | The 38 per-phone scheduler logs of the four batches, from which Table S4 (the thermal gate) is computed. |
+| `tools/sweep_logs/` | The 38 per-phone scheduler logs of the four batches, from which Table OA7 (the thermal gate) is computed. |
 | `appium_android_tests/` | The interaction scenarios of the ten measured applications and their shared library. |
 | `android-runner/` | The Android Runner configurations, hook scripts and framework changes used in the experiment, with instructions ([`android-runner/README.md`](android-runner/README.md)). |
 | `scratchpad/` | Scripts developed next to the analysis: the source of `Per_Device_Analysis` (`analysis/per_device_notebook.py`, converted by `analysis/py2nb.py`), the reference implementation, the producers of some inputs, the generator of the execution diagram, and the APK fingerprint modules the build checks import. |
@@ -60,8 +60,8 @@ comes out byte-identical to the committed one, so `git status` afterwards shows 
 and the figure PDFs (creation date) as changed. Some rows of `tables/final_version_numbers.csv` (the charging share, the
 sampling intervals and the battery readings) are computed from the raw data; without it the notebook keeps the committed
 values, checks the rows it can and reports the others as UNPROVEN. Matplotlib picks the first Linux Libertine cut its font cache lists, so
-on another machine the figures can come out in the other cut of the typeface; their content is the same. To rebuild the supplement PDF as well:
-`TECTONIC=/path/to/tectonic python3 6_results_analysis/make_supplement.py`.
+on another machine the figures can come out in the other cut of the typeface; their content is the same. To rebuild the online appendix PDF as well:
+`TECTONIC=/path/to/tectonic python3 6_results_analysis/make_online_appendix.py`.
 
 `6_results_analysis/trace_numbers.py <file.tex>` traces every number in a LaTeX file to the table cells it can come
 from, which is how the numbers in the thesis were checked.
@@ -76,7 +76,7 @@ The thesis describes the design (Section 4) and its execution (Section 5). This 
   reproducible from a recorded seed and runs Android Runner once per run. `docs/BATCH_NAMING.md` explains the
   batch tags and the names the thesis uses.
 - **Thermal gate.** `tools/thermal_gate.sh` holds the next run while the phone reports moderate thermal throttling or
-  worse (Android thermal status 2 or higher), with the screen off. Table S4 reports what it did.
+  worse (Android thermal status 2 or higher), with the screen off. Table OA7 reports what it did.
 - **Power.** The phones run on battery during a run. A Yepkit YKUSH 3 board cuts the USB supply line in
   hardware (`tools/ykush_power.sh`, and `tools/ykush_ar_power.sh` as Android Runner's USB handler).
   `tools/ykush_band_keeper.sh` keeps each phone's battery level within a band between runs, and

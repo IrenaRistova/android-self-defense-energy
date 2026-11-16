@@ -3,7 +3,7 @@
 **What it is.** The AndroT dataset's record of each measured application's repository: the
 application id, the GitHub repository and the newest commit in AndroT's copy of it. AndroT
 (Muradyan and Fazzini, MSR 2026) lists 1,337 Android projects on GitHub that are published on
-Google Play or F-Droid and have tests. The cohort table (Table S18, `Descriptive_Statistics.ipynb`)
+Google Play or F-Droid and have tests. The cohort table (Table OA2, `Descriptive_Statistics.ipynb`)
 reads `latest_commit_date` as "last commit (AndroT)".
 
 **Built by.** `python3 tools/extract_androt_cohort.py` (2026-11-16), from AndroT's dataset file

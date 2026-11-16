@@ -12,8 +12,8 @@ below it draws on; matches in those files are listed first, and a number that ma
 only elsewhere is marked "elsewhere". A number whose every match lies in a table that
 MANIFEST.csv places in the replication package only (REPO) is marked "(replication
 package only)": the superseded pooled analysis is still emitted there, so such a number
-may be stale even though it is found. A number found only in the numbered supplementary tables
-(placement SUPPLEMENT, Table S1-S20 of supplementary.pdf) is marked "(supplement only: ...)":
+may be stale even though it is found. A number found only in the numbered tables of the online appendix
+(placement ONLINE_APPENDIX, Table OA1-OA20 of online_appendix.pdf) is marked "(online appendix only: ...)":
 it is valid, but its sentence must point to the S-table. Method constants (the 95% interval, 80% power,
 the 1.5-IQR whisker) and device names (Pixel 3/6/9) are not traced.
 
@@ -104,9 +104,9 @@ def main():
                 status += " (magnitude only)"
             if hits and place and all(place.get(c[0]) == "REPO" for c in hits):
                 status += " (replication package only)"
-            elif hits and place and all(place.get(c[0]) in ("REPO", "SUPPLEMENT") for c in hits):
-                # found only in the numbered supplementary tables, so the sentence needs a "Table S.." pointer
-                status += f" (supplement only: {', '.join(sorted({c[0] for c in hits if place.get(c[0]) == 'SUPPLEMENT'}))})"
+            elif hits and place and all(place.get(c[0]) in ("REPO", "ONLINE_APPENDIX") for c in hits):
+                # found only in the numbered tables of the online appendix, so the sentence needs a "Table OA.." pointer
+                status += f" (online appendix only: {', '.join(sorted({c[0] for c in hits if place.get(c[0]) == 'ONLINE_APPENDIX'}))})"
             shown = (pref or hits)[:3]
             out.append(dict(line=n, number=tok, status=status, matches=len(hits),
                             sources=" | ".join(f"{c[0]} [{c[1]}] {c[2]}={c[3]:g}" for c in shown),
@@ -122,7 +122,7 @@ def main():
     print(f"{len(out)} numbers; {sum(r['status'] == 'emitted' for r in out)} emitted from their named sources; "
           f"{sum(r['status'].startswith('elsewhere') for r in out)} found elsewhere; {missing} not found; "
           f"{sum(r['status'].endswith('(replication package only)') for r in out)} found only in replication-package tables; "
-          f"{sum('(supplement only:' in r['status'] for r in out)} found only in supplementary tables")
+          f"{sum('(online appendix only:' in r['status'] for r in out)} found only in online appendix tables")
     sys.exit(1 if missing else 0)
 
 

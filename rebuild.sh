@@ -27,4 +27,4 @@ for nb in Descriptive_Statistics Headline_Effects Phase_Analysis Mechanism_Analy
   echo "$nb OK ($(( $(date +%s) - start )) s)"
 done
 "$PY" ../write_tables_readme.py
-echo "Done. Optional: TECTONIC=/path/to/tectonic $PY 6_results_analysis/make_supplement.py rebuilds the supplement PDF."
+echo "Done. Optional: TECTONIC=/path/to/tectonic $PY 6_results_analysis/make_online_appendix.py rebuilds the online appendix PDF."

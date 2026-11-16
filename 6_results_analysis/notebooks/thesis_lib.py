@@ -488,13 +488,13 @@ def write_tex(df: pd.DataFrame, stem: str, caption: str, label: str, colfmt: str
 
 
 def register(paths, placement: str, section: str, description: str, notebook: str):
-    """Record artifacts in MANIFEST.csv: path, BODY | APPENDIX | SUPPLEMENT | REPO | SENSITIVITY, thesis
-    section, one-line description, source notebook. SUPPLEMENT: a numbered supplementary item
-    (Table/Figure S1, S2, ...) in the replication package's supplementary.pdf, which the thesis cites.
+    """Record artifacts in MANIFEST.csv: path, BODY | APPENDIX | ONLINE_APPENDIX | REPO | SENSITIVITY, thesis
+    section, one-line description, source notebook. ONLINE_APPENDIX: a numbered item of the online appendix
+    (Table/Figure OA1, OA2, ...), online_appendix/online_appendix.pdf in the replication package, which the thesis cites.
     Re-running a notebook replaces its own rows only."""
     if isinstance(paths, str):
         paths = [paths]
-    assert placement in ("BODY", "APPENDIX", "SUPPLEMENT", "REPO", "SENSITIVITY"), placement
+    assert placement in ("BODY", "APPENDIX", "ONLINE_APPENDIX", "REPO", "SENSITIVITY"), placement
     cols = ["path", "placement", "thesis_section", "description", "notebook", "status"]
     m = pd.read_csv(MANIFEST) if MANIFEST.exists() else pd.DataFrame(columns=cols)
     m = m[~m["path"].isin(paths)]

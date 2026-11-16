@@ -45,11 +45,11 @@ One row is one **cell**: one application × one technique × one device × one r
 | `allatori_static_code_effects.csv` | Mechanism_Analysis | measured from the APKs; no notebook regenerates it (see its PROVENANCE file) |
 | `app_characteristics.csv` | Descriptive_Statistics, Mechanism_Analysis | per-app category, size, SDK levels, permissions |
 | `selection_funnel.csv` | Descriptive_Statistics | every count with its source |
-| `control_build_screen.csv` | Descriptive_Statistics (Table S1) | source-file-name screen of the ten control APKs, with packages of any 1–2 character names |
+| `control_build_screen.csv` | Descriptive_Statistics (Table OA3) | source-file-name screen of the ten control APKs, with packages of any 1–2 character names |
 | `freerasp_build_screen.csv` | Descriptive_Statistics | the same screen on the freeRASP builds, for comparison |
 | `allatori_build_screen.csv` | Descriptive_Statistics | the same screen on the Allatori builds: the basis for the screen's minimum |
 | `variant_parity.csv` | Descriptive_Statistics, Phase_Analysis | one row per build: version, SDKs, NSC, INTERNET, debuggable, protection marker, hash vs run tables |
-| `allatori_renaming.csv` | Headline_Effects (Table S10) | classes Allatori renamed, measured on the swept APKs |
+| `allatori_renaming.csv` | Headline_Effects (Table OA16) | classes Allatori renamed, measured on the swept APKs |
 
 ## Builds the analysis sets aside
 
@@ -59,10 +59,10 @@ mark the builds the analysis leaves out; `6_results_analysis/notebooks/thesis_li
 
 | left out | reason | where to check |
 |---|---|---|
-| androidskk, every build | its unprotected control already carries obfuscated code | Table S1, `inputs/control_build_screen.csv` |
-| itsok's Allatori build | a release build in an otherwise all-debug experiment | Table S10, `inputs/variant_parity.csv` (`debuggable`) |
+| androidskk, every build | its unprotected control already carries obfuscated code | Table OA3, `inputs/control_build_screen.csv` |
+| itsok's Allatori build | a release build in an otherwise all-debug experiment | Table OA16, `inputs/variant_parity.csv` (`debuggable`) |
 | medtimer's packed build | it carries JaCoCo coverage probes that its control lacks | `inputs/coverage_screen.csv` |
-| medtimer in the passive phase, every build | its introduction screens put interaction into that phase | Table S3 |
+| medtimer in the passive phase, every build | its introduction screens put interaction into that phase | Table OA4 |
 
 The build checks, like the static code effects, are measured from the APKs, which are not in
 this package (available on request); `inputs/build_checks.PROVENANCE.md` gives the command for each.

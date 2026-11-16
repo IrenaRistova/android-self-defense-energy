@@ -2,7 +2,7 @@
 
 **What it is.** For each of the nine applications, whether Google Play and F-Droid list it, and the
 download range Google Play shows. Read from the stores' public pages on 16 November 2026, after the
-experiment. The cohort table (Table S18, `Descriptive_Statistics.ipynb`) reads it.
+experiment. The cohort table (Table OA2, `Descriptive_Statistics.ipynb`) reads it.
 
 **How it was read.** By hand from saved copies of the pages, on 16 November 2026 between 03:46 and
 03:51 UTC. The values were typed into this file once. Each row's `source_url` names the two pages.

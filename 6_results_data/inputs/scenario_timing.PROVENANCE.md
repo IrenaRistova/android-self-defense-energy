@@ -1,7 +1,7 @@
 # scenario_timing_series.csv — provenance
 
 **What it is.** One row per Appium scenario run, in every series cell with a run: the scenario's
-name and how long it took. The cohort table (Table S18, `Descriptive_Statistics.ipynb`) reads it
+name and how long it took. The cohort table (Table OA2, `Descriptive_Statistics.ipynb`) reads it
 for each application's mean scenario duration.
 
 **Built by.** `python3 tools/extract_scenario_timing.py` (2026-11-16). The source is each run's

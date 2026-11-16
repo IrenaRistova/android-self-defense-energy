@@ -119,7 +119,7 @@ A cell is `(batch, phone, app, variant, rep)`. Apart from the log tables in
 ## 4. The derived inputs and what each is built from
 
 The notebooks read `6_results_data/run_tables/` and `6_results_data/inputs/`, the reference results in
-`6_results_data/derived/` (as a cross-check) and, for Table S4, the scheduler logs in `tools/sweep_logs/` through
+`6_results_data/derived/` (as a cross-check) and, for Table OA7, the scheduler logs in `tools/sweep_logs/` through
 `6_results_data/sweep_log_index.csv`. `tools/check_data_complete.py` checks the log tables and the inputs
 `dexopt_status`, `post_charge_k_window`, `mechanism_cells`, `clock_offset`, `launch_timing`, `denial_timing` and
 `variant_permissions` against the raw files and the run tables.

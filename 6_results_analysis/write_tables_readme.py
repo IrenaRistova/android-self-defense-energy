@@ -12,12 +12,12 @@ HERE = Path(__file__).resolve().parent
 
 HEAD = """# Tables: source notebooks
 
-Every table here is written by a notebook under `6_results_analysis/notebooks/`. **BODY** tables appear in the thesis (`.tex` to `\\input`, `.csv` for the data); **REPO** tables are cited by path; **SENSITIVITY** tables (`sensitivity_ten_apps/`) hold the ten-application sensitivity check, which the thesis does not cite. This list is generated from `../MANIFEST.csv`, which also covers the figures.
+Every table here is written by a notebook under `6_results_analysis/notebooks/`. **BODY** tables appear in the thesis (`.tex` to `\\input`, `.csv` for the data); **ONLINE_APPENDIX** tables are Tables OA1 to OA20 of the online appendix (`../online_appendix/online_appendix.pdf`), which the thesis cites; **REPO** tables are cited by path; **SENSITIVITY** tables (`sensitivity_ten_apps/`) hold the ten-application sensitivity check, which the thesis does not cite. This list is generated from `../MANIFEST.csv`, which also covers the figures.
 
 **The `.tex` tables were test-compiled on 2026-10-02** in ACM `sigconf` (Tectonic 0.15.0): all compile; Table 1 is a `table*` (both columns). The `.csv` beside each holds the same table.
 """
 FOOT = ("To regenerate: run the notebooks from `6_results_analysis/notebooks/` (see the top-level `README.md`). "
-        "Inputs: `6_results_data/run_tables/`, `6_results_data/inputs/`, `6_results_data/derived/` and, for Table S4, `tools/sweep_logs/`.")
+        "Inputs: `6_results_data/run_tables/`, `6_results_data/inputs/`, `6_results_data/derived/` and, for Table OA7, `tools/sweep_logs/`.")
 
 
 def main():
@@ -27,15 +27,15 @@ def main():
     a = ap.parse_args()
     rows = [r for r in csv.DictReader(open(a.manifest, encoding="utf-8")) if r["path"].startswith("tables/")]
     out = [HEAD]
-    for placement in ("BODY", "APPENDIX", "SUPPLEMENT", "REPO", "SENSITIVITY"):
+    for placement in ("BODY", "APPENDIX", "ONLINE_APPENDIX", "REPO", "SENSITIVITY"):
         group = {}
         for r in sorted(rows, key=lambda r: r["path"]):
             if r["placement"] != placement:
                 continue
             f = r["path"][len("tables/"):]
-            stem = f.rsplit(".", 1)[0] if placement in ("BODY", "APPENDIX", "SUPPLEMENT") else f      # a body table's .csv and .tex share a row
+            stem = f.rsplit(".", 1)[0] if placement in ("BODY", "APPENDIX", "ONLINE_APPENDIX") else f      # a body table's .csv and .tex share a row
             group.setdefault(stem, [r, []])[1].append(f)
-        if not group:                                                    # no table has this placement (APPENDIX: the thesis's appendix is the supplement PDF, placement SUPPLEMENT)
+        if not group:                                                    # no table has this placement (APPENDIX: the thesis's appendix is the online appendix PDF, placement ONLINE_APPENDIX)
             continue
         out += [f"## {placement}", "", "| File | Thesis section | What it holds | Notebook |", "|---|---|---|---|"]
         for r, files in group.values():

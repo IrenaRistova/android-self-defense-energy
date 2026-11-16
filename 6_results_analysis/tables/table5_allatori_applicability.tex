@@ -5,10 +5,10 @@
 \label{tab:allatori}
 \begin{tabular}{lrp{7cm}r}
 \toprule
-\textbf{App} & \textbf{Classes renamed} & \textbf{Outcome} & \textbf{Valid cells} \\
+\textbf{App} & \textbf{Classes renamed} & \textbf{Outcome} & \textbf{Valid runs} \\
 \midrule
 calculator & 61 & obfuscated, runs & 89 / 90 \\
-documenter & 143 & \textbf{obfuscated, crashes at start-up (AbstractMethodError in 90 of 90 cells)} & \textbf{0 / 90} \\
+documenter & 143 & \textbf{obfuscated, crashes at start-up (AbstractMethodError in 90 of 90 runs)} & \textbf{0 / 90} \\
 itsok & 124 & obfuscated, runs; release build, not in the arm & 88 / 90 \\
 keep\_recipe & 0 & runs; not transformed (class set identical to the control) & 60 / 90 \\
 linkhub & 0 & runs; not transformed (52 unreachable classes only in its control) & 89 / 90 \\
@@ -18,5 +18,5 @@ poetskingdom & 490 & obfuscated, runs & 90 / 90 \\
 tipuous & 138 & obfuscated, runs & 90 / 90 \\
 \bottomrule
 \end{tabular}
-\par\smallskip\footnotesize Valid cells: the three series batches; keep\_recipe's 30 Pixel 3 cells are excluded for every build (the device cannot run it). keep\_recipe's and linkhub's obfuscated builds were not transformed, so they are not in the arm. itsok's obfuscated build is a release build and is not part of the obfuscation arm.
+\par\smallskip\footnotesize Valid runs: the three series batches; keep\_recipe's 30 Pixel 3 runs are excluded for every build (the device cannot run it). keep\_recipe's and linkhub's obfuscated builds were not transformed, so they are not in the arm. itsok's obfuscated build is a release build and is not part of the obfuscation arm.
 \end{table*}

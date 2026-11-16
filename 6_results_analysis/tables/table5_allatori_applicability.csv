@@ -1,6 +1,6 @@
-App,Classes renamed,Outcome,Valid cells
+App,Classes renamed,Outcome,Valid runs
 calculator,61,"obfuscated, runs",89 / 90
-documenter,143,"obfuscated, crashes at start-up (AbstractMethodError in 90 of 90 cells)",0 / 90
+documenter,143,"obfuscated, crashes at start-up (AbstractMethodError in 90 of 90 runs)",0 / 90
 itsok,124,"obfuscated, runs; release build, not in the arm",88 / 90
 keep_recipe,0,runs; not transformed (class set identical to the control),60 / 90
 linkhub,0,runs; not transformed (52 unreachable classes only in its control),89 / 90
