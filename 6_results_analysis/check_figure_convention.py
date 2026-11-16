@@ -4,7 +4,7 @@ Checked from the text inside each PDF (pdftotext), so it tests what a reader see
   1. an axis says "vs. control"
   2. a reference line is labelled "unprotected control"
   3. no tick or bar is labelled "Control" (the control drawn as a category of its own)
-  4. no axis presents absolute energy (the word "energy" does not appear)
+  4. no axis presents absolute energy (the word "energy" does not appear, except in "energy cost", a verdict label)
   5. drawn at the single-column width, 3.33 in
 
 Usage (from 6_results_analysis/): python3 check_figure_convention.py figures
@@ -33,7 +33,7 @@ for pdf in sorted(d.glob("*.pdf")):
         fails.append('no line labelled "unprotected control"')
     if re.search(r"(Control|[Bb]aseline)", text):
         fails.append('the control shown as a quantity of its own (tick, bar or axis)')
-    if re.search(r"energy", text, re.I):
+    if re.search(r"energy(?!cost)", text, re.I):   # "Non-negligible energy cost" labels a verdict, not an axis
         fails.append("an axis presents absolute energy")
     if abs(w - 3.33) > 0.01:
         fails.append(f"width {w:.2f} in, not 3.33")

@@ -4,13 +4,13 @@
 \caption{The three protection families considered, their candidate tools and the three tools measured. $^{*}$: the tool measured.}
 \label{tab:tools}
 \textbf{(a)} The three protection families and their candidate tools\par\smallskip
-\begin{tabular}{p{2.6cm}p{2.6cm}p{2.2cm}p{2.3cm}p{3.6cm}p{2.2cm}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.8cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{2.8cm}>{\raggedright\arraybackslash}p{4.4cm}}
 \toprule
-\textbf{Family} & \textbf{Protects} & \textbf{Inserted} & \textbf{Acts} & \textbf{Candidate tools} & \textbf{References} \\
+\textbf{Family} & \textbf{Protects} & \textbf{Inserted} & \textbf{Acts} & \textbf{Candidate tools} \\
 \midrule
-Obfuscation (code transformation) & names, strings and control flow of the Java/DEX code & at build time (Gradle plugin or command line) & statically: the transformed code runs as it is & ProGuard, R8, DexGuard, Allatori$^{*}$, DashO, Obfuscapk & \cite{Faruki2017AndroidCodeProtectionSurvey} \\
-Packing (loader-based) & the DEX bytecode, encrypted as a payload & after compilation, on the APK (vendor service) & at run time: a stub decrypts and loads the payload & Bangcle$^{*}$, Qihoo 360 Jiagu, Tencent Legu, Ijiami, AliProtect, Baidu, Naga, Manxi, APKProtect, SecNeo & \cite{Duan2018AndroidUnpackers,Dong2022PackDiff,BlazquezTapiador2025AndroidProtectionWild} \\
-Runtime shielding (RASP) & the running application and its environment (debugger, root, hooks, tampering) & as an SDK at build time, or by wrapping the APK & at run time: checks and reacts & freeRASP$^{*}$, DexProtector, Appdome, Promon SHIELD, LIAPP, WhiteCryption, V-Key, Virbox Protector, AppSealing & \cite{Faruki2017AndroidCodeProtectionSurvey,BlazquezTapiador2025AndroidProtectionWild} \\
+Obfuscation (code transformation) & names, strings and control flow of the Java/DEX code & at build time (Gradle plugin or command line) & statically: the transformed code runs as it is & ProGuard, R8, DexGuard, Allatori$^{*}$, DashO, Obfuscapk \\
+Packing (loader-based) & the DEX bytecode, encrypted as a payload & after compilation, on the APK (vendor service) & at run time: a stub decrypts and loads the payload & Bangcle$^{*}$, Qihoo 360 Jiagu, Tencent Legu, Ijiami, AliProtect, Baidu, Naga, Manxi, APKProtect, SecNeo \\
+Runtime shielding (RASP) & the running application and its environment (debugger, root, hooks, tampering) & as an SDK at build time, or by wrapping the APK & at run time: checks and reacts & freeRASP$^{*}$, DexProtector, Appdome, Promon SHIELD, LIAPP, WhiteCryption, V-Key, Virbox Protector, AppSealing \\
 \bottomrule
 \end{tabular}
 \par\smallskip\footnotesize Per-tool sources and reasons for exclusion: \texttt{candidate\_tools.csv} in the replication package. A fourth family, compilation of the bytecode to native code, was considered and not pursued; its one candidate, DroidPro, is a research prototype. freeRASP is freemium: an open-source integration layer around a proprietary binary core.
@@ -20,10 +20,11 @@ Runtime shielding (RASP) & the running application and its environment (debugger
 \toprule
 \textbf{Tool} & \textbf{Family} & \textbf{Vendor (country)} & \textbf{Version} & \textbf{Licence and cost} & \textbf{Key characteristic} \\
 \midrule
-Allatori & Obfuscation & Smardec Inc.\ (country not stated)~\cite{oa_allatori_overview} & 9.8, educational edition (released 1~June 2026)~\cite{oa_allatori_changelog} & Educational licence (used here): free on request. Commercial: US\$290 per developer, a licence with no time limit (12 months of updates included)~\cite{oa_allatori_price} & Renames classes, methods and fields, encrypts strings (an added method decrypts them at run time) and obfuscates control flow, in the compiled classes at build time~\cite{oa_allatori_doc} \\
-Bangcle & Packing & Beijing Bangcle Security Technology Co., Ltd.\ (China)~\cite{oa_bangcle_agreement} & None reported by the service (builds packed in May and June 2026) & Standard tier (used here): free. Customised hardening: paid, price on request~\cite{oa_bangcle_faq} & Encrypts the bytecode into a payload that a stub decrypts and loads at run time, applied to the finished APK~\cite{oa_bangcle_features} \\
-freeRASP & Runtime shielding & Talsec, Lynx SFT s.r.o.\ (Czech Republic)~\cite{oa_talsec_contact} & Community 18.0.2 (released 10~February 2026)~\cite{oa_freerasp_release} & Community tier (used here): free up to 100,000 devices, with mandatory data collection by the vendor. Paid plans from EUR~284 per month~\cite{oa_freerasp_fup,oa_talsec_plans} & A library in the application's process that checks for root, debuggers, hooking frameworks, emulators and tampering, at launch and periodically~\cite{oa_freerasp_features,oa_freerasp_faq} \\
+Allatori & Obfuscation & Smardec Inc.\ (country not stated) & 9.8, educational edition (released 1~June 2026) & Educational licence (used here): free on request. Commercial: US\$290 per developer, a licence with no time limit (12 months of updates included) & Renames classes, methods and fields, encrypts strings (an added method decrypts them at run time) and obfuscates control flow, in the compiled classes at build time \\
+Bangcle & Packing & Beijing Bangcle Security Technology Co., Ltd.\ (China) & None reported by the service (builds packed in May and June 2026) & Standard tier (used here): free. Customised hardening: paid, price on request & Encrypts the bytecode into a payload that a stub decrypts and loads at run time, applied to the finished APK \\
+freeRASP & Runtime shielding & Talsec, Lynx SFT s.r.o.\ (Czech Republic) & Community 18.0.2 (released 10~February 2026) & Community tier (used here): free up to 100,000 devices, with mandatory data collection by the vendor. Paid plans from EUR~284 per month & A library in the application's process that checks for root, debuggers, hooking frameworks, emulators and tampering, at launch and periodically \\
 \bottomrule
 \end{tabular}
-\par\smallskip\footnotesize Vendor websites read on 16 November 2026. Versions are those used for the measured builds. Smardec's website and licence give no address or country. Allatori's licence has no time limit. Bangcle's company name is translated from Chinese. Talsec's main office is in Brno. freeRASP runs here in passive mode: it logs each threat and never stops the application.
+\par\smallskip\footnotesize Versions are those used for the measured builds. Smardec's website and licence give no address or country. Allatori's licence has no time limit. Bangcle's company name is translated from Chinese. Talsec's main office is in Brno. Here freeRASP's threat callbacks only log each threat and never stop the application.
+\par\smallskip Sources of every entry (papers, and vendor pages read on 16 November 2026): \texttt{online\_appendix/SOURCES.md} in the replication package.
 \end{table*}

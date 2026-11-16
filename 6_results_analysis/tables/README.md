@@ -35,7 +35,7 @@ Every table here is written by a notebook under `6_results_analysis/notebooks/`.
 | `table_rq4_full.csv`, `table_rq4_full.tex` | Online appendix (RQ3) | RQ3 in full: all 54 tests with intervals, pairs higher, BH p and Cliff's delta | `Per_Device_Analysis.ipynb` |
 | `table_sampler_load.csv`, `table_sampler_load.tex` | Online appendix (the memory sampler's load) | freeRASP's extra collection time per device, active phase, and the share of delta-E it could account for at three powers | `Per_Device_Analysis.ipynb` |
 | `table_thermal_gate.csv`, `table_thermal_gate.tex` | Online appendix (the thermal gate) | the thermal gate: safety-floor stops per regime, battery temperature before each run, and the within-pilot coolest-subset test | `Per_Device_Analysis.ipynb` |
-| `table_tool_families.tex` | Online appendix (candidate and measured tools) | (a) one row per protection family: what it protects, where it is inserted, how it acts, candidate tools (measured one marked), references; (b) the three measured tools: vendor and country, version, licence and cost, key characteristic, with the vendors' pages as sources (read 16 Nov 2026) | `Per_Device_Analysis.ipynb` |
+| `table_tool_families.tex` | Online appendix (candidate and measured tools) | (a) one row per protection family: what it protects, where it is inserted, how it acts, candidate tools (measured one marked); (b) the three measured tools: vendor and country, version, licence and cost, key characteristic; no citations in the table: the sources of every entry (papers, and vendor pages read 16 Nov 2026) are in online_appendix/SOURCES.md | `Per_Device_Analysis.ipynb` |
 
 ## REPO
 

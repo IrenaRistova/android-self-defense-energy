@@ -3,15 +3,41 @@
 \usepackage[T1]{fontenc}
 \usepackage{libertine}
 \usepackage[libertine]{newtxmath}
+\DeclareSymbolFont{operators}{TU}{\rmdefault}{m}{n}   % digits and operators in math in Libertine, not Computer Modern
 \usepackage{booktabs,graphicx,colortbl,xcolor,placeins}
 \usepackage[labelfont=bf]{caption}
-\usepackage{cite}
-\usepackage{url}
-\urlstyle{same}
 \renewcommand{\thetable}{OA\arabic{table}}
 \renewcommand{\thefigure}{OA\arabic{figure}}
 \providecommand{\etal}{et~al.}
-\pagestyle{plain}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Online appendix}
+\fancyhead[R]{\small\itshape On the Impact of Self-Defense Techniques on the Energy Consumption of Android Apps}
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+% every table and figure is placed where it stands, in order, several to a page
+\makeatletter
+\let\oa@table\table \let\oa@endtable\endtable
+\renewenvironment{table}[1][]{\oa@table[H]\oa@tablesetup}{\oa@endtable}
+\expandafter\def\csname table*\endcsname{\@ifnextchar[{\oa@tablestar}{\oa@tablestar[]}}
+\def\oa@tablestar[#1]{\oa@table[H]\oa@tablesetup}
+\expandafter\def\csname endtable*\endcsname{\endtable}
+\let\oa@figure\figure \let\oa@endfigure\endfigure
+\renewenvironment{figure}[1][]{\oa@figure[H]}{\oa@endfigure}
+\makeatother
+\setlength{\intextsep}{16pt plus 4pt minus 2pt}
+% in a table, each top-level tabular stands centred on a line of its own, and the text around it (the note, a panel
+% label) is set ragged-right at the text width; a tabular nested in a cell is untouched
+\usepackage{etoolbox}
+\makeatletter
+\newif\ifoa@top \let\oa@centering\centering
+\def\oa@ragged{\let\\\@centercr \leftskip\z@skip \rightskip\z@ \@plus 2em\relax \parfillskip\z@ \@plus 1fil\relax}
+\def\oa@tablesetup{\oa@toptrue \let\centering\oa@ragged}
+\AtBeginEnvironment{tabular}{\oa@topfalse}
+\BeforeBeginEnvironment{tabular}{\ifoa@top\par\oa@centering\fi}
+\AfterEndEnvironment{tabular}{\ifoa@top\par\oa@ragged\fi}
+\makeatother
 \begin{document}
 \section*{Online appendix}
 \noindent\emph{On the Impact of Self-Defense Techniques on the Energy Consumption of Android Apps}\par\noindent Irena Ristova, Vrije Universiteit Amsterdam\par\medskip
@@ -42,9 +68,10 @@ Figure OA2 & Energy per run against phase duration, per device and phase, with a
 Figure OA3 & Active phase: energy per run against phase duration, processor utilisation (device-wide), memory and thread count, per device & \texttt{\footnotesize figure\_rq3\_active} \\
 Figure OA4 & Passive phase, as Figure OA3 & \texttt{\footnotesize figure\_rq3\_passive} \\
 \bottomrule\end{tabular}\end{center}
-\clearpage
+\subsection*{Cited in Section 3, Experiment Definition}
 \input{../tables/table_launch_per_device.tex}
 \FloatBarrier
+\subsection*{Cited in Section 4, Experiment Planning}
 \input{../tables/table1_cohort.tex}
 \FloatBarrier
 \input{../tables/table2_control_build_screen.tex}
@@ -55,12 +82,14 @@ Figure OA4 & Passive phase, as Figure OA3 & \texttt{\footnotesize figure\_rq3\_p
 \FloatBarrier
 \input{../tables/table_obfuscation_static.tex}
 \FloatBarrier
+\subsection*{Cited in Section 6, A New Technique: The Thermal Gate}
 \input{../tables/table_thermal_gate.tex}
 \FloatBarrier
 \input{../tables/table_pilot_series.tex}
 \FloatBarrier
 \input{../tables/table_fuel_gauge.tex}
 \FloatBarrier
+\subsection*{Cited in Section 7, Results}
 \input{../tables/table_descriptives_per_device.tex}
 \FloatBarrier
 \input{../tables/table_normality.tex}
@@ -71,6 +100,7 @@ Figure OA4 & Passive phase, as Figure OA3 & \texttt{\footnotesize figure\_rq3\_p
 \FloatBarrier
 \input{../tables/table_rq4_full.tex}
 \FloatBarrier
+\subsection*{Cited in Section 8, Discussion}
 \input{../tables/table_freerasp_active_cost.tex}
 \FloatBarrier
 \input{../tables/table5_allatori_applicability.tex}
@@ -79,35 +109,34 @@ Figure OA4 & Passive phase, as Figure OA3 & \texttt{\footnotesize figure\_rq3\_p
 \FloatBarrier
 \input{../tables/table_freerasp_mechanism.tex}
 \FloatBarrier
+\subsection*{Cited in Section 9, Threats to Validity}
 \input{../tables/table_arrival_temperature.tex}
 \FloatBarrier
 \input{../tables/table_sampler_load.tex}
 \FloatBarrier
-\clearpage
-\begin{figure}[p]
+\subsection*{Figures, cited in Section 7, Results}
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{../figures/qq_per_device.pdf}
 \caption{Q-Q plots of the paired differences for each technique, phase and device.}
 \end{figure}
 \FloatBarrier
-\begin{figure}[p]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth]{../figures/figure_rq3_length.pdf}
 \caption{Energy per run against phase duration, per device and phase, with a least-squares line per build.}
 \end{figure}
 \FloatBarrier
-\begin{figure}[p]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{../figures/figure_rq3_active.pdf}
 \caption{Active phase: energy per run against phase duration, processor utilisation (device-wide), memory and thread count, per device; one point per run, a least-squares line per build.}
 \end{figure}
 \FloatBarrier
-\begin{figure}[p]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{../figures/figure_rq3_passive.pdf}
 \caption{Passive phase, as Figure OA3; medtimer is not included.}
 \end{figure}
 \FloatBarrier
-\bibliographystyle{abbrv}
-\bibliography{references}
 \end{document}

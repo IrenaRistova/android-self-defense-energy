@@ -689,14 +689,18 @@ T.register(T.save_figure(fig, "figure1_per_device", T.FIG_SINGLE), "REPO", "6 Re
 # columns: the passive phase (RQ1), then the active phase (RQ2); the devices side by side in each panel, each panel with its own
 # y-axis (the passive cost of runtime shielding is an order of magnitude larger than the other effects). Each dot is one matched
 # pair (the pairs of Table 1, `pt`); the violin is their distribution; the diamond is their mean, the number Table 1 gives (checked
-# below against table_rq12.csv); the line is their median. A dark violin: a non-negligible difference (BH-adjusted
-# p < 0.05 and |Cliff's delta| >= 0.147, bold in Table 1); a pale one: no detectable difference. Device colours as in the forest plot.
+# below against table_rq12.csv); the line is their median. A non-negligible difference (BH-adjusted
+# p < 0.05 and |Cliff's delta| >= 0.147, bold in Table 1) is red, as Table 1 shades it; no detectable difference is grey.
 import csv as _csv
 import matplotlib.colors as _mc
 from matplotlib.ticker import MaxNLocator as _MaxN
 _VI_ROWS = ("freeRASP", "Bangcle", "Allatori")                     # runtime shielding, packing, obfuscation
 _VI_COLS = (("passive", "Passive phase (RQ1)"), ("active", "Active phase (RQ2)"))
-_VI_ALPHA = {True: 0.45, False: 0.13}                              # violin fill: non-negligible difference / none detected
+# Colour by verdict, as Table 1 shades it: red = a non-negligible energy cost, grey = no detectable difference.
+# The device is the x-axis label. Under simulated deuteranopia the fills differ by a colour difference of 18.8 and the
+# marks by 12.8 (target at least 8).
+_VI_FILL = {True: "#E9897E", False: "#E3E3E3"}
+_VI_MARK = {True: "#A93226", False: "#808080"}                      # violin outline and dots
 with open(T.TABLES / "table_rq12.csv", encoding="utf-8") as _fh:   # Table 1 as printed: rows TECHS x DEVS; the passive dE in
     _vi_t1 = list(_csv.reader(_fh))[1:]                            # column 2, the active dE in column 6
 _vi_rng = np.random.default_rng(20261028)                          # fixed seed: the jitter is the same on every rebuild
@@ -716,16 +720,16 @@ for r, t in enumerate(_VI_ROWS):
             if np.sign(vals.mean()) != np.sign(np.median(vals)):
                 assert not tr.significant, (t, ph, dev)            # a sign flip only where no difference is detected
                 _vi_flip.append(f"{_TECH_WORD[t]}, {DEV[dev]}, {ph}: mean {P.signed(vals.mean())}, median {P.signed(np.median(vals))}")
-            col = _FP_DEV_COLOURS[dev]
+            assert (not strong) or vals.mean() > 0, (t, ph, dev)   # every non-negligible difference is a cost: the legend says so
             body = ax.violinplot([vals], positions=[i], widths=0.82, showextrema=False)["bodies"][0]
             body.set_alpha(None)
-            body.set_facecolor(_mc.to_rgba(col, _VI_ALPHA[strong]))
-            body.set_edgecolor(_mc.to_rgba(col, 0.9))
-            body.set_linewidth(0.5)
+            body.set_facecolor(_VI_FILL[strong])
+            body.set_edgecolor(_VI_MARK[strong])
+            body.set_linewidth(0.6)
             body.set_zorder(1)
-            ax.scatter(i + _vi_rng.uniform(-0.15, 0.15, len(vals)), vals, s=5, color=col, edgecolor="white", linewidth=0.3, zorder=3)
+            ax.scatter(i + _vi_rng.uniform(-0.15, 0.15, len(vals)), vals, s=5, color=_VI_MARK[strong], edgecolor="white", linewidth=0.3, zorder=3)
             ax.plot([i - 0.25, i + 0.25], [np.median(vals)] * 2, color="0.1", lw=0.7, solid_capstyle="butt", zorder=4)
-            ax.plot(i, vals.mean(), ls="", marker="D", ms=3.6, mfc="0.1", mec="white", mew=0.5, zorder=5)
+            ax.plot(i, vals.mean(), ls="", marker="D", ms=4.2, mfc="0.1", mec="white", mew=0.8, zorder=5)   # white rim: visible on red and grey
         if (r, c) == (0, 0):                                       # zero is the control: labelled once, where no data is
             T.control_line(ax, at=0.03, side="above")
         else:
@@ -743,18 +747,18 @@ for r, t in enumerate(_VI_ROWS):
                         ha="left", va="bottom", fontsize=7.5, fontstyle="italic", annotation_clip=False)   # italic, as Table 1's blocks
 fig.supylabel(T.DELTA_LABEL, fontsize=8)
 # the legend fills column by column: the three marks on the first row, the two fills on the second
-_vi_h = [Line2D([], [], ls="", marker="o", ms=3, mfc="0.45", mec="white", mew=0.3, label="One matched pair"),
-         mpatches.Patch(facecolor=_mc.to_rgba("0.35", _VI_ALPHA[True]), edgecolor="0.35", lw=0.5, label="Non-negligible difference"),
-         Line2D([], [], ls="", marker="D", ms=3.6, mfc="0.1", mec="white", mew=0.5, label="Mean"),
-         mpatches.Patch(facecolor=_mc.to_rgba("0.35", _VI_ALPHA[False]), edgecolor="0.35", lw=0.5, label="No detectable difference"),
+_vi_h = [Line2D([], [], ls="", marker="o", ms=3, mfc="#808080", mec="white", mew=0.3, label="One matched pair"),
+         mpatches.Patch(facecolor=_VI_FILL[True], edgecolor=_VI_MARK[True], lw=0.6, label="Non-negligible energy cost"),
+         Line2D([], [], ls="", marker="D", ms=4.2, mfc="0.1", mec="white", mew=0.8, label="Mean"),
+         mpatches.Patch(facecolor=_VI_FILL[False], edgecolor=_VI_MARK[False], lw=0.6, label="No detectable difference"),
          Line2D([], [], color="0.1", lw=0.7, label="Median")]
 fig.legend(handles=_vi_h, loc="outside lower center", ncol=3, frameon=False, fontsize=6.5, handlelength=1.3,
            columnspacing=1.0, handletextpad=0.4)
 T.register(T.save_figure(fig, "figure_rq12_violins", T.FIG_SINGLE), "BODY", "7 Results (RQ1 and RQ2)",
            "violin plots of the per-pair delta-E vs. control (one dot per matched pair, the pairs of Table 1), one column: rows runtime "
            "shielding (freeRASP), packing (Bangcle), obfuscation (Allatori); columns passive (RQ1), active (RQ2) phase; devices side by "
-           "side, each panel its own y-axis; diamond: mean (= Table 1), line: median; dark violin: non-negligible difference "
-           "(BH-adjusted p < 0.05 and |Cliff's delta| >= 0.147)", NB)
+           "side, each panel its own y-axis; diamond: mean (= Table 1), line: median; red violin: a non-negligible energy cost "
+           "(BH-adjusted p < 0.05 and |Cliff's delta| >= 0.147), grey: no detectable difference", NB)
 print("the 18 means are Table 1's (checked against table_rq12.csv)")
 print(f"median and mean of opposite sign in {len(_vi_flip)} comparisons, none with a detectable difference:")
 for _l in _vi_flip:
@@ -773,7 +777,7 @@ for i, (ph, t) in enumerate((ph, t) for ph in ("active", "passive") for t in TEC
         ax.scatter(osm, osr, s=10, marker=T.DEVICE_MARKERS[dev], facecolors="none", edgecolors=T.COLOURS[t], linewidths=0.6)
         ax.plot(osm, icpt + slope * osm, color="0.3", lw=0.7)
         nr = norm[(norm["phase"] == P.PHASE_DISPLAY[ph]) & (norm["technique"] == t) & (norm["device"] == DEV[dev])].iloc[0]
-        ax.text(0.03, 0.95, f"n = {nr.n}\nShapiro p = {P.fmt_p(nr.shapiro_p_raw)}", transform=ax.transAxes, va="top", fontsize=7)
+        ax.text(0.03, 0.95, f"n = {nr.n}\nShapiro p " + ("" if nr.shapiro_p_raw < 0.001 else "= ") + P.fmt_p(nr.shapiro_p_raw), transform=ax.transAxes, va="top", fontsize=7)
         ax.set_title(f"{t}, {ph}, {DEV[dev]}", fontsize=7.5)
         ax.spines[["top", "right"]].set_visible(False)
         if j == 0:
@@ -2040,43 +2044,42 @@ print(_st_tab.to_string(index=False))
 
 # %%
 _fam = [("Obfuscation (code transformation)", "names, strings and control flow of the Java/DEX code", "at build time (Gradle plugin or command line)",
-         "statically: the transformed code runs as it is", "ProGuard, R8, DexGuard, Allatori$^{*}$, DashO, Obfuscapk",
-         r"\cite{Faruki2017AndroidCodeProtectionSurvey}"),
+         "statically: the transformed code runs as it is", "ProGuard, R8, DexGuard, Allatori$^{*}$, DashO, Obfuscapk"),
         ("Packing (loader-based)", "the DEX bytecode, encrypted as a payload", "after compilation, on the APK (vendor service)",
          "at run time: a stub decrypts and loads the payload",
-         "Bangcle$^{*}$, Qihoo 360 Jiagu, Tencent Legu, Ijiami, AliProtect, Baidu, Naga, Manxi, APKProtect, SecNeo",
-         r"\cite{Duan2018AndroidUnpackers,Dong2022PackDiff,BlazquezTapiador2025AndroidProtectionWild}"),
+         "Bangcle$^{*}$, Qihoo 360 Jiagu, Tencent Legu, Ijiami, AliProtect, Baidu, Naga, Manxi, APKProtect, SecNeo"),
         ("Runtime shielding (RASP)", "the running application and its environment (debugger, root, hooks, tampering)",
          "as an SDK at build time, or by wrapping the APK", "at run time: checks and reacts",
-         "freeRASP$^{*}$, DexProtector, Appdome, Promon SHIELD, LIAPP, WhiteCryption, V-Key, Virbox Protector, AppSealing",
-         r"\cite{Faruki2017AndroidCodeProtectionSurvey,BlazquezTapiador2025AndroidProtectionWild}")]
-# (b) the three measured tools. Vendor, licence, cost and mechanism from the vendors' own pages, read 16 Nov 2026 (keys oa_* in
-# ../online_appendix/references.bib). Versions are those the builds used: Allatori 9.8 Educational and freeRASP
+         "freeRASP$^{*}$, DexProtector, Appdome, Promon SHIELD, LIAPP, WhiteCryption, V-Key, Virbox Protector, AppSealing")]
+# The table cites nothing: the papers each family was cited with and the vendor page behind each entry of panel (b) are in
+# ../online_appendix/SOURCES.md (written by make_online_appendix.py; the same works in ../online_appendix/references.bib).
+# (b) the three measured tools. Vendor, licence, cost and mechanism from the vendors' own pages, read 16 Nov 2026 (listed in
+# ../online_appendix/SOURCES.md; keys oa_* in ../online_appendix/references.bib). Versions are those the builds used: Allatori 9.8 Educational and freeRASP
 # TalsecSecurity-Community 18.0.2 (tools/pack_freerasp.sh); the packing service reports no version.
 _measured = [
-    ("Allatori", "Obfuscation", r"Smardec Inc.\ (country not stated)~\cite{oa_allatori_overview}",
-     r"9.8, educational edition (released 1~June 2026)~\cite{oa_allatori_changelog}",
-     r"Educational licence (used here): free on request. Commercial: US\$290 per developer, a licence with no time limit (12 months of updates included)~\cite{oa_allatori_price}",
+    ("Allatori", "Obfuscation", r"Smardec Inc.\ (country not stated)",
+     r"9.8, educational edition (released 1~June 2026)",
+     r"Educational licence (used here): free on request. Commercial: US\$290 per developer, a licence with no time limit (12 months of updates included)",
      r"Renames classes, methods and fields, encrypts strings (an added method decrypts them at run time) and obfuscates "
-     r"control flow, in the compiled classes at build time~\cite{oa_allatori_doc}"),
-    ("Bangcle", "Packing", r"Beijing Bangcle Security Technology Co., Ltd.\ (China)~\cite{oa_bangcle_agreement}",
+     r"control flow, in the compiled classes at build time"),
+    ("Bangcle", "Packing", r"Beijing Bangcle Security Technology Co., Ltd.\ (China)",
      "None reported by the service (builds packed in May and June 2026)",
-     r"Standard tier (used here): free. Customised hardening: paid, price on request~\cite{oa_bangcle_faq}",
+     r"Standard tier (used here): free. Customised hardening: paid, price on request",
      r"Encrypts the bytecode into a payload that a stub decrypts and loads at run time, applied to the finished "
-     r"APK~\cite{oa_bangcle_features}"),
-    ("freeRASP", "Runtime shielding", r"Talsec, Lynx SFT s.r.o.\ (Czech Republic)~\cite{oa_talsec_contact}",
-     r"Community 18.0.2 (released 10~February 2026)~\cite{oa_freerasp_release}",
+     r"APK"),
+    ("freeRASP", "Runtime shielding", r"Talsec, Lynx SFT s.r.o.\ (Czech Republic)",
+     r"Community 18.0.2 (released 10~February 2026)",
      r"Community tier (used here): free up to 100,000 devices, with mandatory data collection by the vendor. Paid plans "
-     r"from EUR~284 per month~\cite{oa_freerasp_fup,oa_talsec_plans}",
+     r"from EUR~284 per month",
      r"A library in the application's process that checks for root, debuggers, hooking frameworks, emulators and "
-     r"tampering, at launch and periodically~\cite{oa_freerasp_features,oa_freerasp_faq}"),
+     r"tampering, at launch and periodically"),
 ]
 _rag = r">{\raggedright\arraybackslash}"
 _tex = [r"\begin{table*}[t]", r"\centering", r"\small",
         r"\caption{The three protection families considered, their candidate tools and the three tools measured. $^{*}$: the tool measured.}",
         r"\label{tab:tools}", r"\textbf{(a)} The three protection families and their candidate tools\par\smallskip",
-        r"\begin{tabular}{p{2.6cm}p{2.6cm}p{2.2cm}p{2.3cm}p{3.6cm}p{2.2cm}}", r"\toprule",
-        r"\textbf{Family} & \textbf{Protects} & \textbf{Inserted} & \textbf{Acts} & \textbf{Candidate tools} & \textbf{References} \\", r"\midrule"]
+        r"\begin{tabular}{" + "".join(f"{_rag}p{{{w}cm}}" for w in ("2.8", "3.2", "2.7", "2.8", "4.4")) + "}", r"\toprule",
+        r"\textbf{Family} & \textbf{Protects} & \textbf{Inserted} & \textbf{Acts} & \textbf{Candidate tools} \\", r"\midrule"]
 _tex += [" & ".join(row) + r" \\" for row in _fam]
 _tex += [r"\bottomrule", r"\end{tabular}",
          r"\par\smallskip\footnotesize Per-tool sources and reasons for exclusion: \texttt{candidate\_tools.csv} in the replication package. A fourth family, compilation of the bytecode to native code, was considered and not pursued; its one "
@@ -2087,14 +2090,17 @@ _tex += [r"\bottomrule", r"\end{tabular}",
          r"\midrule"]
 _tex += [" & ".join(row) + r" \\" for row in _measured]
 _tex += [r"\bottomrule", r"\end{tabular}",
-         r"\par\smallskip\footnotesize Vendor websites read on 16 November 2026. Versions are those used for the measured builds. Smardec's "
+         r"\par\smallskip\footnotesize Versions are those used for the measured builds. Smardec's "
          r"website and licence give no address or country. Allatori's licence has no time limit. Bangcle's company name is translated "
-         r"from Chinese. Talsec's main office is in Brno. freeRASP runs here in passive mode: it logs each threat and never stops the application.",
+         r"from Chinese. Talsec's main office is in Brno. Here freeRASP's threat callbacks only log each threat and never stop the application.",
+         r"\par\smallskip Sources of every entry (papers, and vendor pages read on 16 November 2026): "
+         r"\texttt{online\_appendix/SOURCES.md} in the replication package.",
          r"\end{table*}"]
 (T.TABLES / "table_tool_families.tex").write_text("\n".join(_tex) + "\n")
 T.register("tables/table_tool_families.tex", "ONLINE_APPENDIX", "Online appendix (candidate and measured tools)", "(a) one row per protection "
-           "family: what it protects, where it is inserted, how it acts, candidate tools (measured one marked), references; (b) the three "
-           "measured tools: vendor and country, version, licence and cost, key characteristic, with the vendors' pages as sources (read 16 Nov 2026)", NB)
+           "family: what it protects, where it is inserted, how it acts, candidate tools (measured one marked); (b) the three "
+           "measured tools: vendor and country, version, licence and cost, key characteristic; no citations in the table: the sources of "
+           "every entry (papers, and vendor pages read 16 Nov 2026) are in online_appendix/SOURCES.md", NB)
 
 _tools = pd.DataFrame([
     ("R8", "obfuscation", "open source (Android build tools)", "On debug builds R8 shrinks but does not rename; release builds were abandoned on 24 July 2026 because the packing service could not process them and release-mode R8 broke applications", "calculator's debug R8 build: 11.1 to 7.7 MB, class names unchanged (identity mapping)"),

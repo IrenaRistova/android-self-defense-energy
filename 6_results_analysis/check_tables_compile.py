@@ -17,7 +17,7 @@ import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-body = [r["path"] for r in csv.DictReader(open(HERE / "MANIFEST.csv")) if r["placement"] in ("BODY", "APPENDIX")]
+body = [r["path"] for r in csv.DictReader(open(HERE / "MANIFEST.csv")) if r["placement"] == "BODY"]   # the online appendix: make_online_appendix.py
 tables = sorted(p for p in body if p.endswith(".tex"))
 figures = sorted(p for p in body if p.endswith(".pdf"))
 
