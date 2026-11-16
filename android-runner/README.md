@@ -39,11 +39,15 @@ aside first (for example to `android-runner-additions/`).
       `git clone https://github.com/S2-group/android-runner && cd android-runner && git checkout cca271c3`
    2. Apply the framework changes: `git apply ../android-runner-additions/framework-changes.patch`.
    3. Copy `configs/*.json` and `Scripts/` into `examples/batterymanager/`.
-2. Add your phones to `devices.json` (see `devices.example.json`), and adapt the absolute paths in the configurations
+2. Install the dependencies inside the installation (Python 3.12 was used). In the fork:
+   `pip install -r requirements.txt -r requirements-appium.txt`. `requirements-appium.txt` (the Appium client the
+   interaction scripts use) is only in the fork, so in Android Runner itself:
+   `pip install -r requirements.txt Appium-Python-Client==5.3.1` (the version used in the experiment).
+3. Add your phones to `devices.json` (see `devices.example.json`), and adapt the absolute paths in the configurations
    (`adb_path`, the APK in `paths`, and the `usb_handler` commands, which call `tools/ykush_ar_power.sh` from this
    repository). `Scripts/before_run_direct_launch.py` looks for `aapt` or `aapt2` on `PATH` first and then in two
    fixed build-tools paths, so put one of them on `PATH` or adapt those paths.
-3. The batch scheduler in `tools/` (see the main README) drives Android Runner, one configuration per measurement, in a
+4. The batch scheduler in `tools/` (see the main README) drives Android Runner, one configuration per run, in a
    randomised order per phone. A single configuration can also be run directly from the repository root:
    `python3 android-runner <config>`.
 

@@ -16,15 +16,26 @@ One row is one **cell**: one application × one technique × one device × one r
 | column | meaning |
 |---|---|
 | `app`, `phone`, `variant`, `rep` | identity of the cell. `variant` is the technique: `baseline_debug` (control), `allatori_debug`, `bangcle_debug`, `freerasp_debug` |
-| `cell_start_ts_utc` | cell start, UTC. Used for the pilot regime cutoff (2026-08-07) |
+| `cell_start_ts_utc` | cell start, UTC. Used for the pilot regime cutoff (2026-08-07, when the YKUSH board's external supply was fitted; `thesis_lib.PILOT_CUTOFF`) |
 | `scientifically_valid` | `"True"` if the cell passed every validity gate. A string, not a boolean |
 | `cell_failure_class` | why an invalid cell is invalid |
 | `negative_control` | non-empty for keep_recipe/allatori and linkhub/allatori, where the obfuscator never ran |
 | `scenarios_completed`, `scenarios_planned` | scenario **executions**, including repeats |
-| `workload_joules` | energy over the interactive workload window, J |
-| `pre_workload_joules` | energy from profiler start to the first scenario, the **startup** window, J. It opens after the application has been launched (about seven seconds after its first frame), so it does not contain the cold launch |
+| `workload_joules` | energy of the **active phase** (RQ2, the scenarios), J |
+| `pre_workload_joules` | energy of the **passive phase** (RQ1), from the first energy sample to the first scenario, J (earlier drafts called it the startup window). It opens after the application has been launched (about seven seconds after its first frame), so it does not contain the cold launch |
 | `duration_workload_s`, `duration_pre_workload_s` | window durations, s |
 | `workload_avg_watts` | mean power over the workload window, W |
+| `run_id` | name of the run's Android Runner output folder (laptop local time) |
+| `cell_end_ts_utc` | run end, UTC |
+| `apk_sha256` | SHA-256 of the measured APK |
+| `android_release` | the phone's Android version |
+| `total_cell_joules` | energy over all energy samples of the run, J |
+| `battery_level_pre_pct` | battery level at the first energy sample, % |
+| `cpu_avg_pct` | mean processor utilisation over the run from Android Runner's Android profiler (device-wide), % |
+| `mem_pss_avg_mb` | the application's mean total PSS (`dumpsys meminfo`), MB |
+| `frame_time_median_ms`, `frame_time_p95_ms`, `delayed_frames_count` | frame timing from the frame-time profiler |
+| `scenarios_json` | per-scenario outcomes |
+| `app_crash_signature` | the crash recorded in the system log, if any |
 
 ## Columns that must NOT be used naively
 
@@ -38,18 +49,7 @@ One row is one **cell**: one application × one technique × one device × one r
 
 ## Other inputs (`inputs/`)
 
-| file | used by | notes |
-|---|---|---|
-| `post_charge_k_window.csv` | Headline_Effects | per-cell `k` for the post-charge K-window rule |
-| `logcat_activity_<batch>.csv` | Mechanism_Analysis | per-cell app-attributed logcat, attribution by process ID |
-| `allatori_static_code_effects.csv` | Mechanism_Analysis | measured from the APKs; no notebook regenerates it (see its PROVENANCE file) |
-| `app_characteristics.csv` | Descriptive_Statistics, Mechanism_Analysis | per-app category, size, SDK levels, permissions |
-| `selection_funnel.csv` | Descriptive_Statistics | every count with its source |
-| `control_build_screen.csv` | Descriptive_Statistics (Table OA3) | source-file-name screen of the ten control APKs, with packages of any 1–2 character names |
-| `freerasp_build_screen.csv` | Descriptive_Statistics | the same screen on the freeRASP builds, for comparison |
-| `allatori_build_screen.csv` | Descriptive_Statistics | the same screen on the Allatori builds: the basis for the screen's minimum |
-| `variant_parity.csv` | Descriptive_Statistics, Phase_Analysis | one row per build: version, SDKs, NSC, INTERNET, debuggable, protection marker, hash vs run tables |
-| `allatori_renaming.csv` | Headline_Effects (Table OA16) | classes Allatori renamed, measured on the swept APKs |
+Every file in `inputs/` is listed in `DATA_MAP.md` §4 with the script that builds it and its PROVENANCE file.
 
 ## Builds the analysis sets aside
 

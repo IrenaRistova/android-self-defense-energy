@@ -127,6 +127,9 @@ Per-scenario collapse via
 is the per-scenario strict verdict (`scenario_success_strict_ui` in the
 coverage row).
 
+Metronome (Kr0oked/Metronome) is the application the harness was first developed on. It is not in the cohort, and
+its module is not in this repository.
+
 The shared helper knows only the Metronome scenario names
 (`initialState`, `tempoMarkingsWalk`, etc.); for any other name it returns
 `(False, False, ["unknown_scenario_name"])`, so silent passes are

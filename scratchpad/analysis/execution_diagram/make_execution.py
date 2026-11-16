@@ -140,7 +140,7 @@ for sid, (lab, n) in [
     y = node(sid, SX, y, SW, h_of(n), lab, STEP) + GAP_Y
 AR_H = y - 2 - AR_Y
 y = AR_Y + AR_H + GAP_Y
-lab, n = lines("Switch USB off again; stop the log;", "mark the measurement valid or failed")
+lab, n = lines("Switch USB off again; stop the log;", "mark the run valid or failed")
 y = node("s7", SX, y, SW, h_of(n), lab, STEP) + GAP_Y
 LOOP_H = y - LOOP_Y
 lab, n = lines("After the batch: build the run table")
@@ -191,9 +191,9 @@ front = [
     dict(id="host", x=0, y=0, w=HOST_W, h=TOTAL_H, label="Host laptop", style=CONTAINER),
     dict(id="runner", x=8, y=RUNNER_Y, w=HOST_W - 16, h=RUNNER_H,
          label="Measurement harness (batch scheduler + Android Runner)", style=RUNNER),
-    dict(id="loop", x=16, y=LOOP_Y, w=HOST_W - 32, h=LOOP_H, label="Loop: for each measurement, on each phone",
+    dict(id="loop", x=16, y=LOOP_Y, w=HOST_W - 32, h=LOOP_H, label="Loop: for each run, on each phone",
          style=LOOP),
-    dict(id="ar", x=24, y=AR_Y, w=SX + SW + 8 - 24, h=AR_H, label="Android Runner: one run per measurement",
+    dict(id="ar", x=24, y=AR_Y, w=SX + SW + 8 - 24, h=AR_H, label="Android Runner carries out the run",
          style=AR),
     dict(id="band", x=28, y=band_y, w=SX + SW + 4 - 28, h=band_h, label="", style=BAND),
     dict(id="bandlabel", x=28, y=band_y, w=12, h=band_h, label="measured", style=VLABEL),

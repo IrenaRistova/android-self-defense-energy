@@ -59,13 +59,6 @@ The `(?:\s+round=\d+)?` non-capturing group is CRITICAL. Regexes that expect `->
 
 `tools/scenario_log_parser.py` reads both formats.
 
-## Other apps with scenarios (not measured in the four batches; same formats)
-
-| App | Format |
-|---|---|
-| avnc, crcontainer, diaguard, gallerywall, horoscapp, iamspeed, metronome, repertoire | A |
-| keepitup, podaura, ytalarm | B basic |
-
 ---
 
 ## Duplicate-line trap

@@ -1,8 +1,8 @@
 # Tables: source notebooks
 
-Every table here is written by a notebook under `6_results_analysis/notebooks/`. **BODY** tables appear in the thesis (`.tex` to `\input`, `.csv` for the data); **ONLINE_APPENDIX** tables are Tables OA1 to OA20 of the online appendix (`../online_appendix/online_appendix.pdf`), which the thesis cites; **REPO** tables are cited by path; **SENSITIVITY** tables (`sensitivity_ten_apps/`) hold the ten-application sensitivity check, which the thesis does not cite. This list is generated from `../MANIFEST.csv`, which also covers the figures.
+Every table here is written by a notebook under `6_results_analysis/notebooks/`. **BODY** tables appear in the thesis (`.tex` to `\input`, `.csv` for the data); **ONLINE_APPENDIX** tables are Tables OA1 to OA20 of the online appendix (`../online_appendix/online_appendix.pdf`), which the thesis cites; **REPO** tables are in this repository only; the thesis refers to them as "the replication package" (for example the exclusions by cause, `exclusions_by_cause.csv`); **SENSITIVITY** tables (`sensitivity_ten_apps/`) hold the ten-application sensitivity check, which the thesis does not cite. This list is generated from `../MANIFEST.csv`, which also covers the figures.
 
-**The `.tex` tables were test-compiled on 2026-10-02** in ACM `sigconf` (Tectonic 0.15.0): all compile; Table 1 is a `table*` (both columns). The `.csv` beside each holds the same table.
+**The BODY `.tex` tables compile** in ACM `sigconf` (`python3 check_tables_compile.py`: PASS on 2026-11-16, Tectonic 0.17.0); Table 1 is a `table*` (both columns). The online-appendix tables compile into `online_appendix.pdf` (`make_online_appendix.py`). The `.csv` beside each holds the same table.
 
 ## BODY
 

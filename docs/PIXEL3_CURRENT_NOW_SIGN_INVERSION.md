@@ -1,7 +1,11 @@
 # Pixel 3 (Android 12): BATTERY_PROPERTY_CURRENT_NOW sign inversion
 
+> Development note of 2 June 2026, before the batches. The Pixel 6 then ran Android 13; in all four batches it ran
+> Android 16 with the same sign convention. The conclusion holds for the batches: energy is computed from
+> abs(current) x voltage, so it is not affected.
+
 **Discovered:** 2026-06-02 during first 3-phone parallel S2 baseline smoke
-**Affects:** Pixel 3 only. Pixel 6 (Android 13) + Pixel 9 (Android 16) read the standard sign convention.
+**Affects:** Pixel 3 only. Pixel 6 (Android 13 in June; Android 16 in the batches) + Pixel 9 (Android 16) read the standard sign convention.
 
 ## The bug in one sentence
 
@@ -57,7 +61,7 @@ First 3-phone parallel S2-baseline smoke (2026-06-02):
 | Phone | hub-ctrl mean current (BM API) | sysfs `battery/current_now` mean | matched? |
 |---|---|---|---|
 | Pixel 9 (Android 16) | -431 mA | -431 mA | ✓ |
-| Pixel 6 (Android 13) | -161 mA | -161 mA | ✓ |
+| Pixel 6 (Android 13 in June; Android 16 in the batches) | -161 mA | -161 mA | ✓ |
 | Pixel 3 (Android 12) | **+201 mA** | **-279 mA** | ❌ sign flipped |
 
 `BATTERY_PROPERTY_CURRENT_NOW` on Pixel 3 reports +201 mA *during a

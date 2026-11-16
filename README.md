@@ -5,7 +5,9 @@ Replication package of the MSc thesis by Irena Ristova (Vrije Universiteit Amste
 The study measures the energy cost of three Android self-defense techniques, each against the unprotected build of the
 same application: packing (Bangcle), obfuscation (Allatori) and runtime shielding (freeRASP). Ten open-source
 applications were measured on three generations of Google Pixel phones (Pixel 3, 6 and 9) in four batches of 1200
-runs: a pilot and three series batches. The thesis analyses the three series batches, on nine applications.
+runs: a pilot and three series batches. The thesis analyses the three series batches, on nine applications. Of the 3,600 runs of the three series batches, 3,331 are valid and 2,647 are analysed (`6_results_analysis/tables/filter_chain.csv`,
+`cell_counts_per_device.csv`, `exclusions_by_cause.csv`). The tools measured are Allatori 9.8 (educational licence),
+Bangcle (web service, free standard tier) and freeRASP (Talsec Community 18.0.2).
 
 The thesis asks four research questions: RQ1, the energy cost in the passive phase (from the first energy sample to the
 first scenario); RQ2, the energy cost in the active phase (the scenarios); RQ3, how the protected builds differ from
@@ -21,11 +23,11 @@ data, and the code that took the measurements. The thesis's online appendix (Tab
 | Folder | What it holds |
 | --- | --- |
 | `6_results_analysis/notebooks/` | The five notebooks that produce every table, figure and number, and their two libraries (`thesis_lib.py`, `per_device_lib.py`). `Per_Device_Analysis` makes most of the tables and figures of the thesis body. |
-| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body (BODY), the online appendix (ONLINE_APPENDIX), repository only (REPO), or the ten-application sensitivity check that the thesis does not cite (SENSITIVITY, in `tables/sensitivity_ten_apps/`). The execution diagram (`figures/figure_execution.*`) is drawn by `scratchpad/analysis/execution_diagram/make_execution.py`. |
-| `6_results_analysis/online_appendix/` | `online_appendix.pdf`, the thesis's online appendix (Tables OA1 to OA20, Figures OA1 to OA4), its LaTeX source, `SOURCES.md` (the papers and vendor pages behind every entry of Table OA5; the PDF holds only tables and figures), `references.bib` (the same works in BibTeX), and `INDEX.md`, which maps every table and figure of the thesis to its file and notebook. |
+| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body (BODY), the online appendix (ONLINE_APPENDIX), repository only (REPO), or the ten-application sensitivity check that the thesis does not cite (SENSITIVITY, in `tables/sensitivity_ten_apps/`). The execution diagram (`figures/figure_execution.*`) is drawn by `scratchpad/analysis/execution_diagram/make_execution.py`, which `rebuild.sh` does not run. It needs Pillow, the Liberation Sans fonts, Google Chrome (headless) and network access to viewer.diagrams.net (`drawio_render.py` renders the draw.io file through it); its output in `scratchpad/analysis/execution_diagram/out/` is copied to `figures/`. |
+| `6_results_analysis/online_appendix/` | `online_appendix.pdf`, the thesis's online appendix (Tables OA1 to OA20, Figures OA1 to OA4), its LaTeX source, `SOURCES.md` (the papers and vendor pages behind every entry of Table OA5; the PDF holds only tables and figures), `references.bib` (the same works in BibTeX), and `INDEX.md`, which maps every table and figure of the thesis body and the online appendix that a notebook writes to its file and notebook. |
 | `6_results_data/run_tables/` | The four run tables, one row per run (4 x 1200 rows), with each run's validity verdict. `RUN_TABLE_COLUMNS_EXPLANATION.md` explains the columns. |
 | `6_results_data/inputs/` | Per-run and per-build inputs extracted from the raw logs and APKs. Each `<name>.PROVENANCE.md` gives the command that made the file. |
-| `6_results_data/derived/` | Results of an independent reference implementation (`scratchpad/analysis/thesis_numbers.py`), which the notebooks print next to their own numbers as a cross-check. |
+| `6_results_data/derived/` | Results of an independent reference implementation (`scratchpad/analysis/thesis_numbers.py`), which the notebooks print next to their own numbers as a cross-check. Regenerate with `python3 scratchpad/analysis/thesis_numbers.py`, and the ten-application file with `--exclude-apps '' --out 6_results_data/derived/thesis_numbers_ten_apps_sensitivity.json` added. |
 | `6_results_data/DATA_MAP.md` | Where every file comes from: batches, tags, sessions, clocks, raw files and derived inputs. |
 | `6_results_data/raw_manifest.csv.gz` | Size and SHA-256 of every raw file, so that the raw data (see below) can be checked. |
 | `6_results_data/sweep_log_index.csv` | Maps every raw log file of the four batches to its batch. |
@@ -33,12 +35,22 @@ data, and the code that took the measurements. The thesis's online appendix (Tab
 | `tools/sweep_logs/` | The 38 per-phone scheduler logs of the four batches, from which Table OA7 (the thermal gate) is computed. |
 | `appium_android_tests/` | The interaction scenarios of the ten measured applications and their shared library. |
 | `android-runner/` | The Android Runner configurations, hook scripts and framework changes used in the experiment, with instructions ([`android-runner/README.md`](android-runner/README.md)). |
-| `scratchpad/` | Scripts developed next to the analysis: the source of `Per_Device_Analysis` (`analysis/per_device_notebook.py`, converted by `analysis/py2nb.py`), the reference implementation, the producers of some inputs, the generator of the execution diagram, and the APK fingerprint modules the build checks import. |
+| `scratchpad/` | Scripts developed next to the analysis: the source of `Per_Device_Analysis` (`analysis/per_device_notebook.py`, converted by `analysis/py2nb.py`), the reference implementation, the producers of some inputs, the generator of the execution diagram, the APK fingerprint modules the build checks import, and `99-ykush.rules`, the udev rule that lets ykushcmd switch the YKUSH 3 ports without root. |
 | `docs/` | Three reference notes: batch naming, the scenario log formats, and the sign of the Pixel 3's current reading. |
+
+The thesis body's tables and figures are: Figure 1 `figures/figure_run.pdf`; Figure 2, a photograph of the set-up (not
+produced by code, and not in this repository); Figure 3 `figures/figure_execution.pdf`, drawn by
+`scratchpad/analysis/execution_diagram/make_execution.py` (draw.io source `figures/figure_execution.drawio`); Figure 4
+`figures/figure_rq12_violins.pdf`; Figure 5 `figures/freerasp_postlaunch_profile.pdf` (`Mechanism_Analysis`); Table 1
+`tables/table_rq12.tex`; Table 2 `tables/table_rq4.tex`; Table 3 `tables/table_rq3_correlations.tex`. All except
+Figures 2, 3 and 5 come from `Per_Device_Analysis`.
 
 The thesis calls one measurement a *run*; where a file name, a column name or a table in this package says *cell* (for
 example `cell_start_ts_utc` or `cell_counts_per_device.csv`), a cell means one run. File names, the notebooks' headings
-and the repository-only (REPO) rows of `MANIFEST.csv` keep earlier numberings of the research questions. In file names,
+and the repository-only (REPO) rows of `MANIFEST.csv` and `tables/README.md` keep the research-question, section, table
+and figure numbers of earlier drafts (for example '6.2 RQ1 (headline)', 'Appendix', 'Table 4'); only the BODY and
+ONLINE_APPENDIX rows use the thesis's numbering. REPO figures such as `figure1_headline` and `figure_measurement` are
+earlier or supporting views that the thesis does not show. In file names,
 `table_rq12*` and `figure_rq12_violins` hold RQ1 and RQ2, `table_rq2_passive*` holds RQ1 and `table_rq1_active*` RQ2,
 `table_rq4*` and `rq4_runtime_differences.csv` hold RQ3, and `table_rq3_correlations*`, `rq3_*.csv` and `figure_rq3_*`
 hold RQ4.
@@ -81,15 +93,20 @@ The thesis describes the design (Section 4) and its execution (Section 5). This 
   hardware (`tools/ykush_power.sh`, and `tools/ykush_ar_power.sh` as Android Runner's USB handler).
   `tools/ykush_band_keeper.sh` keeps each phone's battery level within a band between runs, and
   `tools/verify_parallel_charging.sh` checks that the external supply can charge all phones at once.
+  `tools/ykush_sweep_watchdog.sh` runs next to a batch and cuts every port if the batch dies or a phone charges above the ceiling.
 - **Energy and behaviour.** Android Runner's battery profiler samples Android's `BatteryManager` every 100 ms; other
   profilers sample processor and memory use and count garbage collections. The system log of each run is
   captured and parsed into the run table.
 - **Network replay.** pdfviewer's network traffic is replayed from a recording by mitmproxy
   (`tools/mitmproxy_replay.sh`). `tools/record_via_scenario.sh` made the recording.
-- **Builds.** `tools/pack_baseline_release.sh` builds the unprotected controls and `tools/pack_freerasp.sh` the freeRASP
-  builds; `tools/patch_apk_nsc.sh` and `tools/inject_arm64_stub.sh` prepare the input to the Bangcle web service, to
-  which packing is a manual upload. `tools/verify_baseline_not_obfuscated.py`, `tools/verify_allatori_obfuscation.py`
-  and `tools/verify_variant_parity.py` check the builds. The Allatori build script is not included; it can be shared on
+- **Builds.** Every analysed build is a debug build. itsok's Allatori build is a release build: it was measured and is
+  excluded (Table OA16). The controls come from `BASELINE_BUILD_TYPE=debug tools/pack_baseline_release.sh <app>` and
+  the freeRASP builds (Talsec freeRASP Community 18.0.2) from `FREERASP_BUILD_TYPE=debug tools/pack_freerasp.sh <app>`.
+  Without these variables, both scripts build release builds, which the analysis does not use.
+  `tools/patch_apk_nsc.sh` and `tools/inject_arm64_stub.sh` prepare the input to the Bangcle web service (free standard
+  tier), to which packing is a manual upload. Allatori 9.8 ran under its educational licence.
+  `tools/verify_baseline_not_obfuscated.py`, `tools/verify_allatori_obfuscation.py` and `tools/verify_variant_parity.py`
+  check the builds. The Allatori build script is not included; it can be shared on
   request.
 - **From raw files to data.** `tools/build_run_table_extended.py` builds the run tables, and the `tools/extract_*.py`
   scripts build the inputs. `tools/check_data_complete.py` compares every derived input with the raw files, so it needs
@@ -99,22 +116,43 @@ The harness was written for one laptop and three phones. Absolute paths (`/home/
 and placeholders for device-specific values (`<pixel3-serial>`, `<pixel3-ip>`, `<ykush-serial>` and so on) in
 `tools/`, `scratchpad/` and `android-runner/` have to be set for a new set-up. The scripts that read APKs or raw logs
 (the build checks, the input extractors and the producers in `scratchpad/analysis/`) need the raw data; the notebooks
-do not.
+do not. `tools/README.md` describes every file in `tools/` in one line.
+
+## Running the harness
+
+The harness ran on one Linux laptop (Python 3.12) with three phones: Pixel 3 (Android 12), Pixel 6 (Android 16) and
+Pixel 9 (Android 16). It needs:
+
+- Android Runner from the fork named in `android-runner/README.md`, with
+  `pip install -r requirements.txt -r requirements-appium.txt` inside the fork (Appium-Python-Client 5.3.1 was used);
+- one Appium server per phone (Appium 3.3.1 with the UiAutomator2 driver 7.2.0);
+- Android SDK platform-tools (adb) and build-tools (aapt or aapt2);
+- mitmproxy 12 (12.2.3) for pdfviewer's network replay (`tools/mitmproxy_replay.sh` looks for `mitmdump` in
+  `appium_android_tests/.venv/bin/` first, then on `PATH`);
+- Yepkit's `ykushcmd` (1.2.5), with the udev rule `scratchpad/99-ykush.rules` copied to `/etc/udev/rules.d/`;
+- a Yepkit YKUSH 3 board with its own power supply.
+
+The `requirements-appium.txt` that some scenario modules mention is the fork's.
 
 ## Data kept outside this repository
 
 The raw Android system logs, the per-run logs, the raw energy samples, the 40 measured APKs and the network
 recording replayed for pdfviewer are not in this repository because of their size. They can be shared on request: open an
 issue in this repository.
-`6_results_data/raw_manifest.csv.gz` lists every raw file with its size and SHA-256. In the 38 scheduler logs under
+`6_results_data/raw_manifest.csv.gz` lists every raw file with its size and SHA-256: 134,522 files, 43.6 GB. Its paths
+are the original ones, so they contain the laptop's home folder and the phones' Wi-Fi ADB addresses on a private
+network. In the 38 scheduler logs under
 `tools/sweep_logs/`, local network addresses are replaced by documentation addresses (198.51.100.x and 203.0.113.x), so the checksums
 of 36 of these 38 files differ from the manifest (the two logs of the pilot's false start held no address).
 
 ## Applications
 
 The applications come from the AndroT dataset of Android applications with tests (Muradyan and Fazzini, MSR 2026).
-Each one is built from a pinned commit of its open-source repository, and
-`6_results_data/inputs/app_characteristics.csv` gives each application's package name and version.
+Each one is built from a pinned commit of its open-source repository. `6_results_data/inputs/androt_cohort.csv` gives
+each repository and AndroT's commit, from which the builds of eight of the nine analysed applications came. linkhub's
+builds came from commit `6d79a778f04f9619d3e476620d19e19b7e2c329e` (version 2.1.0; `androt_cohort.PROVENANCE.md`).
+`app_characteristics.csv` gives each package name and version, and `variant_parity.csv` checks that the four builds of
+each application share them.
 `6_results_analysis/tables/candidate_tools.csv` lists the
 self-defense tools that were considered and why each was or was not used, and `exclusions_by_cause.csv` gives the
 excluded runs by cause.
@@ -123,3 +161,19 @@ excluded runs by cause.
 
 Irena Ristova. *On the Impact of Self-Defense Techniques on the Energy Consumption of Android Apps.* MSc thesis,
 Vrije Universiteit Amsterdam, 2026.
+
+```bibtex
+@mastersthesis{ristova2026thesis,
+  author = {Irena Ristova},
+  title  = {On the Impact of Self-Defense Techniques on the Energy Consumption of {Android} Apps},
+  school = {Vrije Universiteit Amsterdam},
+  year   = {2026}
+}
+
+@misc{ristova2026replication,
+  author       = {Irena Ristova},
+  title        = {On the Impact of Self-Defense Techniques on the Energy Consumption of {Android} Apps: Replication Package},
+  year         = {2026},
+  howpublished = {GitHub repository, \url{https://github.com/IrenaRistova/android-self-defense-energy}}
+}
+```
