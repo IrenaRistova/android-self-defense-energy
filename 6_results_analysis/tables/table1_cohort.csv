@@ -1,10 +1,10 @@
-App,Category,Version,App classes,Scenarios,Devices,Bangcle,Allatori,freeRASP
-calculator,calculator,1.7.2,108,5,"P3, P6, P9",yes,yes,yes
-documenter,document viewer / converter,1.0.14.debug,189,5,"P3, P6, P9",yes,no working build,yes
-itsok,mental-health journal,0.0.1,395,10,"P3, P6, P9",yes,excluded: build type,yes
-keep_recipe,recipe manager,1.1,354,6,"P6, P9",yes,not transformed,yes
-linkhub,bookmark manager,2.1.0,852,5,"P3, P6, P9",yes,not transformed,yes
-medtimer,medication reminder,1.17.7,729,11,"P3, P6, P9",no pairs,active only,active only
-pdfviewer,PDF viewer,1.1,51,8,"P3, P6, P9",yes,yes,yes
-poetskingdom,creative writing / poetry editor,1.0.0,608,6,"P3, P6, P9",yes,yes,yes
-tipuous,receipt and tip tracker,1.30-debug,239,7,"P3, P6, P9",yes,yes,yes
+Application,Android id,Description,Version,APK (MB),Last commit (AndroT),Google Play,F-Droid,Scenarios,Mean duration (s),Devices,Bangcle,Allatori,freeRASP
+calculator,com.exponential_groth.calculator,Scientific calculator,1.7.2,9.9,2024-01-06,10+,not listed,5,19.4,"P3, P6, P9",yes,yes,yes
+documenter,com.viliussutkus89.documenter.debug,Converts PDF and Word files to HTML and shows them,1.0.14.debug,57.3,2024-08-31,100+,not listed,5,14.7,"P3, P6, P9",yes,no working build,yes
+itsok,com.qubacy.itsok,Chat that answers a typed gripe with positive mementos,0.0.1,6.7,2024-03-10,50+,not listed,10,10.9,"P3, P6, P9",yes,excluded,yes
+keep_recipe,com.keeprecipes.android,Saves and manages recipes,1.1,8.2,2025-06-11,50+,not listed,6,5.7,"P6, P9",yes,not transformed,yes
+linkhub,com.amrdeveloper.linkhub,Link manager that sorts links into folders,2.1.0,16.3,2025-08-10,5K+,listed,5,23.7,"P3, P6, P9",yes,not transformed,yes
+medtimer,com.futsch1.medtimer,Offline medication reminder with an intake log,1.17.7,31.5,2025-07-12,10K+,listed,11,5.7,"P3, P6, P9",excluded,active only,active only
+pdfviewer,com.rajat.sample.pdfviewer,Sample app of a PDF-viewer library,1.1,16.0,2025-09-27,not listed,not listed,8,8.4,"P3, P6, P9",yes,yes,yes
+poetskingdom,com.wendorochena.poetskingdom,Poem editor with custom themes,1.0.0,20.5,2025-01-16,not listed,not listed,6,17.5,"P3, P6, P9",yes,yes,yes
+tipuous,com.tips.tipuous.debug,Tip calculator and receipt tracker,1.30-debug,68.4,2025-09-22,10+,not listed,7,15.8,"P3, P6, P9",yes,yes,yes

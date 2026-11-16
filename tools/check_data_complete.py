@@ -32,7 +32,8 @@ B  log captures [raw]. For every cell, B looks at every capture on disk with its
 C  the per-cell inputs the notebooks join, against the analysed cells:
    - `dexopt_status_series`, `post_charge_k_window`, `mechanism_cells_series`: every analysed cell;
    - `launch_timing_series`: every analysed cell whose capture resolves the application's process;
-   - `denial_timing_series`: every analysed cell with denials, with the same totals as the log tables.
+   - `denial_timing_series`: every analysed cell with denials, with the same totals as the log tables;
+   - `scenario_timing_series`: every analysed cell, with one row per scenario run the run table counts.
 D  the raw manifest (`raw_manifest.csv.gz`) lists [raw for the file checks]:
    - every capture the index attributes to each batch;
    - every capture the log tables use, marked used;
@@ -282,6 +283,20 @@ def main():
         report("C denial_timing_series covers every analysed cell with denials, same totals", not (lack or differ),
                f"{len(need) - len(lack)} of {len(need)} present; {len(differ)} totals differ"
                + (f"; missing e.g. {lack[:3]}" if lack else ""))
+        # scenario_timing_series: every analysed cell, one row per scenario run the run table counts
+        done = {(r.batch, r.phone, r.app, r.variant, str(r.rep)): int(float(r.scenarios_completed))
+                for r in df.itertuples() if r.batch in SERIES}
+        p = inputs / "scenario_timing_series.csv"
+        n_rows = defaultdict(int)
+        for r in (read_csv(p) if p.is_file() else []):
+            n_rows[(r["batch"], *key_of(r))] += 1
+        lack = sorted(k for k in analysed if k not in n_rows)
+        differ = sorted(k for k in analysed if k in n_rows and n_rows[k] != done[k])
+        report("C scenario_timing_series covers every analysed cell, one row per scenario run the run table counts",
+               p.is_file() and not (lack or differ),
+               (f"{len(analysed) - len(lack)} of {len(analysed)} present; {len(differ)} with another number of rows"
+                if p.is_file() else "scenario_timing_series.csv not found")
+               + (f"; missing e.g. {lack[:3]}" if lack else "") + (f"; other count e.g. {differ[:3]}" if differ else ""))
         # variant_permissions is per build, not per cell: every analysed build, read from the APK its cells ran
         ran = defaultdict(set)
         for b in SERIES:

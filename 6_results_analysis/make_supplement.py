@@ -46,7 +46,7 @@ S_TABLES = [
     ("S15", "table_arrival_temperature", "Arrival temperature: power slopes, the balance per comparison, the adjusted comparisons", "8 Threats (internal validity)"),
     ("S16", "table_sampler_load", "The memory sampler's extra load on the shielded builds", "8 Threats (construct validity)"),
     ("S17", "table_tool_families", "The three protection families considered and their candidate tools", "4 Planning (tool choice)"),
-    ("S18", "table1_cohort", "The nine applications, the devices each was measured on, and the arms it contributes matched pairs to", "4 Planning (applications)"),
+    ("S18", "table1_cohort", "The nine applications: identity, size, store listings, scenarios, devices and the arms each contributes matched pairs to", "4 Planning (applications)"),
     ("S19", "table_descriptives_per_device", "Energy per run by device, build and phase", "6 Results (descriptive statistics)"),
     ("S20", "table_launch_per_device", "Time to initial display, technique minus control, per device", "3 Definition (metrics)"),
 ]

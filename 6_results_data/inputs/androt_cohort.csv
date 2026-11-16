@@ -1,0 +1,11 @@
+app,application_id,repository,latest_commit_id,latest_commit_date
+androidskk,jp.deadend.noname.skk,https://github.com/tamo/AndroidSKK,f00912b40340e48b338c367171b806e1751ba61b,2025-06-16
+calculator,com.exponential_groth.calculator,https://github.com/exponentialGroth/Calculator,49a34a8dd7ff50c670db0ffdf255df135bda332e,2024-01-06
+documenter,com.viliussutkus89.documenter,https://github.com/ViliusSutkus89/Documenter,6da7bc350f7052142db259934c1d54b54de0271d,2024-08-31
+itsok,com.qubacy.itsok,https://github.com/qubacy/ItsOK,7b6a0a95b920e5c14cdd5f0c0d689281386c05f8,2024-03-10
+keep_recipe,com.keeprecipes.android,https://github.com/bwakessa/Keep-Recipe,ceabd1732ab30493c4c42794d228206b5b87d870,2025-06-11
+linkhub,com.amrdeveloper.linkhub,https://github.com/AmrDeveloper/LinkHub,65a38f390d56c435c15f62e5c2efa0715987abe6,2025-08-10
+medtimer,com.futsch1.medtimer,https://github.com/Futsch1/medTimer,efa9a42bd3662f074f9432cf2b1cd1e82ef2f670,2025-07-12
+pdfviewer,com.rajat.sample.pdfviewer,https://github.com/afreakyelf/Pdf-Viewer,64c5800f5b695757ea2bb6c9d07d0a8a6956cee1,2025-09-27
+poetskingdom,com.wendorochena.poetskingdom,https://github.com/tinochings/PoetsKingdom,26b8627aa1da927ac4ded0d548cd06f2f85228c4,2025-01-16
+tipuous,com.tips.tipuous,https://github.com/JoshLudahl/tipuous,2624be0d222b1779eed11a15cbb315090658ca10,2025-09-22

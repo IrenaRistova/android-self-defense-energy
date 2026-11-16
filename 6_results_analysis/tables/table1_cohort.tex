@@ -1,23 +1,23 @@
 \begin{table*}[t]
 \centering
-\small
-\setlength{\tabcolsep}{4pt}
-\caption{The nine applications, the devices each was measured on, and the arms it contributes matched pairs to.}
+\scriptsize
+\setlength{\tabcolsep}{1.5pt}
+\caption{The nine applications: identity, size, store listings, scenarios, devices and the arms each contributes matched pairs to.}
 \label{tab:cohort}
-\begin{tabular}{lllrrlccc}
+\begin{tabular}{l>{\raggedright\arraybackslash}p{2.05cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{1.0cm}>{\raggedleft\arraybackslash}p{0.7cm}>{\raggedright\arraybackslash}p{1.2cm}>{\raggedright\arraybackslash}p{0.95cm}>{\raggedright\arraybackslash}p{0.95cm}r>{\raggedleft\arraybackslash}p{1.05cm}l>{\raggedright\arraybackslash}p{1.0cm}>{\raggedright\arraybackslash}p{1.3cm}>{\raggedright\arraybackslash}p{1.1cm}}
 \toprule
-\textbf{App} & \textbf{Category} & \textbf{Version} & \textbf{App classes} & \textbf{Scenarios} & \textbf{Devices} & \textbf{Bangcle} & \textbf{Allatori} & \textbf{freeRASP} \\
+\textbf{Application} & \textbf{Android id} & \textbf{Description} & \textbf{Version} & \textbf{APK (MB)} & \textbf{Last commit (AndroT)} & \textbf{Google Play} & \textbf{F-Droid} & \textbf{Scenarios} & \textbf{Mean duration (s)} & \textbf{Devices} & \textbf{Bangcle} & \textbf{Allatori} & \textbf{freeRASP} \\
 \midrule
-calculator & calculator & 1.7.2 & 108 & 5 & P3, P6, P9 & yes & yes & yes \\
-documenter & document viewer / converter & 1.0.14.debug & 189 & 5 & P3, P6, P9 & yes & no working build & yes \\
-itsok & mental-health journal & 0.0.1 & 395 & 10 & P3, P6, P9 & yes & excluded: build type & yes \\
-keep\_recipe & recipe manager & 1.1 & 354 & 6 & P6, P9 & yes & not transformed & yes \\
-linkhub & bookmark manager & 2.1.0 & 852 & 5 & P3, P6, P9 & yes & not transformed & yes \\
-medtimer & medication reminder & 1.17.7 & 729 & 11 & P3, P6, P9 & no pairs & active only & active only \\
-pdfviewer & PDF viewer & 1.1 & 51 & 8 & P3, P6, P9 & yes & yes & yes \\
-poetskingdom & creative writing / poetry editor & 1.0.0 & 608 & 6 & P3, P6, P9 & yes & yes & yes \\
-tipuous & receipt and tip tracker & 1.30-debug & 239 & 7 & P3, P6, P9 & yes & yes & yes \\
+calculator & com.\allowbreak{}exponential\_groth.\allowbreak{}calculator & Scientific calculator & 1.7.2 & 9.9 & 2024-01-06 & 10+ & not listed & 5 & 19.4 & P3, P6, P9 & yes & yes & yes \\
+documenter & com.\allowbreak{}viliussutkus89.\allowbreak{}documenter.\allowbreak{}debug & Converts PDF and Word files to HTML and shows them & 1.0.14.\allowbreak{}debug & 57.3 & 2024-08-31 & 100+ & not listed & 5 & 14.7 & P3, P6, P9 & yes & no working build & yes \\
+itsok & com.\allowbreak{}qubacy.\allowbreak{}itsok & Chat that answers a typed gripe with positive mementos & 0.0.1 & 6.7 & 2024-03-10 & 50+ & not listed & 10 & 10.9 & P3, P6, P9 & yes & excluded & yes \\
+keep\_recipe & com.\allowbreak{}keeprecipes.\allowbreak{}android & Saves and manages recipes & 1.1 & 8.2 & 2025-06-11 & 50+ & not listed & 6 & 5.7 & P6, P9 & yes & not transformed & yes \\
+linkhub & com.\allowbreak{}amrdeveloper.\allowbreak{}linkhub & Link manager that sorts links into folders & 2.1.0 & 16.3 & 2025-08-10 & 5K+ & listed & 5 & 23.7 & P3, P6, P9 & yes & not transformed & yes \\
+medtimer & com.\allowbreak{}futsch1.\allowbreak{}medtimer & Offline medication reminder with an intake log & 1.17.7 & 31.5 & 2025-07-12 & 10K+ & listed & 11 & 5.7 & P3, P6, P9 & excluded & active only & active only \\
+pdfviewer & com.\allowbreak{}rajat.\allowbreak{}sample.\allowbreak{}pdfviewer & Sample app of a PDF-viewer library & 1.1 & 16.0 & 2025-09-27 & not listed & not listed & 8 & 8.4 & P3, P6, P9 & yes & yes & yes \\
+poetskingdom & com.\allowbreak{}wendorochena.\allowbreak{}poetskingdom & Poem editor with custom themes & 1.0.0 & 20.5 & 2025-01-16 & not listed & not listed & 6 & 17.5 & P3, P6, P9 & yes & yes & yes \\
+tipuous & com.\allowbreak{}tips.\allowbreak{}tipuous.\allowbreak{}debug & Tip calculator and receipt tracker & 1.30-debug & 68.4 & 2025-09-22 & 10+ & not listed & 7 & 15.8 & P3, P6, P9 & yes & yes & yes \\
 \bottomrule
 \end{tabular}
-\par\smallskip\footnotesize Scenarios: distinct Appium scenarios that ran, 63 in all; some repeat within a run to fill its 120 s. P3/P6/P9: Pixel 3/6/9. keep\_recipe does not run on the Pixel 3. Active only: medtimer's passive phase contains its six-screen introduction, so medtimer is left out of the passive-phase analysis in every arm. androidskk was measured and excluded from every arm, because its control build is already obfuscated. Allatori: documenter's obfuscated build crashes at start-up, and keep\_recipe's and linkhub's were not transformed; itsok's is a release build, excluded by the build-type rule (Section 4.1 of the thesis).
+\par\smallskip\footnotesize Android id and version: those of the measured control build. The debug build type adds a debug suffix to documenter's and tipuous's. APK size: the control APK, 1 MB = 1,000,000 bytes. Last commit (AndroT): the date of the newest commit in the AndroT dataset's copy of the repository, not of the repository today. linkhub's builds come from a later commit (18 April 2026). Google Play: the download range the store shows. F-Droid shows no download count. Both stores were read on 16 November 2026. Not listed: the store has no page for the id. Scenarios: distinct Appium scenarios that ran, 63 in all; some repeat within a run to fill its 120 s. Mean duration: each scenario's wall-clock time, averaged over every time it ran in the analysed runs of the three series (all four builds), then averaged over the application's scenarios. Devices: P3, P6 and P9 are the Pixel 3, 6 and 9. keep\_recipe does not run on the Pixel 3. Arms. Yes: matched pairs in both phases. Active only: medtimer's passive phase contains its six-screen introduction, so medtimer is left out of the passive-phase analysis in every arm. Not transformed: keep\_recipe's and linkhub's Allatori builds were not transformed. No working build: documenter's obfuscated build crashes at start-up. Excluded: itsok's obfuscated build is a release build, excluded by the build-type rule (Section 4.1 of the thesis), and medtimer was packed from an earlier build with code-coverage instrumentation, which its control does not carry. androidskk was measured and excluded from every arm, because its control build is already obfuscated.
 \end{table*}

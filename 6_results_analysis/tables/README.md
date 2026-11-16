@@ -16,7 +16,7 @@ Every table here is written by a notebook under `6_results_analysis/notebooks/`.
 
 | File | Thesis section | What it holds | Notebook |
 |---|---|---|---|
-| `table1_cohort.csv`, `table1_cohort.tex` | Supplement (applications) | cohort: application, category, size, scenarios, devices, arms analysed | `Descriptive_Statistics.ipynb` |
+| `table1_cohort.csv`, `table1_cohort.tex` | Supplement (applications) | cohort: application, Android id, description, version, APK size, last commit (AndroT), Google Play downloads, F-Droid, scenarios and their mean duration, devices, arms analysed | `Descriptive_Statistics.ipynb` |
 | `table2_control_build_screen.csv`, `table2_control_build_screen.tex` | Supplement (validity of the control) | per-app control screen, all ten measured applications incl. androidskk | `Descriptive_Statistics.ipynb` |
 | `table5_allatori_applicability.csv`, `table5_allatori_applicability.tex` | Supplement (Allatori applicability) | Allatori on nine apps: classes renamed, run-time outcome, valid cells (the tool's behaviour only) | `Headline_Effects.ipynb` |
 | `table6_freerasp_postlaunch.csv`, `table6_freerasp_postlaunch.tex` | Supplement (freeRASP's mechanism, exploratory) | freeRASP's extra passive-phase energy by segment and extra power on the Pixel 6 and 9 rails; all pairs, the other eight, medtimer | `Mechanism_Analysis.ipynb` |
