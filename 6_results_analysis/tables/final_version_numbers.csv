@@ -1,0 +1,26 @@
+name,value,unit,description
+supply_effect_pct,24.87,%,"change in measured power when the switching board got its external supply: valid pilot runs (308 before, 812 after); per application x device x build with runs on both sides, mean active-phase power from 2026-08-07 (PILOT_CUTOFF: the supply fitted) on over the mean before, minus 1; median over the 107 groups. Recomputed from the pilot run table"
+supply_effect_pct_pixel3,3.39,%,the same on the Pixel 3: median over its 30 groups
+supply_effect_pct_pixel6,39.07,%,the same on the Pixel 6: median over its 39 groups
+supply_effect_pct_pixel9,28.74,%,the same on the Pixel 9: median over its 38 groups
+charging_share_pct_series1,28.73,%,"series batch 1: top-up time per phone (mean of the three, 15.6 h) over the batch's wall-clock time (54.2 h, 3 sessions, the pauses between them left out)"
+charging_share_pct_series2,29.90,%,"series batch 2: top-up time per phone (mean of the three, 16.7 h) over the batch's wall-clock time (56.0 h, one session)"
+charging_share_pct_series3,31.03,%,"series batch 3: top-up time per phone (mean of the three, 16.4 h) over the batch's wall-clock time (52.7 h, one session)"
+charging_share_pct,29.88,%,the three series batches together: top-up time per phone (48.7 h) over their wall-clock time (162.9 h)
+charging_share_pct_pixel3,24.70,%,the Pixel 3's top-up time over the three series batches (40.2 h) over their wall-clock time
+charging_share_pct_pixel6,29.74,%,the Pixel 6's top-up time over the three series batches (48.4 h) over their wall-clock time
+charging_share_pct_pixel9,35.19,%,the Pixel 9's top-up time over the three series batches (57.3 h) over their wall-clock time
+topups_pixel3,49,count,top-ups of the Pixel 3 in the three series batches
+topups_pixel6,32,count,top-ups of the Pixel 6 in the three series batches
+topups_pixel9,34,count,top-ups of the Pixel 9 in the three series batches
+topup_median_min_pixel3,46.2,min,median duration of the Pixel 3's top-ups in the three series batches (from below 40 % to 70 %)
+topup_median_min_pixel6,90.2,min,median duration of the Pixel 6's top-ups in the three series batches (from below 40 % to 70 %)
+topup_median_min_pixel9,101.8,min,median duration of the Pixel 9's top-ups in the three series batches (from below 40 % to 70 %)
+sampling_interval_ms_pixel3,109.0,ms,"battery profiler (set to 100 ms), Pixel 3: median interval between consecutive battery samples, over the 1,116,353 intervals of its 796 analysed runs (mean 109.9 ms)"
+sampling_interval_ms_pixel6,105.0,ms,"battery profiler (set to 100 ms), Pixel 6: median interval between consecutive battery samples, over the 1,278,627 intervals of its 926 analysed runs (mean 105.1 ms)"
+sampling_interval_ms_pixel9,109.0,ms,"battery profiler (set to 100 ms), Pixel 9: median interval between consecutive battery samples, over the 1,375,806 intervals of its 925 analysed runs (mean 109.6 ms)"
+cpu_memory_sampling_interval_ms_pixel3,1333.3,ms,"processor and memory sampler (set to 1 s), Pixel 3: median over its 796 analysed runs of each run's mean interval between samples, first to last sample of Android Runner's processor and memory file (time stamps in whole seconds); the measured windows' rate in inputs/mechanism_cells_series.csv gives 1335.1 ms"
+cpu_memory_sampling_interval_ms_pixel6,1175.4,ms,"processor and memory sampler (set to 1 s), Pixel 6: median over its 926 analysed runs of each run's mean interval between samples, first to last sample of Android Runner's processor and memory file (time stamps in whole seconds); the measured windows' rate in inputs/mechanism_cells_series.csv gives 1174.4 ms"
+cpu_memory_sampling_interval_ms_pixel9,1753.4,ms,"processor and memory sampler (set to 1 s), Pixel 9: median over its 925 analysed runs of each run's mean interval between samples, first to last sample of Android Runner's processor and memory file (time stamps in whole seconds); the measured windows' rate in inputs/mechanism_cells_series.csv gives 1753.2 ms"
+readings_total,3773433,readings,"battery readings (rows of the battery-sample files, about 10 per second) of the 2,647 analysed runs, first to last sample"
+readings_in_phases,3464238,readings,"the same, inside the analysed phases: the active phase of every run and the passive phase where it is analysed (not medtimer's); the rest lie after the last scenario or in medtimer's passive phase"

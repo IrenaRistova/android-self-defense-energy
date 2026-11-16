@@ -35,6 +35,8 @@ def main():
             f = r["path"][len("tables/"):]
             stem = f.rsplit(".", 1)[0] if placement in ("BODY", "APPENDIX", "SUPPLEMENT") else f      # a body table's .csv and .tex share a row
             group.setdefault(stem, [r, []])[1].append(f)
+        if not group:                                                    # no table has this placement (APPENDIX: the thesis's appendix is the supplement PDF, placement SUPPLEMENT)
+            continue
         out += [f"## {placement}", "", "| File | Thesis section | What it holds | Notebook |", "|---|---|---|---|"]
         for r, files in group.values():
             out.append(f"| {', '.join(f'`{f}`' for f in files)} | {r['thesis_section']} | {r['description']} | "

@@ -13,7 +13,7 @@ only elsewhere is marked "elsewhere". A number whose every match lies in a table
 MANIFEST.csv places in the replication package only (REPO) is marked "(replication
 package only)": the superseded pooled analysis is still emitted there, so such a number
 may be stale even though it is found. A number found only in the numbered supplementary tables
-(placement SUPPLEMENT, Table S1-S16 of supplementary.pdf) is marked "(supplement only: ...)":
+(placement SUPPLEMENT, Table S1-S20 of supplementary.pdf) is marked "(supplement only: ...)":
 it is valid, but its sentence must point to the S-table. Method constants (the 95% interval, 80% power,
 the 1.5-IQR whisker) and device names (Pixel 3/6/9) are not traced.
 

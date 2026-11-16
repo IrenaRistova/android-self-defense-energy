@@ -8,39 +8,34 @@ Every table here is written by a notebook under `6_results_analysis/notebooks/`.
 
 | File | Thesis section | What it holds | Notebook |
 |---|---|---|---|
-| `table_rq12.csv`, `table_rq12.tex` | 6.2-6.3 RQ1 and RQ2 (per device) | RQ1 and RQ2 merged: per technique x device, both phases: delta-E with CI, BH p, Cliff's delta magnitude (values in the CSV) | `Per_Device_Analysis.ipynb` |
-| `table_rq3_correlations.csv`, `table_rq3_correlations.tex` | 6.4 RQ3 | RQ3 table: Spearman rho per device x build, both phases, one column (bold = BH < 0.05, no stars; BH over 96) | `Per_Device_Analysis.ipynb` |
-| `table_rq4.csv`, `table_rq4.tex` | 6 Results (RQ4) | RQ4 body table: mean difference per technique x device in memory (active, %), threads (count), CPU (active, points), passive length (%); bold = BH < 0.05 within RQ4 | `Per_Device_Analysis.ipynb` |
-
-## APPENDIX
-
-| File | Thesis section | What it holds | Notebook |
-|---|---|---|---|
-| `table1_cohort.csv`, `table1_cohort.tex` | 4 Planning (subjects) | cohort: application, category, size, scenarios, devices, arms analysed | `Descriptive_Statistics.ipynb` |
-| `table_descriptives_per_device.csv`, `table_descriptives_per_device.tex` | Appendix (descriptives) | CAIN Table III: energy per cell per device x build, passive and active phase: cells, mean, median, SD; each technique under its own arm's control | `Per_Device_Analysis.ipynb` |
-| `table_launch_per_device.csv`, `table_launch_per_device.tex` | Discussion / Appendix (the launch) | launch time to first display per technique x device | `Per_Device_Analysis.ipynb` |
-| `table_tool_families.tex` | Appendix (candidate tools) | one row per protection family: what it protects, where it is inserted, how it acts, candidate tools (measured one marked), references | `Per_Device_Analysis.ipynb` |
+| `table_rq12.csv`, `table_rq12.tex` | 6 Results (RQ1 and RQ2) | RQ1 and RQ2 merged: per technique x device, both phases: delta-E with CI, BH p, Cliff's delta magnitude (values in the CSV) | `Per_Device_Analysis.ipynb` |
+| `table_rq3_correlations.csv`, `table_rq3_correlations.tex` | 6 Results (RQ4) | RQ4 table: Spearman rho per device x build, both phases, one column (bold = BH < 0.05, no stars; BH over 96) | `Per_Device_Analysis.ipynb` |
+| `table_rq4.csv`, `table_rq4.tex` | 6 Results (RQ3) | RQ3 body table: mean difference per technique x device in memory (active, %), threads (count), CPU (active, points), passive length (%); bold = BH < 0.05 within RQ3 | `Per_Device_Analysis.ipynb` |
 
 ## SUPPLEMENT
 
 | File | Thesis section | What it holds | Notebook |
 |---|---|---|---|
+| `table1_cohort.csv`, `table1_cohort.tex` | Supplement (applications) | cohort: application, category, size, scenarios, devices, arms analysed | `Descriptive_Statistics.ipynb` |
 | `table2_control_build_screen.csv`, `table2_control_build_screen.tex` | Supplement (validity of the control) | per-app control screen, all ten measured applications incl. androidskk | `Descriptive_Statistics.ipynb` |
 | `table5_allatori_applicability.csv`, `table5_allatori_applicability.tex` | Supplement (Allatori applicability) | Allatori on nine apps: classes renamed, run-time outcome, valid cells (the tool's behaviour only) | `Headline_Effects.ipynb` |
 | `table6_freerasp_postlaunch.csv`, `table6_freerasp_postlaunch.tex` | Supplement (freeRASP's mechanism, exploratory) | freeRASP's extra passive-phase energy by segment and extra power on the Pixel 6 and 9 rails; all pairs, the other eight, medtimer | `Mechanism_Analysis.ipynb` |
 | `table_arrival_temperature.csv`, `table_arrival_temperature.tex` | Supplement (arrival temperature) | per device: power against arrival temperature, the balance of each technique against its control, and the adjusted comparisons | `Per_Device_Analysis.ipynb` |
+| `table_descriptives_per_device.csv`, `table_descriptives_per_device.tex` | Supplement (descriptives) | CAIN Table III: energy per cell per device x build, passive and active phase: cells, mean, median, SD; each technique under its own arm's control | `Per_Device_Analysis.ipynb` |
 | `table_durations_per_device.csv`, `table_durations_per_device.tex` | Supplement (descriptives: phase lengths) | phase length per cell per device x build, passive and active: cells, mean, median, SD; medtimer's passive phase as measured | `Per_Device_Analysis.ipynb` |
 | `table_freerasp_active_cost.csv`, `table_freerasp_active_cost.tex` | Supplement (freeRASP's active-phase cost) | freeRASP's active-phase extra energy per device with the control's energy, and the share of the fall in percent the larger control explains | `Per_Device_Analysis.ipynb` |
 | `table_freerasp_mechanism.csv`, `table_freerasp_mechanism.tex` | Supplement (runtime shielding per device, exploratory) | freeRASP per device: the burst's core and its share of the passive phase's extra energy, rejected local-server requests, Wi-Fi traffic, SELinux denials | `Per_Device_Analysis.ipynb` |
 | `table_fuel_gauge.csv`, `table_fuel_gauge.tex` | Supplement (the fuel gauge) | the fuel gauge's update interval per device, and the readings one launch spans | `Per_Device_Analysis.ipynb` |
+| `table_launch_per_device.csv`, `table_launch_per_device.tex` | Supplement (the launch) | launch time to first display per technique x device | `Per_Device_Analysis.ipynb` |
 | `table_normality.csv`, `table_normality.tex` | Supplement (normality) | Shapiro-Wilk W and p per comparison, raw and log | `Per_Device_Analysis.ipynb` |
 | `table_obfuscation_static.csv`, `table_obfuscation_static.tex` | Supplement (obfuscation) | Allatori static changes per application | `Per_Device_Analysis.ipynb` |
 | `table_per_app_active.csv`, `table_per_app_active.tex` | Supplement (per application) | mean delta-E per application x technique x device, active phase | `Per_Device_Analysis.ipynb` |
 | `table_per_app_passive.csv`, `table_per_app_passive.tex` | Supplement (per application) | mean delta-E per application x technique x device, passive phase | `Per_Device_Analysis.ipynb` |
 | `table_pilot_series.csv`, `table_pilot_series.tex` | Supplement (pilot to series) | pilot vs series repeatability over the common groups | `Per_Device_Analysis.ipynb` |
-| `table_rq4_full.csv`, `table_rq4_full.tex` | Supplement (RQ4) | RQ4 in full: all 54 tests with intervals, pairs higher, BH p and Cliff's delta | `Per_Device_Analysis.ipynb` |
+| `table_rq4_full.csv`, `table_rq4_full.tex` | Supplement (RQ3) | RQ3 in full: all 54 tests with intervals, pairs higher, BH p and Cliff's delta | `Per_Device_Analysis.ipynb` |
 | `table_sampler_load.csv`, `table_sampler_load.tex` | Supplement (the memory sampler's load) | freeRASP's extra collection time per device, active phase, and the share of delta-E it could account for at three powers | `Per_Device_Analysis.ipynb` |
 | `table_thermal_gate.csv`, `table_thermal_gate.tex` | Supplement (the thermal gate) | the thermal gate: safety-floor stops per regime, pre-measurement battery temperature, and the within-pilot coolest-subset test | `Per_Device_Analysis.ipynb` |
+| `table_tool_families.tex` | Supplement (candidate tools) | one row per protection family: what it protects, where it is inserted, how it acts, candidate tools (measured one marked), references | `Per_Device_Analysis.ipynb` |
 
 ## REPO
 
@@ -68,6 +63,7 @@ Every table here is written by a notebook under `6_results_analysis/notebooks/`.
 | `exclusions_by_cause.csv` | 5.7 Deviations and failures (exclusions) | excluded cells by cause in the three series batches, with totals and valid cells; the pilot's exclusions in the note | `Descriptive_Statistics.ipynb` |
 | `exclusions_by_cause.tex` | 5.7 Deviations and failures (exclusions) | excluded cells by cause in the three series batches, with totals and valid cells; the pilot's exclusions in the note | `Descriptive_Statistics.ipynb` |
 | `filter_chain.csv` | 5 Execution | cells surviving each step of the filter chain, per batch | `Descriptive_Statistics.ipynb` |
+| `final_version_numbers.csv` | 5 Execution, 7 Discussion, 8 Threats (numbers the text states) | numbers the text states: the external supply's step in measured power, the share of the series batches' wall-clock time spent charging, the real sampling interval per device, the battery readings of the analysed runs | `Per_Device_Analysis.ipynb` |
 | `frame_timing.csv` | 6.4 RQ3 (frame timing; exploratory) | matched-pair change in median and 95th-percentile frame time and in delayed frames, per technique | `Mechanism_Analysis.ipynb` |
 | `freerasp_active_cost_device_steps.csv` | 7 Discussion (device gradient) | the steps in freeRASP's active-phase cost between devices (extra J; extra device-wide CPU share), matched on application x batch over the eight applications measured on all three: mean, t-interval, Wilcoxon p | `Per_Device_Analysis.ipynb` |
 | `freerasp_active_cost_per_device.csv` | 7 Discussion (device gradient) | freeRASP's active-phase cost per device in absolute terms: extra J per measurement and extra W with the control's energy, extra device-wide CPU share (pp), the percentage had the extra energy stayed at the Pixel 3's; all applications and the eight on all three | `Per_Device_Analysis.ipynb` |

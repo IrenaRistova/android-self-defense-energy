@@ -1,25 +1,30 @@
-# On the impact of self-defense techniques on the energy efficiency of Android apps
+# On the Impact of Self-Defense Techniques on the Energy Consumption of Android Apps
 
 Replication package of the MSc thesis by Irena Ristova (Vrije Universiteit Amsterdam, 2026).
 
 The study measures the energy cost of three Android self-defense techniques, each against the unprotected build of the
 same application: packing (Bangcle), obfuscation (Allatori) and runtime shielding (freeRASP). Ten open-source
 applications were measured on three generations of Google Pixel phones (Pixel 3, 6 and 9) in four batches of 1200
-measurements: a pilot and three series batches. The thesis analyses the three series batches, on nine applications.
+runs: a pilot and three series batches. The thesis analyses the three series batches, on nine applications.
+
+The thesis asks four research questions: RQ1, the energy cost in the passive phase (from the first energy sample to the
+first scenario); RQ2, the energy cost in the active phase (the scenarios); RQ3, how the protected builds differ from
+their controls at run time (memory, threads, processor share, phase duration); and RQ4, how these runtime
+characteristics correlate with energy.
 
 This repository holds everything needed to recompute every table, figure and number of the thesis from the measurement
-data, and the code that took the measurements. The supplementary material cited in the thesis (Tables S1 to S16 and
-Figures S1 to S3) is [`6_results_analysis/supplementary/supplementary.pdf`](6_results_analysis/supplementary/supplementary.pdf).
+data, and the code that took the measurements. The thesis's appendix (Tables S1 to S20 and Figures S1 to S3) is
+[`6_results_analysis/supplementary/supplementary.pdf`](6_results_analysis/supplementary/supplementary.pdf).
 
 ## Contents
 
 | Folder | What it holds |
 | --- | --- |
 | `6_results_analysis/notebooks/` | The five notebooks that produce every table, figure and number, and their two libraries (`thesis_lib.py`, `per_device_lib.py`). `Per_Device_Analysis` makes most of the tables and figures of the thesis body. |
-| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body, appendix, supplement or repository only. The execution diagram (`figures/figure_execution.*`) is drawn by `scratchpad/analysis/execution_diagram/make_execution.py`. |
-| `6_results_analysis/supplementary/` | `supplementary.pdf` (Tables S1 to S16, Figures S1 to S3), its LaTeX source, and `INDEX.md`, which maps every table and figure of the thesis to its file and notebook. |
-| `6_results_data/run_tables/` | The four run tables, one row per measurement (4 x 1200 rows), with each measurement's validity verdict. `RUN_TABLE_COLUMNS_EXPLANATION.md` explains the columns. |
-| `6_results_data/inputs/` | Per-measurement and per-build inputs extracted from the raw logs and APKs. Each `<name>.PROVENANCE.md` gives the command that made the file. |
+| `6_results_analysis/tables/`, `figures/` | Every table (`.tex` and `.csv`) and figure (`.pdf` and `.png`) as the notebooks write them. `MANIFEST.csv` lists each one with its notebook and its place: thesis body (BODY), the appendix PDF (SUPPLEMENT), repository only (REPO), or the ten-application sensitivity check that the thesis does not cite (SENSITIVITY, in `tables/sensitivity_ten_apps/`). The execution diagram (`figures/figure_execution.*`) is drawn by `scratchpad/analysis/execution_diagram/make_execution.py`. |
+| `6_results_analysis/supplementary/` | `supplementary.pdf`, the thesis's appendix (Tables S1 to S20, Figures S1 to S3), its LaTeX source, `references.bib` (the works Table S17 cites), and `INDEX.md`, which maps every table and figure of the thesis to its file and notebook. |
+| `6_results_data/run_tables/` | The four run tables, one row per run (4 x 1200 rows), with each run's validity verdict. `RUN_TABLE_COLUMNS_EXPLANATION.md` explains the columns. |
+| `6_results_data/inputs/` | Per-run and per-build inputs extracted from the raw logs and APKs. Each `<name>.PROVENANCE.md` gives the command that made the file. |
 | `6_results_data/derived/` | Results of an independent reference implementation (`scratchpad/analysis/thesis_numbers.py`), which the notebooks print next to their own numbers as a cross-check. |
 | `6_results_data/DATA_MAP.md` | Where every file comes from: batches, tags, sessions, clocks, raw files and derived inputs. |
 | `6_results_data/raw_manifest.csv.gz` | Size and SHA-256 of every raw file, so that the raw data (see below) can be checked. |
@@ -30,6 +35,13 @@ Figures S1 to S3) is [`6_results_analysis/supplementary/supplementary.pdf`](6_re
 | `android-runner/` | The Android Runner configurations, hook scripts and framework changes used in the experiment, with instructions ([`android-runner/README.md`](android-runner/README.md)). |
 | `scratchpad/` | Scripts developed next to the analysis: the source of `Per_Device_Analysis` (`analysis/per_device_notebook.py`, converted by `analysis/py2nb.py`), the reference implementation, the producers of some inputs, the generator of the execution diagram, and the APK fingerprint modules the build checks import. |
 | `docs/` | Three reference notes: batch naming, the scenario log formats, and the sign of the Pixel 3's current reading. |
+
+The thesis calls one measurement a *run*; where a file name, a column name or a table in this package says *cell* (for
+example `cell_start_ts_utc` or `cell_counts_per_device.csv`), a cell means one run. File names, the notebooks' headings
+and the repository-only (REPO) rows of `MANIFEST.csv` keep earlier numberings of the research questions. In file names,
+`table_rq12*` and `figure_rq12_violins` hold RQ1 and RQ2, `table_rq2_passive*` holds RQ1 and `table_rq1_active*` RQ2,
+`table_rq4*` and `rq4_runtime_differences.csv` hold RQ3, and `table_rq3_correlations*`, `rq3_*.csv` and `figure_rq3_*`
+hold RQ4.
 
 ## Recomputing the results
 
@@ -45,7 +57,9 @@ PYTHON=.venv/bin/python JUPYTER=.venv/bin/jupyter bash rebuild.sh
 `rebuild.sh` converts `per_device_notebook.py` into `Per_Device_Analysis.ipynb`, runs the five notebooks in order (about
 two minutes) and rewrites `6_results_analysis/tables/`, `figures/`, `MANIFEST.csv` and `tables/README.md`. Every table
 comes out byte-identical to the committed one, so `git status` afterwards shows only the notebooks (execution metadata)
-and the figure PDFs (creation date) as changed. Matplotlib picks the first Linux Libertine cut its font cache lists, so
+and the figure PDFs (creation date) as changed. Some rows of `tables/final_version_numbers.csv` (the charging share, the
+sampling intervals and the battery readings) are computed from the raw data; without it the notebook keeps the committed
+values, checks the rows it can and reports the others as UNPROVEN. Matplotlib picks the first Linux Libertine cut its font cache lists, so
 on another machine the figures can come out in the other cut of the typeface; their content is the same. To rebuild the supplement PDF as well:
 `TECTONIC=/path/to/tectonic python3 6_results_analysis/make_supplement.py`.
 
@@ -58,17 +72,17 @@ The thesis describes the design (Section 4) and its execution (Section 5). This 
 
 - **Batches.** `tools/run_final_sweep_ykush.sh` is the entry point of a batch. It prepares the phones, runs the
   preflight checks (`tools/preflight_final_sweep_ykush.sh`), starts the mitmproxy replay and then
-  `tools/sweep_runner_parallel_ykush.sh`, which gives each phone its own queue of measurements in a random order
-  reproducible from a recorded seed and runs Android Runner once per measurement. `docs/BATCH_NAMING.md` explains the
+  `tools/sweep_runner_parallel_ykush.sh`, which gives each phone its own queue of runs in a random order
+  reproducible from a recorded seed and runs Android Runner once per run. `docs/BATCH_NAMING.md` explains the
   batch tags and the names the thesis uses.
-- **Thermal gate.** `tools/thermal_gate.sh` holds a measurement while the phone reports moderate thermal throttling or
+- **Thermal gate.** `tools/thermal_gate.sh` holds the next run while the phone reports moderate thermal throttling or
   worse (Android thermal status 2 or higher), with the screen off. Table S4 reports what it did.
-- **Power.** The phones run on battery during a measurement. A Yepkit YKUSH 3 board cuts the USB supply line in
+- **Power.** The phones run on battery during a run. A Yepkit YKUSH 3 board cuts the USB supply line in
   hardware (`tools/ykush_power.sh`, and `tools/ykush_ar_power.sh` as Android Runner's USB handler).
-  `tools/ykush_band_keeper.sh` keeps each phone's battery level within a band between measurements, and
+  `tools/ykush_band_keeper.sh` keeps each phone's battery level within a band between runs, and
   `tools/verify_parallel_charging.sh` checks that the external supply can charge all phones at once.
 - **Energy and behaviour.** Android Runner's battery profiler samples Android's `BatteryManager` every 100 ms; other
-  profilers sample processor and memory use and count garbage collections. The system log of each measurement is
+  profilers sample processor and memory use and count garbage collections. The system log of each run is
   captured and parsed into the run table.
 - **Network replay.** pdfviewer's network traffic is replayed from a recording by mitmproxy
   (`tools/mitmproxy_replay.sh`). `tools/record_via_scenario.sh` made the recording.
@@ -89,7 +103,7 @@ do not.
 
 ## Data kept outside this repository
 
-The raw Android system logs, the per-measurement logs, the raw energy samples, the 40 measured APKs and the network
+The raw Android system logs, the per-run logs, the raw energy samples, the 40 measured APKs and the network
 recording replayed for pdfviewer are not in this repository because of their size. They can be shared on request: open an
 issue in this repository.
 `6_results_data/raw_manifest.csv.gz` lists every raw file with its size and SHA-256. In the 38 scheduler logs under
@@ -103,9 +117,9 @@ Each one is built from a pinned commit of its open-source repository, and
 `6_results_data/inputs/app_characteristics.csv` gives each application's package name and version.
 `6_results_analysis/tables/candidate_tools.csv` lists the
 self-defense tools that were considered and why each was or was not used, and `exclusions_by_cause.csv` gives the
-excluded measurements by cause.
+excluded runs by cause.
 
 ## Citation
 
-Irena Ristova. *On the impact of self-defense techniques on the energy efficiency of Android apps.* MSc thesis,
+Irena Ristova. *On the Impact of Self-Defense Techniques on the Energy Consumption of Android Apps.* MSc thesis,
 Vrije Universiteit Amsterdam, 2026.

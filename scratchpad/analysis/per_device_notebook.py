@@ -313,7 +313,7 @@ def _b1_tex(kind, unit, stem, caption, label, placement, section, desc, extra=No
         if extra:
             out.extend(extra(dev))
     shown = pd.DataFrame(out)
-    shown.columns = ["Build"] + ["Cells", "Mean", "Median", "SD"] * 2
+    shown.columns = ["Build"] + ["Runs", "Mean", "Median", "SD"] * 2
     T.register(P.write_tex_grouped(shown, stem, caption=caption, label=label, colfmt="l" + "rrrr" * 2,
                                    groups=[("", 1), (f"Passive phase ({unit})", 4), (f"Active phase ({unit})", 4)],
                                    blocks=blocks, star=True, bold_cells=bold(shown) if bold else None), placement, section, desc, NB)
@@ -321,8 +321,8 @@ def _b1_tex(kind, unit, stem, caption, label, placement, section, desc, extra=No
 
 
 print(_b1_tex("energy", "J", "table_descriptives_per_device",
-              caption="Energy per cell (J) by device, build and phase, three series batches; each technique is listed under its own arm's control.",
-              label="tab:descriptives-device", placement="APPENDIX", section="Appendix (descriptives)",
+              caption="Energy per run (J) by device, build and phase, three series batches; each technique is listed under its own arm's control.",
+              label="tab:descriptives-device", placement="SUPPLEMENT", section="Supplement (descriptives)",
               desc="CAIN Table III: energy per cell per device x build, passive and active phase: cells, mean, median, SD; "
                    "each technique under its own arm's control").to_string(index=False))
 def _b1_medtimer(dev):
@@ -347,7 +347,7 @@ def _b1_bold(shown):
 
 
 _b1_tex("duration", "s", "table_durations_per_device",
-        caption="Phase length per cell (s) by device, build and phase, three series batches; each technique is listed under its own arm's "
+        caption="Phase duration per run (s) by device, build and phase, three series batches; each technique is listed under its own arm's "
                 "control. medtimer's passive phase, which contains its introduction and is not in the passive-phase analysis, is given in its "
                 "own row, over its analysed builds. Bold: the values the thesis states in words.",
         label="tab:durations-device", placement="SUPPLEMENT", section="Supplement (descriptives: phase lengths)",
@@ -451,44 +451,51 @@ for rq, ph, lab in (("RQ1", "active", "tab:rq1"), ("RQ2", "passive", "tab:rq2"))
                            star=True, notes=_RQ_NOTE, notes_tex=_RQ_NOTE_TEX, bold_rows=[i for i, s in enumerate(x["significant"]) if s]),
                "REPO", f"6 Results ({rq}, per device; replaced by the merged table)", f"{rq} ({ph} phase), one row per technique x device, with V and MDE", NB)
 # The thesis's table: RQ1 and RQ2 merged, phases side by side; V, MDE and the delta interval stay in the CSV
-def _rq12(tx, stem, label, placement, section, desc, caption_extra=""):
+def _rq12(tx, stem, label, placement, section, desc, caption_extra="", caption=None):
     """The merged RQ1 + RQ2 table: one row per technique x device, phases side by side; V, MDE, delta interval in the CSV."""
     rows_, bold_, odd, shade_ = [], set(), [], set()
     for t in TECHS:
         for dev in DEVS:
             r_ = {ph: tx[(tx["technique"] == t) & (tx["device"] == dev) & (tx["phase"] == ph)].iloc[0] for ph in ("active", "passive")}
             row = {"Device": DEV[dev]}
-            for k, ph in enumerate(("active", "passive")):
+            for k, ph in enumerate(("passive", "active")):      # the passive phase first, as RQ1
                 x_ = r_[ph]
                 row[f"n_{ph}"] = int(x_.n)
                 row[f"d_{ph}"] = f"{P.signed(x_.delta_pct)} {P.ci_text(x_.ci_lo, x_.ci_hi)}"
                 row[f"p_{ph}"] = P.fmt_p(x_.p_bh)
                 row[f"c_{ph}"] = x_.magnitude                       # the magnitude word only; the value is in the CSV
-                if x_.significant:
-                    bold_ |= {(len(rows_), 2 + 4 * k + j) for j in range(3)}
-                    if x_.delta_pct > 0:                            # a detected energy cost, shaded light red
+                if x_.significant and abs(x_.cliff) >= P.CLIFF_THRESHOLDS[0][0]:   # bold = a non-negligible effect:
+                    bold_ |= {(len(rows_), 2 + 4 * k + j) for j in range(3)}     # BH p < 0.05 and |delta| >= 0.147
+                    if x_.delta_pct > 0:                            # a non-negligible energy cost, shaded light red
+                        assert x_.cliff > 0, (t, dev, ph)           # the mean and Cliff's delta agree on the direction
                         shade_.add((len(rows_), 2 + 4 * k))
-                elif x_.ci_lo > 0 or x_.ci_hi < 0:                  # the interval excludes zero but the adjusted test does not
+                elif not x_.significant and (x_.ci_lo > 0 or x_.ci_hi < 0):   # the interval excludes zero but the adjusted test does not
                     odd.append(f"{_TECH_WORD[t]} on the {DEV[dev]} ({ph})")
             rows_.append(row)
     out = pd.DataFrame(rows_)
     out.columns = ["Device"] + ["n", "ΔE (%) [95% CI]", "p (BH)", "Cliff's δ"] * 2
     odd_text = (f" {' and '.join(odd)[0].upper() + ' and '.join(odd)[1:]}: the unadjusted interval excludes zero, the adjusted test "
                 f"does not.") if odd else ""
+    if caption is None:                     # the REPO variants keep the long caption; the body table passes a short one
+        caption = ("RQ1 (passive phase) and RQ2 (active phase): $\\Delta$E (\\%) per technique and device, the mean of n matched "
+                   "pairs with its 95\\% interval, the BH-adjusted Wilcoxon $p$ and the magnitude of Cliff's "
+                   "$\\delta$~\\cite{romano2006cliff}. Bold: adjusted $p < 0.05$ with a non-negligible effect size "
+                   "($|\\delta| \\geq 0.147$); shaded: a non-negligible energy cost." + odd_text
+                   + caption_extra)
     T.register(P.write_tex_grouped(
-        out, stem, caption=("RQ1 (active phase) and RQ2 (passive phase): $\\Delta$E (\\%) per technique and device, the mean of n matched "
-                            "pairs with its 95\\% interval, the BH-adjusted Wilcoxon $p$ and the magnitude of Cliff's "
-                            "$\\delta$~\\cite{romano2006cliff}. Bold: adjusted $p < 0.05$; shaded: a detected energy cost." + odd_text
-                            + caption_extra),
-        label=label, colfmt="l" + "rrrl" * 2, groups=[("", 1), ("Active phase (RQ1)", 4), ("Passive phase (RQ2)", 4)],
+        out, stem, caption=caption,
+        label=label, colfmt="l" + "rrrl" * 2, groups=[("", 1), ("Passive phase (RQ1)", 4), ("Active phase (RQ2)", 4)],
         blocks={0: "Bangcle (packing)", 3: "Allatori (obfuscation)", 6: "freeRASP (runtime shielding)"}, star=True, bold_cells=bold_,
         shade_cells=shade_, shade_colour="red!12"),
         placement, section, desc, NB)
     return out
 
 
-print(_rq12(tests, "table_rq12", "tab:rq12", "BODY", "6.2-6.3 RQ1 and RQ2 (per device)",
-            "RQ1 and RQ2 merged: per technique x device, both phases: delta-E with CI, BH p, Cliff's delta magnitude (values in the CSV)"
+print(_rq12(tests, "table_rq12", "tab:rq12", "BODY", "6 Results (RQ1 and RQ2)",
+            "RQ1 and RQ2 merged: per technique x device, both phases: delta-E with CI, BH p, Cliff's delta magnitude (values in the CSV)",
+            # a short caption; the methods are in the thesis's Data Analysis. Bold and shading need |delta| >= 0.147
+            caption="Energy difference $\\Delta$E (\\%) of each technique from its control, per device and phase. Bold: adjusted "
+                    "$p < 0.05$ with a non-negligible effect size ($|\\delta| \\geq 0.147$); shaded: a non-negligible energy cost."
             ).to_string(index=False))      # the exclusions are stated in the text, not the caption
 for r in tests.itertuples():
     T.record(f"per_device.{T.short(ARM_OF[r.technique])}.{r.phase}.{r.device}", delta_pct=r.delta_pct, ci95=[r.ci_lo, r.ci_hi], n=r.n,
@@ -671,9 +678,87 @@ _fp_fill_h = [Line2D([], [], ls="", marker="o", mfc="0.3", mec="0.3", ms=4.6, la
               Line2D([], [], ls="", label=" ")]
 fig.legend(handles=[h for pair in zip(_fp_dev_h, _fp_fill_h) for h in pair], loc="outside lower center", ncol=3, frameon=False,
            fontsize=6.5, handlelength=1.2, columnspacing=0.8, handletextpad=0.3)
-T.register(T.save_figure(fig, "figure1_per_device", T.FIG_SINGLE), "BODY", "6 Results (RQ1 and RQ2, per device)",
+# the violins of the next cell replace this forest plot as the body figure; it stays in the package
+T.register(T.save_figure(fig, "figure1_per_device", T.FIG_SINGLE), "REPO", "6 Results (RQ1 and RQ2, per device; replaced in the body by the violins)",
            "forest plot of the 18 comparisons: mean delta-E vs. control with its 95% paired t-interval, (a) active and (b) passive "
            "phase; techniques in grey bands under bold names; colour and row label = device; filled circle: BH-adjusted p < 0.05", NB)
+
+# %%
+# Figure 4: the distribution of the matched pairs as violin plots. The body figure for RQ1 and RQ2; the forest plot
+# above stays in the package. One column wide. Rows: the techniques in the order of the Results text (runtime shielding first);
+# columns: the passive phase (RQ1), then the active phase (RQ2); the devices side by side in each panel, each panel with its own
+# y-axis (the passive cost of runtime shielding is an order of magnitude larger than the other effects). Each dot is one matched
+# pair (the pairs of Table 1, `pt`); the violin is their distribution; the diamond is their mean, the number Table 1 gives (checked
+# below against table_rq12.csv); the line is their median. A dark violin: a non-negligible difference (BH-adjusted
+# p < 0.05 and |Cliff's delta| >= 0.147, bold in Table 1); a pale one: no detectable difference. Device colours as in the forest plot.
+import csv as _csv
+import matplotlib.colors as _mc
+from matplotlib.ticker import MaxNLocator as _MaxN
+_VI_ROWS = ("freeRASP", "Bangcle", "Allatori")                     # runtime shielding, packing, obfuscation
+_VI_COLS = (("passive", "Passive phase (RQ1)"), ("active", "Active phase (RQ2)"))
+_VI_ALPHA = {True: 0.45, False: 0.13}                              # violin fill: non-negligible difference / none detected
+with open(T.TABLES / "table_rq12.csv", encoding="utf-8") as _fh:   # Table 1 as printed: rows TECHS x DEVS; the passive dE in
+    _vi_t1 = list(_csv.reader(_fh))[1:]                            # column 2, the active dE in column 6
+_vi_rng = np.random.default_rng(20261028)                          # fixed seed: the jitter is the same on every rebuild
+_vi_flip = []
+fig, axes = plt.subplots(3, 2, figsize=(T.FIG_SINGLE, 4.3), layout="constrained")
+for r, t in enumerate(_VI_ROWS):
+    for c, (ph, _ph_title) in enumerate(_VI_COLS):
+        ax = axes[r, c]
+        for i, dev in enumerate(DEVS):
+            vals = pt[(pt["phase"] == ph) & (pt["technique"] == t) & (pt["device"] == dev)]["delta_pct"].to_numpy(float)
+            tr = tests[(tests["phase"] == ph) & (tests["technique"] == t) & (tests["device"] == dev)].iloc[0]
+            assert len(vals) == int(tr.n) and abs(vals.mean() - tr.delta_pct) < 1e-9 and abs(np.median(vals) - tr.median_delta_pct) < 1e-9, (t, ph, dev)
+            _printed = _vi_t1[3 * TECHS.index(t) + i][2 if ph == "passive" else 6].split()[0]
+            assert _printed == P.signed(vals.mean()), (t, ph, dev, _printed, vals.mean())    # the diamond is Table 1's number
+            strong = bool(tr.significant and abs(tr.cliff) >= P.CLIFF_THRESHOLDS[0][0])
+            assert strong == bool(tr.significant), "a significant but negligible difference: the legend needs a third fill"
+            if np.sign(vals.mean()) != np.sign(np.median(vals)):
+                assert not tr.significant, (t, ph, dev)            # a sign flip only where no difference is detected
+                _vi_flip.append(f"{_TECH_WORD[t]}, {DEV[dev]}, {ph}: mean {P.signed(vals.mean())}, median {P.signed(np.median(vals))}")
+            col = _FP_DEV_COLOURS[dev]
+            body = ax.violinplot([vals], positions=[i], widths=0.82, showextrema=False)["bodies"][0]
+            body.set_alpha(None)
+            body.set_facecolor(_mc.to_rgba(col, _VI_ALPHA[strong]))
+            body.set_edgecolor(_mc.to_rgba(col, 0.9))
+            body.set_linewidth(0.5)
+            body.set_zorder(1)
+            ax.scatter(i + _vi_rng.uniform(-0.15, 0.15, len(vals)), vals, s=5, color=col, edgecolor="white", linewidth=0.3, zorder=3)
+            ax.plot([i - 0.25, i + 0.25], [np.median(vals)] * 2, color="0.1", lw=0.7, solid_capstyle="butt", zorder=4)
+            ax.plot(i, vals.mean(), ls="", marker="D", ms=3.6, mfc="0.1", mec="white", mew=0.5, zorder=5)
+        if (r, c) == (0, 0):                                       # zero is the control: labelled once, where no data is
+            T.control_line(ax, at=0.03, side="above")
+        else:
+            ax.axhline(0, color="0.25", lw=0.7, zorder=2)
+        ax.set_xlim(-0.55, len(DEVS) - 0.45)
+        ax.set_xticks(range(len(DEVS)))
+        ax.set_xticklabels([DEV[d] for d in DEVS], fontsize=6.5)
+        ax.tick_params(axis="x", length=0, pad=2)
+        ax.tick_params(axis="y", labelsize=6.5, length=2.5, pad=1.5)
+        ax.yaxis.set_major_locator(_MaxN(nbins=4, steps=[1, 2, 2.5, 5, 10]))
+        ax.spines[["top", "right"]].set_visible(False)
+        if r == 0:
+            ax.set_title(_ph_title, fontsize=8, fontweight="bold", fontfamily=_FP_BOLD, pad=15)
+    axes[r, 0].annotate(_FP_WORD[t], xy=(0, 1), xycoords="axes fraction", xytext=(0, 4), textcoords="offset points",
+                        ha="left", va="bottom", fontsize=7.5, fontstyle="italic", annotation_clip=False)   # italic, as Table 1's blocks
+fig.supylabel(T.DELTA_LABEL, fontsize=8)
+# the legend fills column by column: the three marks on the first row, the two fills on the second
+_vi_h = [Line2D([], [], ls="", marker="o", ms=3, mfc="0.45", mec="white", mew=0.3, label="One matched pair"),
+         mpatches.Patch(facecolor=_mc.to_rgba("0.35", _VI_ALPHA[True]), edgecolor="0.35", lw=0.5, label="Non-negligible difference"),
+         Line2D([], [], ls="", marker="D", ms=3.6, mfc="0.1", mec="white", mew=0.5, label="Mean"),
+         mpatches.Patch(facecolor=_mc.to_rgba("0.35", _VI_ALPHA[False]), edgecolor="0.35", lw=0.5, label="No detectable difference"),
+         Line2D([], [], color="0.1", lw=0.7, label="Median")]
+fig.legend(handles=_vi_h, loc="outside lower center", ncol=3, frameon=False, fontsize=6.5, handlelength=1.3,
+           columnspacing=1.0, handletextpad=0.4)
+T.register(T.save_figure(fig, "figure_rq12_violins", T.FIG_SINGLE), "BODY", "6 Results (RQ1 and RQ2)",
+           "violin plots of the per-pair delta-E vs. control (one dot per matched pair, the pairs of Table 1), one column: rows runtime "
+           "shielding (freeRASP), packing (Bangcle), obfuscation (Allatori); columns passive (RQ1), active (RQ2) phase; devices side by "
+           "side, each panel its own y-axis; diamond: mean (= Table 1), line: median; dark violin: non-negligible difference "
+           "(BH-adjusted p < 0.05 and |Cliff's delta| >= 0.147)", NB)
+print("the 18 means are Table 1's (checked against table_rq12.csv)")
+print(f"median and mean of opposite sign in {len(_vi_flip)} comparisons, none with a detectable difference:")
+for _l in _vi_flip:
+    print("  " + _l)
 
 # %% [markdown]
 # ## Q-Q plots of the paired differences (appendix)
@@ -756,19 +841,18 @@ for i, (dev, b) in enumerate((DEV[d], b) for d in DEVS for b in BUILDS):
     _r3_tab.append(row)
 assert all(c in _r3_bold for c in _r3_shade), "a shaded |rho| >= 0.5 cell that is not significant: say so in the caption"
 _r3_tab = pd.DataFrame(_r3_tab)
-_r3_tab.columns = ["Build"] + ["Len.", "CPU", "Mem.", "Thr."] * 2
+_r3_tab.columns = ["Build"] + ["Dur.", "CPU", "Mem.", "Thr."] * 2      # duration, not length
 _r3_paths = P.write_tex_grouped(
     _r3_tab, "table_rq3_correlations",
-    caption=("RQ3: Spearman's $\\rho$ between energy per measurement and phase length (Len.), device-wide processor share (CPU), "
-             "the application's memory (Mem.) and threads (Thr.), per device, build and phase. Bold: BH-adjusted $p < 0.05$; "
-             "shaded: $|\\rho| \\geq 0.5$~\\cite{cohen1988}."),
+    caption=("Spearman's $\\rho$ between energy per run and each runtime characteristic, per device, build and phase (Dur.: phase "
+             "duration, CPU: processor share, Mem.: memory, Thr.: threads). Bold: adjusted $p < 0.05$; shaded: $|\\rho| \\geq 0.5$."),
     label="tab:rq3", colfmt="l" + "rrrr" * 2, groups=[("", 1), ("Passive", 4), ("Active", 4)],
     blocks={4 * i: DEV[d] for i, d in enumerate(DEVS)}, star=False, bold_cells=_r3_bold, shade_cells=_r3_shade)
 _f3 = T.TABLES / "table_rq3_correlations.tex"           # one column, so a smaller type and tighter columns
 import re as _re
 _t3 = _f3.read_text().replace("\\small\n", "\\footnotesize\n\\setlength{\\tabcolsep}{3.2pt}\n", 1)
 _f3.write_text(_re.sub(r"(?<![\w$])-\.(?=\d)", "$-$.", _t3))             # a minus sign, not a hyphen, before ".26"
-T.register(_r3_paths, "BODY", "6.4 RQ3", "RQ3 table: Spearman rho per device x build, both phases, one column (bold = BH < 0.05, "
+T.register(_r3_paths, "BODY", "6 Results (RQ4)", "RQ4 table: Spearman rho per device x build, both phases, one column (bold = BH < 0.05, "
            "no stars; BH over 96)", NB)
 print(_r3_tab.to_string(index=False))
 T.record("rq3.cain", significant=f"{int((rq3['p_bh'] < P.ALPHA).sum())} of {len(rq3)}", method="Spearman, cells pooled over applications, BH over 96",
@@ -799,8 +883,8 @@ def _r3_fig(ph, stem, placement):
             ax.spines[["top", "right"]].set_visible(False)
     fig.legend(handles=[Line2D([], [], color=T.COLOURS[b], ls=styles[b], lw=1.1, marker="o", ms=3, label=b) for b in BUILDS],
                loc="outside lower center", ncol=4, frameon=False)
-    T.register(T.save_figure(fig, stem, T.FIG_DOUBLE), placement, "6.4 RQ3" if placement == "BODY" else "Supplement (RQ3)",
-               f"RQ3 scatter, {ph} phase: per-cell energy against phase length, CPU, memory, threads (rows) per device (columns); colour = build, "
+    T.register(T.save_figure(fig, stem, T.FIG_DOUBLE), placement, "6 Results (RQ4)" if placement == "BODY" else "Supplement (RQ4)",
+               f"RQ4 scatter, {ph} phase: per-cell energy against phase length, CPU, memory, threads (rows) per device (columns); colour = build, "
                "least-squares line per build", NB)
 
 
@@ -830,11 +914,11 @@ for j, ph in enumerate(("passive", "active")):
         ax.set_title(f"({'abcdef'[2 * i + j]}) {DEV[dev]}, {ph}", fontsize=7.5)
         ax.spines[["top", "right"]].set_visible(False)
         if j == 0:
-            ax.set_ylabel("energy (J)")
-    axes[-1, j].set_xlabel("phase length (s)")
+            ax.set_ylabel("Energy (J)")
+    axes[-1, j].set_xlabel("Phase duration (s)")
 fig.legend(handles=[Line2D([], [], color=T.COLOURS[b], ls=_rl_style[b], lw=1.2, label=b) for b in BUILDS],
            loc="outside lower center", ncol=4, frameon=False, handlelength=2.0, columnspacing=1.0)
-T.register(T.save_figure(fig, "figure_rq3_length", T.FIG_SINGLE), "BODY", "6.4 RQ3",
+T.register(T.save_figure(fig, "figure_rq3_length", T.FIG_SINGLE), "BODY", "6 Results (RQ4)",
            "energy per cell against phase length, per device (rows) and phase (columns: passive, active): one point per cell, a "
            "least-squares line per build (one column)", NB)
 
@@ -883,8 +967,8 @@ _R4 = [  # characteristic, block heading, phase, column, unit ("pct": % of the c
     ("memory_passive", "Memory, passive phase (the application's PSS, % of the control)", "passive", "ar_mem_mb_post_launch", "pct"),
     ("threads", "Threads that log during the run, launch included (count)", "active", "threads", "abs"),
     ("cpu_active", "Processor share, device-wide, active phase (percentage points)", "active", "ar_cpu_workload", "abs"),
-    ("length_active", "Active-phase length (% of the control)", "active", "duration_workload_s", "pct"),
-    ("length_passive", "Passive-phase length (% of the control)", "passive", "duration_pre_workload_s", "pct"),
+    ("length_active", "Active-phase duration (% of the control)", "active", "duration_workload_s", "pct"),
+    ("length_passive", "Passive-phase duration (% of the control)", "passive", "duration_pre_workload_s", "pct"),
 ]
 _r4_cells = {k: g for k, g in cm.groupby(["app", "phone", "batch", "variant"])}
 rows = []
@@ -924,7 +1008,7 @@ T.register("tables/rq4_runtime_differences.csv", "REPO", "6 Results (RQ4)",
 
 # the body table: one row per technique and device, the four characteristics that carry the result
 _r4_get = lambda _rk, t, dev: rq4[(rq4["characteristic"] == _rk) & (rq4["technique"] == t) & (rq4["device"] == dev)].iloc[0]
-_R4_BODY = [("memory_active", "Memory (%)"), ("threads", "Threads"), ("cpu_active", "CPU (pp)"), ("length_passive", "Passive length (%)")]
+_R4_BODY = [("memory_active", "Memory (%)"), ("threads", "Threads"), ("cpu_active", "CPU (pp)"), ("length_passive", "Passive duration (%)")]
 _r4_tab, _r4_bold, _r4_blocks, _r4_shade = [], set(), {}, set()
 for t in TECHS:
     _r4_blocks[len(_r4_tab)] = {"Bangcle": "Packing (Bangcle)", "Allatori": "Obfuscation (Allatori)", "freeRASP": "Runtime shielding (freeRASP)"}[t]
@@ -935,17 +1019,18 @@ for t in TECHS:
             row[_rlab] = P.signed(r.difference, 1)
             if r.significant:
                 _r4_bold.add((len(_r4_tab), j))
-                if r.difference > 0:                                 # a detected increase: more memory, threads or processor use
+                if r.difference > 0 and abs(r.cliff) >= P.CLIFF_THRESHOLDS[0][0]:   # a non-negligible
+                    assert r.cliff > 0, (_rk, t, dev)                # increase (|delta| >= 0.147): more memory, threads or processor use
                     _r4_shade.add((len(_r4_tab), j))
         _r4_tab.append(row)
 _r4_tab = pd.DataFrame(_r4_tab)
 T.register(T.write_tex(_r4_tab, "table_rq4", caption=(
-    "RQ4: mean difference from the control over the matched pairs, per device: memory (PSS, active phase, \\%), threads that "
-    "log (count), device-wide processor share in the active phase (points) and passive-phase length (\\%). Bold: BH-adjusted "
-    "$p < 0.05$; shaded: a detected increase."), label="tab:rq4", colfmt="lrrrr", blocks=_r4_blocks,
+    "Difference of each technique from its control in active-phase memory (\\%), threads (count), processor share (percentage points) and "
+    "passive-phase duration (\\%), per device. Bold: adjusted $p < 0.05$; shaded: a non-negligible increase."),
+    label="tab:rq4", colfmt="lrrrr", blocks=_r4_blocks,
     star=False, colsep="4pt", bold_cells=_r4_bold, shade_cells=_r4_shade),
-    "BODY", "6 Results (RQ4)", "RQ4 body table: mean difference per technique x device in memory (active, %), threads (count), "
-    "CPU (active, points), passive length (%); bold = BH < 0.05 within RQ4", NB)
+    "BODY", "6 Results (RQ3)", "RQ3 body table: mean difference per technique x device in memory (active, %), threads (count), "
+    "CPU (active, points), passive length (%); bold = BH < 0.05 within RQ3", NB)
 print(_r4_tab.to_string(index=False))
 
 # why the processor share is compared in the active phase only: how often the device-wide figure changes inside the
@@ -971,8 +1056,8 @@ for _rk, _rh, _rph, _rcol, _runit in _R4:
                 _r4_fb.add((len(_r4_full) - 1, 3))
 _r4_full = pd.DataFrame(_r4_full)
 _paths = T.write_tex(_r4_full, "table_rq4_full", caption=(
-    "RQ4 in full: the protected build minus its control on the matched pairs, per characteristic, technique and device, with "
-    "the 95\\% interval, the pairs in which the protected build is higher, the BH-adjusted $p$ (within RQ4's 54 tests) and "
+    "RQ3 in full: the protected build minus its control on the matched pairs, per characteristic, technique and device, with "
+    "the 95\\% interval, the pairs in which the protected build is higher, the BH-adjusted $p$ (within RQ3's 54 tests) and "
     "Cliff's $\\delta$ within pairs. The processor share is given for the active phase only: inside the passive phase the "
     f"device-wide figure changes in only {min(_r4_refresh.values()):.0f} to {max(_r4_refresh.values()):.0f}\\% of the measurements, so it "
     "mostly carries the load from before the phase. Threads are counted once per measurement, over the "
@@ -980,7 +1065,7 @@ _paths = T.write_tex(_r4_full, "table_rq4_full", caption=(
     "$p < 0.05$."), label="tab:rq4-full", colfmt="llrrrrr", blocks=_r4_fblocks, star=True, bold_cells=_r4_fb)
 _f = T.TABLES / "table_rq4_full.tex"
 _f.write_text(_f.read_text().replace("\\small\n", "\\footnotesize\n", 1))      # 54 rows: one supplement page
-T.register(_paths, "SUPPLEMENT", "Supplement (RQ4)", "RQ4 in full: all 54 tests with intervals, pairs higher, BH p and Cliff's delta", NB)
+T.register(_paths, "SUPPLEMENT", "Supplement (RQ3)", "RQ3 in full: all 54 tests with intervals, pairs higher, BH p and Cliff's delta", NB)
 _sig = rq4[rq4["significant"]]
 T.record("rq4", tests=len(rq4), cpu_refreshed_in_passive_pct=_r4_refresh, significant=f"{len(_sig)} of {len(rq4)}", family="BH within RQ4",
          freerasp_threads={DEV[d]: round(float(_r4_get("threads", "freeRASP", d).difference), 2) for d in DEVS},
@@ -1040,7 +1125,7 @@ T.register(T.write_tex(_ln_tab.reset_index(drop=True), "table_launch_per_device"
                        caption="Time to initial display, technique minus control, per device: mean of the matched pairs with its 95\\% paired $t$-interval.",
                        label="tab:launch", colfmt="lrrr", blocks={0: "Bangcle (packing)", 3: "Allatori (obfuscation)", 6: "freeRASP (runtime shielding)"},
                        star=True),      # one column wide, in a page-wide float so it can share the appendix page with Table 8
-           "APPENDIX", "Discussion / Appendix (the launch)", "launch time to first display per technique x device", NB)
+           "SUPPLEMENT", "Supplement (the launch)", "launch time to first display per technique x device", NB)
 print(_ln_tab.to_string(index=False))
 
 _bu = pd.read_csv(T.DATA / "inputs" / "mechanism_cells_series.csv", dtype={"rep": str}).merge(series[key], on=key, how="inner")
@@ -1974,7 +2059,7 @@ _tex += [r"\bottomrule", r"\end{tabular}",
          r"candidate, DroidPro, is a research prototype. freeRASP is freemium: an open-source integration layer around a proprietary binary core.",
          r"\end{table*}"]
 (T.TABLES / "table_tool_families.tex").write_text("\n".join(_tex) + "\n")
-T.register("tables/table_tool_families.tex", "APPENDIX", "Appendix (candidate tools)", "one row per protection family: what it protects, where it is "
+T.register("tables/table_tool_families.tex", "SUPPLEMENT", "Supplement (candidate tools)", "one row per protection family: what it protects, where it is "
            "inserted, how it acts, candidate tools (measured one marked), references", NB)
 
 _tools = pd.DataFrame([
@@ -2094,6 +2179,182 @@ axc.set_yticks([])
 axc.set_xticks([0, 30, 60, 90, 120])
 axc.spines[["top", "right", "left"]].set_visible(False)
 axc.spines["bottom"].set_bounds(_tl_proc, _tl_end)
-axc.set_xlabel("time from the first energy sample (s)")
+axc.set_xlabel("Time from the first energy sample (s)")
 T.register(T.save_figure(fig, "figure_run", T.FIG_SINGLE), "BODY", "5 Experiment execution (one run to scale)",
            "one measured run to scale (pooled medians): launch, passive phase, active phase; phase names in bold, no other labels on the phases", NB)
+
+# %% [markdown]
+# ## Numbers the text states that no other table emits
+#
+# Four numbers: (a) how much fitting the switching board's external supply changed
+# measured power; (b) the share of each series batch's wall-clock time spent charging; (c) the real
+# interval between samples on each device, for the battery profiler and for the processor and memory sampler;
+# (d) the battery readings of the 2,647 analysed runs, all of them and those inside the analysed phases.
+# Written to `tables/final_version_numbers.csv` (name, value, unit, description). (a) and the processor and memory sampler come
+# from the package's tables. The rest read raw data outside them (the stream logs and Android Runner's battery samples), as the
+# thermal-gate check above does: without the raw data the committed CSV is kept, its rows from the package's tables are checked
+# against it, and the raw-data rows are UNPROVEN, not a pass.
+
+# %%
+# --- Four numbers the text states that no other table emits -------------------------------------------------------
+# (a) the external supply's step in measured power (pilot run table; the pilot enters no Results number).
+# (b) the share of each series batch's wall-clock time spent charging (stream logs, run tables).
+# (c) the real interval between samples on each device: the battery profiler (set to 100 ms; battery samples) and
+#     the processor and memory sampler (set to 1 s; Android Runner's processor and memory files).
+# (d) the battery readings of the 2,647 analysed runs, all of them and those inside the analysed phases.
+# (b), (c) and (d) read raw data outside the package's tables: the stream logs and Android Runner's battery samples and
+# processor and memory files, each run's folder found as the run-table builder does (tools/build_run_table_extended.py).
+# Without them the committed CSV is kept and those rows are UNPROVEN, not a pass; the supply rows are then checked against it,
+# and the sampler rows against the sampling rate in inputs/mechanism_cells_series.csv.
+import re as _re, sys as _sys
+from datetime import datetime as _dt, timedelta as _td
+
+_FV = T.TABLES / "final_version_numbers.csv"
+_PH = ["pixel3", "pixel6", "pixel9"]
+_fv = []
+
+
+def _fv_add(name, value, unit, description):
+    _fv.append({"name": name, "value": value, "unit": unit, "description": description})
+
+
+# (a) valid pilot runs; active-phase mean power per application x device x build, from PILOT_CUTOFF on against before it
+_sp = pd.read_csv(T.RUN_TABLES["pilot"], dtype=str)
+_sp = _sp[(_sp["scientifically_valid"] == "True") & (pd.to_numeric(_sp["workload_joules"], errors="coerce") > 0)].assign(
+    watts=lambda d: pd.to_numeric(d["workload_avg_watts"]), after=lambda d: d["cell_start_ts_utc"].fillna("") >= T.PILOT_CUTOFF)
+_sg = _sp.groupby(["app", "phone", "variant", "after"])["watts"].mean().unstack("after").dropna()
+_step = 100 * (_sg[True] / _sg[False] - 1)
+_sp_txt = (f"valid pilot runs ({int((~_sp['after']).sum())} before, {int(_sp['after'].sum())} after); per application x device x build "
+           f"with runs on both sides, mean active-phase power from {T.PILOT_CUTOFF} (PILOT_CUTOFF: the supply fitted) on over the mean before, "
+           f"minus 1; median over")
+_fv_add("supply_effect_pct", f"{_step.median():.2f}", "%",
+        f"change in measured power when the switching board got its external supply: {_sp_txt} the {len(_step)} groups. Recomputed from the "
+        "pilot run table")
+for _ph in _PH:
+    _s = _step.xs(_ph, level="phone")
+    _fv_add(f"supply_effect_pct_{_ph}", f"{_s.median():.2f}", "%", f"the same on the {DEV[_ph]}: median over its {len(_s)} groups")
+
+# (c) cross-check for the processor and memory sampler: the measured windows' length over the samples in them, per run
+# (the extractor's rate, a package input); the raw files' whole-run interval below must agree with it within 10 ms
+_ms = series[key].merge(pd.read_csv(T.DATA / "inputs" / "mechanism_cells_series.csv", dtype={"rep": str}, usecols=key + ["ar_samples_per_s"]),
+                        on=key, how="left", validate="one_to_one")
+assert _ms["ar_samples_per_s"].gt(0).all(), "an analysed run without processor and memory samples"
+_ms_iv = (1000 / _ms["ar_samples_per_s"]).groupby(_ms["phone"]).median()
+
+
+def _raw_rows():
+    """(b), the battery interval and (d), from the raw data; None when the raw data are not on this machine."""
+    try:
+        _sys.path.insert(0, str(T.ROOT / "tools"))
+        import build_run_table_extended as B
+        from organise_sweep_logs import resolve_logs_for_tag
+        tags = {b: T.RUN_TABLES[b].stem.replace("run_table_extended_", "") for b in T.SERIES}
+        logs = {b: [p for p in resolve_logs_for_tag(t, kind="stream") if _re.fullmatch(r"parallel_\d{8}_\d{6}_pixel\d\.log", p.name)]
+                for b, t in tags.items()}
+    except Exception as exc:
+        print(f"UNPROVEN: raw data unavailable ({exc.__class__.__name__})")
+        return None
+    if not B.DEFAULT_AR_OUTPUT.is_dir() or not all(logs.values()):
+        print("UNPROVEN: no battery samples or no stream logs for the series tags")
+        return None
+    rows = []
+    # (b) wall-clock: each session from its start (the stamp in the log names, CEST) to the end of the last cell that started in
+    # it; the pauses between sessions are left out. Charging: the top-ups that reached the band ("band reached ... after N s").
+    band = _re.compile(r"band reached: level=\d+ >= \d+ after (\d+)s")
+    wall, charge, tops = {}, {}, {p: [] for p in _PH}
+    for b in T.SERIES:
+        sessions = sorted({_re.match(r"parallel_(\d{8}_\d{6})_", p.name).group(1) for p in logs[b]})
+        starts = [pd.Timestamp(_dt.strptime(s, "%Y%m%d_%H%M%S") - _td(hours=2)) for s in sessions]
+        rt = pd.read_csv(T.RUN_TABLES[b], usecols=["cell_start_ts_utc", "cell_end_ts_utc"], dtype=str)
+        a = pd.to_datetime(rt["cell_start_ts_utc"], utc=True).dt.tz_localize(None)
+        z = pd.to_datetime(rt["cell_end_ts_utc"], utc=True).dt.tz_localize(None).fillna(a)
+        own = [(a >= s) & (a < (starts[i + 1] if i + 1 < len(starts) else pd.Timestamp.max)) for i, s in enumerate(starts)]
+        assert sum(int(o.sum()) for o in own) == len(rt) == a.notna().sum(), f"{b}: a cell outside every session"
+        wall[b] = sum((z[o].max() - s).total_seconds() for s, o in zip(starts, own) if o.any())
+        for p in logs[b]:
+            ph = _re.search(r"_(pixel\d)\.log$", p.name).group(1)
+            d = [int(m.group(1)) for m in band.finditer(p.read_text(errors="replace"))]
+            charge[(b, ph)] = charge.get((b, ph), 0) + sum(d)
+            tops[ph] += d
+        m = np.mean([charge[(b, ph)] for ph in _PH])
+        rows.append((f"charging_share_pct_{b}", f"{100 * m / wall[b]:.2f}", "%",
+                     f"{b.replace('series', 'series batch ')}: top-up time per phone (mean of the three, {m / 3600:.1f} h) over the batch's "
+                     f"wall-clock time ({wall[b] / 3600:.1f} h, " + (f"{len(sessions)} sessions, the pauses between them left out)" if len(sessions) > 1 else "one session)")))
+    W = sum(wall.values())
+    m = np.mean([sum(charge[(b, ph)] for b in T.SERIES) for ph in _PH])
+    rows.append(("charging_share_pct", f"{100 * m / W:.2f}", "%",
+                 f"the three series batches together: top-up time per phone ({m / 3600:.1f} h) over their wall-clock time ({W / 3600:.1f} h)"))
+    for ph in _PH:
+        c = sum(charge[(b, ph)] for b in T.SERIES)
+        rows.append((f"charging_share_pct_{ph}", f"{100 * c / W:.2f}", "%",
+                     f"the {DEV[ph]}'s top-up time over the three series batches ({c / 3600:.1f} h) over their wall-clock time"))
+    for ph in _PH:
+        rows.append((f"topups_{ph}", str(len(tops[ph])), "count", f"top-ups of the {DEV[ph]} in the three series batches"))
+    for ph in _PH:
+        rows.append((f"topup_median_min_{ph}", f"{np.median(tops[ph]) / 60:.1f}", "min",
+                     f"median duration of the {DEV[ph]}'s top-ups in the three series batches (from below 40 % to 70 %)"))
+    # (c) and (d): every analysed run's battery file, found and read as the run-table builder does
+    full = pd.concat(pd.read_csv(T.RUN_TABLES[b], dtype=str, usecols=["phone", "app", "variant", "rep", "run_id", "duration_whole_window_s"])
+                     .assign(batch=b) for b in T.SERIES)
+    runs = series[key + ["duration_pre_workload_s", "duration_workload_s", "pre_workload_joules"]].merge(
+        full, on=key, how="left", validate="one_to_one")
+    gaps, cpu_iv, total, inside = {p: [] for p in _PH}, {p: [] for p in _PH}, 0, 0
+    for r in runs.itertuples(index=False):
+        subj, _, _ = B.find_subject_dir(B.find_run_dir(B.DEFAULT_AR_OUTPUT, r.run_id), B.WIFI_ALIAS[r.phone])
+        # processor and memory file: whole-second time stamps, so the run's mean interval, first to last sample
+        cpu_csv = max((p for p in (subj / "android").glob("*.csv") if "Aggregated" not in p.name), key=lambda p: p.stat().st_size)
+        t = []
+        for row in pd.read_csv(cpu_csv, dtype=str, usecols=["datetime"])["datetime"].dropna():
+            try:
+                t.append(_dt.strptime(row.strip(), "%a %b %d %H:%M:%S UTC %Y").timestamp())
+            except ValueError:
+                pass
+        assert len(t) >= 3, f"{r.run_id}: fewer than three processor and memory samples"
+        cpu_iv[r.phone].append(1000 * (t[-1] - t[0]) / (len(t) - 1))
+        ts = B.load_bm_samples(B.find_bm_csv(subj)[0], r.phone)["ts_ms"].to_numpy()
+        assert abs((ts[-1] - ts[0]) / 1000 - float(r.duration_whole_window_s)) < 1e-6, f"{r.run_id}: not the file the run table used"
+        ws = ts[0] + round(r.duration_pre_workload_s * 1000)          # the builder's phase boundaries, both ends included
+        we = ws + round(r.duration_workload_s * 1000)
+        active = int(((ts >= ws) & (ts <= we)).sum())
+        passive = int((ts < ws).sum()) if (r.app not in T.PASSIVE_EXCLUDED_APPS and r.pre_workload_joules > 0) else 0
+        total, inside = total + len(ts), inside + active + passive    # a reading at the boundary is counted once
+        gaps[r.phone].append(np.diff(ts))
+    for ph in _PH:
+        g = np.concatenate(gaps[ph])
+        rows.append((f"sampling_interval_ms_{ph}", f"{np.median(g):.1f}", "ms",
+                     f"battery profiler (set to 100 ms), {DEV[ph]}: median interval between consecutive battery samples, over the "
+                     f"{len(g):,} intervals of its {len(gaps[ph])} analysed runs (mean {g.mean():.1f} ms)"))
+    for ph in _PH:
+        v = float(np.median(cpu_iv[ph]))
+        assert abs(v - _ms_iv[ph]) < 10, f"{ph}: whole-run interval {v:.1f} ms against the measured windows' {_ms_iv[ph]:.1f} ms"
+        rows.append((f"cpu_memory_sampling_interval_ms_{ph}", f"{v:.1f}", "ms",
+                     f"processor and memory sampler (set to 1 s), {DEV[ph]}: median over its {len(cpu_iv[ph])} analysed runs of each run's mean "
+                     "interval between samples, first to last sample of Android Runner's processor and memory file (time stamps in whole "
+                     f"seconds); the measured windows' rate in inputs/mechanism_cells_series.csv gives {_ms_iv[ph]:.1f} ms"))
+    rows.append(("readings_total", str(total), "readings",
+                 f"battery readings (rows of the battery-sample files, about 10 per second) of the {len(runs):,} analysed runs, first to last sample"))
+    rows.append(("readings_in_phases", str(inside), "readings",
+                 "the same, inside the analysed phases: the active phase of every run and the passive phase where it is analysed "
+                 "(not medtimer's); the rest lie after the last scenario or in medtimer's passive phase"))
+    return rows
+
+
+_raw = _raw_rows()
+if _raw is not None:
+    for _r in _raw:
+        _fv_add(*_r)
+    _order = ["supply", "charging", "topup", "sampling", "cpu_memory", "readings"]
+    final_numbers = pd.DataFrame(sorted(_fv, key=lambda r: next(i for i, p in enumerate(_order) if r["name"].startswith(p))), dtype=object)
+    final_numbers.to_csv(_FV, index=False)
+else:
+    final_numbers = pd.read_csv(_FV, dtype=str)
+    _old = final_numbers.set_index("name")["value"]
+    _bad = [r["name"] for r in _fv if _old.get(r["name"]) != r["value"]]
+    _bad += [p for p in _PH if not abs(float(_old[f"cpu_memory_sampling_interval_ms_{p}"]) - _ms_iv[p]) < 10]
+    assert not _bad, f"rows of the committed {_FV.name} that the package's tables contradict: {_bad}"
+    print(f"the committed {_FV.name} is kept: its supply rows check out, its processor and memory sampler rows agree with the "
+          "package's sampling rate within 10 ms, and the other raw-data rows are UNPROVEN")
+T.register("tables/final_version_numbers.csv", "REPO", "5 Execution, 7 Discussion, 8 Threats (numbers the text states)",
+           "numbers the text states: the external supply's step in measured power, the share of the series batches' "
+           "wall-clock time spent charging, the real sampling interval per device, the battery readings of the analysed runs", NB)
+print(final_numbers[["name", "value", "unit"]].to_string(index=False))
